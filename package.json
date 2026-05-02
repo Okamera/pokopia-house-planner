@@ -1,0 +1,38 @@
+{
+  "name": "pokemon-compatibility",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "typecheck": "tsc --noEmit -p tsconfig.app.json",
+    "lint": "eslint .",
+    "preview": "vite preview",
+    "data-update": "node assets/full_scraper.cjs"
+  },
+  "dependencies": {
+    "@dnd-kit/react": "^0.4.0",
+    "papaparse": "^5.5.3",
+    "react": "^19.2.5",
+    "react-dom": "^19.2.5",
+    "react-select": "^5.10.2"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.7.0",
+    "@types/papaparse": "^5.5.2",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^6.0.1",
+    "cheerio": "1.2.0",
+    "eslint": "9.7.0",
+    "eslint-plugin-react": "^7.37.5",
+    "eslint-plugin-react-hooks": "^7.1.1",
+    "eslint-plugin-react-refresh": "^0.5.2",
+    "fs-extra": "11.3.4",
+    "globals": "^17.5.0",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.46.2",
+    "vite": "^8.0.10"
+  }
+}
