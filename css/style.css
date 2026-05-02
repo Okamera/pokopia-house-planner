@@ -1,0 +1,485 @@
+/* ===================================================================
+   Pokopia House Planner — Stylesheet
+   =================================================================== */
+
+/* ── Reset & base ─────────────────────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  /* Habitat palette */
+  --bright-hue: #e8c830;
+  --dark-hue:   #7b3fa0;
+  --dry-hue:    #c88a3a;
+  --humid-hue:  #3a9bd5;
+  --warm-hue:   #e84020;
+  --cool-hue:   #5ab8e8;
+
+  /* UI tokens */
+  --bg:          #f4f4f6;
+  --card-bg:     #ffffff;
+  --header-bg:   #cc0000;
+  --header-text: #ffffff;
+  --text:        #222222;
+  --text-muted:  #666666;
+  --border:      #dde0e6;
+  --shadow-sm:   0 1px 4px rgba(0,0,0,.10);
+  --shadow-md:   0 4px 12px rgba(0,0,0,.14);
+  --radius-sm:   6px;
+  --radius-md:   10px;
+  --radius-lg:   16px;
+  --transition:  .15s ease;
+
+  /* Layout */
+  --roster-width: 380px;
+}
+
+html { font-size: 15px; }
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ── Header ──────────────────────────────────────────────────────── */
+.app-header {
+  background: var(--header-bg);
+  color: var(--header-text);
+  padding: .75rem 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: .5rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,.25);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.app-header h1 {
+  font-size: 1.35rem;
+  font-weight: 700;
+  letter-spacing: .02em;
+}
+
+.app-header .subtitle {
+  font-size: .8rem;
+  opacity: .85;
+  margin-top: .1rem;
+}
+
+.header-actions { display: flex; gap: .5rem; flex-wrap: wrap; }
+
+/* ── Buttons ─────────────────────────────────────────────────────── */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: .3rem;
+  padding: .45rem .9rem;
+  border: none;
+  border-radius: var(--radius-sm);
+  font-size: .85rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: filter var(--transition), transform var(--transition);
+  line-height: 1;
+}
+.btn:hover  { filter: brightness(1.1); }
+.btn:active { transform: scale(.97); }
+
+.btn-primary   { background: #3b4cca; color: #fff; }
+.btn-secondary { background: #6c757d; color: #fff; }
+.btn-danger    { background: #fff;    color: #cc0000; border: 1.5px solid #cc0000; }
+.btn-sm        { padding: .3rem .6rem; font-size: .75rem; }
+
+/* ── Main layout ─────────────────────────────────────────────────── */
+.app-main {
+  display: flex;
+  flex: 1;
+  min-height: 0;
+  overflow: hidden;
+}
+
+/* ── Panels ──────────────────────────────────────────────────────── */
+.pokemon-panel {
+  width: var(--roster-width);
+  min-width: 280px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  background: var(--card-bg);
+  border-right: 1px solid var(--border);
+  overflow: hidden;
+}
+
+.houses-panel {
+  flex: 1;
+  overflow-y: auto;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: .75rem;
+}
+
+.panel-header {
+  padding: .75rem 1rem;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: .5rem;
+  flex-wrap: wrap;
+}
+
+.panel-header h2 { font-size: 1rem; font-weight: 700; }
+
+/* ── Search & Filter ─────────────────────────────────────────────── */
+.search-filter {
+  display: flex;
+  flex-direction: column;
+  gap: .4rem;
+  width: 100%;
+  margin-top: .4rem;
+}
+
+#pokemon-search,
+#habitat-filter {
+  width: 100%;
+  padding: .45rem .65rem;
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius-sm);
+  font-size: .85rem;
+  background: #fafafa;
+  color: var(--text);
+  transition: border-color var(--transition);
+}
+#pokemon-search:focus,
+#habitat-filter:focus { outline: none; border-color: #3b4cca; }
+
+/* ── Habitat legend ──────────────────────────────────────────────── */
+.habitat-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .3rem;
+  padding: .5rem 1rem;
+  border-bottom: 1px solid var(--border);
+}
+.legend-item {
+  font-size: .7rem;
+  font-weight: 600;
+  padding: .2rem .5rem;
+  border-radius: 99px;
+  color: #fff;
+  white-space: nowrap;
+}
+
+/* ── Pokémon List ────────────────────────────────────────────────── */
+#pokemon-list {
+  flex: 1;
+  overflow-y: auto;
+  padding: .6rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+  gap: .5rem;
+  align-content: start;
+}
+
+.pokemon-card {
+  background: var(--card-bg);
+  border: 2px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: .5rem .4rem;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: .25rem;
+  transition: border-color var(--transition), box-shadow var(--transition), transform var(--transition);
+  position: relative;
+  text-align: center;
+}
+.pokemon-card:hover { box-shadow: var(--shadow-md); transform: translateY(-2px); }
+.pokemon-card.selected {
+  border-color: #3b4cca;
+  box-shadow: 0 0 0 3px rgba(59,76,202,.3);
+  transform: translateY(-2px);
+}
+.pokemon-card.assigned { opacity: .45; cursor: default; }
+.pokemon-card.assigned:hover { transform: none; box-shadow: none; }
+
+.pokemon-sprite {
+  width: 64px;
+  height: 64px;
+  image-rendering: pixelated;
+}
+.pokemon-name  { font-size: .8rem; font-weight: 700; }
+.pokemon-type  {
+  font-size: .65rem;
+  padding: .15rem .45rem;
+  border-radius: 99px;
+  color: #fff;
+  font-weight: 600;
+}
+.habitat-badge {
+  font-size: .65rem;
+  font-weight: 700;
+  padding: .15rem .45rem;
+  border-radius: 99px;
+  color: #fff;
+}
+.assigned-badge {
+  font-size: .6rem;
+  font-weight: 700;
+  color: #2e7d32;
+  background: #e8f5e9;
+  padding: .1rem .35rem;
+  border-radius: 99px;
+  position: absolute;
+  top: .3rem;
+  right: .3rem;
+}
+
+.empty-msg { padding: 1rem; color: var(--text-muted); text-align: center; font-size: .85rem; }
+
+/* ── Houses Panel ────────────────────────────────────────────────── */
+.houses-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: .85rem;
+  align-content: start;
+}
+
+.empty-houses {
+  grid-column: 1/-1;
+  text-align: center;
+  color: var(--text-muted);
+  padding: 3rem 1rem;
+  font-size: .95rem;
+}
+.empty-houses p + p { margin-top: .5rem; }
+
+/* ── House Card ──────────────────────────────────────────────────── */
+.house-card {
+  background: var(--card-bg);
+  border: 2px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: .85rem;
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  gap: .6rem;
+}
+
+/* Habitat border accent */
+.house-card.habitat-bright-border { border-color: var(--bright-hue); }
+.house-card.habitat-dark-border   { border-color: var(--dark-hue); }
+.house-card.habitat-dry-border    { border-color: var(--dry-hue); }
+.house-card.habitat-humid-border  { border-color: var(--humid-hue); }
+.house-card.habitat-warm-border   { border-color: var(--warm-hue); }
+.house-card.habitat-cool-border   { border-color: var(--cool-hue); }
+
+.house-header { display: flex; flex-direction: column; gap: .35rem; }
+
+.house-title-row {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+}
+
+.house-name-input {
+  flex: 1;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: .35rem .55rem;
+  font-size: .9rem;
+  font-weight: 700;
+  color: var(--text);
+  background: transparent;
+  transition: border-color var(--transition);
+}
+.house-name-input:focus { outline: none; border-color: #3b4cca; background: #fff; }
+
+.house-meta {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  flex-wrap: wrap;
+}
+
+.occupant-count {
+  font-size: .75rem;
+  color: var(--text-muted);
+  font-weight: 600;
+}
+
+.compat-badge {
+  font-size: .72rem;
+  font-weight: 600;
+  padding: .2rem .5rem;
+  border-radius: 99px;
+  background: #f0f0f4;
+}
+
+/* ── House Slots ─────────────────────────────────────────────────── */
+.house-slots {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: .4rem;
+}
+
+.house-slot {
+  border: 2px dashed var(--border);
+  border-radius: var(--radius-sm);
+  min-height: 90px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: .25rem;
+  padding: .35rem .2rem;
+  position: relative;
+  transition: border-color var(--transition), background var(--transition);
+  cursor: pointer;
+  text-align: center;
+}
+
+.house-slot.empty:hover { border-color: #3b4cca; background: #f0f3ff; }
+
+.slot-label  { font-size: .65rem; color: var(--text-muted); }
+
+.house-slot.occupied { border-style: solid; cursor: default; }
+
+.slot-sprite { width: 52px; height: 52px; image-rendering: pixelated; }
+.slot-name   { font-size: .65rem; font-weight: 700; word-break: break-word; }
+
+.slot-remove {
+  position: absolute;
+  top: .2rem;
+  right: .2rem;
+  background: rgba(204,0,0,.85);
+  color: #fff;
+  border: none;
+  border-radius: 99px;
+  width: 18px;
+  height: 18px;
+  font-size: .55rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  padding: 0;
+  transition: background var(--transition);
+}
+.slot-remove:hover { background: #cc0000; }
+
+/* ── Habitat colours ─────────────────────────────────────────────── */
+/* Card backgrounds in roster */
+.pokemon-card.habitat-bright { border-color: var(--bright-hue); }
+.pokemon-card.habitat-dark   { border-color: var(--dark-hue); }
+.pokemon-card.habitat-dry    { border-color: var(--dry-hue); }
+.pokemon-card.habitat-humid  { border-color: var(--humid-hue); }
+.pokemon-card.habitat-warm   { border-color: var(--warm-hue); }
+.pokemon-card.habitat-cool   { border-color: var(--cool-hue); }
+
+/* Slot tinting when occupied */
+.house-slot.habitat-bright { background: #fefae0; border-color: var(--bright-hue); }
+.house-slot.habitat-dark   { background: #f5eeff; border-color: var(--dark-hue); }
+.house-slot.habitat-dry    { background: #fdf4e7; border-color: var(--dry-hue); }
+.house-slot.habitat-humid  { background: #eaf6fd; border-color: var(--humid-hue); }
+.house-slot.habitat-warm   { background: #fff0ee; border-color: var(--warm-hue); }
+.house-slot.habitat-cool   { background: #eef8fd; border-color: var(--cool-hue); }
+
+/* Legend & habitat badges */
+.legend-item.habitat-bright, .habitat-badge.habitat-bright { background: var(--bright-hue); color: #333; }
+.legend-item.habitat-dark,   .habitat-badge.habitat-dark   { background: var(--dark-hue); }
+.legend-item.habitat-dry,    .habitat-badge.habitat-dry    { background: var(--dry-hue); }
+.legend-item.habitat-humid,  .habitat-badge.habitat-humid  { background: var(--humid-hue); }
+.legend-item.habitat-warm,   .habitat-badge.habitat-warm   { background: var(--warm-hue); }
+.legend-item.habitat-cool,   .habitat-badge.habitat-cool   { background: var(--cool-hue); }
+
+/* Type badge colours (a useful subset) */
+.type-grass    { background: #78c850; }
+.type-fire     { background: #f08030; }
+.type-water    { background: #6890f0; }
+.type-bug      { background: #a8b820; }
+.type-normal   { background: #a8a878; }
+.type-poison   { background: #a040a0; }
+.type-rock     { background: #b8a038; }
+.type-ground   { background: #e0c068; color: #333; }
+.type-ghost    { background: #705898; }
+.type-dark     { background: #705848; }
+.type-ice      { background: #98d8d8; color: #333; }
+.type-steel    { background: #b8b8d0; color: #333; }
+.type-fairy    { background: #ee99ac; color: #333; }
+.type-psychic  { background: #f85888; }
+.type-electric { background: #f8d030; color: #333; }
+.type-dragon   { background: #7038f8; }
+.type-fighting { background: #c03028; }
+.type-flying   { background: #a890f0; }
+
+/* ── How-to hint ─────────────────────────────────────────────────── */
+.how-to-hint {
+  background: #eef3ff;
+  border: 1px solid #c5d0f5;
+  border-radius: var(--radius-sm);
+  padding: .65rem 1rem;
+  font-size: .82rem;
+  color: #3b4cca;
+  line-height: 1.5;
+}
+.how-to-hint.hidden { display: none; }
+
+/* ── Toast ───────────────────────────────────────────────────────── */
+.toast {
+  position: fixed;
+  bottom: 1.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: .65rem 1.2rem;
+  border-radius: var(--radius-sm);
+  font-size: .88rem;
+  font-weight: 600;
+  color: #fff;
+  box-shadow: var(--shadow-md);
+  z-index: 9999;
+  white-space: nowrap;
+  animation: fadeIn .2s ease;
+}
+.toast.hidden   { display: none; }
+.toast-info     { background: #555; }
+.toast-success  { background: #2e7d32; }
+.toast-error    { background: #c62828; }
+
+@keyframes fadeIn { from { opacity: 0; transform: translateX(-50%) translateY(8px); } to { opacity: 1; transform: translateX(-50%) translateY(0); } }
+
+/* ── Responsive ──────────────────────────────────────────────────── */
+@media (max-width: 700px) {
+  .app-main { flex-direction: column; overflow: visible; }
+
+  .pokemon-panel {
+    width: 100%;
+    min-width: unset;
+    border-right: none;
+    border-bottom: 1px solid var(--border);
+    max-height: 50vh;
+  }
+
+  #pokemon-list {
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  }
+
+  .houses-panel { padding: .75rem .6rem; }
+
+  .houses-container { grid-template-columns: 1fr; }
+
+  .house-slots { grid-template-columns: repeat(2, 1fr); }
+
+  .app-header { padding: .6rem .75rem; }
+  .app-header h1 { font-size: 1.1rem; }
+
+  .header-actions .btn { font-size: .75rem; padding: .35rem .65rem; }
+}
