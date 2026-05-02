@@ -76,17 +76,17 @@ function savePlan() {
   }
 }
 
-function loadPlan() {
+function loadPlan(silent = false) {
   try {
     const raw = localStorage.getItem(STORAGE_KEY);
-    if (!raw) { showToast('No saved plan found.', 'info'); return; }
+    if (!raw) { if (!silent) showToast('No saved plan found.', 'info'); return; }
     const data = JSON.parse(raw);
     houses = data.houses || [];
     houseCounter = data.houseCounter || houses.length;
     renderHouses();
-    showToast('Plan loaded! 📂', 'success');
+    if (!silent) showToast('Plan loaded! 📂', 'success');
   } catch {
-    showToast('Could not load plan.', 'error');
+    if (!silent) showToast('Could not load plan.', 'error');
   }
 }
 
@@ -341,15 +341,5 @@ document.getElementById('houses-container').addEventListener('change', handleHou
 renderRoster();
 renderHouses();
 
-// Auto-load any saved plan
-(function autoLoad() {
-  try {
-    const raw = localStorage.getItem(STORAGE_KEY);
-    if (raw) {
-      const data = JSON.parse(raw);
-      houses = data.houses || [];
-      houseCounter = data.houseCounter || houses.length;
-      renderHouses();
-    }
-  } catch { /* ignore */ }
-})();
+// Auto-load any saved plan silently on startup
+loadPlan(true);
