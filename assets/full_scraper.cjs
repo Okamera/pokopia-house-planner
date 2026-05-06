@@ -57,6 +57,7 @@ async function scrapeList(url) {
   const $ = await fetchPage(url);
   if (!$) return [];
 
+  const specialtyImageMap = {};
   const rows = $("table.tab").eq(1).children("tbody").children("tr").toArray();
   const rowResults = await Promise.all(
     rows.map(async (row) => {
@@ -86,6 +87,9 @@ async function scrapeList(url) {
         if ($(el).text().trim()) {
           specialties.push($(el).text().trim());
         }
+        if ($(el).find('img').attr('src')) {
+          specialtyImageMap[$(el).find('img').attr('alt')] = BASE_URL + $(el).find('img').attr('src');
+        }
       });
 
       const details = await scrapeDetails(detailUrl);
@@ -107,16 +111,23 @@ async function scrapeList(url) {
     })
   );
 
-  return rowResults.filter(Boolean);
+  return {
+    rowResults: rowResults.filter(Boolean),
+    specialtyImageMap
+  };
 }
 
 async function main() {
-  const results = await scrapeList(START_URL);
-  const eventResults = await scrapeList(EVENT_DEX_URL);
+  const {rowResults: results, specialtyImageMap} = await scrapeList(START_URL);
+  const {rowResults: eventResults, specialtyImageMap: eventSpecialtyImageMap } = await scrapeList(EVENT_DEX_URL);
   results.push(...eventResults);
 
   const outputPath = path.join(__dirname, "../src/data/pokemon.json");
   await fs.writeJson(outputPath, results, { spaces: 2 });
+
+  const combinedSpecialtyImageMap = { ...specialtyImageMap, ...eventSpecialtyImageMap };
+  const specialtyImgPath = path.join(__dirname, "../src/data/specialtyImages.json");
+  await fs.writeJson(specialtyImgPath, combinedSpecialtyImageMap, { spaces: 2 });
 
   console.log(`Saved ${results.length} Pokémon`);
 }

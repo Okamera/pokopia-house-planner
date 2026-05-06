@@ -23,7 +23,7 @@ type DragEndEventLike = {
 const unhouseablePokemon = ['Ho-Oh', 'Lugia', 'Kyogre']
 
 function AppContent() {
-  const { moveToHouse } = useHouse()
+  const { moveToHouse, removeFromHouse } = useHouse()
   const data: PokemonRecord[] = pokemonData.filter((pokemon) => {
     return pokemon.name.trim().length > 0 && !unhouseablePokemon.includes(pokemon.name)
   })
@@ -40,6 +40,13 @@ function AppContent() {
       return
     }
 
+    // If dragging to compatibility list, remove from house
+    if (targetId === 'compatability-list') {
+      removeFromHouse(sourceId)
+      return
+    }
+
+    // Otherwise, move to target house
     moveToHouse(sourceId, targetId)
   }
 

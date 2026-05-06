@@ -593,6 +593,27 @@
     border-bottom: 2px solid var(--borderColor);
     font-weight: 600;
     white-space: nowrap;
+    cursor: default;
+
+    &.sortable {
+      cursor: pointer;
+      &:hover {
+        color: var(--textPrimary);
+      }
+
+      svg {
+        margin-left: 4px;
+      }
+    }
+  }
+
+  .sort-arrow {
+    flex-shrink: 0;
+    opacity: 1;
+  }
+
+  .sort-arrow-inactive {
+    opacity: 0.3;
   }
 
   td {
@@ -708,6 +729,11 @@
       line-height: 20px;
       padding: 0 4px;
       margin-right: 4px;
+      color: var(--textMain);
+      text-decoration: none;
+      &:hover {
+        background: var(--accentPrimary);
+      }
     }
     .none {
       color: var(--textSecondary);
@@ -969,7 +995,11 @@
         padding: 2px 5px;
         font-size: 0.75rem;
         line-height: 1rem;
-
+        color: var(--textMain);
+        text-decoration: none;
+        &:hover {
+          background: var(--accentPrimary);
+        }
       }
   }
 }
@@ -997,7 +1027,8 @@
   }
 }
 
-#habitat-filter-toggle {
+#habitat-filter-toggle,
+#specialty-icons-toggle {
   display: flex;
   align-items: center;
   gap: 5px;
@@ -1024,6 +1055,46 @@
     font-weight: 600;
     transform: none;
     box-shadow: none;
+  }
+}
+
+#name-search-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 8px;
+  border: 1px solid var(--borderColor);
+  border-radius: 6px;
+  background: var(--backgroundSecondary);
+  color: var(--textSecondary);
+
+  #name-search {
+    border: none;
+    background: transparent;
+    outline: none;
+    font-size: 0.75rem;
+    color: var(--textPrimary);
+    width: 100%;
+
+    &::placeholder {
+      color: var(--textSecondary);
+    }
+  }
+
+  #name-search-clear {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    color: var(--textSecondary);
+    font-size: 0.7rem;
+    line-height: 1;
+
+    &:hover {
+      color: var(--textPrimary);
+      transform: none;
+      box-shadow: none;
+    }
   }
 }
 
@@ -1116,7 +1187,7 @@
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: flex-start;
   gap: 5px;
   padding: 0;
   width: 100%;
@@ -1124,17 +1195,47 @@
 
   .compatability-item {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    gap: 6px;
     background-color: var(--backgroundSecondary);
     padding: 4px 8px;
     text-align: left;
     cursor: grab;
+    border-radius: 6px;
 
-    img {
+    .compatability-pokemon-image {
       max-width: 36px;
       max-height: 36px;
+    }
+
+    .compatability-pokemon-image-wrapper {
+      position: relative;
+      display: inline-block;
+    }
+
+    .compatability-litter-icon {
+      position: absolute;
+      bottom: -2px;
+      left: -2px;
+      width: 16px;
+      height: 16px;
+      padding: 1px;
+    }
+
+    .compatability-specialties {
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+      align-items: center;
+      justify-content: center;
+      min-height: 36px;
+    }
+
+    .compatability-specialty-icon {
+      width: 14px;
+      height: 14px;
+      object-fit: contain;
     }
 
     .compatability-name {
@@ -1169,6 +1270,50 @@
       background: var(--accentDanger);
       color: var(--textMain);
     }
+  }
+}
+
+.pokemon-member {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4px;
+  cursor: grab;
+  border-radius: 4px;
+  background: var(--backgroundMain);
+  border: 1px solid var(--borderColor);
+  position: relative;
+
+  .compatability-pokemon-image {
+    max-width: 36px;
+    max-height: 36px;
+  }
+
+  .compatability-pokemon-image-wrapper {
+    position: relative;
+    display: inline-block;
+  }
+
+  .compatability-litter-icon {
+    position: absolute;
+    bottom: 0px;
+    left: -2px;
+    width: 16px;
+    height: 16px;
+  }
+
+  .compatability-specialties {
+    display: flex;
+    flex-direction: row;
+    gap: 2px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .compatability-specialty-icon {
+    width: 12px;
+    height: 12px;
+    object-fit: contain;
   }
 }
 

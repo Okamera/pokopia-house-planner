@@ -63,12 +63,21 @@ const HouseProvider = ({ children }: { children: React.ReactNode }) => {
   }
 
   const moveToHouse = (pokemonName: string, houseId: string) => {
-    console.log(`Moving ${pokemonName} to house ${houseId}`)
     setHouses((currentHouses) => currentHouses.map((house) => {
+      // Remove pokemon from any house that currently has it
       if (house.members.includes(pokemonName)) {
-        return house
+        const nextMembers = [...house.members]
+        const memberIndex = nextMembers.findIndex((member) => member === pokemonName)
+        if (memberIndex !== -1) {
+          nextMembers[memberIndex] = null
+        }
+        return {
+          ...house,
+          members: nextMembers,
+        }
       }
 
+      // Add pokemon to the target house
       if (house.id !== houseId) {
         return house
       }
@@ -99,6 +108,25 @@ const HouseProvider = ({ children }: { children: React.ReactNode }) => {
     setSelectedHouseId((current) => (current === houseId ? null : current))
   }
 
+  const removeFromHouse = (pokemonName: string) => {
+    setHouses((currentHouses) =>
+      currentHouses.map((house) => {
+        if (house.members.includes(pokemonName)) {
+          const nextMembers = [...house.members]
+          const memberIndex = nextMembers.findIndex((member) => member === pokemonName)
+          if (memberIndex !== -1) {
+            nextMembers[memberIndex] = null
+          }
+          return {
+            ...house,
+            members: nextMembers,
+          }
+        }
+        return house
+      })
+    )
+  }
+
   const clearHouseData = () => {
     setHouses([])
     setSelectedHouseId(null)
@@ -107,7 +135,7 @@ const HouseProvider = ({ children }: { children: React.ReactNode }) => {
   }
 
   return (
-    <HouseContext.Provider value={{ houses, selectedHouseId, setSelectedHouseId, filterLocation, setFilterLocation, generateHouse, moveToHouse, updateHouse, removeHouse, clearHouseData }}>
+    <HouseContext.Provider value={{ houses, selectedHouseId, setSelectedHouseId, filterLocation, setFilterLocation, generateHouse, moveToHouse, updateHouse, removeHouse, removeFromHouse, clearHouseData }}>
       {children}
     </HouseContext.Provider>
   )
@@ -123,6 +151,7 @@ const HouseContext = createContext<{
   moveToHouse: (pokemonName: string, houseId: string) => void
   updateHouse: (house: House) => void
   removeHouse: (houseId: string) => void
+  removeFromHouse: (pokemonName: string) => void
   clearHouseData: () => void
 }>({ 
   houses: [],
@@ -134,6 +163,7 @@ const HouseContext = createContext<{
   moveToHouse: () => {},
   updateHouse: () => {},
   removeHouse: () => {},
+  removeFromHouse: () => {},
   clearHouseData: () => {},
 })
 

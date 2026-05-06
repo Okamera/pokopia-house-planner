@@ -1,7 +1,11 @@
 import { useDroppable } from '@dnd-kit/react'
 import { useHouse } from '../HouseProvider'
-import type { House, HouseType, LocationCode, PokemonRecord } from '../types'
+import type { House, HouseType, LocationCode, PokemonRecord, CompatiblePokemon } from '../types'
 import { useState, useRef, useEffect } from 'react'
+import { DraggablePokemon } from './Pokemon'
+import favoriteLinksJson from '../data/favoriteLinks.json'
+
+const favoriteLinks = favoriteLinksJson as Record<string, string>
 
 const locations: Record<LocationCode, string> = {
   ww: 'Withered Wastelands',
@@ -184,6 +188,13 @@ export const HouseCard = ({ house, data }: HouseProps) => {
     updateHouse(removePokemonFromHouse(house, pokemonName))
   }
 
+  const handleMemberClick = (pokemonName: string) => {
+    const mockEvent = {
+      stopPropagation: () => {}
+    } as React.MouseEvent<HTMLLIElement>
+    removePokemon(pokemonName, mockEvent)
+  }
+
   return (
     <div ref={ref} className={`house ${selectedHouseId === house.id ? 'selected ' : ''}${house.location}`} onClick={toggleSelect}>
       <div className="house-header">
@@ -223,10 +234,16 @@ export const HouseCard = ({ house, data }: HouseProps) => {
         {house.members.map((member, memberIndex) => {
           const memberPokemon = member ? getPokemonByName(data, member) : null
 
-          return (
-            <li key={`${house.id}-${memberIndex}`} className={member ? 'member filled' : 'member empty'} onClick={member ? (e) => removePokemon(member, e) : undefined} >
-              {member && memberPokemon ? <img src={memberPokemon.image} alt={memberPokemon.name} /> : '?'}
-            </li>
+          return member && memberPokemon ? (
+            <DraggablePokemon
+              key={`${house.id}-${memberIndex}`}
+              pokemon={{ ...memberPokemon, compatibility: 0 } as CompatiblePokemon}
+              showIcons
+              layout="vertical"
+              onClick={handleMemberClick}
+            />
+          ) : (
+            <li key={`${house.id}-${memberIndex}`} className="member empty">?</li>
           )
         })}
       </ul>
@@ -242,15 +259,47 @@ export const HouseCard = ({ house, data }: HouseProps) => {
       })()}
       <div className='favorites'>{
       getSharedFavorites(house.members, data).map((favorite) => (
-        <span key={favorite} className='favorite'>{favorite}</span>
+        <a key={favorite} className='favorite' href={favoriteLinks[favorite]} target="_blank" rel="noopener noreferrer">{favorite}</a>
       ))}</div>
     </div>
+  )
+}
+
+const SortArrow = ({ col, sort }: { col: string; sort: { col: string; dir: string } }) => {
+  if (sort.col !== col) {
+    return (
+      <svg className="sort-arrow sort-arrow-inactive" xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M12 5v14M5 12l7-7 7 7" />
+      </svg>
+    )
+  }
+  return sort.dir === 'asc' ? (
+    <svg className="sort-arrow" xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M12 19V5M5 12l7-7 7 7" />
+    </svg>
+  ) : (
+    <svg className="sort-arrow" xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M12 5v14M5 12l7 7 7-7" />
+    </svg>
   )
 }
 
 export const HouseList = ({ data }: HouseListProps) => {
   const { houses, selectedHouseId, setSelectedHouseId, updateHouse, removeHouse, filterLocation, setFilterLocation } = useHouse()
   const [view, setView] = useState<'grid' | 'table'>('grid')
+  const [sort, setSort] = useState({ col: 'id', dir: 'asc' })
+
+  const updateSort = (col: string) => {
+    setSort((prev) => {
+      if (prev.col === col) {
+        if (prev.dir === 'desc') {
+          return { col: 'id', dir: 'asc' }
+        }
+        return { col, dir: prev.dir === 'asc' ? 'desc' : 'asc' }
+      }
+      return { col, dir: 'asc' }
+    })
+  }
 
   const removePokemon = (house: House, pokemonName: string, event: React.MouseEvent<HTMLButtonElement>) => {
     event.stopPropagation()
@@ -264,9 +313,24 @@ export const HouseList = ({ data }: HouseListProps) => {
     return { loc, cost }
   })
 
-  const visibleHouses = filterLocation
+  const visibleHouses = (filterLocation
     ? houses.filter((h) => h.location === filterLocation)
-    : houses
+    : houses).sort((a, b) => {
+      let compare = 0
+      if (sort.col === 'id') return a.id > b.id ? -1 : 1
+      if (sort.col === 'name') {
+        compare = a.name.localeCompare(b.name)
+      } else if (sort.col === 'habitats') {
+        const aHabitats = getHabitats(a.members, data).length
+        const bHabitats = getHabitats(b.members, data).length
+        compare = aHabitats - bHabitats
+      } else if (sort.col === 'sharedFavorites') {
+        const fav1 = getSharedFavorites(a.members, data)
+        const fav2 = getSharedFavorites(b.members, data)
+        compare = fav1[0]?.localeCompare(fav2[0])
+      }
+      return sort.dir === 'asc' ? compare : -compare
+    })
 
   return (
     <div id="house-list-container">
@@ -313,10 +377,19 @@ export const HouseList = ({ data }: HouseListProps) => {
           <table id="houses-table">
             <thead>
               <tr>
-                <th>Name</th>
-                <th>Habitats</th>
+                <th onClick={() => updateSort('name')} className="sortable">
+                  Name
+                  <SortArrow col="name" sort={sort} />
+                </th>
+                <th onClick={() => updateSort('habitats')} className="sortable">
+                  Habitats
+                  <SortArrow col="habitats" sort={sort} />
+                </th>
                 <th>Members</th>
-                <th>Shared Favorites</th>
+                <th onClick={() => updateSort('sharedFavorites')} className="sortable">
+                  Shared Favorites
+                  <SortArrow col="sharedFavorites" sort={sort} />
+                </th>
                 <th></th>
               </tr>
             </thead>
@@ -324,7 +397,7 @@ export const HouseList = ({ data }: HouseListProps) => {
               {visibleHouses.map((house) => {
                 const isSelected = selectedHouseId === house.id
                 const shared = getSharedFavorites(house.members, data)
-                const filledMembers = house.members.filter((m): m is string => m !== null)
+
                 return (
                   <tr
                     key={house.id}
@@ -347,7 +420,7 @@ export const HouseList = ({ data }: HouseListProps) => {
                     </td>
                     <td className="table-favorites">
                       {shared.length > 0
-                        ? shared.map((f) => <span key={f} className="favorite">{f}</span>)
+                        ? shared.map((f) => <a key={f} className="favorite" href={favoriteLinks[f]} target="_blank" rel="noopener noreferrer">{f}</a>)
                         : <span className="none">—</span>}
                     </td>
                     <td>

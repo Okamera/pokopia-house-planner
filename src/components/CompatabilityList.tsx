@@ -1,4 +1,5 @@
 import { useMemo, useState, useRef, useEffect } from 'react'
+import { useDroppable } from '@dnd-kit/react'
 import { DraggablePokemon } from './Pokemon'
 import { useHouse } from '../HouseProvider'
 import type { CompatiblePokemon, House, PokemonRecord } from '../types'
@@ -60,10 +61,15 @@ const getHabitats = (members: House['members'], data: PokemonRecord[]): string[]
 
 function CompatabilityList({ data }: CompatibilityListProps) {
   const { houses, selectedHouseId, moveToHouse } = useHouse()
+  const { ref: compatabilityRef } = useDroppable({
+    id: 'compatability-list',
+  })
   const selectedHouse = houses.find((house) => house.id === selectedHouseId) ?? null
   const [selectedSpecialties, setSelectedSpecialties] = useState<Set<string>>(new Set())
   const [dropdownOpen, setDropdownOpen] = useState(false)
   const [hideDiffHabitat, setHideDiffHabitat] = useState(false)
+  const [nameSearch, setNameSearch] = useState('')
+  const [showSpecialtyIcons, setShowSpecialtyIcons] = useState(true)
   const dropdownRef = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
@@ -106,7 +112,8 @@ function CompatabilityList({ data }: CompatibilityListProps) {
     return data
       .filter((pokemon) => !assignedPokemon.has(pokemon.name))
       .filter((pokemon) => selectedSpecialties.size === 0 || selectedSpecialties.has(pokemon.specialty1) || selectedSpecialties.has(pokemon.specialty2))
-  }, [data, houses, selectedSpecialties])
+      .filter((pokemon) => nameSearch.trim() === '' || pokemon.name.toLowerCase().includes(nameSearch.trim().toLowerCase()))
+  }, [data, houses, selectedSpecialties, nameSearch])
 
   const sharedSelectedData = useMemo<SharedSelectedData | null>(() => {
     const firstMember = selectedHouse?.members.find((member): member is string => member !== null) ?? null
@@ -130,27 +137,26 @@ function CompatabilityList({ data }: CompatibilityListProps) {
       return filteredData.map((pokemon) => ({ ...pokemon, compatibility: 0 }))
     }
 
-    const compatibleList = filteredData.reduce((acc: CompatiblePokemon[], pokemon: PokemonRecord) => {
-      if (!sharedSelectedData) return acc
+    const compatibleList = filteredData.map((pokemon: PokemonRecord) => {
+      if (!sharedSelectedData) return { ...pokemon, compatibility: 0 }
       const conflictingHabitats = sharedSelectedData.habitats.map(h => habitatConflicts[h])
       // Always hide directly conflicting habitats
-      if (conflictingHabitats.some(h => h && pokemon.habitat === h)) return acc
+      if (conflictingHabitats.some(h => h && pokemon.habitat === h)) return { ...pokemon, compatibility: 0 }
       // When toggle is on, also hide non-matching habitats
-      if (hideDiffHabitat && !sharedSelectedData.habitats.includes(pokemon.habitat)) return acc
+      if (hideDiffHabitat && !sharedSelectedData.habitats.includes(pokemon.habitat)) return { ...pokemon, compatibility: 0 }
 
       const sharedFavorites = getPokemonFavorites(pokemon).filter((favorite) =>
         sharedSelectedData.favorites.includes(favorite)
       )
 
       // If there are no shared favorites, the pokemon is not compatible, so we skip it
-      if (sharedFavorites.length === 0) return acc
+      if (sharedFavorites.length === 0) return { ...pokemon, compatibility: 0 }
 
-      acc.push({
+      return {
         ...pokemon,
         compatibility: sharedFavorites.length > 0 ? (sharedFavorites.length * 100) / favoriteCount : 0,
-      })
-      return acc
-    }, [])
+      }
+    })
 
     compatibleList.sort((leftPokemon, rightPokemon) => rightPokemon.compatibility - leftPokemon.compatibility)
     return compatibleList
@@ -194,6 +200,34 @@ function CompatabilityList({ data }: CompatibilityListProps) {
             </ul>
           )}
         </div>
+        <div id="name-search-wrapper">
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <circle cx="11" cy="11" r="8" /><line x1="21" y1="21" x2="16.65" y2="16.65" />
+          </svg>
+          <input
+            id="name-search"
+            type="text"
+            placeholder="Search"
+            value={nameSearch}
+            onChange={(e) => setNameSearch(e.target.value)}
+          />
+          {nameSearch && (
+            <button id="name-search-clear" onClick={() => setNameSearch('')}>✕</button>
+          )}
+        </div>
+        <button
+          id="specialty-icons-toggle"
+          className={showSpecialtyIcons ? 'active' : ''}
+          onClick={() => setShowSpecialtyIcons((v) => !v)}
+          title={showSpecialtyIcons ? 'Hide specialty icons' : 'Show specialty icons'}
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <rect x="3" y="3" width="18" height="18" rx="2" ry="2" />
+            <line x1="9" y1="9" x2="15" y2="9" />
+            <line x1="9" y1="15" x2="15" y2="15" />
+          </svg>
+          {showSpecialtyIcons ? 'Icons: on' : 'Icons: off'}
+        </button>
         {selectedHouse && (
           <button
             id="habitat-filter-toggle"
@@ -208,9 +242,9 @@ function CompatabilityList({ data }: CompatibilityListProps) {
           </button>
         )}
       </div>
-      <ul id="compatability-list">
+      <ul ref={compatabilityRef} id="compatability-list">
         {compatiblePokemon.map((pokemon) => (
-          <DraggablePokemon key={pokemon.name} pokemon={pokemon} onClick={() => selectedHouseId ? moveToHouse(pokemon.name, selectedHouseId) : null} />
+          <DraggablePokemon key={pokemon.name} pokemon={pokemon} showIcons={showSpecialtyIcons} onClick={() => selectedHouseId ? moveToHouse(pokemon.name, selectedHouseId) : null} />
         ))}
       </ul>
     </div>
