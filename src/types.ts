@@ -24,5 +24,6 @@ export interface House {
   location: LocationCode
   name: string
   type: HouseType
+  hasDitto: boolean
   members: Array<string | null>
 }

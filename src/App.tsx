@@ -21,6 +21,7 @@ type DragEndEventLike = {
 }
 
 const unhouseablePokemon = ['Ho-Oh', 'Lugia', 'Kyogre']
+const DITTO_NAME = 'Ditto'
 
 function AppContent() {
   const { houses, moveToHouse, removeFromHouse } = useHouse()
@@ -56,7 +57,7 @@ function AppContent() {
 
     // Check if the Pokemon is already in the target house
     const targetHouse = houses.find((h) => h.id === targetId)
-    if (targetHouse?.members.includes(sourceId)) {
+    if (targetHouse?.members.includes(sourceId) || (sourceId === DITTO_NAME && targetHouse?.hasDitto)) {
       return
     }
 

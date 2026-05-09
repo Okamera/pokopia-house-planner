@@ -205,6 +205,11 @@ export const HouseCard = ({ house, data }: HouseProps) => {
     removePokemon(pokemonName, mockEvent)
   }
 
+  const removeDitto = (event: React.MouseEvent<HTMLButtonElement>) => {
+    event.stopPropagation()
+    updateHouse({ ...house, hasDitto: false })
+  }
+
   return (
     <div ref={ref} className={`house ${selectedHouseId === house.id ? 'selected ' : ''}${house.location}`} onClick={toggleSelect}>
       <div className="house-header">
@@ -221,6 +226,11 @@ export const HouseCard = ({ house, data }: HouseProps) => {
             />
           ) : (
             <h2 className='title' onClick={(e) => { e.stopPropagation(); setEditingName(true) }}>
+              {house.hasDitto && (
+                <button type='button' className='ditto-badge' onClick={removeDitto} title='Remove Ditto'>
+                  <img src="https://www.serebii.net/pokemonpokopia/items/dittoflag.png" alt="Ditto flag" />
+                </button>
+              )}
               {house.name}
               <svg className='edit-icon' xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='currentColor' strokeWidth='2' strokeLinecap='round' strokeLinejoin='round'>
                 <path d='M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7'/>
@@ -438,7 +448,14 @@ export const HouseList = ({ data }: HouseListProps) => {
                     className={`${house.location}${isSelected ? ' selected' : ''}`}
                     onClick={() => setSelectedHouseId(isSelected ? null : house.id)}
                   >
-                    <td className="table-name">{house.name}</td>
+                    <td className="table-name">
+                      <span>{house.name}</span>
+                      {house.hasDitto && (
+                        <button type="button" className="ditto-badge" onClick={(event) => { event.stopPropagation(); updateHouse({ ...house, hasDitto: false }) }} title="Remove Ditto">
+                          <img src="https://www.serebii.net/pokemonpokopia/items/dittoflag.png" alt="Ditto flag" />
+                        </button>
+                      )}
+                    </td>
                     <td className="table-habitat">{getHabitats(house.members, data).join(', ')}</td>
                     <td className="table-members">
                       <div className="member-avatars">

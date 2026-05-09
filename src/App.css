@@ -679,6 +679,9 @@
   .table-name {
     font-weight: 600;
     white-space: nowrap;
+    display: flex;
+    align-items: center;
+    gap: 6px;
   }
 
   .table-habitat {
@@ -792,6 +795,32 @@
       transform: none;
       box-shadow: none;
     }
+  }
+}
+
+
+.ditto-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  border-radius: 999px;
+  border: 1px solid var(--dittoPink);
+  background: color-mix(in srgb, var(--dittoPink) 18%, var(--backgroundMain));
+  color: var(--dittoPink);
+  cursor: pointer;
+
+  &:hover {
+    background: var(--dittoPink);
+    color: var(--textMain);
+    transform: none;
+    box-shadow: none;
+  }
+  img {
+    width: 24px;
+    height: 24px;
   }
 }
 

@@ -115,10 +115,10 @@ function CompatabilityList({ data }: CompatibilityListProps) {
     )
 
     return data
-      .filter((pokemon) => !assignedPokemon.has(pokemon.name))
+      .filter((pokemon) => pokemon.name === 'Ditto' || !assignedPokemon.has(pokemon.name))
       .filter((pokemon) => selectedSpecialties.size === 0 || selectedSpecialties.has(pokemon.specialty1) || selectedSpecialties.has(pokemon.specialty2))
       .filter((pokemon) => nameSearch.trim() === '' || pokemon.name.toLowerCase().includes(nameSearch.trim().toLowerCase()))
-  }, [data, houses, selectedSpecialties, nameSearch])
+  }, [data, houses, nameSearch, selectedSpecialties])
 
   const sharedSelectedData = useMemo<SharedSelectedData | null>(() => {
     const firstMember = selectedHouse?.members.find((member): member is string => member !== null) ?? null

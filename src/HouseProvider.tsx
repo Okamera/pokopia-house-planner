@@ -3,6 +3,7 @@ import type { House, HouseType, LocationCode } from './types'
 
 const STORAGE_KEY_HOUSES = 'pokemon-houses'
 const STORAGE_KEY_SELECTED = 'pokemon-selected-house'
+const DITTO_NAME = 'Ditto'
 
 // Provider to maintain house state and provide dnd context
 const HouseProvider = ({ children }: { children: React.ReactNode }) => {
@@ -22,7 +23,8 @@ const HouseProvider = ({ children }: { children: React.ReactNode }) => {
       
         loadedHouses = loadedHouses.map((house: House, index: number) => ({
           ...house,
-          id: loadedHouses.length - index
+          id: loadedHouses.length - index,
+          hasDitto: house.hasDitto ?? false,
         }))
         
         setHouses(loadedHouses)
@@ -62,6 +64,7 @@ const HouseProvider = ({ children }: { children: React.ReactNode }) => {
       location: location ?? 'ww',
       name: name || `House ${houses.length + 1}`,
       type: type ?? 'custom',
+      hasDitto: false,
       members: Array(slots ?? 4).fill(null),
     }
 
@@ -70,7 +73,41 @@ const HouseProvider = ({ children }: { children: React.ReactNode }) => {
   }
 
   const moveToHouse = (pokemonName: string, houseId: number) => {
-    setHouses((currentHouses) => currentHouses.map((house) => {
+    setHouses((currentHouses) => {
+      const targetHouse = currentHouses.find((house) => house.id === houseId)
+      if (!targetHouse) {
+        return currentHouses
+      }
+
+      if (pokemonName === DITTO_NAME) {
+        if (targetHouse.hasDitto) {
+          return currentHouses
+        }
+
+        return currentHouses.map((house) => {
+          if (house.location !== targetHouse.location) {
+            return house
+          }
+
+          if (house.id === targetHouse.id) {
+            return {
+              ...house,
+              hasDitto: true,
+            }
+          }
+
+          if (!house.hasDitto) {
+            return house
+          }
+
+          return {
+            ...house,
+            hasDitto: false,
+          }
+        })
+      }
+
+      return currentHouses.map((house) => {
       // Remove pokemon from any house that currently has it
       if (house.members.includes(pokemonName)) {
         const nextMembers = [...house.members]
@@ -101,12 +138,26 @@ const HouseProvider = ({ children }: { children: React.ReactNode }) => {
         ...house,
         members: nextMembers,
       }
-    }))
+    })
+    })
   }
 
   const updateHouse = (updatedHouse: House) => {
     setHouses((currentHouses) =>
-      currentHouses.map((house) => (house.id === updatedHouse.id ? updatedHouse : house))
+      currentHouses.map((house) => {
+        if (house.id === updatedHouse.id) {
+          return updatedHouse
+        }
+
+        if (updatedHouse.hasDitto && house.location === updatedHouse.location && house.hasDitto) {
+          return {
+            ...house,
+            hasDitto: false,
+          }
+        }
+
+        return house
+      })
     )
   }
 
@@ -142,7 +193,10 @@ const HouseProvider = ({ children }: { children: React.ReactNode }) => {
   }
 
   const importHouses = (imported: House[]) => {
-    setHouses(imported)
+    setHouses(imported.map((house) => ({
+      ...house,
+      hasDitto: house.hasDitto ?? false,
+    })))
     setSelectedHouseId(null)
   }
 
