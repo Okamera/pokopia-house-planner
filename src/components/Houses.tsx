@@ -18,7 +18,7 @@ const locations: Record<LocationCode, string> = {
 
 const slotCost: Record<number, number> = {
   1: 1,
-  2: 2,
+  2: 1,
   4: 2
 }
 

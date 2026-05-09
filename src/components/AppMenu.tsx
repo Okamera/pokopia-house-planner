@@ -1,13 +1,72 @@
-import { useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { useHouse } from '../HouseProvider'
 import { useFontSize } from '../FontSizeProvider'
+import type { House } from '../types'
+
+const IPHONE_SAFARI_WARNING_KEY = 'pokopia-iphone-safari-warning-seen'
+
+const isIPhoneSafari = () => {
+  const userAgent = navigator.userAgent
+  const vendor = navigator.vendor
+  const isIPhone = /iPhone/i.test(userAgent)
+  const isSafari = /Safari/i.test(userAgent) && /Apple/i.test(vendor)
+  const isOtherIosBrowser = /CriOS|FxiOS|EdgiOS|OPiOS/i.test(userAgent)
+
+  return isIPhone && isSafari && !isOtherIosBrowser
+}
 
 export const AppMenu = () => {
-  const { clearHouseData } = useHouse()
+  const { clearHouseData, houses, importHouses } = useHouse()
   const { fontScale, setFontScale } = useFontSize()
+  const fileInputRef = useRef<HTMLInputElement>(null)
   const [menuOpen, setMenuOpen] = useState(false)
   const [aboutOpen, setAboutOpen] = useState(false)
+  const [faqOpen, setFaqOpen] = useState(false)
   const [confirmDeleteOpen, setConfirmDeleteOpen] = useState(false)
+  const [iphoneSafariWarningOpen, setIPhoneSafariWarningOpen] = useState(false)
+
+  useEffect(() => {
+    if (!isIPhoneSafari()) {
+      return
+    }
+
+    const hasSeenWarning = localStorage.getItem(IPHONE_SAFARI_WARNING_KEY)
+    if (hasSeenWarning) {
+      return
+    }
+
+    localStorage.setItem(IPHONE_SAFARI_WARNING_KEY, 'true')
+    setIPhoneSafariWarningOpen(true)
+  }, [])
+
+  const uploadBackup = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const file = e.target.files?.[0]
+    if (!file) return
+    const reader = new FileReader()
+    reader.onload = (event) => {
+      try {
+        const data = JSON.parse(event.target?.result as string) as House[]
+        if (Array.isArray(data)) {
+          importHouses(data)
+        }
+      } catch {
+        alert('Invalid backup file.')
+      }
+    }
+    reader.readAsText(file)
+    e.target.value = ''
+    setMenuOpen(false)
+  }
+
+  const downloadBackup = () => {
+    const blob = new Blob([JSON.stringify(houses, null, 2)], { type: 'application/json' })
+    const url = URL.createObjectURL(blob)
+    const a = document.createElement('a')
+    a.href = url
+    a.download = `pokopia-houses-${new Date().toISOString().slice(0, 10)}.json`
+    a.click()
+    URL.revokeObjectURL(url)
+  }
 
   return (
     <>
@@ -68,6 +127,37 @@ export const AppMenu = () => {
             <button
               type="button"
               onClick={() => {
+                setFaqOpen(true)
+                setMenuOpen(false)
+              }}
+            >
+              FAQ
+            </button>
+            <button
+              type="button"
+              onClick={() => {
+                downloadBackup()
+                setMenuOpen(false)
+              }}
+            >
+              Backup data to device
+            </button>
+            <button
+              type="button"
+              onClick={() => fileInputRef.current?.click()}
+            >
+              Restore from backup
+            </button>
+            <input
+              ref={fileInputRef}
+              type="file"
+              accept=".json,application/json"
+              style={{ display: 'none' }}
+              onChange={uploadBackup}
+            />
+            <button
+              type="button"
+              onClick={() => {
                 setConfirmDeleteOpen(true)
                 setMenuOpen(false)
               }}
@@ -102,6 +192,71 @@ export const AppMenu = () => {
                 Delete
               </button>
             </div>
+          </div>
+        </div>
+      )}
+      {iphoneSafariWarningOpen && (
+        <div id="about-modal-backdrop" onClick={() => setIPhoneSafariWarningOpen(false)}>
+          <div id="about-modal" onClick={(event) => event.stopPropagation()}>
+            <div className="about-modal-header">
+              <h2>Backup Recommended</h2>
+              <button type="button" aria-label="Close backup warning" onClick={() => setIPhoneSafariWarningOpen(false)}>
+                ×
+              </button>
+            </div>
+            <p>
+              You&apos;re using Safari on an iPhone. Safari may clear this app&apos;s saved house data after about 7 days
+              without use.
+            </p>
+            <p>
+              Use the Backup data to device option in the menu to save a copy of your houses in case your browser data gets wiped.
+            </p>
+            <div className="modal-actions">
+              <button type="button" className="modal-cancel" onClick={() => setIPhoneSafariWarningOpen(false)}>
+                Dismiss
+              </button>
+              <button
+                type="button"
+                onClick={() => {
+                  downloadBackup()
+                  setIPhoneSafariWarningOpen(false)
+                }}
+              >
+                Back Up Now
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
+      {faqOpen && (
+        <div id="about-modal-backdrop" onClick={() => setFaqOpen(false)}>
+          <div id="about-modal" className="faq-modal" onClick={(event) => event.stopPropagation()}>
+            <div className="about-modal-header">
+              <h2>FAQ</h2>
+              <button type="button" aria-label="Close FAQ" onClick={() => setFaqOpen(false)}>×</button>
+            </div>
+            <dl className="faq-list">
+              <dt>How do I add a Pokémon to a house?</dt>
+              <dd>Select a house by clicking on it, then drag a Pokémon from the compatibility list on the right into the house. You can also drag between houses.</dd>
+
+              <dt>How do I remove a Pokémon from a house?</dt>
+              <dd>Click on a Pokémon inside a house to remove it. You can also drag it back to the compatibility list on the right.</dd>
+
+              <dt>What does compatibility mean?</dt>
+              <dd>The compatibility score reflects how many favorites a Pokémon shares with the current members of the selected house. Higher is better. Pokémon with no shared favorites appear in the Incompatible section at the bottom of the list.</dd>
+
+              <dt>What are the colored location tags (WW, BB, etc.)?</dt>
+              <dd>These represent the house's location: Withered Wastelands (WW), Bleak Beach (BB), Rocky Ridges (RR), Sparkling Skylands (SS), and Palette Town (PT). The number shown is the total prefab slot cost used at that location out of the 40-slot limit.</dd>
+
+              <dt>What's the difference between Prefab and Custom houses?</dt>
+              <dd>Prefab houses are houses that have a loading screen when you enter/exit them and count toward the 40-slot location limit. Custom houses do not.</dd>
+
+              <dt>Will my house data be lost if I close the browser?</dt>
+              <dd>No — house data is saved to your browser's local storage and will persist across sessions. However, Safari on iPhone may clear it after 7 days of inactivity. Use the Backup option in this menu to save a file to your device.</dd>
+
+              <dt>How do I restore a backup?</dt>
+              <dd>Use "Restore from backup" in this menu and select the <code>.json</code> file you previously downloaded. This will replace all current house data.</dd>
+            </dl>
           </div>
         </div>
       )}

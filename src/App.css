@@ -243,6 +243,38 @@
   }
 }
 
+.faq-modal {
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin: 0;
+
+  dt {
+    font-weight: 600;
+    font-size: 0.9375rem;
+    color: var(--textMain);
+  }
+
+  dd {
+    margin: 4px 0 0 0;
+    font-size: 0.875rem;
+    color: var(--textSecondary);
+    line-height: 1.5;
+
+    code {
+      font-size: 0.8125rem;
+      background: var(--backgroundSecondary);
+      padding: 1px 4px;
+      border-radius: 4px;
+    }
+  }
+}
+
 .about-modal-header {
   display: flex;
   align-items: center;

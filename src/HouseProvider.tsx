@@ -134,8 +134,13 @@ const HouseProvider = ({ children }: { children: React.ReactNode }) => {
     localStorage.removeItem(STORAGE_KEY_SELECTED)
   }
 
+  const importHouses = (imported: House[]) => {
+    setHouses(imported)
+    setSelectedHouseId(null)
+  }
+
   return (
-    <HouseContext.Provider value={{ houses, selectedHouseId, setSelectedHouseId, filterLocation, setFilterLocation, generateHouse, moveToHouse, updateHouse, removeHouse, removeFromHouse, clearHouseData }}>
+    <HouseContext.Provider value={{ houses, selectedHouseId, setSelectedHouseId, filterLocation, setFilterLocation, generateHouse, moveToHouse, updateHouse, removeHouse, removeFromHouse, clearHouseData, importHouses }}>
       {children}
     </HouseContext.Provider>
   )
@@ -153,6 +158,7 @@ const HouseContext = createContext<{
   removeHouse: (houseId: string) => void
   removeFromHouse: (pokemonName: string) => void
   clearHouseData: () => void
+  importHouses: (houses: House[]) => void
 }>({ 
   houses: [],
   selectedHouseId: null,
@@ -165,6 +171,7 @@ const HouseContext = createContext<{
   removeHouse: () => {},
   removeFromHouse: () => {},
   clearHouseData: () => {},
+  importHouses: () => {},
 })
 
 export { HouseProvider, HouseContext }
