@@ -7,7 +7,7 @@ const STORAGE_KEY_SELECTED = 'pokemon-selected-house'
 // Provider to maintain house state and provide dnd context
 const HouseProvider = ({ children }: { children: React.ReactNode }) => {
   const [houses, setHouses] = useState<House[]>([])
-  const [selectedHouseId, setSelectedHouseId] = useState<string | null>(null)
+  const [selectedHouseId, setSelectedHouseId] = useState<number | null>(null)
   const [filterLocation, setFilterLocation] = useState<LocationCode | null>(null)
   const [isHydrated, setIsHydrated] = useState(false)
 
@@ -18,14 +18,22 @@ const HouseProvider = ({ children }: { children: React.ReactNode }) => {
     
     if (savedHouses) {
       try {
-        setHouses(JSON.parse(savedHouses))
+        let loadedHouses = JSON.parse(savedHouses)
+      
+        loadedHouses = loadedHouses.map((house: House, index: number) => ({
+          ...house,
+          id: loadedHouses.length - index
+        }))
+        
+        setHouses(loadedHouses)
+        console.log('Loaded houses from localStorage:', loadedHouses)
       } catch (e) {
         console.error('Failed to parse saved houses:', e)
       }
     }
     
     if (savedSelected) {
-      setSelectedHouseId(savedSelected)
+      setSelectedHouseId(parseInt(savedSelected))
     }
     
     setIsHydrated(true)
@@ -42,7 +50,7 @@ const HouseProvider = ({ children }: { children: React.ReactNode }) => {
   useEffect(() => {
     if (isHydrated) {
       if (selectedHouseId) {
-        localStorage.setItem(STORAGE_KEY_SELECTED, selectedHouseId)
+        localStorage.setItem(STORAGE_KEY_SELECTED, String(selectedHouseId))
       } else {
         localStorage.removeItem(STORAGE_KEY_SELECTED)
       }
@@ -51,7 +59,7 @@ const HouseProvider = ({ children }: { children: React.ReactNode }) => {
 
   const generateHouse = ({ name, location, slots, type }: { name?: string; location?: LocationCode; slots?: number; type?: HouseType }) => {
     const newHouse: House = {
-      id: crypto.randomUUID(),
+      id: houses.length + 1,
       location: location ?? 'ww',
       name: name || `House ${houses.length + 1}`,
       type: type ?? 'custom',
@@ -62,7 +70,7 @@ const HouseProvider = ({ children }: { children: React.ReactNode }) => {
     setSelectedHouseId(newHouse.id)
   }
 
-  const moveToHouse = (pokemonName: string, houseId: string) => {
+  const moveToHouse = (pokemonName: string, houseId: number) => {
     setHouses((currentHouses) => currentHouses.map((house) => {
       // Remove pokemon from any house that currently has it
       if (house.members.includes(pokemonName)) {
@@ -103,7 +111,7 @@ const HouseProvider = ({ children }: { children: React.ReactNode }) => {
     )
   }
 
-  const removeHouse = (houseId: string) => {
+  const removeHouse = (houseId: number) => {
     setHouses((currentHouses) => currentHouses.filter((house) => house.id !== houseId))
     setSelectedHouseId((current) => (current === houseId ? null : current))
   }
@@ -148,14 +156,14 @@ const HouseProvider = ({ children }: { children: React.ReactNode }) => {
 
 const HouseContext = createContext<{
   houses: House[]
-  selectedHouseId: string | null
-  setSelectedHouseId: Dispatch<SetStateAction<string | null>>
+  selectedHouseId: number | null
+  setSelectedHouseId: Dispatch<SetStateAction<number | null>>
   filterLocation: LocationCode | null
   setFilterLocation: Dispatch<SetStateAction<LocationCode | null>>
   generateHouse: (data: { name?: string; location?: LocationCode; slots?: number; type?: HouseType }) => void
-  moveToHouse: (pokemonName: string, houseId: string) => void
+  moveToHouse: (pokemonName: string, houseId: number) => void
   updateHouse: (house: House) => void
-  removeHouse: (houseId: string) => void
+  removeHouse: (houseId: number) => void
   removeFromHouse: (pokemonName: string) => void
   clearHouseData: () => void
   importHouses: (houses: House[]) => void

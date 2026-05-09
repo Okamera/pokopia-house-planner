@@ -20,7 +20,7 @@ export interface CompatiblePokemon extends PokemonRecord {
 }
 
 export interface House {
-  id: string
+  id: number
   location: LocationCode
   name: string
   type: HouseType
