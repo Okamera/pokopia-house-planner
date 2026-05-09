@@ -23,6 +23,18 @@ type DragEndEventLike = {
 const unhouseablePokemon = ['Ho-Oh', 'Lugia', 'Kyogre']
 const DITTO_NAME = 'Ditto'
 
+const parseDragSource = (sourceId: string) => {
+  if (!sourceId.startsWith(`${DITTO_NAME}:`)) {
+    return { pokemonName: sourceId, sourceHouseId: undefined as number | undefined }
+  }
+
+  const sourceHouseId = Number.parseInt(sourceId.slice(DITTO_NAME.length + 1), 10)
+  return {
+    pokemonName: DITTO_NAME,
+    sourceHouseId: Number.isNaN(sourceHouseId) ? undefined : sourceHouseId,
+  }
+}
+
 function AppContent() {
   const { houses, moveToHouse, removeFromHouse } = useHouse()
   const data: PokemonRecord[] = pokemonData.filter((pokemon) => {
@@ -45,9 +57,11 @@ function AppContent() {
       return
     }
 
+    const { pokemonName, sourceHouseId } = parseDragSource(sourceId)
+
     // If dragging to compatibility list, remove from house
     if (targetId === 'compatability-list') {
-      removeFromHouse(sourceId)
+      removeFromHouse(pokemonName, sourceHouseId)
       return
     }
 
@@ -57,12 +71,12 @@ function AppContent() {
 
     // Check if the Pokemon is already in the target house
     const targetHouse = houses.find((h) => h.id === targetId)
-    if (targetHouse?.members.includes(sourceId) || (sourceId === DITTO_NAME && targetHouse?.hasDitto)) {
+    if (targetHouse?.members.includes(pokemonName) || (pokemonName === DITTO_NAME && targetHouse?.hasDitto)) {
       return
     }
 
     // Otherwise, move to target house
-    moveToHouse(sourceId, targetId)
+    moveToHouse(pokemonName, targetId, sourceHouseId)
   }
 
   return (

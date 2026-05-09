@@ -5,6 +5,8 @@ const STORAGE_KEY_HOUSES = 'pokemon-houses'
 const STORAGE_KEY_SELECTED = 'pokemon-selected-house'
 const DITTO_NAME = 'Ditto'
 
+const canHouseHoldDitto = (house: House) => !(house.type === 'custom' && house.members.length === 1)
+
 // Provider to maintain house state and provide dnd context
 const HouseProvider = ({ children }: { children: React.ReactNode }) => {
   const [houses, setHouses] = useState<House[]>([])
@@ -72,7 +74,7 @@ const HouseProvider = ({ children }: { children: React.ReactNode }) => {
     setSelectedHouseId(newHouse.id)
   }
 
-  const moveToHouse = (pokemonName: string, houseId: number) => {
+  const moveToHouse = (pokemonName: string, houseId: number, sourceHouseId?: number) => {
     setHouses((currentHouses) => {
       const targetHouse = currentHouses.find((house) => house.id === houseId)
       if (!targetHouse) {
@@ -80,11 +82,22 @@ const HouseProvider = ({ children }: { children: React.ReactNode }) => {
       }
 
       if (pokemonName === DITTO_NAME) {
-        if (targetHouse.hasDitto) {
+        if (sourceHouseId === houseId) {
+          return currentHouses
+        }
+
+        if (!canHouseHoldDitto(targetHouse) || targetHouse.hasDitto) {
           return currentHouses
         }
 
         return currentHouses.map((house) => {
+          if (house.id === sourceHouseId) {
+            return {
+              ...house,
+              hasDitto: false,
+            }
+          }
+
           if (house.location !== targetHouse.location) {
             return house
           }
@@ -166,9 +179,16 @@ const HouseProvider = ({ children }: { children: React.ReactNode }) => {
     setSelectedHouseId((current) => (current === houseId ? null : current))
   }
 
-  const removeFromHouse = (pokemonName: string) => {
+  const removeFromHouse = (pokemonName: string, sourceHouseId?: number) => {
     setHouses((currentHouses) =>
       currentHouses.map((house) => {
+        if (pokemonName === DITTO_NAME && house.id === sourceHouseId) {
+          return {
+            ...house,
+            hasDitto: false,
+          }
+        }
+
         if (house.members.includes(pokemonName)) {
           const nextMembers = [...house.members]
           const memberIndex = nextMembers.findIndex((member) => member === pokemonName)
@@ -214,10 +234,10 @@ const HouseContext = createContext<{
   filterLocation: LocationCode | null
   setFilterLocation: Dispatch<SetStateAction<LocationCode | null>>
   generateHouse: (data: { name?: string; location?: LocationCode; slots?: number; type?: HouseType }) => void
-  moveToHouse: (pokemonName: string, houseId: number) => void
+  moveToHouse: (pokemonName: string, houseId: number, sourceHouseId?: number) => void
   updateHouse: (house: House) => void
   removeHouse: (houseId: number) => void
-  removeFromHouse: (pokemonName: string) => void
+  removeFromHouse: (pokemonName: string, sourceHouseId?: number) => void
   clearHouseData: () => void
   importHouses: (houses: House[]) => void
 }>({ 

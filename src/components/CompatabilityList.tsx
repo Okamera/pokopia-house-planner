@@ -49,6 +49,8 @@ const habitatConflicts: Record<string, string> = {
   Warm: 'Cool'
 }
 
+const canHouseHoldDitto = (house: House) => !(house.type === 'custom' && house.members.length === 1)
+
 const getHabitats = (members: House['members'], data: PokemonRecord[]): string[] => {
   const habitats = members
     .filter((member): member is string => member !== null)
@@ -115,10 +117,12 @@ function CompatabilityList({ data }: CompatibilityListProps) {
     )
 
     return data
-      .filter((pokemon) => pokemon.name === 'Ditto' || !assignedPokemon.has(pokemon.name))
+      .filter((pokemon) => pokemon.name === 'Ditto'
+        ? !selectedHouse || canHouseHoldDitto(selectedHouse)
+        : !assignedPokemon.has(pokemon.name))
       .filter((pokemon) => selectedSpecialties.size === 0 || selectedSpecialties.has(pokemon.specialty1) || selectedSpecialties.has(pokemon.specialty2))
       .filter((pokemon) => nameSearch.trim() === '' || pokemon.name.toLowerCase().includes(nameSearch.trim().toLowerCase()))
-  }, [data, houses, nameSearch, selectedSpecialties])
+  }, [data, houses, nameSearch, selectedHouse, selectedSpecialties])
 
   const sharedSelectedData = useMemo<SharedSelectedData | null>(() => {
     const firstMember = selectedHouse?.members.find((member): member is string => member !== null) ?? null

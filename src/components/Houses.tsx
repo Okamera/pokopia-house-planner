@@ -1,4 +1,4 @@
-import { useDroppable } from '@dnd-kit/react'
+import { useDraggable, useDroppable } from '@dnd-kit/react'
 import { useHouse } from '../HouseProvider'
 import type { House, HouseType, LocationCode, PokemonRecord, CompatiblePokemon } from '../types'
 import { useState, useRef, useEffect } from 'react'
@@ -22,6 +22,8 @@ const slotCost: Record<number, number> = {
   4: 2
 }
 
+const DITTO_NAME = 'Ditto'
+
 export type HouseProps = {
   house: House
   data: PokemonRecord[]
@@ -29,6 +31,11 @@ export type HouseProps = {
 
 export type HouseListProps = {
   data: PokemonRecord[]
+}
+
+type DittoBadgeProps = {
+  houseId: number
+  onActivate: () => void
 }
 
 const getPokemonByName = (data: PokemonRecord[], name: string) => (
@@ -79,6 +86,35 @@ const getHabitats = (members: House['members'], data: PokemonRecord[]): string[]
     .map((pokemon) => pokemon.habitat)
 
   return Array.from(new Set(habitats))
+}
+
+const DittoBadge = ({ houseId, onActivate }: DittoBadgeProps) => {
+  const { ref } = useDraggable({
+    id: `${DITTO_NAME}:${houseId}`,
+  })
+
+  return (
+    <span
+      ref={ref}
+      className='ditto-badge ditto-badge-draggable'
+      onClick={(event) => {
+        event.stopPropagation()
+        onActivate()
+      }}
+      title='Remove or drag Ditto flag'
+      role='button'
+      tabIndex={0}
+      onKeyDown={(event) => {
+        if (event.key === 'Enter' || event.key === ' ') {
+          event.preventDefault()
+          event.stopPropagation()
+          onActivate()
+        }
+      }}
+    >
+      <img src='https://www.serebii.net/pokemonpokopia/items/dittoflag.png' alt='Ditto flag' />
+    </span>
+  )
 }
 
 export const HouseCreateForm = ()=> {
@@ -205,8 +241,7 @@ export const HouseCard = ({ house, data }: HouseProps) => {
     removePokemon(pokemonName, mockEvent)
   }
 
-  const removeDitto = (event: React.MouseEvent<HTMLButtonElement>) => {
-    event.stopPropagation()
+  const removeDitto = () => {
     updateHouse({ ...house, hasDitto: false })
   }
 
@@ -227,9 +262,7 @@ export const HouseCard = ({ house, data }: HouseProps) => {
           ) : (
             <h2 className='title' onClick={(e) => { e.stopPropagation(); setEditingName(true) }}>
               {house.hasDitto && (
-                <button type='button' className='ditto-badge' onClick={removeDitto} title='Remove Ditto'>
-                  <img src="https://www.serebii.net/pokemonpokopia/items/dittoflag.png" alt="Ditto flag" />
-                </button>
+                <DittoBadge houseId={house.id} onActivate={removeDitto} />
               )}
               {house.name}
               <svg className='edit-icon' xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='currentColor' strokeWidth='2' strokeLinecap='round' strokeLinejoin='round'>

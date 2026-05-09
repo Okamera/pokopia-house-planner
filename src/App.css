@@ -824,6 +824,21 @@
   }
 }
 
+.ditto-badge-draggable {
+  cursor: grab;
+}
+
+.ditto-badge-handle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: inherit;
+}
+
+.ditto-badge-draggable:active {
+  cursor: grabbing;
+}
+
 #houses {
   display: flex;
   flex-wrap: wrap;
