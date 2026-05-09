@@ -187,6 +187,21 @@ function CompatabilityList({ data }: CompatibilityListProps) {
   return (
     <div id="compatability-container">
       <div id="compatability-header">
+        <div id="name-search-wrapper">
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <circle cx="11" cy="11" r="8" /><line x1="21" y1="21" x2="16.65" y2="16.65" />
+          </svg>
+          <input
+            id="name-search"
+            type="text"
+            placeholder="Search"
+            value={nameSearch}
+            onChange={(e) => setNameSearch(e.target.value)}
+          />
+          {nameSearch && (
+            <button id="name-search-clear" onClick={() => setNameSearch('')}>✕</button>
+          )}
+        </div>
         <div id="specialty-filter" ref={dropdownRef}>
           <button
             id="specialty-filter-trigger"
@@ -220,21 +235,6 @@ function CompatabilityList({ data }: CompatibilityListProps) {
                 </li>
               ))}
             </ul>
-          )}
-        </div>
-        <div id="name-search-wrapper">
-          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-            <circle cx="11" cy="11" r="8" /><line x1="21" y1="21" x2="16.65" y2="16.65" />
-          </svg>
-          <input
-            id="name-search"
-            type="text"
-            placeholder="Search"
-            value={nameSearch}
-            onChange={(e) => setNameSearch(e.target.value)}
-          />
-          {nameSearch && (
-            <button id="name-search-clear" onClick={() => setNameSearch('')}>✕</button>
           )}
         </div>
         <button

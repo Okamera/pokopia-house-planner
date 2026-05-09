@@ -1113,14 +1113,14 @@
 
 #compatability-header {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     gap: 8px;
   @media (max-width: 752px) {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
   }
-  @media (max-width: 500px) {
+  @media (max-width: 752px) {
     justify-content: flex-start;
     flex-wrap: wrap;
     svg {
@@ -1226,6 +1226,7 @@
   cursor: pointer;
   white-space: nowrap;
   transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+  max-width: 96px;
 
   &:hover {
     background: var(--backgroundMain);
@@ -1244,6 +1245,7 @@
 }
 
 #name-search-wrapper {
+  width: calc(100% - 35px);
   display: flex;
   align-items: center;
   gap: 6px;
@@ -1281,6 +1283,9 @@
       transform: none;
       box-shadow: none;
     }
+  }
+  @media (max-width: 752px) {
+    width: auto;
   }
 }
 
