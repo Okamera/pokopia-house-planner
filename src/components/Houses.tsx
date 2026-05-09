@@ -88,6 +88,16 @@ const getHabitats = (members: House['members'], data: PokemonRecord[]): string[]
   return Array.from(new Set(habitats))
 }
 
+const getFloorFavorites = (house: House, data: PokemonRecord[]): Array<{ label: string | null; favorites: string[] }> => {
+  if (house.type === 'prefab' && house.members.length === 4) {
+    return [
+      { label: 'F1', favorites: getSharedFavorites(house.members.slice(0, 2), data) },
+      { label: 'F2', favorites: getSharedFavorites(house.members.slice(2, 4), data) },
+    ]
+  }
+  return [{ label: null, favorites: getSharedFavorites(house.members, data) }]
+}
+
 const DittoBadge = ({ houseId, onActivate }: DittoBadgeProps) => {
   const { ref } = useDraggable({
     id: `${DITTO_NAME}:${houseId}`,
@@ -238,7 +248,7 @@ export const HouseCard = ({ house, data }: HouseProps) => {
   }
 
   return (
-    <div ref={ref} className={`house ${selectedHouseId === house.id ? 'selected ' : ''}${house.location}`} onClick={toggleSelect}>
+    <div ref={ref} className={`house ${selectedHouseId === house.id ? 'selected ' : ''}${house.location}${house.type === 'prefab' && house.members.length === 4 ? ' two-floor' : ''}`} onClick={toggleSelect}>
       <div className="house-header">
         <div className='house-info'>
           {editingName ? (
@@ -299,37 +309,90 @@ export const HouseCard = ({ house, data }: HouseProps) => {
           </svg>
         </button>
       </div>
-      <ul>
-        {house.members.map((member, memberIndex) => {
-          const memberPokemon = member ? getPokemonByName(data, member) : null
-
-          return member && memberPokemon ? (
-            <DraggablePokemon
-              key={`${house.id}-${memberIndex}`}
-              pokemon={{ ...memberPokemon, compatibility: 0 } as CompatiblePokemon}
-              showIcons
-              layout="vertical"
-              onClick={handleMemberClick}
-            />
-          ) : (
-            <li key={`${house.id}-${memberIndex}`} className="member empty">?</li>
-          )
-        })}
-      </ul>
-      {(() => {
-        const habitats = getHabitats(house.members, data)
-        return habitats.length > 0 ? (
-          <div className="house-habitats">
-            {habitats.map((habitat) => (
-              <span key={habitat} className="habitat-chip">{habitat}</span>
-            ))}
+      {house.type === 'prefab' && house.members.length === 4 ? (
+        <div className='house-floors'>
+          {[house.members.slice(0, 2), house.members.slice(2, 4)].map((floorMembers, floorIndex) => {
+            const floorHabitats = getHabitats(floorMembers, data)
+            const floorFavs = getSharedFavorites(floorMembers, data)
+            return (
+              <div key={floorIndex} className='house-floor'>
+                <ul>
+                  {floorMembers.map((member, i) => {
+                    const memberPokemon = member ? getPokemonByName(data, member) : null
+                    const memberIndex = floorIndex * 2 + i
+                    return member && memberPokemon ? (
+                      <DraggablePokemon
+                        key={`${house.id}-${memberIndex}`}
+                        pokemon={{ ...memberPokemon, compatibility: 0 } as CompatiblePokemon}
+                        showIcons
+                        layout='vertical'
+                        onClick={handleMemberClick}
+                      />
+                    ) : (
+                      <li key={`${house.id}-${memberIndex}`} className='member empty'>?</li>
+                    )
+                  })}
+                </ul>
+                {floorHabitats.length > 0 && (
+                  <div className='house-habitats'>
+                    {floorHabitats.map((habitat) => (
+                      <span key={habitat} className='habitat-chip'>{habitat}</span>
+                    ))}
+                  </div>
+                )}
+                {floorFavs.length > 0 && (
+                  <div className='favorites'>
+                    {floorFavs.map((favorite) => (
+                      <a key={favorite} className='favorite' href={favoriteLinks[favorite]} target='_blank' rel='noopener noreferrer'>{favorite}</a>
+                    ))}
+                  </div>
+                )}
+              </div>
+            )
+          })}
+        </div>
+      ) : (
+        <>
+          <ul>
+            {house.members.map((member, memberIndex) => {
+              const memberPokemon = member ? getPokemonByName(data, member) : null
+              return member && memberPokemon ? (
+                <DraggablePokemon
+                  key={`${house.id}-${memberIndex}`}
+                  pokemon={{ ...memberPokemon, compatibility: 0 } as CompatiblePokemon}
+                  showIcons
+                  layout='vertical'
+                  onClick={handleMemberClick}
+                />
+              ) : (
+                <li key={`${house.id}-${memberIndex}`} className='member empty'>?</li>
+              )
+            })}
+          </ul>
+          {(() => {
+            const habitats = getHabitats(house.members, data)
+            return habitats.length > 0 ? (
+              <div className='house-habitats'>
+                {habitats.map((habitat) => (
+                  <span key={habitat} className='habitat-chip'>{habitat}</span>
+                ))}
+              </div>
+            ) : null
+          })()}
+          <div className='favorites'>
+            {getFloorFavorites(house, data).map(({ label, favorites }) =>
+              favorites.length > 0 ? (
+                <div key={label ?? 'all'} className='floor-favorites'>
+                  {label && <span className='floor-label'>{label}:</span>}
+                  {favorites.map((favorite) => (
+                    <a key={favorite} className='favorite' href={favoriteLinks[favorite]} target='_blank' rel='noopener noreferrer'>{favorite}</a>
+                  ))}
+                </div>
+              ) : null
+            )}
           </div>
-        ) : null
-      })()}
-      <div className='favorites'>{
-      getSharedFavorites(house.members, data).map((favorite) => (
-        <a key={favorite} className='favorite' href={favoriteLinks[favorite]} target="_blank" rel="noopener noreferrer">{favorite}</a>
-      ))}</div>
+        </>
+      )}
     </div>
   )
 }
@@ -465,7 +528,8 @@ export const HouseList = ({ data }: HouseListProps) => {
             <tbody>
               {visibleHouses.map((house) => {
                 const isSelected = selectedHouseId === house.id
-                const shared = getSharedFavorites(house.members, data)
+                const floorFavorites = getFloorFavorites(house, data)
+                const hasAnyFavorites = floorFavorites.some(({ favorites }) => favorites.length > 0)
 
                 return (
                   <tr
@@ -495,8 +559,15 @@ export const HouseList = ({ data }: HouseListProps) => {
                       </div>
                     </td>
                     <td className="table-favorites">
-                      {shared.length > 0
-                        ? shared.map((f) => <a key={f} className="favorite" href={favoriteLinks[f]} target="_blank" rel="noopener noreferrer">{f}</a>)
+                      {hasAnyFavorites
+                        ? floorFavorites.map(({ label, favorites }) =>
+                            favorites.length > 0 ? (
+                              <div key={label ?? 'all'} className='floor-favorites'>
+                                {label && <span className='floor-label'>{label}:</span>}
+                                {favorites.map((f) => <a key={f} className="favorite" href={favoriteLinks[f]} target="_blank" rel="noopener noreferrer">{f}</a>)}
+                              </div>
+                            ) : null
+                          )
                         : <span className="none">—</span>}
                     </td>
                     <td>

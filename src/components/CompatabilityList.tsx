@@ -61,6 +61,19 @@ const getHabitats = (members: House['members'], data: PokemonRecord[]): string[]
   return Array.from(new Set(habitats))
 }
 
+const getCompatibilityMembers = (house: House): House['members'] => {
+  if (house.type !== 'prefab' || house.members.length !== 4) {
+    return house.members
+  }
+
+  const emptyIndex = house.members.findIndex((member) => member === null)
+  if (emptyIndex === -1) {
+    return house.members
+  }
+
+  return emptyIndex < 2 ? house.members.slice(0, 2) : house.members.slice(2, 4)
+}
+
 function CompatabilityList({ data }: CompatibilityListProps) {
   const { houses, selectedHouseId, moveToHouse } = useHouse()
   const { ref: compatabilityRef } = useDroppable({
@@ -125,8 +138,13 @@ function CompatabilityList({ data }: CompatibilityListProps) {
   }, [data, houses, nameSearch, selectedHouse, selectedSpecialties])
 
   const sharedSelectedData = useMemo<SharedSelectedData | null>(() => {
-    const firstMember = selectedHouse?.members.find((member): member is string => member !== null) ?? null
-    if (!selectedHouse || !firstMember) {
+    if (!selectedHouse) {
+      return null
+    }
+
+    const compatibilityMembers = getCompatibilityMembers(selectedHouse)
+    const firstMember = compatibilityMembers.find((member): member is string => member !== null) ?? null
+    if (!firstMember) {
       return null
     }
 
@@ -136,8 +154,8 @@ function CompatabilityList({ data }: CompatibilityListProps) {
     }
 
     return {
-      habitats: getHabitats(selectedHouse.members, data),
-      favorites: getSharedFavorites(selectedHouse.members, data),
+      habitats: getHabitats(compatibilityMembers, data),
+      favorites: getSharedFavorites(compatibilityMembers, data),
     }
   }, [data, selectedHouse])
 
