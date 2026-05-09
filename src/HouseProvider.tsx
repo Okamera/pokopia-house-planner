@@ -7,6 +7,19 @@ const DITTO_NAME = 'Ditto'
 
 const canHouseHoldDitto = (house: House) => !(house.type === 'custom' && house.members.length === 1)
 
+const normalizeHouses = (inputHouses: House[]) => {
+  return inputHouses.map((house, index) => ({
+    ...house,
+    id: inputHouses.length - index,
+    hasDitto: house.hasDitto ?? false,
+  }))
+}
+
+const getNextHouseId = (currentHouses: House[]) => {
+  const highestId = currentHouses.reduce((maxId, house) => Math.max(maxId, house.id), 0)
+  return highestId + 1
+}
+
 // Provider to maintain house state and provide dnd context
 const HouseProvider = ({ children }: { children: React.ReactNode }) => {
   const [houses, setHouses] = useState<House[]>([])
@@ -21,14 +34,7 @@ const HouseProvider = ({ children }: { children: React.ReactNode }) => {
     
     if (savedHouses) {
       try {
-        let loadedHouses = JSON.parse(savedHouses)
-      
-        loadedHouses = loadedHouses.map((house: House, index: number) => ({
-          ...house,
-          id: loadedHouses.length - index,
-          hasDitto: house.hasDitto ?? false,
-        }))
-        
+        const loadedHouses = normalizeHouses(JSON.parse(savedHouses))
         setHouses(loadedHouses)
       } catch (e) {
         console.error('Failed to parse saved houses:', e)
@@ -61,17 +67,27 @@ const HouseProvider = ({ children }: { children: React.ReactNode }) => {
   }, [selectedHouseId, isHydrated])
 
   const generateHouse = ({ name, location, slots, type }: { name?: string; location?: LocationCode; slots?: number; type?: HouseType }) => {
-    const newHouse: House = {
-      id: houses.length + 1,
-      location: location ?? 'ww',
-      name: name || `House ${houses.length + 1}`,
-      type: type ?? 'custom',
-      hasDitto: false,
-      members: Array(slots ?? 4).fill(null),
-    }
+    let nextSelectedId: number | null = null
 
-    setHouses((currentHouses) => [newHouse, ...currentHouses])
-    setSelectedHouseId(newHouse.id)
+    setHouses((currentHouses) => {
+      const nextHouseId = getNextHouseId(currentHouses)
+      nextSelectedId = nextHouseId
+
+      const newHouse: House = {
+        id: nextHouseId,
+        location: location ?? 'ww',
+        name: name || `House ${nextHouseId}`,
+        type: type ?? 'custom',
+        hasDitto: false,
+        members: Array(slots ?? 4).fill(null),
+      }
+
+      return [newHouse, ...currentHouses]
+    })
+
+    if (nextSelectedId !== null) {
+      setSelectedHouseId(nextSelectedId)
+    }
   }
 
   const moveToHouse = (pokemonName: string, houseId: number, sourceHouseId?: number) => {
@@ -213,10 +229,7 @@ const HouseProvider = ({ children }: { children: React.ReactNode }) => {
   }
 
   const importHouses = (imported: House[]) => {
-    setHouses(imported.map((house) => ({
-      ...house,
-      hasDitto: house.hasDitto ?? false,
-    })))
+    setHouses(normalizeHouses(imported))
     setSelectedHouseId(null)
   }
 
