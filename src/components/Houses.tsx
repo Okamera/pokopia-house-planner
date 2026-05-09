@@ -159,18 +159,29 @@ export const HouseCard = ({ house, data }: HouseProps) => {
     id: house.id,
   })
   const [editingName, setEditingName] = useState(false)
+  const [editingLocation, setEditingLocation] = useState(false)
   const [nameValue, setNameValue] = useState(house.name)
   const inputRef = useRef<HTMLInputElement>(null)
+  const locationSelectRef = useRef<HTMLSelectElement>(null)
 
   useEffect(() => {
     if (editingName) inputRef.current?.select()
   }, [editingName])
+
+  useEffect(() => {
+    if (editingLocation) locationSelectRef.current?.focus()
+  }, [editingLocation])
 
   const commitName = () => {
     const trimmed = nameValue.trim()
     if (trimmed) updateHouse({ ...house, name: trimmed })
     else setNameValue(house.name)
     setEditingName(false)
+  }
+
+  const updateLocation = (location: LocationCode) => {
+    updateHouse({ ...house, location })
+    setEditingLocation(false)
   }
 
   const toggleSelect = () => {
@@ -184,7 +195,6 @@ export const HouseCard = ({ house, data }: HouseProps) => {
   // remove pokemon from house when clicking on them
   const removePokemon = (pokemonName: string, event: React.MouseEvent<HTMLLIElement>) => {
     event.stopPropagation()
-    console.log('removing', pokemonName, 'from', house.id)
     updateHouse(removePokemonFromHouse(house, pokemonName))
   }
 
@@ -218,7 +228,31 @@ export const HouseCard = ({ house, data }: HouseProps) => {
               </svg>
             </h2>
           )}
-          <div className='location'>{`${locations[house.location]} - ${house.type}`}</div>
+          {editingLocation ? (
+            <select
+              ref={locationSelectRef}
+              className='location-select'
+              value={house.location}
+              onChange={(e) => updateLocation(e.target.value as LocationCode)}
+              onBlur={() => setEditingLocation(false)}
+              onClick={(e) => e.stopPropagation()}
+            >
+              {(Object.entries(locations) as Array<[LocationCode, string]>).map(([code, name]) => (
+                <option key={code} value={code}>{name}</option>
+              ))}
+            </select>
+          ) : (
+            <button
+              type='button'
+              className='location location-button'
+              onClick={(e) => {
+                e.stopPropagation()
+                setEditingLocation(true)
+              }}
+            >
+              {`${locations[house.location]} - ${house.type}`}
+            </button>
+          )}
         </div>
         <button className="remove-house" onClick={(e) => { e.stopPropagation(); removeHouse(house.id) }} title="Remove house">
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--textDanger)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">

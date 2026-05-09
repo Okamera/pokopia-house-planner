@@ -23,7 +23,7 @@ type DragEndEventLike = {
 const unhouseablePokemon = ['Ho-Oh', 'Lugia', 'Kyogre']
 
 function AppContent() {
-  const { moveToHouse, removeFromHouse } = useHouse()
+  const { houses, moveToHouse, removeFromHouse } = useHouse()
   const data: PokemonRecord[] = pokemonData.filter((pokemon) => {
     return pokemon.name.trim().length > 0 && !unhouseablePokemon.includes(pokemon.name)
   })
@@ -34,15 +34,29 @@ function AppContent() {
     }
 
     const sourceId = typeof event.operation.source?.id === 'string' ? event.operation.source.id : null
-    const targetId = typeof event.operation.target?.id === 'string' ? event.operation.target.id : null
+    const targetId = typeof event.operation.target?.id === 'number'
+      ? event.operation.target.id
+      : typeof event.operation.target?.id === 'string'
+        ? event.operation.target.id
+        : null
 
-    if (!sourceId || !targetId) {
+    if (!sourceId || targetId === null) {
       return
     }
 
     // If dragging to compatibility list, remove from house
     if (targetId === 'compatability-list') {
       removeFromHouse(sourceId)
+      return
+    }
+
+    if (typeof targetId !== 'number') {
+      return
+    }
+
+    // Check if the Pokemon is already in the target house
+    const targetHouse = houses.find((h) => h.id === targetId)
+    if (targetHouse?.members.includes(sourceId)) {
       return
     }
 

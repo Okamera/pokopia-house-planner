@@ -26,7 +26,6 @@ const HouseProvider = ({ children }: { children: React.ReactNode }) => {
         }))
         
         setHouses(loadedHouses)
-        console.log('Loaded houses from localStorage:', loadedHouses)
       } catch (e) {
         console.error('Failed to parse saved houses:', e)
       }
