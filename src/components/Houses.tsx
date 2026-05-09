@@ -228,17 +228,8 @@ export const HouseCard = ({ house, data }: HouseProps) => {
     setSelectedHouseId(house.id)
   }
 
-  // remove pokemon from house when clicking on them
-  const removePokemon = (pokemonName: string, event: React.MouseEvent<HTMLLIElement>) => {
-    event.stopPropagation()
-    updateHouse(removePokemonFromHouse(house, pokemonName))
-  }
-
   const handleMemberClick = (pokemonName: string) => {
-    const mockEvent = {
-      stopPropagation: () => {}
-    } as React.MouseEvent<HTMLLIElement>
-    removePokemon(pokemonName, mockEvent)
+    updateHouse(removePokemonFromHouse(house, pokemonName))
   }
 
   const removeDitto = () => {

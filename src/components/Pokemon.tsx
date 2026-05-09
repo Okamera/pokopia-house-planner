@@ -79,7 +79,7 @@ export const DraggablePokemon = ({ pokemon, onClick, showIcons = true, layout = 
   const containerClass = layout === 'vertical' ? 'pokemon-member' : `compatability-item percent${pokemon.compatibility}`
 
   return (
-    <li ref={ref} className={containerClass} title={pokemon.name} onClick={() => onClick(pokemon.name)}>
+    <li ref={ref} className={containerClass} title={pokemon.name} onClick={(e) => { e.stopPropagation(); onClick(pokemon.name) }}>
       <PokemonIcons pokemon={pokemon} showIcons={showIcons} />
     </li>
   )
