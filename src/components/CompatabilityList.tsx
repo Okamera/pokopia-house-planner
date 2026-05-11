@@ -75,7 +75,7 @@ const getCompatibilityMembers = (house: House): House['members'] => {
 }
 
 function CompatabilityList({ data }: CompatibilityListProps) {
-  const { houses, selectedHouseId, moveToHouse } = useHouse()
+  const { houses, selectedHouseId, dragAndDropEnabled, moveToHouse } = useHouse()
   const { ref: compatabilityRef } = useDroppable({
     id: 'compatability-list',
   })
@@ -326,7 +326,7 @@ function CompatabilityList({ data }: CompatibilityListProps) {
       </div>
       <ul ref={compatabilityRef} id="compatability-list">
         {compatiblePokemon.map((pokemon) => (
-          <DraggablePokemon key={pokemon.name} pokemon={pokemon} showIcons={showSpecialtyIcons} onClick={() => selectedHouseId ? moveToHouse(pokemon.name, selectedHouseId) : null} />
+          <DraggablePokemon key={pokemon.name} pokemon={pokemon} showIcons={showSpecialtyIcons} isDraggable={dragAndDropEnabled} onClick={() => selectedHouseId ? moveToHouse(pokemon.name, selectedHouseId) : null} />
         ))}
       </ul>
     </div>

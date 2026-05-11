@@ -36,6 +36,7 @@ export type HouseListProps = {
 type DittoBadgeProps = {
   houseId: number
   onActivate: () => void
+  isDraggable: boolean
 }
 
 const getPokemonByName = (data: PokemonRecord[], name: string) => (
@@ -98,9 +99,10 @@ const getFloorFavorites = (house: House, data: PokemonRecord[]): Array<{ label: 
   return [{ label: null, favorites: getSharedFavorites(house.members, data) }]
 }
 
-const DittoBadge = ({ houseId, onActivate }: DittoBadgeProps) => {
+const DittoBadge = ({ houseId, onActivate, isDraggable }: DittoBadgeProps) => {
   const { ref } = useDraggable({
     id: `${DITTO_NAME}:${houseId}`,
+    disabled: !isDraggable,
   })
 
   return (
@@ -201,7 +203,7 @@ export const HouseCreateForm = ()=> {
 }
 
 export const HouseCard = ({ house, data }: HouseProps) => {
-  const { selectedHouseId, setSelectedHouseId, updateHouse, removeHouse } = useHouse()
+  const { selectedHouseId, setSelectedHouseId, dragAndDropEnabled, updateHouse, removeHouse } = useHouse()
   const { ref } = useDroppable({
     id: house.id,
   })
@@ -264,7 +266,7 @@ export const HouseCard = ({ house, data }: HouseProps) => {
           ) : (
             <h2 className='title' onClick={(e) => { e.stopPropagation(); setEditingName(true) }}>
               {house.hasDitto && (
-                <DittoBadge houseId={house.id} onActivate={removeDitto} />
+                <DittoBadge houseId={house.id} onActivate={removeDitto} isDraggable={dragAndDropEnabled} />
               )}
               {house.name}
               <svg className='edit-icon' xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='currentColor' strokeWidth='2' strokeLinecap='round' strokeLinejoin='round'>
@@ -326,6 +328,7 @@ export const HouseCard = ({ house, data }: HouseProps) => {
                         pokemon={{ ...memberPokemon, compatibility: 0 } as CompatiblePokemon}
                         showIcons
                         layout='vertical'
+                        isDraggable={dragAndDropEnabled}
                         onClick={handleMemberClick}
                       />
                     ) : (
@@ -362,6 +365,7 @@ export const HouseCard = ({ house, data }: HouseProps) => {
                   pokemon={{ ...memberPokemon, compatibility: 0 } as CompatiblePokemon}
                   showIcons
                   layout='vertical'
+                  isDraggable={dragAndDropEnabled}
                   onClick={handleMemberClick}
                 />
               ) : (

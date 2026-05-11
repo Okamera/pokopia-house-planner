@@ -36,13 +36,13 @@ const parseDragSource = (sourceId: string) => {
 }
 
 function AppContent() {
-  const { houses, moveToHouse, removeFromHouse } = useHouse()
+  const { houses, dragAndDropEnabled, moveToHouse, removeFromHouse } = useHouse()
   const data: PokemonRecord[] = pokemonData.filter((pokemon) => {
     return pokemon.name.trim().length > 0 && !unhouseablePokemon.includes(pokemon.name)
   })
 
   const handleDragEnd = (event: DragEndEventLike) => {
-    if (event.canceled) {
+    if (!dragAndDropEnabled || event.canceled) {
       return
     }
 

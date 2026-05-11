@@ -16,7 +16,7 @@ const isIPhoneSafari = () => {
 }
 
 export const AppMenu = () => {
-  const { clearHouseData, houses, importHouses } = useHouse()
+  const { clearHouseData, dragAndDropEnabled, houses, importHouses, setDragAndDropEnabled } = useHouse()
   const { fontScale, setFontScale } = useFontSize()
   const fileInputRef = useRef<HTMLInputElement>(null)
   const [menuOpen, setMenuOpen] = useState(false)
@@ -113,6 +113,16 @@ export const AppMenu = () => {
                   </button>
                 ))}
               </div>
+            </div>
+            <div className="menu-section">
+              <label>Interactions</label>
+              <button
+                type="button"
+                className={`menu-toggle-btn ${dragAndDropEnabled ? 'active' : ''}`}
+                onClick={() => setDragAndDropEnabled((current) => !current)}
+              >
+                {dragAndDropEnabled ? 'Click, Drag and Drop' : 'Click only'}
+              </button>
             </div>
             <hr className="menu-divider" />
             <button
@@ -237,7 +247,7 @@ export const AppMenu = () => {
             </div>
             <dl className="faq-list">
               <dt>How do I add a Pokémon to a house?</dt>
-              <dd>Select a house by clicking on it, then drag a Pokémon from the compatibility list on the right into the house. You can also drag between houses.</dd>
+              <dd>Select a house by clicking on it, then drag a Pokémon from the compatibility list on the right into the house. You can also turn drag and drop off in the menu and add Pokémon with clicks instead.</dd>
 
               <dt>How do I remove a Pokémon from a house?</dt>
               <dd>Click on a Pokémon inside a house to remove it. You can also drag it back to the compatibility list on the right.</dd>

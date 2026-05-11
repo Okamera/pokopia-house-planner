@@ -177,6 +177,25 @@
     }
   }
 
+  .menu-toggle-btn {
+    border: 1px solid var(--borderColor) !important;
+    border-radius: 6px !important;
+    background: var(--backgroundMain) !important;
+    font-size: 0.875rem;
+    font-weight: 600;
+
+    &.active {
+      background: var(--accentPrimary) !important;
+      border-color: var(--accentPrimary) !important;
+      color: #000;
+    }
+
+    &:hover {
+      background: var(--accentPrimary) !important;
+      opacity: 0.9;
+    }
+  }
+
   .menu-divider {
     border: none;
     border-top: 1px solid var(--borderColor);
@@ -301,6 +320,13 @@
       box-shadow: none;
       opacity: 0.75;
     }
+  }
+}
+
+*[aria-roledescription="draggable"] {
+  cursor: grab;
+  &[aria-disabled="true"] {
+    cursor: pointer;
   }
 }
 
@@ -608,6 +634,7 @@
 
 #houses-table {
   width: 100%;
+  min-width: 670px;
   border-collapse: collapse;
   font-size: 0.8125rem;
   text-align: left;
@@ -749,6 +776,131 @@
     }
   }
 
+  .table-expand-row {
+    cursor: default;
+    background: transparent;
+    border-bottom: none;
+
+    &:hover {
+      filter: none;
+    }
+
+    td {
+      padding: 0 4px 8px;
+      border-bottom: none;
+    }
+  }
+
+  .table-expand-panel {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    border: 1px solid var(--borderColor);
+    border-radius: 12px;
+    background: var(--backgroundTint);
+  }
+
+  .table-expand-meta {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 8px;
+  }
+
+  .table-expand-item,
+  .table-expand-section {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    padding: 8px 10px;
+    border-radius: 10px;
+    background: var(--backgroundMain);
+    border: 1px solid var(--borderColor);
+
+    span {
+      font-size: 0.6875rem;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      color: var(--textSecondary);
+    }
+
+    strong {
+      font-size: 0.8125rem;
+      font-weight: 600;
+      color: var(--textMain);
+    }
+  }
+
+  .table-expand-floors {
+    display: flex;
+    gap: 10px;
+
+    &.split {
+      .table-expand-floor {
+        flex: 1;
+      }
+    }
+  }
+
+  .table-expand-floor {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 10px;
+    border-radius: 10px;
+    background: var(--backgroundMain);
+    border: 1px solid var(--borderColor);
+  }
+
+  .table-expand-floor-label {
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: var(--textSecondary);
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+
+  .table-expand-floor-members {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+
+  .table-expand-member {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 4px 6px;
+    border-radius: 8px;
+    background: var(--backgroundTint);
+    border: 1px solid var(--borderColor);
+
+    img {
+      width: 28px;
+      height: 28px;
+      border-radius: 4px;
+      border: 1px solid var(--borderColor);
+    }
+
+    span {
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: var(--textMain);
+    }
+
+    &.empty {
+      opacity: 0.7;
+    }
+  }
+
+  .table-expand-favorites {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+  }
+
   .table-favorites {
     .favorite {
       border: 1px solid var(--accentPrimary);
@@ -757,7 +909,6 @@
       border-radius: 12px;
       line-height: 20px;
       padding: 0 4px;
-      margin-right: 4px;
       color: var(--textMain);
       text-decoration: none;
       &:hover {
@@ -766,6 +917,15 @@
     }
     .none {
       color: var(--textSecondary);
+    }
+
+    .floor-favorites {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 4px;
+      & + .floor-favorites {
+        padding-top: 4px;
+      }
     }
   }
 
@@ -815,9 +975,6 @@
   }
 }
 
-.ditto-badge-draggable {
-  cursor: grab;
-}
 
 .ditto-badge-handle {
   display: inline-flex;
@@ -1416,7 +1573,6 @@
     background-color: var(--backgroundSecondary);
     padding: 4px 8px;
     text-align: left;
-    cursor: grab;
     border-radius: 6px;
 
     .compatability-pokemon-image {
@@ -1493,7 +1649,6 @@
   flex-direction: column;
   align-items: center;
   padding: 4px;
-  cursor: grab;
   border-radius: 4px;
   background: var(--backgroundMain);
   border: 1px solid var(--borderColor);
