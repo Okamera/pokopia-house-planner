@@ -3,6 +3,7 @@ import { useDroppable } from '@dnd-kit/react'
 import { DraggablePokemon } from './Pokemon'
 import { useHouse } from '../HouseProvider'
 import type { CompatiblePokemon, House, PokemonRecord } from '../types'
+import { getPokemonByName, getSharedFavorites, getHabitats } from '../utils/houseUtils'
 
 const favoriteCount = 5
 
@@ -19,27 +20,6 @@ const getPokemonFavorites = (pokemon: PokemonRecord): string[] => (
   pokemon.favorites.filter((favorite) => favorite.length > 0)
 )
 
-const getPokemonByName = (data: PokemonRecord[], name: string) => (
-  data.find((pokemon) => pokemon.name === name) ?? null
-)
-
-const getSharedFavorites = (members: House['members'], data: PokemonRecord[]): string[] => {
-  const memberFavorites = members
-    .filter((member): member is string => member !== null)
-    .map((member) => getPokemonByName(data, member))
-    .filter((pokemon): pokemon is PokemonRecord => pokemon !== null)
-    .map(getPokemonFavorites)
-
-  if (memberFavorites.length === 0) {
-    return []
-  }
-
-  return memberFavorites.slice(1).reduce(
-    (sharedFavorites, favorites) => sharedFavorites.filter((favorite) => favorites.includes(favorite)),
-    memberFavorites[0],
-  )
-}
-
 const habitatConflicts: Record<string, string> = {
   Dry: 'Humid',
   Humid: 'Dry',
@@ -50,16 +30,6 @@ const habitatConflicts: Record<string, string> = {
 }
 
 const canHouseHoldDitto = (house: House) => !(house.type === 'custom' && house.members.length === 1)
-
-const getHabitats = (members: House['members'], data: PokemonRecord[]): string[] => {
-  const habitats = members
-    .filter((member): member is string => member !== null)
-    .map((member) => getPokemonByName(data, member))
-    .filter((pokemon): pokemon is PokemonRecord => pokemon !== null)
-    .map((pokemon) => pokemon.habitat)
-
-  return Array.from(new Set(habitats))
-}
 
 const getCompatibilityMembers = (house: House): House['members'] => {
   if (house.type !== 'prefab' || house.members.length !== 4) {
@@ -74,7 +44,7 @@ const getCompatibilityMembers = (house: House): House['members'] => {
   return emptyIndex < 2 ? house.members.slice(0, 2) : house.members.slice(2, 4)
 }
 
-function CompatabilityList({ data }: CompatibilityListProps) {
+export const CompatabilityList = ({ data }: CompatibilityListProps) => {
   const { houses, selectedHouseId, dragAndDropEnabled, moveToHouse } = useHouse()
   const { ref: compatabilityRef } = useDroppable({
     id: 'compatability-list',
@@ -333,4 +303,3 @@ function CompatabilityList({ data }: CompatibilityListProps) {
   )
 }
 
-export { CompatabilityList }

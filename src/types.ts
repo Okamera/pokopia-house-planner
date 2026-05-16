@@ -19,6 +19,12 @@ export interface CompatiblePokemon extends PokemonRecord {
   compatibility: number
 }
 
+export type FurnitureFloorKey = 'house' | 'floor1' | 'floor2'
+
+export type HouseFurnitureSelections = Partial<Record<FurnitureFloorKey, string[]>>
+
+export type FurnitureSelectionsByHouse = Record<number, HouseFurnitureSelections>
+
 export interface House {
   id: number
   location: LocationCode
@@ -26,4 +32,10 @@ export interface House {
   type: HouseType
   hasDitto: boolean
   members: Array<string | null>
+  furniture: string[][]
+}
+
+export type Sort = {
+  col: string
+  dir: 'asc' | 'desc'
 }

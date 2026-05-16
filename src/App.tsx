@@ -3,10 +3,12 @@ import pokemonData from './data/pokemon.json'
 import { DragDropProvider } from '@dnd-kit/react'
 import { HouseProvider, useHouse } from './HouseProvider'
 import { FontSizeProvider } from './FontSizeProvider'
-import { HouseCreateForm, HouseList } from './components/Houses'
+import { HouseList } from './components/HouseList'
+import { HouseCreateForm } from './components/HouseCreateForm'
 import { CompatabilityList } from './components/CompatabilityList'
 import { AppMenu } from './components/AppMenu'
 import type { PokemonRecord } from './types'
+import { DITTO_NAME } from './constants'
 
 type DragEndEventLike = {
   canceled?: boolean
@@ -21,7 +23,6 @@ type DragEndEventLike = {
 }
 
 const unhouseablePokemon = ['Ho-Oh', 'Lugia', 'Kyogre']
-const DITTO_NAME = 'Ditto'
 
 const parseDragSource = (sourceId: string) => {
   if (!sourceId.startsWith(`${DITTO_NAME}:`)) {

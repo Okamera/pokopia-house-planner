@@ -1,10 +1,10 @@
-import { createContext, useContext, useState, useEffect, type Dispatch, type SetStateAction } from 'react'
+import { createContext, useContext, useState, useEffect, type Dispatch, type SetStateAction, useMemo } from 'react'
 import type { House, HouseType, LocationCode } from './types'
+import { DITTO_NAME } from './constants'
 
 const STORAGE_KEY_HOUSES = 'pokemon-houses'
 const STORAGE_KEY_SELECTED = 'pokemon-selected-house'
 const STORAGE_KEY_DRAG_ENABLED = 'pokemon-drag-enabled'
-const DITTO_NAME = 'Ditto'
 
 const canHouseHoldDitto = (house: House) => !(house.type === 'custom' && house.members.length === 1)
 
@@ -13,6 +13,7 @@ const normalizeHouses = (inputHouses: House[]) => {
     ...house,
     id: inputHouses.length - index,
     hasDitto: house.hasDitto ?? false,
+    furniture: house.furniture ?? (house.type === 'prefab' && house.members.length === 4 ? [[], []] : [[]]),
   }))
 }
 
@@ -79,6 +80,8 @@ const HouseProvider = ({ children }: { children: React.ReactNode }) => {
     }
   }, [dragAndDropEnabled, isHydrated])
 
+  const houseMap = useMemo(() => Object.fromEntries(houses.map((house) => [house.id, house])), [houses])
+
   const generateHouse = ({ name, location, slots, type }: { name?: string; location?: LocationCode; slots?: number; type?: HouseType }) => {
     let nextSelectedId: number | null = null
 
@@ -93,6 +96,7 @@ const HouseProvider = ({ children }: { children: React.ReactNode }) => {
         type: type ?? 'custom',
         hasDitto: false,
         members: Array(slots ?? 4).fill(null),
+        furniture: type === 'prefab' && (slots ?? 4) === 4 ? [[], []] : [[]],
       }
 
       return [newHouse, ...currentHouses]
@@ -247,7 +251,7 @@ const HouseProvider = ({ children }: { children: React.ReactNode }) => {
   }
 
   return (
-    <HouseContext.Provider value={{ houses, selectedHouseId, setSelectedHouseId, filterLocation, setFilterLocation, dragAndDropEnabled, setDragAndDropEnabled, generateHouse, moveToHouse, updateHouse, removeHouse, removeFromHouse, clearHouseData, importHouses }}>
+    <HouseContext.Provider value={{ houses, houseMap, selectedHouseId, setSelectedHouseId, filterLocation, setFilterLocation, dragAndDropEnabled, setDragAndDropEnabled, generateHouse, moveToHouse, updateHouse, removeHouse, removeFromHouse, clearHouseData, importHouses }}>
       {children}
     </HouseContext.Provider>
   )
@@ -261,6 +265,7 @@ const HouseContext = createContext<{
   setFilterLocation: Dispatch<SetStateAction<LocationCode | null>>
   dragAndDropEnabled: boolean
   setDragAndDropEnabled: Dispatch<SetStateAction<boolean>>
+  houseMap: Record<number, House>
   generateHouse: (data: { name?: string; location?: LocationCode; slots?: number; type?: HouseType }) => void
   moveToHouse: (pokemonName: string, houseId: number, sourceHouseId?: number) => void
   updateHouse: (house: House) => void
@@ -276,6 +281,7 @@ const HouseContext = createContext<{
   setFilterLocation: () => {},
   dragAndDropEnabled: true,
   setDragAndDropEnabled: () => {},
+  houseMap: {},
   generateHouse: () => {},
   moveToHouse: () => {},
   updateHouse: () => {},

@@ -204,7 +204,8 @@
   }
 }
 
-#about-modal-backdrop {
+#about-modal-backdrop,
+.app-modal-backdrop {
   position: fixed;
   inset: 0;
   z-index: 30;
@@ -215,7 +216,8 @@
   padding: 20px;
 }
 
-#about-modal {
+#about-modal,
+.app-modal {
   width: min(480px, 100%);
   border-radius: 16px;
   border: 1px solid var(--borderColor);
@@ -294,12 +296,11 @@
   }
 }
 
-.about-modal-header {
+.about-modal-header,
+.app-modal-header {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
-  gap: 12px;
-  margin-bottom: 12px;
 
   h2 {
     margin: 0;
@@ -321,6 +322,185 @@
       opacity: 0.75;
     }
   }
+}
+
+.house-details-modal {
+  width: min(760px, 100%);
+}
+
+.house-details-subtitle {
+  margin: 4px 0 0;
+  font-size: 0.875rem;
+  color: var(--textSecondary);
+}
+
+.house-details-title {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+
+.house-details-section {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 10px;
+  border: 1px solid var(--borderColor);
+  border-radius: 12px;
+  background: var(--backgroundMain);
+
+  span {
+    font-size: 0.6875rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: var(--textSecondary);
+  }
+
+  strong {
+    font-size: 0.875rem;
+    color: var(--textMain);
+  }
+}
+
+.house-details-section {
+  h3 {
+    margin: 0;
+    font-size: 0.95rem;
+  }
+}
+
+.house-details-floors {
+  display: flex;
+  gap: 10px;
+
+  &.split {
+    .house-details-floor {
+      flex: 1;
+    }
+  }
+
+  @media (max-width: 640px) {
+    flex-direction: column;
+  }
+}
+
+.house-details-floor {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  gap: 8px;
+  & + .house-details-floor {
+    border-left: 1px solid var(--borderColor);
+    padding-left: 10px;
+  }
+}
+
+.house-details-floor-label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--textSecondary);
+}
+
+.house-details-members {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.house-details-member {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 6px;
+  border: 1px solid var(--borderColor);
+  border-radius: 8px;
+  background: var(--backgroundMain);
+
+  img {
+    width: 28px;
+    height: 28px;
+    border-radius: 4px;
+    border: 1px solid var(--borderColor);
+  }
+
+  span {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--textMain);
+  }
+
+  &.empty {
+    opacity: 0.7;
+  }
+}
+
+.house-details-favorites {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+
+  &:before {
+    content: 'Favorites';
+    display: block;
+    font-weight: 600;
+    font-size: 0.825rem;
+  }
+
+  .favorite {
+    border: 1px solid var(--accentPrimary);
+    background: var(--backgroundMain);
+    text-wrap: nowrap;
+    border-radius: 12px;
+    line-height: 20px;
+    padding: 0 6px;
+    color: var(--textMain);
+    text-decoration: none;
+    font-size: 0.825rem;
+
+    &:hover {
+      background: var(--accentPrimary);
+    }
+  }
+
+  .none {
+    color: var(--textSecondary);
+    font-size: 0.8125rem;
+  }
+}
+
+.house-details-habitats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+
+  &:before {
+    content: 'Habitats';
+    display: block;
+    font-weight: 600;
+    font-size: 0.825rem;
+  }
+}
+
+
+.house-details-empty-state {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px dashed var(--borderColor);
+  border-radius: 10px;
+  background: var(--backgroundTint);
+  color: var(--textSecondary);
+  text-align: center;
+  font-size: 0.875rem;
+  padding: 12px;
+}
+
+.house-details-furniture-floor {
+  flex: 1;
 }
 
 *[aria-roledescription="draggable"] {
@@ -929,22 +1109,40 @@
     }
   }
 
-  .remove-house {
-    background: none;
-    border: none;
-    padding: 3px;
-    cursor: pointer;
-    opacity: 0.3;
-    color: var(--textMain);
-    border-radius: 4px;
-    transition: opacity 0.15s ease, background 0.15s ease;
+  .table-actions {
+    white-space: nowrap;
     display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+    align-items: center;
+    button {
+      background: none;
+      border: none;
+      padding: 3px;
+      cursor: pointer;
+      opacity: 0.3;
+      color: var(--textMain);
+      border-radius: 4px;
+      transition: opacity 0.15s ease, background 0.15s ease;
 
-    &:hover {
-      opacity: 1;
-      background: var(--accentDanger);
-      transform: none;
-      box-shadow: none;
+      &:hover {
+        opacity: 1;
+        transform: none;
+        box-shadow: none;
+      }
+      svg {
+        display: block;
+        width: 22px;
+        height: 22px;
+      }
+      &.remove-house {
+        svg {
+          width: 16px;
+          height: 16px;
+        }
+        color: var(--textDanger);
+        background: var(--accentDanger);
+      }
     }
   }
 }

@@ -1,0 +1,90 @@
+import { locations, getPokemonByName, getHabitats, getSharedFavorites } from '../utils/houseUtils';
+import type { House, PokemonRecord } from '../types';
+import { favoriteLinks } from '../data/data'
+
+const HouseDetailsModal = ({ house, data, onClose }: { house: House; data: PokemonRecord[]; onClose: () => void }) => {
+  const detailFloors = house.type === 'prefab' && house.members.length === 4
+    ? [
+        {
+          label: 'Floor 1',
+          members: house.members.slice(0, 2),
+          habitats: getHabitats(house.members.slice(0, 2), data),
+          favorites: getSharedFavorites(house.members.slice(0, 2), data),
+        },
+        {
+          label: 'Floor 2',
+          members: house.members.slice(2, 4),
+          habitats: getHabitats(house.members.slice(2, 4), data),
+          favorites: getSharedFavorites(house.members.slice(2, 4), data),
+        },
+      ]
+    : [
+        {
+          label: 'House',
+          members: house.members,
+          habitats: getHabitats(house.members, data),
+          favorites: getSharedFavorites(house.members, data),
+        },
+      ]
+
+  return (
+    <div className="app-modal-backdrop" onClick={onClose}>
+      <div className="app-modal house-details-modal" onClick={(event) => event.stopPropagation()}>
+        <div className="app-modal-header">
+          <div>
+            <h2 className="house-details-title">
+              {house.hasDitto && (
+                <span className="ditto-badge" aria-label="Ditto present" title="Ditto present">
+                  <img src="https://www.serebii.net/pokemonpokopia/items/dittoflag.png" alt="Ditto flag" />
+                </span>
+              )}
+              {house.name}
+            </h2>
+            <p className="house-details-subtitle">{locations[house.location]} • {house.type === 'prefab' ? 'Prefab' : 'Custom'}</p>
+          </div>
+          <button type="button" aria-label="Close house details" onClick={onClose}>×</button>
+        </div>
+        <div className="house-details-content">
+            {/* <h3>House Data</h3> */}
+            <div className={`house-details-floors${detailFloors.length > 1 ? ' split' : ''}`}>
+              {detailFloors.map((floor) => (
+                <div key={floor.label} className="house-details-floor">
+                  {floor.label !== 'House' && <div className="house-details-floor-label">{floor.label}</div>}
+                  <div className="house-details-members">
+                    {floor.members.map((member, index) => {
+                      const pokemon = member ? getPokemonByName(data, member) : null
+                      return pokemon ? (
+                        <div key={`${floor.label}-${pokemon.name}-${index}`} className="house-details-member">
+                          <img src={pokemon.image} alt={pokemon.name} />
+                          <span>{pokemon.name}</span>
+                        </div>
+                      ) : (
+                        <div key={`${floor.label}-empty-${index}`} className="house-details-member empty">
+                          <span>Empty</span>
+                        </div>
+                      )
+                    })}
+                  </div>
+                  <div className="house-details-habitats">
+                    {floor.habitats.join(', ') || 'None'}
+                  </div>
+                  <div className="house-details-favorites">
+                    {floor.favorites.length > 0
+                      ? floor.favorites.map((favorite) => (
+                          <a key={`${floor.label}-${favorite}`} className="favorite" href={favoriteLinks[favorite]} target="_blank" rel="noopener noreferrer">{favorite}</a>
+                        ))
+                      : <span className="none">No shared favorites</span>}
+                  </div>
+                  <div key={`furniture-${floor.label}`} className="house-details-furniture-floor">
+                  <div className="house-details-empty-state">No furniture selected yet.</div>
+                </div>
+                </div>
+              ))}
+            </div>
+        </div>
+      </div>
+    </div>
+  )
+}
+
+export default HouseDetailsModal;
