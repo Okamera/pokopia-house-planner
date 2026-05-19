@@ -1,18 +1,17 @@
 import { useHouse } from '../HouseProvider';
 import SortArrow from './SortArrow';
-import type { House, PokemonRecord, Sort } from '../types';
+import type { House, Sort } from '../types';
 import { favoriteLinks } from '../data/data'
 import { removePokemonFromHouse, getFloorFavorites, getPokemonByName, getHabitats } from '../utils/houseUtils'
 
 type HouseTableProps = {
-  data: PokemonRecord[]
   visibleHouses: House[]
   onDetailsClick: (houseId: number) => void
   sort: Sort
   onSort: (sort: Sort) => void
 }
 
-export const HouseTable = ({ data, visibleHouses, onDetailsClick, sort, onSort }: HouseTableProps) => {
+export const HouseTable = ({ visibleHouses, onDetailsClick, sort, onSort }: HouseTableProps) => {
   const { selectedHouseId, setSelectedHouseId, updateHouse, removeHouse } = useHouse()
 
   const updateSort = (col: string) => {
@@ -51,7 +50,7 @@ export const HouseTable = ({ data, visibleHouses, onDetailsClick, sort, onSort }
         <tbody>
           {visibleHouses.map((house) => {
             const isSelected = selectedHouseId === house.id
-            const floorFavorites = getFloorFavorites(house, data)
+            const floorFavorites = getFloorFavorites(house)
             const hasAnyFavorites = floorFavorites.some(({ favorites }) => favorites.length > 0)
 
             return (
@@ -68,11 +67,11 @@ export const HouseTable = ({ data, visibleHouses, onDetailsClick, sort, onSort }
                     </button>
                   )}
                 </td>
-                <td className="table-habitat">{getHabitats(house.members, data).join(', ')}</td>
+                <td className="table-habitat">{getHabitats(house.members).join(', ')}</td>
                 <td className="table-members">
                   <div className="member-avatars">
                     {house.members.map((member, i) => {
-                      const pokemon = member ? getPokemonByName(data, member) : null
+                      const pokemon = member ? getPokemonByName(member) : null
                       return pokemon
                         ? <button key={i} type="button" className="member-avatar-button" onClick={(event) => removePokemon(house, pokemon.name, event)} title={`Remove ${pokemon.name}`}>
                             <img src={pokemon.image} alt={pokemon.name} />

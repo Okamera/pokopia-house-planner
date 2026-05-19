@@ -4,16 +4,13 @@ import { DraggablePokemon } from './Pokemon'
 import { useHouse } from '../HouseProvider'
 import type { CompatiblePokemon, House, PokemonRecord } from '../types'
 import { getPokemonByName, getSharedFavorites, getHabitats } from '../utils/houseUtils'
+import { pokemonData } from '../data/data'
 
 const favoriteCount = 5
 
 type SharedSelectedData = {
   habitats: string[]
   favorites: string[]
-}
-
-type CompatibilityListProps = {
-  data: PokemonRecord[]
 }
 
 const getPokemonFavorites = (pokemon: PokemonRecord): string[] => (
@@ -44,7 +41,7 @@ const getCompatibilityMembers = (house: House): House['members'] => {
   return emptyIndex < 2 ? house.members.slice(0, 2) : house.members.slice(2, 4)
 }
 
-export const CompatabilityList = ({ data }: CompatibilityListProps) => {
+export const CompatabilityList = () => {
   const { houses, selectedHouseId, dragAndDropEnabled, moveToHouse } = useHouse()
   const { ref: compatabilityRef } = useDroppable({
     id: 'compatability-list',
@@ -83,7 +80,7 @@ export const CompatabilityList = ({ data }: CompatibilityListProps) => {
 
   const specialties = useMemo(() => {
     const set = new Set<string>()
-    data.forEach((pokemon) => {
+    pokemonData.forEach((pokemon) => {
       if (pokemon.specialty1.trim()) set.add(pokemon.specialty1.trim())
       if (pokemon.specialty2.trim()) set.add(pokemon.specialty2.trim())
     })
@@ -92,20 +89,20 @@ export const CompatabilityList = ({ data }: CompatibilityListProps) => {
       if (b === '???') return -1
       return a.localeCompare(b)
     })
-  }, [data])
+  }, [])
 
   const filteredData = useMemo(() => {
     const assignedPokemon = new Set(
       houses.flatMap((house) => house.members.filter((member): member is string => member !== null)),
     )
 
-    return data
+    return pokemonData
       .filter((pokemon) => pokemon.name === 'Ditto'
         ? !selectedHouse || canHouseHoldDitto(selectedHouse)
         : !assignedPokemon.has(pokemon.name))
       .filter((pokemon) => selectedSpecialties.size === 0 || selectedSpecialties.has(pokemon.specialty1) || selectedSpecialties.has(pokemon.specialty2))
       .filter((pokemon) => nameSearch.trim() === '' || pokemon.name.toLowerCase().includes(nameSearch.trim().toLowerCase()))
-  }, [data, houses, nameSearch, selectedHouse, selectedSpecialties])
+  }, [pokemonData, houses, nameSearch, selectedHouse, selectedSpecialties])
 
   const sharedSelectedData = useMemo<SharedSelectedData | null>(() => {
     if (!selectedHouse) {
@@ -118,16 +115,16 @@ export const CompatabilityList = ({ data }: CompatibilityListProps) => {
       return null
     }
 
-    const pokemon = getPokemonByName(data, firstMember)
+    const pokemon = getPokemonByName(firstMember)
     if (!pokemon) {
       return null
     }
 
     return {
-      habitats: getHabitats(compatibilityMembers, data),
-      favorites: getSharedFavorites(compatibilityMembers, data),
+      habitats: getHabitats(compatibilityMembers),
+      favorites: getSharedFavorites(compatibilityMembers),
     }
-  }, [data, selectedHouse])
+  }, [selectedHouse])
 
   const compatiblePokemon = useMemo<CompatiblePokemon[]>(() => {
     if (!sharedSelectedData) {

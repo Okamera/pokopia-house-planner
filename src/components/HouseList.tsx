@@ -14,11 +14,7 @@ const slotCost: Record<number, number> = {
   4: 2
 }
 
-type HouseListProps = {
-  data: PokemonRecord[]
-}
-
-export const HouseList = ({ data }: HouseListProps) => {
+export const HouseList = () => {
   const { houses, setSelectedHouseId, filterLocation, setFilterLocation } = useHouse()
   const [view, setView] = useState<'grid' | 'table'>(() => {
     const savedView = localStorage.getItem(STORAGE_KEY_VIEW)
@@ -47,12 +43,12 @@ export const HouseList = ({ data }: HouseListProps) => {
       if (sort.col === 'name') {
         compare = a.name.localeCompare(b.name)
       } else if (sort.col === 'habitats') {
-        const aHabitats = getHabitats(a.members, data).length
-        const bHabitats = getHabitats(b.members, data).length
+        const aHabitats = getHabitats(a.members).length
+        const bHabitats = getHabitats(b.members).length
         compare = aHabitats - bHabitats
       } else if (sort.col === 'sharedFavorites') {
-        const fav1 = getSharedFavorites(a.members, data)
-        const fav2 = getSharedFavorites(b.members, data)
+        const fav1 = getSharedFavorites(a.members)
+        const fav2 = getSharedFavorites(b.members)
         compare = fav1[0]?.localeCompare(fav2[0])
       }
       return sort.dir === 'asc' ? compare : -compare
@@ -97,15 +93,15 @@ export const HouseList = ({ data }: HouseListProps) => {
       {view === 'grid' ? (
         <ul id="houses">
           {visibleHouses.map((house) => (
-            <HouseCard key={house.id} house={house} data={data} />
+            <HouseCard key={house.id} house={house} />
           ))}
         </ul>
       ) : (
-        <HouseTable data={data} visibleHouses={visibleHouses} onDetailsClick={setDetailsHouseId} onSort={(nSort: Sort) => setSort(nSort)} sort={sort} />
+        <HouseTable visibleHouses={visibleHouses} onDetailsClick={setDetailsHouseId} onSort={(nSort: Sort) => setSort(nSort)} sort={sort} />
       )}
       </div>
       {detailsHouse && (
-        <HouseDetailsModal house={detailsHouse} data={data} onClose={() => setDetailsHouseId(null)} />
+        <HouseDetailsModal house={detailsHouse} onClose={() => setDetailsHouseId(null)} />
       )}
     </>
   )

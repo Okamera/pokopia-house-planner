@@ -5,7 +5,7 @@
     "categories": [
       "Round stuff"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Adventure kit",
@@ -23,7 +23,7 @@
     "categories": [
       "Round stuff"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Afternoon tea set",
@@ -153,7 +153,7 @@
       "Luxury",
       "Wooden stuff"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Arcade machine",
@@ -182,7 +182,7 @@
     "categories": [
       "Round stuff"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Armor Fossil",
@@ -201,7 +201,7 @@
     "categories": [
       "Strange stuff"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Arrow sign",
@@ -283,7 +283,7 @@
     "categories": [
       "Round stuff"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Battle! (Gym Leader) 1",
@@ -291,7 +291,7 @@
     "categories": [
       "Round stuff"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Battle! (Gym Leader) 2",
@@ -299,7 +299,7 @@
     "categories": [
       "Round stuff"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Beach chair",
@@ -327,7 +327,7 @@
     "categories": [
       "Pretty flowers"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Beautiful flower (pink)",
@@ -335,7 +335,7 @@
     "categories": [
       "Pretty flowers"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Beautiful flower (purple)",
@@ -343,7 +343,7 @@
     "categories": [
       "Pretty flowers"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Beautiful flower (white)",
@@ -351,7 +351,7 @@
     "categories": [
       "Pretty flowers"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Beautiful flower (yellow)",
@@ -359,7 +359,7 @@
     "categories": [
       "Pretty flowers"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Bell",
@@ -378,7 +378,7 @@
     "categories": [
       "Round stuff"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Berry basket",
@@ -458,7 +458,7 @@
       "Looks like food",
       "Lots of nature"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Berry print (wallpaper)",
@@ -467,7 +467,7 @@
       "Looks like food",
       "Lots of nature"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Berry table",
@@ -476,7 +476,7 @@
       "Looks like food",
       "Lots of nature"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Berry table lamp",
@@ -528,7 +528,7 @@
     "categories": [
       "Lots of nature"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Big storage box",
@@ -536,7 +536,7 @@
     "categories": [
       "Wooden stuff"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Bike",
@@ -557,7 +557,7 @@
       "Colorful stuff",
       "Lots of dirt"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Blank canvas",
@@ -586,7 +586,7 @@
       "Colorful stuff",
       "Lots of dirt"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Bonfire",
@@ -652,7 +652,7 @@
     "categories": [
       "Round stuff"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Box Sofa",
@@ -670,7 +670,7 @@
     "categories": [
       "Slender objects"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Campfire",
@@ -741,7 +741,7 @@
       "Metal stuff",
       "Strange stuff"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Castform weather charm",
@@ -760,7 +760,7 @@
     "categories": [
       "Round stuff"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "CD player",
@@ -828,7 +828,7 @@
     "categories": [
       "Lots of fire"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Chic chair",
@@ -869,7 +869,7 @@
     "categories": [
       "Luxury"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Chocolate cookies",
@@ -899,7 +899,7 @@
       "Glass stuff",
       "Shiny stuff"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Clear Bell",
@@ -962,7 +962,7 @@
     "categories": [
       "Round stuff"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Control unit",
@@ -1010,7 +1010,7 @@
     "categories": [
       "Metal stuff"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Copper ore",
@@ -1018,7 +1018,7 @@
     "categories": [
       "Metal stuff"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Corkboard",
@@ -1044,7 +1044,7 @@
     "categories": [
       "Soft stuff"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Crystal ball",
@@ -1065,7 +1065,7 @@
       "Glass stuff",
       "Shiny stuff"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Cute bed",
@@ -1105,7 +1105,7 @@
       "Cute stuff",
       "Pretty flowers"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Cute flower (blue)",
@@ -1113,7 +1113,7 @@
     "categories": [
       "Pretty flowers"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Cute flower (pink)",
@@ -1121,7 +1121,7 @@
     "categories": [
       "Pretty flowers"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Cute flower (white)",
@@ -1129,7 +1129,7 @@
     "categories": [
       "Pretty flowers"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Cute flower (yellow)",
@@ -1137,7 +1137,7 @@
     "categories": [
       "Pretty flowers"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Cute lamp",
@@ -1166,7 +1166,7 @@
     "categories": [
       "Cute stuff"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Cutting board",
@@ -1174,7 +1174,7 @@
     "categories": [
       "Wooden stuff"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Cyan paint",
@@ -1183,7 +1183,7 @@
       "Colorful stuff",
       "Lots of dirt"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Deck chair",
@@ -1315,7 +1315,7 @@
     "categories": [
       "Stone stuff"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Double streetlight",
@@ -1344,7 +1344,7 @@
     "categories": [
       "Round stuff"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Driftveil City",
@@ -1352,7 +1352,7 @@
     "categories": [
       "Round stuff"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Ecruteak City",
@@ -1360,7 +1360,7 @@
     "categories": [
       "Round stuff"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Eerie candle",
@@ -1389,7 +1389,7 @@
     "categories": [
       "Pretty flowers"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Elegant flower (orange)",
@@ -1397,7 +1397,7 @@
     "categories": [
       "Pretty flowers"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Elegant flower (pink)",
@@ -1405,7 +1405,7 @@
     "categories": [
       "Pretty flowers"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Elegant flower (red)",
@@ -1413,7 +1413,7 @@
     "categories": [
       "Pretty flowers"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Elegant flower (yellow)",
@@ -1421,7 +1421,7 @@
     "categories": [
       "Pretty flowers"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Excavation tools",
@@ -1450,7 +1450,7 @@
     "categories": [
       "Cute stuff"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Fan",
@@ -1523,7 +1523,7 @@
     "categories": [
       "Round stuff"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Firework (green)",
@@ -1531,7 +1531,7 @@
     "categories": [
       "Round stuff"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Firework (red)",
@@ -1539,7 +1539,7 @@
     "categories": [
       "Round stuff"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Firework (white)",
@@ -1547,7 +1547,7 @@
     "categories": [
       "Round stuff"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Firework (yellow)",
@@ -1555,7 +1555,7 @@
     "categories": [
       "Round stuff"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "First aid kit",
@@ -1585,7 +1585,7 @@
     "categories": [
       "Round stuff"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Flat-leaf plant",
@@ -1605,7 +1605,7 @@
     "categories": [
       "Electronics"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Flower backpack",
@@ -1616,7 +1616,7 @@
       "Pretty flowers",
       "Soft stuff"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Flower cushion",
@@ -1627,7 +1627,7 @@
       "Pretty flowers",
       "Soft stuff"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Flower garland",
@@ -1662,7 +1662,7 @@
       "Round stuff",
       "Soft stuff"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Fluorescent light",
@@ -1698,7 +1698,7 @@
     "categories": [
       "Round stuff"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Frame",
@@ -1729,7 +1729,7 @@
     "categories": [
       "Round stuff"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Funky diffuser",
@@ -1757,7 +1757,7 @@
     "categories": [
       "Round stuff"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Gaming bed",
@@ -1892,7 +1892,7 @@
     "categories": [
       "Lots of nature"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Glass",
@@ -1900,7 +1900,7 @@
     "categories": [
       "Glass stuff"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Glass window",
@@ -1908,7 +1908,7 @@
     "categories": [
       "Glass stuff"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Gold Bottle Cap",
@@ -1917,7 +1917,7 @@
       "Round stuff",
       "Shiny stuff"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Gold ingot",
@@ -1925,7 +1925,7 @@
     "categories": [
       "Metal stuff"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Gold ore",
@@ -1933,7 +1933,7 @@
     "categories": [
       "Metal stuff"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Gold Teeth",
@@ -1974,7 +1974,7 @@
       "Colorful stuff",
       "Lots of dirt"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Grubby book",
@@ -2070,7 +2070,7 @@
     "categories": [
       "Rides"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Hanging banner",
@@ -2109,7 +2109,7 @@
     "categories": [
       "Round stuff"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Headbutt Fossil (body)",
@@ -2149,7 +2149,7 @@
     "categories": [
       "Cute stuff"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Hoppip water bottle",
@@ -2231,7 +2231,7 @@
     "categories": [
       "Metal stuff"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Inflatable boat",
@@ -2275,7 +2275,7 @@
       "Hard stuff",
       "Round stuff"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Iron bed",
@@ -2311,7 +2311,7 @@
     "categories": [
       "Metal stuff"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Iron door",
@@ -2319,7 +2319,7 @@
     "categories": [
       "Metal stuff"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Iron gate",
@@ -2327,7 +2327,7 @@
     "categories": [
       "Metal stuff"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Iron ingot",
@@ -2335,7 +2335,7 @@
     "categories": [
       "Metal stuff"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Iron ladder",
@@ -2343,7 +2343,7 @@
     "categories": [
       "Metal stuff"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Iron ore",
@@ -2351,7 +2351,7 @@
     "categories": [
       "Metal stuff"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Iron pipes",
@@ -2369,7 +2369,7 @@
     "categories": [
       "Hard stuff"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Iron scaffold",
@@ -2406,7 +2406,7 @@
       "Hard stuff",
       "Metal stuff"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Iron wall",
@@ -2414,7 +2414,7 @@
     "categories": [
       "Metal stuff"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Iron-plate flooring",
@@ -2430,7 +2430,7 @@
     "categories": [
       "Metal stuff"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Iron-scaffold plank",
@@ -2467,7 +2467,7 @@
     "categories": [
       "Round stuff"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Juice trio",
@@ -2515,7 +2515,7 @@
     "categories": [
       "Hard stuff"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Lantern",
@@ -2545,7 +2545,7 @@
     "categories": [
       "Strange stuff"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Large mirror",
@@ -2576,7 +2576,7 @@
     "categories": [
       "Electronics"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Leafy plant",
@@ -2595,7 +2595,7 @@
     "categories": [
       "Looks like food"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Letter",
@@ -2614,7 +2614,7 @@
     "categories": [
       "Round stuff"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Light Clay",
@@ -2623,7 +2623,7 @@
       "Soft stuff",
       "Stone stuff"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Log Bed",
@@ -2654,7 +2654,7 @@
       "Lots of nature",
       "Wooden stuff"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Lucky Egg",
@@ -2662,7 +2662,7 @@
     "categories": [
       "Round stuff"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Lunch box",
@@ -2737,7 +2737,7 @@
     "categories": [
       "Luxury"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Magazine rack",
@@ -2797,7 +2797,7 @@
       "Metal stuff",
       "Slender objects"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Metal Debris",
@@ -2807,7 +2807,7 @@
       "Metal stuff",
       "Stone stuff"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Metal drum",
@@ -2826,7 +2826,7 @@
     "categories": [
       "Metal stuff"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Metal Powder",
@@ -2834,7 +2834,7 @@
     "categories": [
       "Shiny stuff"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Metallic smelting furnace",
@@ -2842,7 +2842,7 @@
     "categories": [
       "Lots of fire"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Microscope",
@@ -2910,7 +2910,7 @@
     "categories": [
       "Lots of nature"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Mirror ball",
@@ -2955,7 +2955,7 @@
     "categories": [
       "Glass stuff"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Modern sink",
@@ -2975,7 +2975,7 @@
     "categories": [
       "Pretty flowers"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Mountain flowers (pink)",
@@ -2983,7 +2983,7 @@
     "categories": [
       "Pretty flowers"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Mountain flowers (purple)",
@@ -2991,7 +2991,7 @@
     "categories": [
       "Pretty flowers"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Mountain flowers (red)",
@@ -2999,7 +2999,7 @@
     "categories": [
       "Pretty flowers"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Mountain flowers (white)",
@@ -3007,7 +3007,7 @@
     "categories": [
       "Pretty flowers"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Mt. Coronet",
@@ -3015,7 +3015,7 @@
     "categories": [
       "Round stuff"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Mud",
@@ -3023,7 +3023,7 @@
     "categories": [
       "Lots of dirt"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Mug",
@@ -3168,7 +3168,7 @@
     "categories": [
       "Lots of water"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Naptime bed",
@@ -3195,7 +3195,7 @@
     "categories": [
       "Garbage"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Nonburnable garbage (outdoor)",
@@ -3203,7 +3203,7 @@
     "categories": [
       "Garbage"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Notepad",
@@ -3223,7 +3223,7 @@
       "Round stuff",
       "Shiny stuff"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Oak's Lab",
@@ -3231,7 +3231,7 @@
     "categories": [
       "Round stuff"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Office cabinet",
@@ -3261,7 +3261,7 @@
     "categories": [
       "Metal stuff"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Office locker",
@@ -3326,7 +3326,7 @@
       "Colorful stuff",
       "Round stuff"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Paint balloon (beige)",
@@ -3335,7 +3335,7 @@
       "Colorful stuff",
       "Round stuff"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Paint balloon (black)",
@@ -3344,7 +3344,7 @@
       "Colorful stuff",
       "Round stuff"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Paint balloon (blue)",
@@ -3353,7 +3353,7 @@
       "Colorful stuff",
       "Round stuff"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Paint balloon (brown)",
@@ -3362,7 +3362,7 @@
       "Colorful stuff",
       "Round stuff"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Paint balloon (cyan)",
@@ -3371,7 +3371,7 @@
       "Colorful stuff",
       "Round stuff"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Paint balloon (gray)",
@@ -3380,7 +3380,7 @@
       "Colorful stuff",
       "Round stuff"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Paint balloon (green)",
@@ -3389,7 +3389,7 @@
       "Colorful stuff",
       "Round stuff"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Paint balloon (lime)",
@@ -3398,7 +3398,7 @@
       "Colorful stuff",
       "Round stuff"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Paint balloon (navy)",
@@ -3407,7 +3407,7 @@
       "Colorful stuff",
       "Round stuff"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Paint balloon (orange)",
@@ -3416,7 +3416,7 @@
       "Colorful stuff",
       "Round stuff"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Paint balloon (pink)",
@@ -3425,7 +3425,7 @@
       "Colorful stuff",
       "Round stuff"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Paint balloon (plum)",
@@ -3434,7 +3434,7 @@
       "Colorful stuff",
       "Round stuff"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Paint balloon (purple)",
@@ -3443,7 +3443,7 @@
       "Colorful stuff",
       "Round stuff"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Paint balloon (red)",
@@ -3452,7 +3452,7 @@
       "Colorful stuff",
       "Round stuff"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Paint balloon (rose)",
@@ -3461,7 +3461,7 @@
       "Colorful stuff",
       "Round stuff"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Paint balloon (white)",
@@ -3470,7 +3470,7 @@
       "Colorful stuff",
       "Round stuff"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Paint balloon (yellow)",
@@ -3479,7 +3479,7 @@
       "Colorful stuff",
       "Round stuff"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Painting (landscape)",
@@ -3517,7 +3517,7 @@
     "categories": [
       "Round stuff"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Paper Party cups",
@@ -3566,7 +3566,7 @@
     "categories": [
       "Round stuff"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Photo cutout board",
@@ -3600,7 +3600,7 @@
       "Fabric",
       "Group Activities"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Pikachu doll",
@@ -3631,7 +3631,7 @@
       "Colorful stuff",
       "Lots of dirt"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Pinwheels",
@@ -3756,7 +3756,7 @@
     "categories": [
       "Wooden stuff"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Poké Ball bed",
@@ -3819,7 +3819,7 @@
       "Colorful stuff",
       "Metal stuff"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Pokémetal fragment",
@@ -3827,7 +3827,7 @@
     "categories": [
       "Metal stuff"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Pokémon Center",
@@ -3835,7 +3835,7 @@
     "categories": [
       "Round stuff"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Pokémon Gym",
@@ -3843,7 +3843,7 @@
     "categories": [
       "Round stuff"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Polygonal Shelf",
@@ -3904,7 +3904,7 @@
     "categories": [
       "Cute stuff"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Printer",
@@ -3964,7 +3964,7 @@
     "categories": [
       "Shiny stuff"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Rare Pokémetal fragment",
@@ -3972,7 +3972,7 @@
     "categories": [
       "Metal stuff"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Recycling bin",
@@ -3991,7 +3991,7 @@
       "Glass stuff",
       "Shiny stuff"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Red meteor lamp",
@@ -4011,7 +4011,7 @@
       "Colorful stuff",
       "Lots of dirt"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Refrigerator",
@@ -4114,7 +4114,7 @@
     "categories": [
       "Round stuff"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Road to Bill",
@@ -4122,7 +4122,7 @@
     "categories": [
       "Round stuff"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Road to Cerulean City",
@@ -4130,7 +4130,7 @@
     "categories": [
       "Round stuff"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Road to Viridian City",
@@ -4138,7 +4138,7 @@
     "categories": [
       "Round stuff"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Robust flower",
@@ -4146,7 +4146,7 @@
     "categories": [
       "Pretty flowers"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Robust flower (blue)",
@@ -4154,7 +4154,7 @@
     "categories": [
       "Pretty flowers"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Robust flower (orange)",
@@ -4162,7 +4162,7 @@
     "categories": [
       "Pretty flowers"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Robust flower (purple)",
@@ -4170,7 +4170,7 @@
     "categories": [
       "Pretty flowers"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Robust flower (white)",
@@ -4178,7 +4178,7 @@
     "categories": [
       "Pretty flowers"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Rocket Hideout",
@@ -4186,7 +4186,7 @@
     "categories": [
       "Round stuff"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Room Service",
@@ -4194,7 +4194,7 @@
     "categories": [
       "Fabric"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Rope",
@@ -4202,7 +4202,7 @@
     "categories": [
       "Slender objects"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Rose Tower",
@@ -4210,7 +4210,7 @@
     "categories": [
       "Round stuff"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Route 10 (Unova)",
@@ -4218,7 +4218,7 @@
     "categories": [
       "Round stuff"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Route 209 (Day)",
@@ -4226,7 +4226,7 @@
     "categories": [
       "Round stuff"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Rowlet clock",
@@ -4288,7 +4288,7 @@
     "categories": [
       "Glass stuff"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Science experiment",
@@ -4308,7 +4308,7 @@
     "categories": [
       "Glass stuff"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Seashore flowers",
@@ -4316,7 +4316,7 @@
     "categories": [
       "Pretty flowers"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Seashore flowers (blue)",
@@ -4324,7 +4324,7 @@
     "categories": [
       "Pretty flowers"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Seashore flowers (orange)",
@@ -4332,7 +4332,7 @@
     "categories": [
       "Pretty flowers"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Seashore flowers (white)",
@@ -4340,7 +4340,7 @@
     "categories": [
       "Pretty flowers"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Seashore flowers (yellow)",
@@ -4348,7 +4348,7 @@
     "categories": [
       "Pretty flowers"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Security camera",
@@ -4356,7 +4356,7 @@
     "categories": [
       "Electronics"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Seedot Lamp",
@@ -4472,7 +4472,7 @@
     "categories": [
       "Fabric"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Silph Co.",
@@ -4480,7 +4480,7 @@
     "categories": [
       "Round stuff"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Silver Bottle Cap",
@@ -4489,7 +4489,7 @@
       "Round stuff",
       "Shiny stuff"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Silver Feather",
@@ -4497,7 +4497,7 @@
     "categories": [
       "Shiny stuff"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Silver Powder",
@@ -4505,7 +4505,7 @@
     "categories": [
       "Lots of nature"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Simple cushion",
@@ -4544,7 +4544,7 @@
     "categories": [
       "Pretty flowers"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Skyland flowers (blue)",
@@ -4552,7 +4552,7 @@
     "categories": [
       "Pretty flowers"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Skyland flowers (orange)",
@@ -4560,7 +4560,7 @@
     "categories": [
       "Pretty flowers"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Skyland flowers (pink)",
@@ -4568,7 +4568,7 @@
     "categories": [
       "Pretty flowers"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Skyland flowers (yellow)",
@@ -4576,7 +4576,7 @@
     "categories": [
       "Pretty flowers"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Sleeping bag",
@@ -4625,7 +4625,7 @@
     "categories": [
       "Strange stuff"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Small stage",
@@ -4658,7 +4658,7 @@
     "categories": [
       "Lots of fire"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Snowbelle City",
@@ -4666,7 +4666,7 @@
     "categories": [
       "Round stuff"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Soda float",
@@ -4684,7 +4684,7 @@
     "categories": [
       "Soft stuff"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Soft seat",
@@ -4702,7 +4702,7 @@
     "categories": [
       "Round stuff"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "South Province",
@@ -4710,7 +4710,7 @@
     "categories": [
       "Round stuff"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Spaceship",
@@ -4760,7 +4760,7 @@
     "categories": [
       "Spooky stuff"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Spotlight",
@@ -4789,7 +4789,7 @@
     "categories": [
       "Soft stuff"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Stained-glass window (lower)",
@@ -4797,7 +4797,7 @@
     "categories": [
       "Glass stuff"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Stained-glass window (middle)",
@@ -4805,7 +4805,7 @@
     "categories": [
       "Glass stuff"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Stained-glass window (upper)",
@@ -4813,7 +4813,7 @@
     "categories": [
       "Glass stuff"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Standing mic",
@@ -4832,7 +4832,7 @@
     "categories": [
       "Shiny stuff"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Stardust",
@@ -4840,7 +4840,7 @@
     "categories": [
       "Shiny stuff"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Step stool",
@@ -4858,7 +4858,7 @@
       "Hard stuff",
       "Stone stuff"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Stone bench",
@@ -4877,7 +4877,7 @@
       "Hard stuff",
       "Stone stuff"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Stone brick wall (wallpaper)",
@@ -4886,7 +4886,7 @@
       "Hard stuff",
       "Stone stuff"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Stone debris",
@@ -4895,7 +4895,7 @@
       "Hard stuff",
       "Stone stuff"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Stone fireplace",
@@ -4925,7 +4925,7 @@
       "Hard stuff",
       "Stone stuff"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Stone fragments",
@@ -4933,7 +4933,7 @@
     "categories": [
       "Wooden stuff"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Stone hipped roof",
@@ -4942,7 +4942,7 @@
       "Hard stuff",
       "Stone stuff"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Stone pillar (lower)",
@@ -4951,7 +4951,7 @@
       "Hard stuff",
       "Stone stuff"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Stone pillar (middle)",
@@ -4960,7 +4960,7 @@
       "Hard stuff",
       "Stone stuff"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Stone pillar (upper)",
@@ -4969,7 +4969,7 @@
       "Hard stuff",
       "Stone stuff"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Stone roof decoration",
@@ -4978,7 +4978,7 @@
       "Hard stuff",
       "Stone stuff"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Stone roof valley",
@@ -4987,7 +4987,7 @@
       "Hard stuff",
       "Stone stuff"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Stone steps",
@@ -5004,7 +5004,7 @@
     "categories": [
       "Hard stuff"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Stone tiling",
@@ -5022,7 +5022,7 @@
       "Hard stuff",
       "Stone stuff"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Storage box",
@@ -5030,7 +5030,7 @@
     "categories": [
       "Wooden stuff"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Straw bed",
@@ -5055,7 +5055,7 @@
     "categories": [
       "Lots of nature"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Strength rock",
@@ -5063,7 +5063,7 @@
     "categories": [
       "Hard stuff"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "String lights",
@@ -5081,7 +5081,7 @@
     "categories": [
       "Wooden stuff"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Stylish stool",
@@ -5110,7 +5110,7 @@
     "categories": [
       "Round stuff"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Surface light",
@@ -5211,7 +5211,7 @@
     "categories": [
       "Round stuff"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "The S.S. Anne",
@@ -5219,7 +5219,7 @@
     "categories": [
       "Round stuff"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Tidal Bell",
@@ -5259,7 +5259,7 @@
     "categories": [
       "Round stuff"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Toilet",
@@ -5373,7 +5373,7 @@
     "categories": [
       "Slender objects"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Twisted potted plant",
@@ -5393,7 +5393,7 @@
     "categories": [
       "Strange stuff"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Ultra Ruin",
@@ -5401,7 +5401,7 @@
     "categories": [
       "Round stuff"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Union Cave",
@@ -5409,7 +5409,7 @@
     "categories": [
       "Round stuff"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Utility pole",
@@ -5417,7 +5417,7 @@
     "categories": [
       "Electronics"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Vending machine",
@@ -5437,7 +5437,7 @@
     "categories": [
       "Round stuff"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Vine rope",
@@ -5445,7 +5445,7 @@
     "categories": [
       "Slender objects"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Vine wall decoration",
@@ -5542,7 +5542,7 @@
     "categories": [
       "Electronics"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Wall torch",
@@ -5582,7 +5582,7 @@
     "categories": [
       "Garbage"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Water basin",
@@ -5620,7 +5620,7 @@
     "categories": [
       "Letters and words"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Weather vane",
@@ -5650,7 +5650,7 @@
       "Colorful stuff",
       "Lots of dirt"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Whiteboard",
@@ -5682,7 +5682,7 @@
     "categories": [
       "Round stuff"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Wildflowers",
@@ -5690,7 +5690,7 @@
     "categories": [
       "Pretty flowers"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Wildflowers (blue)",
@@ -5698,7 +5698,7 @@
     "categories": [
       "Pretty flowers"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Wildflowers (orange)",
@@ -5706,7 +5706,7 @@
     "categories": [
       "Pretty flowers"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Wildflowers (purple)",
@@ -5714,7 +5714,7 @@
     "categories": [
       "Pretty flowers"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Wildflowers (red)",
@@ -5722,7 +5722,7 @@
     "categories": [
       "Pretty flowers"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Window pane",
@@ -5730,7 +5730,7 @@
     "categories": [
       "Glass stuff"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Wing fossil (body)",
@@ -5792,7 +5792,7 @@
     "categories": [
       "Slender objects"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Wireless power transmitter",
@@ -5800,7 +5800,7 @@
     "categories": [
       "Electronics"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Wireless power-transmitter switch",
@@ -5808,7 +5808,7 @@
     "categories": [
       "Electronics"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Wobbuffet Wobbler",
@@ -5866,7 +5866,7 @@
     "categories": [
       "Wooden stuff"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Wooden stool",
@@ -5901,7 +5901,7 @@
     "categories": [
       "Round stuff"
     ],
-    "type": "Unknown"
+    "type": ""
   },
   {
     "name": "Yellow meteor lamp",
@@ -5921,6 +5921,6 @@
       "Colorful stuff",
       "Lots of dirt"
     ],
-    "type": "Unknown"
+    "type": ""
   }
 ]

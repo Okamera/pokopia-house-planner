@@ -1,31 +1,46 @@
 import { locations, getPokemonByName, getHabitats, getSharedFavorites } from '../utils/houseUtils';
 import type { House, PokemonRecord } from '../types';
-import { favoriteLinks } from '../data/data'
+import { favoriteLinks } from '../data/data';
+import FurnitureSelector, { SelectedFurniture } from './FurnitureSelector';
+import { useHouse } from '../HouseProvider';
+import { useState } from 'react';
 
-const HouseDetailsModal = ({ house, data, onClose }: { house: House; data: PokemonRecord[]; onClose: () => void }) => {
-  const detailFloors = house.type === 'prefab' && house.members.length === 4
+const HouseDetailsModal = ({ house, onClose }: { house: House; onClose: () => void }) => {
+  const { updateHouse } = useHouse();
+  const isPrefab = house.type === 'prefab' && house.members.length === 4;
+  const detailFloors = isPrefab
     ? [
         {
           label: 'Floor 1',
           members: house.members.slice(0, 2),
-          habitats: getHabitats(house.members.slice(0, 2), data),
-          favorites: getSharedFavorites(house.members.slice(0, 2), data),
+          habitats: getHabitats(house.members.slice(0, 2)),
+          favorites: getSharedFavorites(house.members.slice(0, 2)),
+          floorIndex: 0,
         },
         {
           label: 'Floor 2',
           members: house.members.slice(2, 4),
-          habitats: getHabitats(house.members.slice(2, 4), data),
-          favorites: getSharedFavorites(house.members.slice(2, 4), data),
+          habitats: getHabitats(house.members.slice(2, 4)),
+          favorites: getSharedFavorites(house.members.slice(2, 4)),
+          floorIndex: 1,
         },
       ]
     : [
         {
           label: 'House',
           members: house.members,
-          habitats: getHabitats(house.members, data),
-          favorites: getSharedFavorites(house.members, data),
+          habitats: getHabitats(house.members),
+          favorites: getSharedFavorites(house.members),
+          floorIndex: 0,
         },
-      ]
+      ];
+
+  const [selectedFavorite, setSelectedFavorite] = useState<(string | null)[]>([null, null]);
+  const selectFav = (floorIndex: number, favorite: string) => {
+    const current = [...selectedFavorite];
+    current[floorIndex] = current[floorIndex] === favorite ? null : favorite;
+    setSelectedFavorite(current); // create new array to trigger re-render
+  }
 
   return (
     <div className="app-modal-backdrop" onClick={onClose}>
@@ -45,14 +60,13 @@ const HouseDetailsModal = ({ house, data, onClose }: { house: House; data: Pokem
           <button type="button" aria-label="Close house details" onClick={onClose}>×</button>
         </div>
         <div className="house-details-content">
-            {/* <h3>House Data</h3> */}
             <div className={`house-details-floors${detailFloors.length > 1 ? ' split' : ''}`}>
-              {detailFloors.map((floor) => (
+              {detailFloors.map((floor, index) => (
                 <div key={floor.label} className="house-details-floor">
                   {floor.label !== 'House' && <div className="house-details-floor-label">{floor.label}</div>}
                   <div className="house-details-members">
                     {floor.members.map((member, index) => {
-                      const pokemon = member ? getPokemonByName(data, member) : null
+                      const pokemon = member ? getPokemonByName(member) : null
                       return pokemon ? (
                         <div key={`${floor.label}-${pokemon.name}-${index}`} className="house-details-member">
                           <img src={pokemon.image} alt={pokemon.name} />
@@ -71,13 +85,22 @@ const HouseDetailsModal = ({ house, data, onClose }: { house: House; data: Pokem
                   <div className="house-details-favorites">
                     {floor.favorites.length > 0
                       ? floor.favorites.map((favorite) => (
-                          <a key={`${floor.label}-${favorite}`} className="favorite" href={favoriteLinks[favorite]} target="_blank" rel="noopener noreferrer">{favorite}</a>
+                          <div key={`${floor.label}-${favorite}`} className={`favorite ${selectedFavorite[index] === favorite ? ' selected' : ''}`} onClick={() => selectFav(index, favorite)}>{favorite}</div>
                         ))
                       : <span className="none">No shared favorites</span>}
                   </div>
                   <div key={`furniture-${floor.label}`} className="house-details-furniture-floor">
-                  <div className="house-details-empty-state">No furniture selected yet.</div>
-                </div>
+                    <FurnitureSelector
+                      floor={floor}
+                      selected={house.furniture?.[floor.floorIndex] || []}
+                      selectedFavorite={selectedFavorite[index]}
+                      onChange={(selected) => {
+                        const updated = { ...house, furniture: [...(house.furniture || [])] };
+                        updated.furniture[floor.floorIndex] = selected;
+                        updateHouse(updated);
+                      }}
+                    />
+                  </div>
                 </div>
               ))}
             </div>

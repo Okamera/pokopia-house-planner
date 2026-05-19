@@ -3,16 +3,15 @@ import { useDroppable } from '@dnd-kit/react';
 import { useHouse } from '../HouseProvider';
 import DittoBadge from './DittoBadge';
 import { locations, getPokemonByName, getHabitats, getSharedFavorites, getFloorFavorites, removePokemonFromHouse } from '../utils/houseUtils';
-import type { House, LocationCode, PokemonRecord, CompatiblePokemon } from '../types';
+import type { House, LocationCode, CompatiblePokemon } from '../types';
 import { DraggablePokemon } from './Pokemon';
 import { favoriteLinks } from '../data/data'
 
 type HouseProps = {
   house: House
-  data: PokemonRecord[]
 }
 
-export const HouseCard = ({ house, data }: HouseProps) => {
+export const HouseCard = ({ house }: HouseProps) => {
   const { selectedHouseId, setSelectedHouseId, dragAndDropEnabled, updateHouse, removeHouse } = useHouse()
   const { ref } = useDroppable({
     id: house.id,
@@ -124,13 +123,13 @@ export const HouseCard = ({ house, data }: HouseProps) => {
       {house.type === 'prefab' && house.members.length === 4 ? (
         <div className='house-floors'>
           {[house.members.slice(0, 2), house.members.slice(2, 4)].map((floorMembers, floorIndex) => {
-            const floorHabitats = getHabitats(floorMembers, data)
-            const floorFavs = getSharedFavorites(floorMembers, data)
+            const floorHabitats = getHabitats(floorMembers)
+            const floorFavs = getSharedFavorites(floorMembers)
             return (
               <div key={floorIndex} className='house-floor'>
                 <ul>
                   {floorMembers.map((member, i) => {
-                    const memberPokemon = member ? getPokemonByName(data, member) : null
+                    const memberPokemon = member ? getPokemonByName(member) : null
                     const memberIndex = floorIndex * 2 + i
                     return member && memberPokemon ? (
                       <DraggablePokemon
@@ -168,7 +167,7 @@ export const HouseCard = ({ house, data }: HouseProps) => {
         <>
           <ul>
             {house.members.map((member, memberIndex) => {
-              const memberPokemon = member ? getPokemonByName(data, member) : null
+              const memberPokemon = member ? getPokemonByName(member) : null
               return member && memberPokemon ? (
                 <DraggablePokemon
                   key={`${house.id}-${memberIndex}`}
@@ -184,7 +183,7 @@ export const HouseCard = ({ house, data }: HouseProps) => {
             })}
           </ul>
           {(() => {
-            const habitats = getHabitats(house.members, data)
+            const habitats = getHabitats(house.members)
             return habitats.length > 0 ? (
               <div className='house-habitats'>
                 {habitats.map((habitat) => (
@@ -194,7 +193,7 @@ export const HouseCard = ({ house, data }: HouseProps) => {
             ) : null
           })()}
           <div className='favorites'>
-            {getFloorFavorites(house, data).map(({ label, favorites }) =>
+            {getFloorFavorites(house).map(({ label, favorites }) =>
               favorites.length > 0 ? (
                 <div key={label ?? 'all'} className='floor-favorites'>
                   {label && <span className='floor-label'>{label}:</span>}

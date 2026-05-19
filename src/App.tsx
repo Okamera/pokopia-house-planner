@@ -1,5 +1,4 @@
 import './App.css'
-import pokemonData from './data/pokemon.json'
 import { DragDropProvider } from '@dnd-kit/react'
 import { HouseProvider, useHouse } from './HouseProvider'
 import { FontSizeProvider } from './FontSizeProvider'
@@ -7,7 +6,6 @@ import { HouseList } from './components/HouseList'
 import { HouseCreateForm } from './components/HouseCreateForm'
 import { CompatabilityList } from './components/CompatabilityList'
 import { AppMenu } from './components/AppMenu'
-import type { PokemonRecord } from './types'
 import { DITTO_NAME } from './constants'
 
 type DragEndEventLike = {
@@ -21,8 +19,6 @@ type DragEndEventLike = {
     }
   }
 }
-
-const unhouseablePokemon = ['Ho-Oh', 'Lugia', 'Kyogre']
 
 const parseDragSource = (sourceId: string) => {
   if (!sourceId.startsWith(`${DITTO_NAME}:`)) {
@@ -38,9 +34,6 @@ const parseDragSource = (sourceId: string) => {
 
 function AppContent() {
   const { houses, dragAndDropEnabled, moveToHouse, removeFromHouse } = useHouse()
-  const data: PokemonRecord[] = pokemonData.filter((pokemon) => {
-    return pokemon.name.trim().length > 0 && !unhouseablePokemon.includes(pokemon.name)
-  })
 
   const handleDragEnd = (event: DragEndEventLike) => {
     if (!dragAndDropEnabled || event.canceled) {
@@ -87,10 +80,10 @@ function AppContent() {
       <section id="container">
         <div id="left">
           <HouseCreateForm />
-          <HouseList data={data} />
+          <HouseList />
         </div>
         <div id="right">
-          <CompatabilityList data={data} />
+          <CompatabilityList />
         </div>
       </section>
     </DragDropProvider>

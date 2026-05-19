@@ -6,6 +6,7 @@ const BASE_URL = "https://www.serebii.net";
 const FAVORITES_PAGE = "https://www.serebii.net/pokemonpokopia/favorites/blockystuff.shtml";
 const FAVORITES_OUTPUT_PATH = path.join(__dirname, "../src/data/favoriteLinks.json");
 const FURNITURE_OUTPUT_PATH = path.join(__dirname, "../src/data/furniture.json");
+const FURNITURE_TYPES_OUTPUT_PATH = path.join(__dirname, "../src/data/furnitureTypes.json");
 
 function toAbsoluteUrl(value) {
   if (!value) return "";
@@ -38,7 +39,11 @@ function findItemsTable($) {
 function getFurnitureType($, cell) {
   const cellClone = $(cell).clone();
   cellClone.find("img, br").remove();
-  return normalizeText(cellClone.text()) || "Unknown";
+  const name = normalizeText(cellClone.text()) || "";
+  return name ? {
+    name,
+    image: toAbsoluteUrl($(cell).find("img").attr("src")),
+  } : null;
 }
 
 function mergeFurnitureItems(itemsByName, nextItem) {
@@ -109,7 +114,7 @@ async function scrapeFavorites() {
   return favorites;
 }
 
-async function scrapeFurnitureForCategory(categoryName, url) {
+async function scrapeFurnitureForCategory(categoryName, url, allTypes) {
   const $ = await fetchPage(url);
   if (!$) return [];
 
@@ -144,36 +149,46 @@ async function scrapeFurnitureForCategory(categoryName, url) {
         name,
         image,
         categories: [categoryName],
-        type,
+        type: type?.name || "",
       });
+      if (type) {
+        allTypes[type.name] = type.image;
+      }
     });
 
   console.log(`Scraped ${furniture.length} furniture items from ${categoryName}`);
-  return furniture;
+  console.log(`Current furniture types: ${Object.keys(allTypes).join(", ")}`);
+  return { furniture, types: allTypes };
 }
 
 async function scrapeAllFurniture(favorites) {
   const furnitureByName = new Map();
+  const allTypes = {};
 
   for (const [categoryName, url] of Object.entries(favorites)) {
-    const furnitureItems = await scrapeFurnitureForCategory(categoryName, url);
-    for (const furnitureItem of furnitureItems) {
+    const { furniture, types } = await scrapeFurnitureForCategory(categoryName, url, allTypes);
+    for (const furnitureItem of furniture) {
       mergeFurnitureItems(furnitureByName, furnitureItem);
     }
   }
 
-  return Array.from(furnitureByName.values()).sort((left, right) => left.name.localeCompare(right.name));
+  return {
+    furniture: Array.from(furnitureByName.values()).sort((left, right) => left.name.localeCompare(right.name)),
+    types: allTypes,
+  };
 }
 
 async function main() {
   const favoritesData = await scrapeFavorites();
-  const furnitureData = await scrapeAllFurniture(favoritesData);
+  const { furniture: furnitureData, types: furnitureTypes } = await scrapeAllFurniture(favoritesData);
 
   await fs.writeJson(FAVORITES_OUTPUT_PATH, favoritesData, { spaces: 2 });
   await fs.writeJson(FURNITURE_OUTPUT_PATH, furnitureData, { spaces: 2 });
+  await fs.writeJson(FURNITURE_TYPES_OUTPUT_PATH, furnitureTypes, { spaces: 2 });
 
   console.log(`\nSaved ${Object.keys(favoritesData).length} favorite categories`);
   console.log(`Saved ${furnitureData.length} furniture items`);
+  console.log(`Saved ${Object.keys(furnitureTypes).length} furniture types`);
 }
 
 main();

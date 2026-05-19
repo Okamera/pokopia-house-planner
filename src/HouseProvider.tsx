@@ -273,7 +273,7 @@ const HouseContext = createContext<{
   removeFromHouse: (pokemonName: string, sourceHouseId?: number) => void
   clearHouseData: () => void
   importHouses: (houses: House[]) => void
-}>({ 
+}>({
   houses: [],
   selectedHouseId: null,
   setSelectedHouseId: () => {},
