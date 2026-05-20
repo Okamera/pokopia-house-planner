@@ -92,7 +92,7 @@ export const HouseTable = ({ visibleHouses, onDetailsClick, sort, onSort }: Hous
                       )
                     : <span className="none">—</span>}
                 </td>
-                <td className="table-actions">
+                <td className="house-actions">
                   <button
                     onClick={(event) => {
                       event.stopPropagation()

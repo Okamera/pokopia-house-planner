@@ -1198,8 +1198,9 @@
       }
     }
   }
+}
 
-  .table-actions {
+  .house-actions {
     white-space: nowrap;
     display: flex;
     justify-content: flex-end;
@@ -1233,9 +1234,14 @@
         color: var(--textDanger);
         background: var(--accentDanger);
       }
+      /* &.house-details-btn {
+        svg {
+          width: 16px;
+          height: 16px;
+        }
+      } */
     }
   }
-}
 
 
 .ditto-badge {
