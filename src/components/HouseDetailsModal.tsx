@@ -1,9 +1,63 @@
 import { locations, getPokemonByName, getHabitats, getSharedFavorites } from '../utils/houseUtils';
-import type { House, PokemonRecord } from '../types';
-import { favoriteLinks } from '../data/data';
-import FurnitureSelector, { SelectedFurniture } from './FurnitureSelector';
+import type { House } from '../types';
+import FurnitureSelector from './FurnitureSelector';
 import { useHouse } from '../HouseProvider';
 import { useState } from 'react';
+
+type FloorType = {
+  label: string;
+  members: (string | null)[];
+  habitats: string[];
+  favorites: string[];
+  floorIndex: number;
+}
+
+const FloorDetails = ({ floor, furniture, updateFurniture }: { floor: FloorType, furniture: string[], updateFurniture: (updated: any, floorIndex: number) => void }) => {
+  const [selectedFavorite, setSelectedFavorite] = useState<(string | null)>(null);
+  const selectFav = (favorite: string) => {
+    setSelectedFavorite(selectedFavorite === favorite ? null : favorite);
+  }
+  return (
+    <div key={floor.label} className="house-details-floor">
+      {floor.label !== 'House' && <div className="house-details-floor-label">{floor.label}</div>}
+      <div className="house-details-members">
+        {floor.members.map((member, index) => {
+          const pokemon = member ? getPokemonByName(member) : null
+          return pokemon ? (
+            <div key={`${floor.label}-${pokemon.name}-${index}`} className="house-details-member">
+              <img src={pokemon.image} alt={pokemon.name} />
+              <span>{pokemon.name}</span>
+            </div>
+          ) : (
+            <div key={`${floor.label}-empty-${index}`} className="house-details-member empty">
+              <span>Empty</span>
+            </div>
+          )
+        })}
+      </div>
+      <div className="house-details-habitats">
+        {floor.habitats.join(', ') || 'None'}
+      </div>
+      <div className="house-details-favorites">
+        {floor.favorites.length > 0
+          ? floor.favorites.map((favorite) => (
+              <div key={`${floor.label}-${favorite}`} className={`favorite ${selectedFavorite === favorite ? ' selected' : ''}`} onClick={() => selectFav(favorite)}>{favorite}</div>
+            ))
+          : <span className="none">No shared favorites</span>}
+      </div>
+      <div key={`furniture-${floor.label}`} className="house-details-furniture-floor">
+        <FurnitureSelector
+          floor={floor}
+          selected={furniture}
+          selectedFavorite={selectedFavorite}
+          onChange={(selected) => {
+            updateFurniture(selected, floor.floorIndex)
+          }}
+        />
+      </div>
+    </div>
+  )
+}
 
 const HouseDetailsModal = ({ house, onClose }: { house: House; onClose: () => void }) => {
   const { updateHouse } = useHouse();
@@ -35,12 +89,11 @@ const HouseDetailsModal = ({ house, onClose }: { house: House; onClose: () => vo
         },
       ];
 
-  const [selectedFavorite, setSelectedFavorite] = useState<(string | null)[]>([null, null]);
-  const selectFav = (floorIndex: number, favorite: string) => {
-    const current = [...selectedFavorite];
-    current[floorIndex] = current[floorIndex] === favorite ? null : favorite;
-    setSelectedFavorite(current); // create new array to trigger re-render
-  }
+  const updateFurniture = (updated: any, floorIndex: number) => {
+    const newHouse = { ...house, furniture: house.furniture || [] };
+    newHouse.furniture[floorIndex] = updated;
+    updateHouse(newHouse);
+  };
 
   return (
     <div className="app-modal-backdrop" onClick={onClose}>
@@ -61,47 +114,13 @@ const HouseDetailsModal = ({ house, onClose }: { house: House; onClose: () => vo
         </div>
         <div className="house-details-content">
             <div className={`house-details-floors${detailFloors.length > 1 ? ' split' : ''}`}>
-              {detailFloors.map((floor, index) => (
-                <div key={floor.label} className="house-details-floor">
-                  {floor.label !== 'House' && <div className="house-details-floor-label">{floor.label}</div>}
-                  <div className="house-details-members">
-                    {floor.members.map((member, index) => {
-                      const pokemon = member ? getPokemonByName(member) : null
-                      return pokemon ? (
-                        <div key={`${floor.label}-${pokemon.name}-${index}`} className="house-details-member">
-                          <img src={pokemon.image} alt={pokemon.name} />
-                          <span>{pokemon.name}</span>
-                        </div>
-                      ) : (
-                        <div key={`${floor.label}-empty-${index}`} className="house-details-member empty">
-                          <span>Empty</span>
-                        </div>
-                      )
-                    })}
-                  </div>
-                  <div className="house-details-habitats">
-                    {floor.habitats.join(', ') || 'None'}
-                  </div>
-                  <div className="house-details-favorites">
-                    {floor.favorites.length > 0
-                      ? floor.favorites.map((favorite) => (
-                          <div key={`${floor.label}-${favorite}`} className={`favorite ${selectedFavorite[index] === favorite ? ' selected' : ''}`} onClick={() => selectFav(index, favorite)}>{favorite}</div>
-                        ))
-                      : <span className="none">No shared favorites</span>}
-                  </div>
-                  <div key={`furniture-${floor.label}`} className="house-details-furniture-floor">
-                    <FurnitureSelector
-                      floor={floor}
-                      selected={house.furniture?.[floor.floorIndex] || []}
-                      selectedFavorite={selectedFavorite[index]}
-                      onChange={(selected) => {
-                        const updated = { ...house, furniture: [...(house.furniture || [])] };
-                        updated.furniture[floor.floorIndex] = selected;
-                        updateHouse(updated);
-                      }}
-                    />
-                  </div>
-                </div>
+              {detailFloors.map((floor) => (
+                <FloorDetails
+                  key={floor.floorIndex}
+                  floor={floor}
+                  furniture={house.furniture?.[floor.floorIndex] || []}
+                  updateFurniture={updateFurniture}
+                />
               ))}
             </div>
         </div>

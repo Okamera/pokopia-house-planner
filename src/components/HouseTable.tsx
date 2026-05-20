@@ -101,7 +101,7 @@ export const HouseTable = ({ visibleHouses, onDetailsClick, sort, onSort }: Hous
                     aria-label={`Select furniture for ${house.name}`}
                     title={`Select furniture for ${house.name}`}
                   >
-                    <svg width="20px" stroke="currentColor" fill="currentColor" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="-10.73 -10.73 236.00 236.00" stroke-width="2.789007">
+                    <svg width="20px" stroke="currentColor" fill="currentColor" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="-10.73 -10.73 236.00 236.00" strokeWidth="2.789007">
                       <g> 
                         <g>
                           <g>

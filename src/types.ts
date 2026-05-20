@@ -39,3 +39,11 @@ export type Sort = {
   col: string
   dir: 'asc' | 'desc'
 }
+
+export type FurnitureItem = {
+  name: string;
+  image: string;
+  categories: string[];
+  type: string;
+  favPercent?: number;
+};

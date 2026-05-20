@@ -22,8 +22,10 @@ export const AppMenu = () => {
   const [menuOpen, setMenuOpen] = useState(false)
   const [aboutOpen, setAboutOpen] = useState(false)
   const [faqOpen, setFaqOpen] = useState(false)
+  const [contactOpen, setContactOpen] = useState(false)
   const [confirmDeleteOpen, setConfirmDeleteOpen] = useState(false)
   const [iphoneSafariWarningOpen, setIPhoneSafariWarningOpen] = useState(false)
+  const [emailCopied, setEmailCopied] = useState(false)
 
   useEffect(() => {
     if (!isIPhoneSafari()) {
@@ -66,6 +68,12 @@ export const AppMenu = () => {
     a.download = `pokopia-houses-${new Date().toISOString().slice(0, 10)}.json`
     a.click()
     URL.revokeObjectURL(url)
+  }
+
+  const copyEmailToClipboard = () => {
+    navigator.clipboard.writeText('pokehouseplan@gmail.com')
+    setEmailCopied(true)
+    setTimeout(() => setEmailCopied(false), 2000)
   }
 
   return (
@@ -146,7 +154,15 @@ export const AppMenu = () => {
             <button
               type="button"
               onClick={() => {
-                downloadBackup()
+                setContactOpen(true)
+                setMenuOpen(false)
+              }}
+            >
+              Contact Creator
+            </button>
+            <button
+              type="button"
+              onClick={() => {
                 setMenuOpen(false)
               }}
             >
@@ -266,6 +282,9 @@ export const AppMenu = () => {
 
               <dt>How do I restore a backup?</dt>
               <dd>Use "Restore from backup" in this menu and select the <code>.json</code> file you previously downloaded. This will replace all current house data.</dd>
+
+              <dt>How do I select furniture for a house?</dt>
+              <dd>Click the furniture icon (table and chairs) in the table view or open the house details modal from the grid view. In the details modal, you'll find a furniture selector for each floor. You can search for items, filter by type or category, and click items to add or remove them from your selection.</dd>
             </dl>
           </div>
         </div>
@@ -280,15 +299,28 @@ export const AppMenu = () => {
               </button>
             </div>
             <p>
-              Pokemon Compatibility helps you organize Pokopia houses, compare compatible Pokemon,
+              Pokemon Compatibility helps you organize Pokopia houses, plan furniture for a house, compare compatible Pokemon,
               and experiment with house combinations using habitat, favorites, and specialty data.
             </p>
             <p>
               House data is saved locally in your browser so your layout stays available after refresh
               unless you clear it from the menu.*
             </p>
-            <p>Credit to Serebii.net for all of the Pokemon data and images used in this app.</p>
+            <p>Credit to Serebii.net for all of the Pokemon and furniture data and images used in this app.</p>
             <p>*Note: If you are using Safari on an iPhone, the house data will be automatically cleared after 7 days without use of the app. It is recommended to use a different browser or device to retain your data.</p>
+          </div>
+        </div>
+      )}
+      {contactOpen && (
+        <div id="about-modal-backdrop" onClick={() => setContactOpen(false)}>
+          <div id="about-modal" onClick={(event) => event.stopPropagation()}>
+            <div className="about-modal-header">
+              <h2>Contact</h2>
+              <button type="button" aria-label="Close contact modal" onClick={() => setContactOpen(false)}>
+                ×
+              </button>
+            </div>
+            <p>If you have any questions or feedback, you can contact me at <button type="button" className="contact-email-btn" onClick={copyEmailToClipboard} title="Click to copy email">{emailCopied ? 'Copied!' : 'pokehouseplan@gmail.com'}</button> or on discord <a href="https://discord.com/channels/281794915736748032" target="_blank" rel="noopener noreferrer">@okamera</a>.</p>
           </div>
         </div>
       )}
