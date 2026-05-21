@@ -1,0 +1,16 @@
+{
+  "name": "Pokopia House Planner",
+  "short_name": "Pokopia Planner",
+  "description": "Plan Pokemon Pokopia houses using compatibility, favorites, habitats, and furniture.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f4f3ee",
+  "theme_color": "#5f7f58",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
