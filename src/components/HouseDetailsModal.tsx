@@ -12,48 +12,72 @@ type FloorType = {
   floorIndex: number;
 }
 
-const FloorDetails = ({ floor, furniture, updateFurniture }: { floor: FloorType, furniture: string[], updateFurniture: (updated: any, floorIndex: number) => void }) => {
+const FloorDetails = ({
+  floor,
+  furniture,
+  isCollapsible,
+  updateFurniture,
+}: {
+  floor: FloorType
+  furniture: string[]
+  isCollapsible: boolean
+  updateFurniture: (updated: string[], floorIndex: number) => void
+}) => {
   const [selectedFavorite, setSelectedFavorite] = useState<(string | null)>(null);
+  const [isCollapsed, setIsCollapsed] = useState(false);
+
   const selectFav = (favorite: string) => {
     setSelectedFavorite(selectedFavorite === favorite ? null : favorite);
   }
+
   return (
-    <div key={floor.label} className="house-details-floor">
-      {floor.label !== 'House' && <div className="house-details-floor-label">{floor.label}</div>}
-      <div className="house-details-members">
-        {floor.members.map((member, index) => {
-          const pokemon = member ? getPokemonByName(member) : null
-          return pokemon ? (
-            <div key={`${floor.label}-${pokemon.name}-${index}`} className="house-details-member">
-              <img src={pokemon.image} alt={pokemon.name} />
-              <span>{pokemon.name}</span>
-            </div>
-          ) : (
-            <div key={`${floor.label}-empty-${index}`} className="house-details-member empty">
-              <span>Empty</span>
-            </div>
-          )
-        })}
-      </div>
-      <div className="house-details-habitats">
-        {floor.habitats.join(', ') || 'None'}
-      </div>
-      <div className="house-details-favorites">
-        {floor.favorites.length > 0
-          ? floor.favorites.map((favorite) => (
-              <div key={`${floor.label}-${favorite}`} className={`favorite ${selectedFavorite === favorite ? ' selected' : ''}`} onClick={() => selectFav(favorite)}>{favorite}</div>
-            ))
-          : <span className="none">No shared favorites</span>}
-      </div>
-      <div key={`furniture-${floor.label}`} className="house-details-furniture-floor">
-        <FurnitureSelector
-          floor={floor}
-          selected={furniture}
-          selectedFavorite={selectedFavorite}
-          onChange={(selected) => {
-            updateFurniture(selected, floor.floorIndex)
-          }}
-        />
+    <div key={floor.label} className={`house-details-floor${isCollapsible && isCollapsed ? ' collapsed' : ''}`}>
+      {floor.label !== 'House' && (
+        <button
+          className="house-details-floor-toggle"
+          aria-expanded={!isCollapsed}
+          onClick={() => setIsCollapsed((current) => !current)}
+        >
+          <span className="house-details-floor-chevron">▾</span>
+          <span className="house-details-floor-label">{floor.label}</span>
+        </button>
+      )}
+      <div className="house-details-floor-content">
+        <div className="house-details-members">
+          {floor.members.map((member, index) => {
+            const pokemon = member ? getPokemonByName(member) : null
+            return pokemon ? (
+              <div key={`${floor.label}-${pokemon.name}-${index}`} className="house-details-member">
+                <img src={pokemon.image} alt={pokemon.name} />
+                <span>{pokemon.name}</span>
+              </div>
+            ) : (
+              <div key={`${floor.label}-empty-${index}`} className="house-details-member empty">
+                <span>Empty</span>
+              </div>
+            )
+          })}
+        </div>
+        <div className="house-details-habitats">
+          {floor.habitats.join(', ') || 'None'}
+        </div>
+        <div className="house-details-favorites">
+          {floor.favorites.length > 0
+            ? floor.favorites.map((favorite) => (
+                <div key={`${floor.label}-${favorite}`} className={`favorite ${selectedFavorite === favorite ? ' selected' : ''}`} onClick={() => selectFav(favorite)}>{favorite}</div>
+              ))
+            : <span className="none">No shared favorites</span>}
+        </div>
+        <div key={`furniture-${floor.label}`} className="house-details-furniture-floor">
+          <FurnitureSelector
+            floor={floor}
+            selected={furniture}
+            selectedFavorite={selectedFavorite}
+            onChange={(selected) => {
+              updateFurniture(selected, floor.floorIndex)
+            }}
+          />
+        </div>
       </div>
     </div>
   )
@@ -118,6 +142,7 @@ const HouseDetailsModal = ({ house, onClose }: { house: House; onClose: () => vo
                 <FloorDetails
                   key={floor.floorIndex}
                   floor={floor}
+                  isCollapsible={detailFloors.length > 1}
                   furniture={house.furniture?.[floor.floorIndex] || []}
                   updateFurniture={updateFurniture}
                 />

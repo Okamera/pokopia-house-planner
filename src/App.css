@@ -495,6 +495,50 @@
   color: var(--textSecondary);
 }
 
+.house-details-floor-toggle {
+  display: flex;
+  border: none;
+  align-items: center;
+  cursor: pointer;
+  text-align: left;
+  gap: 6px;
+  background: none;
+
+  .house-details-floor-chevron {
+    font-size: 1rem;
+    line-height: 1;
+    font-weight: 700;
+  }
+  &[aria-expanded="false"] .house-details-floor-chevron {
+    transform: rotate(-90deg);
+  }
+}
+
+.house-details-floor-content {
+  display: contents;
+}
+
+@media (max-width: 640px) {
+  .house-details-floor + .house-details-floor {
+    border-left: none;
+    padding-left: 0;
+    border-top: 1px solid var(--borderColor);
+    padding-top: 10px;
+  }
+
+  .house-details-floor.collapsed .house-details-floor-content {
+    display: none;
+  }
+}
+@media (min-width: 641px) {
+  .house-details-floor-toggle {
+    cursor: default;
+  }
+  .house-details-floor-chevron {
+    display: none;
+  }
+}
+
 .house-details-members {
   display: flex;
   flex-wrap: wrap;
