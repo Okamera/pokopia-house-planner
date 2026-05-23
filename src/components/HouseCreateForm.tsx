@@ -41,7 +41,7 @@ export const HouseCreateForm = () => {
             : <path d="M6 9l6 6 6-6" />}
         </svg>
       </button>
-      <div className="house-create-header">Add House {">"}</div>
+      <div className="house-create-header">Add House</div>
       <div id="house-create-fields">
         <div>
         <label>Type</label>

@@ -235,7 +235,7 @@ export const AppMenu = () => {
               without use.
             </p>
             <p>
-              Use the Backup data to device option in the menu to save a copy of your houses in case your browser data gets wiped.
+              To prevent this you can add this website to your home screen or use the Backup data to device option in the menu to save a copy of your houses in case your browser data gets wiped.
             </p>
             <div className="modal-actions">
               <button type="button" className="modal-cancel" onClick={() => setIPhoneSafariWarningOpen(false)}>
