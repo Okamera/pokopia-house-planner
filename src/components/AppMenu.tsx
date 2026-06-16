@@ -163,6 +163,7 @@ export const AppMenu = () => {
             <button
               type="button"
               onClick={() => {
+                downloadBackup()
                 setMenuOpen(false)
               }}
             >
