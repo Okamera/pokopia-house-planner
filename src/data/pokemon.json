@@ -1173,7 +1173,7 @@
     "type2": "",
     "favorites": [
       "Lots of dirt",
-      "Strange stuff",
+      "Stone stuff",
       "Lots of nature",
       "Watching stuff",
       "Sharp stuff"
@@ -1517,7 +1517,7 @@
       "Spooky stuff",
       "Nice breezes",
       "Wooden stuff",
-      "Noise stuff",
+      "Noisy stuff",
       "Complicated stuff"
     ],
     "taste": "Spicy flavors",
@@ -1535,7 +1535,7 @@
       "Spooky stuff",
       "Nice breezes",
       "Wooden stuff",
-      "Noise stuff",
+      "Noisy stuff",
       "Complicated stuff"
     ],
     "taste": "Spicy flavors",
@@ -2451,7 +2451,7 @@
     "type2": "",
     "favorites": [
       "Garbage",
-      "Construction",
+      "Containers",
       "Complicated stuff",
       "Shiny stuff",
       "Gatherings"
@@ -5608,5 +5608,23 @@
     ],
     "taste": "Sour flavors",
     "image": "https://www.serebii.net/pokemonpokopia/pokemon/small/302.png"
+  },
+  {
+    "number": "005",
+    "name": "Jirachi",
+    "specialty1": "Litter",
+    "specialty2": "",
+    "habitat": "Bright",
+    "type1": "Steel",
+    "type2": "Psychic",
+    "favorites": [
+      "Metal stuff",
+      "Strange stuff",
+      "Shiny stuff",
+      "Watching stuff",
+      "Wobbly stuff"
+    ],
+    "taste": "Sweet flavors",
+    "image": "https://www.serebii.net/pokemonpokopia/pokemon/small/385.png"
   }
 ]

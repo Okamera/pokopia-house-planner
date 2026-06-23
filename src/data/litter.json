@@ -33,7 +33,8 @@
     "Bastiodon": "Stone",
     "Tyrantrum": "Stone",
     "Aurorus": "Stone",
-    "Jumpluff": "Fluff"
+    "Jumpluff": "Fluff",
+    "Jirachi": "Stardust"
   },
   "imgs": {
     "Leaf": "https://www.serebii.net/pokemonpokopia/items/leaf.png",
@@ -46,6 +47,7 @@
     "Twine": "https://www.serebii.net/pokemonpokopia/items/twine.png",
     "Fluff": "https://www.serebii.net/pokemonpokopia/items/fluff.png",
     "Squishy Clay": "https://www.serebii.net/pokemonpokopia/items/squishyclay.png",
-    "Iron Ore": "https://www.serebii.net/pokemonpokopia/items/ironore.png"
+    "Iron Ore": "https://www.serebii.net/pokemonpokopia/items/ironore.png",
+    "Stardust": "https://www.serebii.net/pokemonpokopia/items/stardust.png"
   }
 }

@@ -142,7 +142,8 @@
       "Fabric",
       "Group Activities",
       "Luxury",
-      "Soft stuff"
+      "Soft stuff",
+      "Wooden stuff"
     ],
     "type": "Relaxation"
   },
@@ -421,6 +422,7 @@
       "Cute stuff",
       "Looks like food",
       "Lots of nature",
+      "Round stuff",
       "Soft stuff"
     ],
     "type": "Relaxation"
@@ -430,11 +432,9 @@
     "image": "https://www.serebii.net/pokemonpokopia/items/berryclock.png",
     "categories": [
       "Cute stuff",
-      "Fabric",
       "Looks like food",
       "Lots of nature",
-      "Round stuff",
-      "Wobbly stuff"
+      "Round stuff"
     ],
     "type": "Toy"
   },
@@ -506,8 +506,7 @@
     "name": "Big drum",
     "image": "https://www.serebii.net/pokemonpokopia/items/bigdrum.png",
     "categories": [
-      "Round stuff",
-      "Wobbly stuff"
+      "Round stuff"
     ],
     "type": "Toy"
   },
@@ -665,6 +664,14 @@
     "type": "Relaxation"
   },
   {
+    "name": "Brick",
+    "image": "https://www.serebii.net/pokemonpokopia/items/brick.png",
+    "categories": [
+      "Hard stuff"
+    ],
+    "type": ""
+  },
+  {
     "name": "Broken streetlight",
     "image": "https://www.serebii.net/pokemonpokopia/items/brokenstreetlight.png",
     "categories": [
@@ -793,8 +800,7 @@
       "Electronics",
       "Nice breezes",
       "Spinning stuff",
-      "Strange stuff",
-      "Wobbly stuff"
+      "Strange stuff"
     ],
     "type": "Decoration"
   },
@@ -836,7 +842,8 @@
     "categories": [
       "Fabric",
       "Luxury",
-      "Soft stuff"
+      "Soft stuff",
+      "Wooden stuff"
     ],
     "type": "Relaxation"
   },
@@ -847,7 +854,8 @@
       "Fabric",
       "Group Activities",
       "Luxury",
-      "Soft stuff"
+      "Soft stuff",
+      "Wooden stuff"
     ],
     "type": "Relaxation"
   },
@@ -923,6 +931,16 @@
     "type": "Toy"
   },
   {
+    "name": "Cloud cannon",
+    "image": "https://www.serebii.net/pokemonpokopia/items/cloudcannon.png",
+    "categories": [
+      "Lots of fire",
+      "Metal stuff",
+      "Strange stuff"
+    ],
+    "type": ""
+  },
+  {
     "name": "Computer",
     "image": "https://www.serebii.net/pokemonpokopia/items/computer.png",
     "categories": [
@@ -933,6 +951,14 @@
       "Shiny stuff"
     ],
     "type": "Toy"
+  },
+  {
+    "name": "Concrete",
+    "image": "https://www.serebii.net/pokemonpokopia/items/concrete.png",
+    "categories": [
+      "Hard stuff"
+    ],
+    "type": ""
   },
   {
     "name": "Concrete pipe",
@@ -1439,8 +1465,7 @@
       "Containers",
       "Pretty flowers",
       "Stone stuff",
-      "Watching stuff",
-      "Wobbly stuff"
+      "Watching stuff"
     ],
     "type": "Decoration"
   },
@@ -1779,6 +1804,7 @@
       "Electronics",
       "Fabric",
       "Luxury",
+      "Metal stuff",
       "Shiny stuff",
       "Soft stuff",
       "Spinning stuff"
@@ -2221,6 +2247,7 @@
     "name": "Industrial chair",
     "image": "https://www.serebii.net/pokemonpokopia/items/industrialchair.png",
     "categories": [
+      "Hard stuff",
       "Metal stuff"
     ],
     "type": "Relaxation"
@@ -2239,8 +2266,7 @@
     "categories": [
       "Blocky stuff",
       "Group Activities",
-      "Lots of water",
-      "Wobbly stuff"
+      "Lots of water"
     ],
     "type": "Relaxation"
   },
@@ -2292,6 +2318,7 @@
     "image": "https://www.serebii.net/pokemonpokopia/items/ironbench.png",
     "categories": [
       "Group Activities",
+      "Hard stuff",
       "Metal stuff"
     ],
     "type": "Relaxation"
@@ -2301,6 +2328,7 @@
     "image": "https://www.serebii.net/pokemonpokopia/items/ironchair.png",
     "categories": [
       "Blocky stuff",
+      "Hard stuff",
       "Metal stuff"
     ],
     "type": "Relaxation"
@@ -2386,8 +2414,7 @@
       "Blocky stuff",
       "Containers",
       "Hard stuff",
-      "Metal stuff",
-      "Shiny stuff"
+      "Metal stuff"
     ],
     "type": "Decoration"
   },
@@ -2462,6 +2489,15 @@
     "type": "Decoration"
   },
   {
+    "name": "Jirachi lamp",
+    "image": "https://www.serebii.net/pokemonpokopia/items/jirachilamp.png",
+    "categories": [
+      "Cute stuff",
+      "Glass stuff"
+    ],
+    "type": ""
+  },
+  {
     "name": "Jubilife Village",
     "image": "https://www.serebii.net/pokemonpokopia/items/jubilifevillage.png",
     "categories": [
@@ -2513,7 +2549,7 @@
     "name": "Lagging Tail",
     "image": "https://www.serebii.net/pokemonpokopia/items/laggingtail.png",
     "categories": [
-      "Hard stuff"
+      "Wobbly stuff"
     ],
     "type": ""
   },
@@ -2584,8 +2620,7 @@
     "categories": [
       "Containers",
       "Pretty flowers",
-      "Watching stuff",
-      "Wobbly stuff"
+      "Watching stuff"
     ],
     "type": "Decoration"
   },
@@ -2643,6 +2678,7 @@
     "image": "https://www.serebii.net/pokemonpokopia/items/logchair.png",
     "categories": [
       "Lots of nature",
+      "Round stuff",
       "Wooden stuff"
     ],
     "type": "Relaxation"
@@ -2661,6 +2697,14 @@
     "image": "https://www.serebii.net/pokemonpokopia/items/luckyegg.png",
     "categories": [
       "Round stuff"
+    ],
+    "type": ""
+  },
+  {
+    "name": "Lumber",
+    "image": "https://www.serebii.net/pokemonpokopia/items/lumber.png",
+    "categories": [
+      "Wooden stuff"
     ],
     "type": ""
   },
@@ -2690,6 +2734,8 @@
     "name": "Luxury chair",
     "image": "https://www.serebii.net/pokemonpokopia/items/luxurychair.png",
     "categories": [
+      "Fabric",
+      "Hard stuff",
       "Luxury",
       "Metal stuff",
       "Spooky stuff"
@@ -2900,7 +2946,8 @@
     "categories": [
       "Blocky stuff",
       "Fabric",
-      "Soft stuff"
+      "Soft stuff",
+      "Wooden stuff"
     ],
     "type": "Relaxation"
   },
@@ -2968,6 +3015,18 @@
       "Strange stuff"
     ],
     "type": "Toy"
+  },
+  {
+    "name": "Moon clock",
+    "image": "https://www.serebii.net/pokemonpokopia/items/moonclock.png",
+    "categories": [
+      "Cute stuff",
+      "Glass stuff",
+      "Round stuff",
+      "Watching stuff",
+      "Wobbly stuff"
+    ],
+    "type": ""
   },
   {
     "name": "Mountain flowers",
@@ -3174,6 +3233,9 @@
     "name": "Naptime bed",
     "image": "https://www.serebii.net/pokemonpokopia/items/naptimebed.png",
     "categories": [
+      "Cute stuff",
+      "Fabric",
+      "Group Activities",
       "Soft stuff"
     ],
     "type": "Relaxation"
@@ -3281,6 +3343,7 @@
       "Containers",
       "Gatherings",
       "Glass stuff",
+      "Group Activities",
       "Letters and words",
       "Metal stuff"
     ],
@@ -3520,6 +3583,14 @@
     "type": ""
   },
   {
+    "name": "Paper",
+    "image": "https://www.serebii.net/pokemonpokopia/items/paper.png",
+    "categories": [
+      "Blocky stuff"
+    ],
+    "type": ""
+  },
+  {
     "name": "Paper Party cups",
     "image": "https://www.serebii.net/pokemonpokopia/items/paperpartycups.png",
     "categories": [
@@ -3653,8 +3724,7 @@
       "Containers",
       "Spooky stuff",
       "Stone stuff",
-      "Watching stuff",
-      "Wobbly stuff"
+      "Watching stuff"
     ],
     "type": "Decoration"
   },
@@ -3726,7 +3796,8 @@
     "categories": [
       "Fabric",
       "Group Activities",
-      "Soft stuff"
+      "Soft stuff",
+      "Wooden stuff"
     ],
     "type": "Relaxation"
   },
@@ -3746,7 +3817,9 @@
     "image": "https://www.serebii.net/pokemonpokopia/items/plainstool.png",
     "categories": [
       "Fabric",
-      "Soft stuff"
+      "Round stuff",
+      "Soft stuff",
+      "Wooden stuff"
     ],
     "type": "Relaxation"
   },
@@ -3763,6 +3836,8 @@
     "image": "https://www.serebii.net/pokemonpokopia/items/pokeballbed.png",
     "categories": [
       "Fabric",
+      "Metal stuff",
+      "Round stuff",
       "Soft stuff"
     ],
     "type": "Relaxation"
@@ -3774,8 +3849,7 @@
       "Containers",
       "Cute stuff",
       "Metal stuff",
-      "Round stuff",
-      "Shiny stuff"
+      "Round stuff"
     ],
     "type": "Decoration"
   },
@@ -3808,7 +3882,8 @@
     "image": "https://www.serebii.net/pokemonpokopia/items/pokeballsofa.png",
     "categories": [
       "Group Activities",
-      "Metal stuff"
+      "Metal stuff",
+      "Round stuff"
     ],
     "type": "Relaxation"
   },
@@ -3816,7 +3891,6 @@
     "name": "Pokémetal",
     "image": "https://www.serebii.net/pokemonpokopia/items/pokemetal.png",
     "categories": [
-      "Colorful stuff",
       "Metal stuff"
     ],
     "type": ""
@@ -3851,6 +3925,7 @@
     "categories": [
       "Containers",
       "Cute stuff",
+      "Hard stuff",
       "Strange stuff"
     ],
     "type": "Decoration"
@@ -3922,6 +3997,7 @@
     "image": "https://www.serebii.net/pokemonpokopia/items/publicseat.png",
     "categories": [
       "Blocky stuff",
+      "Hard stuff",
       "Metal stuff"
     ],
     "type": "Relaxation"
@@ -3963,6 +4039,14 @@
     "image": "https://www.serebii.net/pokemonpokopia/items/rainbowfeather.png",
     "categories": [
       "Shiny stuff"
+    ],
+    "type": ""
+  },
+  {
+    "name": "Rare Pokémetal",
+    "image": "https://www.serebii.net/pokemonpokopia/items/rarepokemetal.png",
+    "categories": [
+      "Metal stuff"
     ],
     "type": ""
   },
@@ -4049,7 +4133,8 @@
     "categories": [
       "Fabric",
       "Ocean vibes",
-      "Soft stuff"
+      "Soft stuff",
+      "Wooden stuff"
     ],
     "type": "Relaxation"
   },
@@ -4070,9 +4155,7 @@
     "image": "https://www.serebii.net/pokemonpokopia/items/resortlight.png",
     "categories": [
       "Electronics",
-      "Metal stuff",
-      "Ocean vibes",
-      "Wobbly stuff"
+      "Ocean vibes"
     ],
     "type": "Decoration"
   },
@@ -4083,7 +4166,8 @@
       "Fabric",
       "Group Activities",
       "Ocean vibes",
-      "Soft stuff"
+      "Soft stuff",
+      "Wooden stuff"
     ],
     "type": "Relaxation"
   },
@@ -4093,7 +4177,9 @@
     "categories": [
       "Fabric",
       "Ocean vibes",
-      "Soft stuff"
+      "Round stuff",
+      "Soft stuff",
+      "Wooden stuff"
     ],
     "type": "Relaxation"
   },
@@ -4267,6 +4353,7 @@
       "Blocky stuff",
       "Group Activities",
       "Lots of dirt",
+      "Ocean vibes",
       "Play spaces"
     ],
     "type": "Toy"
@@ -4307,6 +4394,14 @@
     "image": "https://www.serebii.net/pokemonpokopia/items/seaglassfragments.png",
     "categories": [
       "Glass stuff"
+    ],
+    "type": ""
+  },
+  {
+    "name": "Seashell",
+    "image": "https://www.serebii.net/pokemonpokopia/items/seashell.png",
+    "categories": [
+      "Hard stuff"
     ],
     "type": ""
   },
@@ -4470,7 +4565,7 @@
     "name": "Silk Scarf",
     "image": "https://www.serebii.net/pokemonpokopia/items/silkscarf.png",
     "categories": [
-      "Fabric"
+      "Wobbly stuff"
     ],
     "type": ""
   },
@@ -4620,6 +4715,14 @@
     "type": "Decoration"
   },
   {
+    "name": "Small log",
+    "image": "https://www.serebii.net/pokemonpokopia/items/smalllog.png",
+    "categories": [
+      "Wooden stuff"
+    ],
+    "type": ""
+  },
+  {
     "name": "Small Lost Relic",
     "image": "https://www.serebii.net/pokemonpokopia/items/smalllostrelic.png",
     "categories": [
@@ -4750,6 +4853,7 @@
     "name": "Spectator chair",
     "image": "https://www.serebii.net/pokemonpokopia/items/spectatorchair.png",
     "categories": [
+      "Hard stuff",
       "Metal stuff"
     ],
     "type": "Relaxation"
@@ -4827,6 +4931,16 @@
     "type": "Toy"
   },
   {
+    "name": "Star closet",
+    "image": "https://www.serebii.net/pokemonpokopia/items/starcloset.png",
+    "categories": [
+      "Blocky stuff",
+      "Containers",
+      "Cute stuff"
+    ],
+    "type": ""
+  },
+  {
     "name": "Star Piece",
     "image": "https://www.serebii.net/pokemonpokopia/items/starpiece.png",
     "categories": [
@@ -4835,10 +4949,44 @@
     "type": ""
   },
   {
+    "name": "Star wall decoration",
+    "image": "https://www.serebii.net/pokemonpokopia/items/starwalldecoration.png",
+    "categories": [
+      "Cute stuff",
+      "Glass stuff",
+      "Shiny stuff",
+      "Watching stuff"
+    ],
+    "type": ""
+  },
+  {
+    "name": "Star-shaped dresser",
+    "image": "https://www.serebii.net/pokemonpokopia/items/star-shapeddresser.png",
+    "categories": [
+      "Containers",
+      "Cute stuff",
+      "Glass stuff",
+      "Luxury",
+      "Strange stuff"
+    ],
+    "type": ""
+  },
+  {
     "name": "Stardust",
     "image": "https://www.serebii.net/pokemonpokopia/items/stardust.png",
     "categories": [
       "Shiny stuff"
+    ],
+    "type": ""
+  },
+  {
+    "name": "Starry-sky bed",
+    "image": "https://www.serebii.net/pokemonpokopia/items/starry-skybed.png",
+    "categories": [
+      "Cute stuff",
+      "Fabric",
+      "Group Activities",
+      "Soft stuff"
     ],
     "type": ""
   },
@@ -5045,6 +5193,7 @@
     "name": "Straw stool",
     "image": "https://www.serebii.net/pokemonpokopia/items/strawstool.png",
     "categories": [
+      "Round stuff",
       "Soft stuff"
     ],
     "type": "Relaxation"
@@ -5084,13 +5233,23 @@
     "type": ""
   },
   {
+    "name": "Sturdy stick",
+    "image": "https://www.serebii.net/pokemonpokopia/items/sturdystick.png",
+    "categories": [
+      "Wooden stuff"
+    ],
+    "type": ""
+  },
+  {
     "name": "Stylish stool",
     "image": "https://www.serebii.net/pokemonpokopia/items/stylishstool.png",
     "categories": [
       "Colorful stuff",
       "Cute stuff",
       "Fabric",
-      "Soft stuff"
+      "Round stuff",
+      "Soft stuff",
+      "Wooden stuff"
     ],
     "type": "Relaxation"
   },
@@ -5191,6 +5350,17 @@
     "type": "Decoration"
   },
   {
+    "name": "Telescope",
+    "image": "https://www.serebii.net/pokemonpokopia/items/telescope.png",
+    "categories": [
+      "Glass stuff",
+      "Slender objects",
+      "Strange stuff",
+      "Watching stuff"
+    ],
+    "type": ""
+  },
+  {
     "name": "Television",
     "image": "https://www.serebii.net/pokemonpokopia/items/television.png",
     "categories": [
@@ -5233,13 +5403,20 @@
     "type": "Toy"
   },
   {
+    "name": "Tinkagear",
+    "image": "https://www.serebii.net/pokemonpokopia/items/tinkagear.png",
+    "categories": [
+      "Hard stuff"
+    ],
+    "type": ""
+  },
+  {
     "name": "Tire toy",
     "image": "https://www.serebii.net/pokemonpokopia/items/tiretoy.png",
     "categories": [
       "Group Activities",
       "Play spaces",
-      "Round stuff",
-      "Wobbly stuff"
+      "Round stuff"
     ],
     "type": "Toy"
   },
@@ -5248,8 +5425,7 @@
     "image": "https://www.serebii.net/pokemonpokopia/items/tires.png",
     "categories": [
       "Gatherings",
-      "Round stuff",
-      "Wobbly stuff"
+      "Round stuff"
     ],
     "type": "Toy"
   },
@@ -5660,8 +5836,7 @@
       "Complicated stuff",
       "Gatherings",
       "Group Activities",
-      "Letters and words",
-      "Shiny stuff"
+      "Letters and words"
     ],
     "type": "Decoration"
   },
@@ -5872,7 +6047,8 @@
     "name": "Wooden stool",
     "image": "https://www.serebii.net/pokemonpokopia/items/woodenstool.png",
     "categories": [
-      "Blocky stuff"
+      "Blocky stuff",
+      "Wooden stuff"
     ],
     "type": "Relaxation"
   },
