@@ -17,7 +17,7 @@ async function fetchPage(url) {
   }
 }
 
-async function scrapeLitter() {
+async function scrapeLitter(showLogs) {
   const $ = await fetchPage(LITTER_URL);
   if (!$) return {
     pokemon: {},
@@ -48,14 +48,14 @@ async function scrapeLitter() {
     }
     pokemon[name] = itemText;
 
-    console.log(`Found: ${name} (#${number}) - Litters: ${itemText}`);
+    if(showLogs) console.log(`Found: ${name} (#${number}) - Litters: ${itemText}`);
   });
 
   return { pokemon, imgs };
 }
 
-async function main() {
-  const litterResults = await scrapeLitter();
+async function main(showLogs) {
+  const litterResults = await scrapeLitter(showLogs);
 
   const outputPath = path.join(__dirname, "../src/data/litter.json");
   await fs.writeJson(outputPath, litterResults, { spaces: 2 });
@@ -63,4 +63,4 @@ async function main() {
   console.log(`Saved litter data for ${Object.keys(litterResults.pokemon).length} Pokémon`);
 }
 
-main();
+main(false);

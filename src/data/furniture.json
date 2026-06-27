@@ -934,8 +934,8 @@
     "name": "Cloud cannon",
     "image": "https://www.serebii.net/pokemonpokopia/items/cloudcannon.png",
     "categories": [
-      "Lots of fire",
       "Metal stuff",
+      "Noisy stuff",
       "Strange stuff"
     ],
     "type": ""
@@ -1088,7 +1088,6 @@
     "name": "Crystal fragment",
     "image": "https://www.serebii.net/pokemonpokopia/items/crystalfragment.png",
     "categories": [
-      "Glass stuff",
       "Shiny stuff"
     ],
     "type": ""
@@ -1684,7 +1683,6 @@
     "image": "https://www.serebii.net/pokemonpokopia/items/fluff.png",
     "categories": [
       "Fabric",
-      "Round stuff",
       "Soft stuff"
     ],
     "type": ""
@@ -2493,7 +2491,10 @@
     "image": "https://www.serebii.net/pokemonpokopia/items/jirachilamp.png",
     "categories": [
       "Cute stuff",
-      "Glass stuff"
+      "Electronics",
+      "Glass stuff",
+      "Hard stuff",
+      "Shiny stuff"
     ],
     "type": ""
   },
@@ -3021,7 +3022,6 @@
     "image": "https://www.serebii.net/pokemonpokopia/items/moonclock.png",
     "categories": [
       "Cute stuff",
-      "Glass stuff",
       "Round stuff",
       "Watching stuff",
       "Wobbly stuff"
@@ -4072,7 +4072,6 @@
     "name": "Red crystal fragment",
     "image": "https://www.serebii.net/pokemonpokopia/items/redcrystalfragment.png",
     "categories": [
-      "Glass stuff",
       "Shiny stuff"
     ],
     "type": ""
@@ -4936,7 +4935,10 @@
     "categories": [
       "Blocky stuff",
       "Containers",
-      "Cute stuff"
+      "Cute stuff",
+      "Hard stuff",
+      "Shiny stuff",
+      "Wooden stuff"
     ],
     "type": ""
   },
@@ -4954,6 +4956,7 @@
     "categories": [
       "Cute stuff",
       "Glass stuff",
+      "Hard stuff",
       "Shiny stuff",
       "Watching stuff"
     ],
@@ -4966,7 +4969,7 @@
       "Containers",
       "Cute stuff",
       "Glass stuff",
-      "Luxury",
+      "Shiny stuff",
       "Strange stuff"
     ],
     "type": ""
@@ -4983,9 +4986,11 @@
     "name": "Starry-sky bed",
     "image": "https://www.serebii.net/pokemonpokopia/items/starry-skybed.png",
     "categories": [
+      "Blocky stuff",
       "Cute stuff",
       "Fabric",
       "Group Activities",
+      "Shiny stuff",
       "Soft stuff"
     ],
     "type": ""
@@ -5003,7 +5008,6 @@
     "name": "Stone",
     "image": "https://www.serebii.net/pokemonpokopia/items/stone.png",
     "categories": [
-      "Hard stuff",
       "Stone stuff"
     ],
     "type": ""
@@ -5354,6 +5358,8 @@
     "image": "https://www.serebii.net/pokemonpokopia/items/telescope.png",
     "categories": [
       "Glass stuff",
+      "Metal stuff",
+      "Shiny stuff",
       "Slender objects",
       "Strange stuff",
       "Watching stuff"

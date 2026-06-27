@@ -53,7 +53,7 @@ async function scrapeDetails(url) {
   };
 }
 
-async function scrapeList(url) {
+async function scrapeList(url, showLogs) {
   const $ = await fetchPage(url);
   if (!$) return [];
 
@@ -76,7 +76,7 @@ async function scrapeList(url) {
       const name = nameCell.text().trim();
       const relativeLink = nameCell.find("a").attr("href");
 
-      console.log(`Scraping ${name}...`);
+      if(showLogs) console.log(`Scraping ${name}...`);
 
       if (!relativeLink) return null;
 
@@ -117,9 +117,9 @@ async function scrapeList(url) {
   };
 }
 
-async function main() {
-  const {rowResults: results, specialtyImageMap} = await scrapeList(START_URL);
-  const {rowResults: eventResults, specialtyImageMap: eventSpecialtyImageMap } = await scrapeList(EVENT_DEX_URL);
+async function main(showLogs) {
+  const {rowResults: results, specialtyImageMap} = await scrapeList(START_URL, showLogs);
+  const {rowResults: eventResults, specialtyImageMap: eventSpecialtyImageMap } = await scrapeList(EVENT_DEX_URL, showLogs);
   results.push(...eventResults);
 
   const outputPath = path.join(__dirname, "../src/data/pokemon.json");
@@ -132,4 +132,4 @@ async function main() {
   console.log(`Saved ${results.length} Pokémon`);
 }
 
-main();
+main(false);

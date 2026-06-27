@@ -80,7 +80,7 @@ async function fetchPage(url) {
   }
 }
 
-async function scrapeFavorites() {
+async function scrapeFavorites(showLogs) {
   const $ = await fetchPage(FAVORITES_PAGE);
   if (!$) return {};
 
@@ -107,14 +107,14 @@ async function scrapeFavorites() {
       
       favorites[optionText] = url;
       
-      console.log(`Found: ${optionText} -> ${url}`);
+      if (showLogs) console.log(`Found: ${optionText} -> ${url}`);
     }
   });
 
   return favorites;
 }
 
-async function scrapeFurnitureForCategory(categoryName, url, allTypes) {
+async function scrapeFurnitureForCategory(categoryName, url, allTypes, showLogs) {
   const $ = await fetchPage(url);
   if (!$) return [];
 
@@ -156,17 +156,16 @@ async function scrapeFurnitureForCategory(categoryName, url, allTypes) {
       }
     });
 
-  console.log(`Scraped ${furniture.length} furniture items from ${categoryName}`);
-  console.log(`Current furniture types: ${Object.keys(allTypes).join(", ")}`);
+  if (showLogs) console.log(`Scraped ${furniture.length} furniture items from ${categoryName}`);
   return { furniture, types: allTypes };
 }
 
-async function scrapeAllFurniture(favorites) {
+async function scrapeAllFurniture(favorites, showLogs) {
   const furnitureByName = new Map();
   const allTypes = {};
 
   for (const [categoryName, url] of Object.entries(favorites)) {
-    const { furniture, types } = await scrapeFurnitureForCategory(categoryName, url, allTypes);
+    const { furniture, types } = await scrapeFurnitureForCategory(categoryName, url, allTypes, showLogs);
     for (const furnitureItem of furniture) {
       mergeFurnitureItems(furnitureByName, furnitureItem);
     }
@@ -178,17 +177,17 @@ async function scrapeAllFurniture(favorites) {
   };
 }
 
-async function main() {
-  const favoritesData = await scrapeFavorites();
-  const { furniture: furnitureData, types: furnitureTypes } = await scrapeAllFurniture(favoritesData);
+async function main(showLogs) {
+  const favoritesData = await scrapeFavorites(showLogs);
+  const { furniture: furnitureData, types: furnitureTypes } = await scrapeAllFurniture(favoritesData, showLogs);
 
   await fs.writeJson(FAVORITES_OUTPUT_PATH, favoritesData, { spaces: 2 });
   await fs.writeJson(FURNITURE_OUTPUT_PATH, furnitureData, { spaces: 2 });
   await fs.writeJson(FURNITURE_TYPES_OUTPUT_PATH, furnitureTypes, { spaces: 2 });
 
-  console.log(`\nSaved ${Object.keys(favoritesData).length} favorite categories`);
+  console.log(`Saved ${Object.keys(favoritesData).length} favorite categories`);
   console.log(`Saved ${furnitureData.length} furniture items`);
   console.log(`Saved ${Object.keys(furnitureTypes).length} furniture types`);
 }
 
-main();
+main(false);
