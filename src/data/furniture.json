@@ -938,7 +938,7 @@
       "Noisy stuff",
       "Strange stuff"
     ],
-    "type": ""
+    "type": "Toy"
   },
   {
     "name": "Computer",
@@ -2496,7 +2496,7 @@
       "Hard stuff",
       "Shiny stuff"
     ],
-    "type": ""
+    "type": "Decoration"
   },
   {
     "name": "Jubilife Village",
@@ -3026,7 +3026,7 @@
       "Watching stuff",
       "Wobbly stuff"
     ],
-    "type": ""
+    "type": "Toy"
   },
   {
     "name": "Mountain flowers",
@@ -4940,7 +4940,7 @@
       "Shiny stuff",
       "Wooden stuff"
     ],
-    "type": ""
+    "type": "Decoration"
   },
   {
     "name": "Star Piece",
@@ -4960,10 +4960,10 @@
       "Shiny stuff",
       "Watching stuff"
     ],
-    "type": ""
+    "type": "Decoration"
   },
   {
-    "name": "Star-shaped dresser",
+    "name": "Star-shaped Dresser",
     "image": "https://www.serebii.net/pokemonpokopia/items/star-shapeddresser.png",
     "categories": [
       "Containers",
@@ -4972,7 +4972,7 @@
       "Shiny stuff",
       "Strange stuff"
     ],
-    "type": ""
+    "type": "Toy"
   },
   {
     "name": "Stardust",
@@ -4993,7 +4993,7 @@
       "Shiny stuff",
       "Soft stuff"
     ],
-    "type": ""
+    "type": "Relaxation"
   },
   {
     "name": "Step stool",
@@ -5359,12 +5359,11 @@
     "categories": [
       "Glass stuff",
       "Metal stuff",
-      "Shiny stuff",
       "Slender objects",
       "Strange stuff",
       "Watching stuff"
     ],
-    "type": ""
+    "type": "Toy"
   },
   {
     "name": "Television",
