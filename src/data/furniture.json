@@ -110,6 +110,7 @@
       "Complicated stuff",
       "Glass stuff",
       "Luxury",
+      "Noisy stuff",
       "Wooden stuff"
     ],
     "type": "Toy"
@@ -173,7 +174,8 @@
     "image": "https://www.serebii.net/pokemonpokopia/items/arcaninedoll.png",
     "categories": [
       "Cute stuff",
-      "Fabric"
+      "Fabric",
+      "Symbols"
     ],
     "type": "Toy"
   },
@@ -192,6 +194,7 @@
       "Hard stuff",
       "Lots of dirt",
       "Round stuff",
+      "Stone stuff",
       "Strange stuff"
     ],
     "type": "Decoration"
@@ -261,8 +264,11 @@
     "image": "https://www.serebii.net/pokemonpokopia/items/bathtimeset.png",
     "categories": [
       "Cleanliness",
+      "Colorful stuff",
+      "Construction",
       "Cute stuff",
       "Lots of water",
+      "Play spaces",
       "Shiny stuff"
     ],
     "type": "Toy"
@@ -366,6 +372,7 @@
     "name": "Bell",
     "image": "https://www.serebii.net/pokemonpokopia/items/bell.png",
     "categories": [
+      "Luxury",
       "Metal stuff",
       "Shiny stuff",
       "Strange stuff",
@@ -514,10 +521,12 @@
     "name": "Big Nugget",
     "image": "https://www.serebii.net/pokemonpokopia/items/bignugget.png",
     "categories": [
+      "Luxury",
       "Metal stuff",
       "Round stuff",
       "Shiny stuff",
-      "Stone stuff"
+      "Stone stuff",
+      "Symbols"
     ],
     "type": "Toy"
   },
@@ -603,6 +612,7 @@
     "categories": [
       "Blocky stuff",
       "Containers",
+      "Cute stuff",
       "Group Activities",
       "Play spaces",
       "Spooky stuff",
@@ -629,6 +639,7 @@
       "Colorful stuff",
       "Complicated stuff",
       "Containers",
+      "Letters and words",
       "Watching stuff",
       "Wooden stuff"
     ],
@@ -641,6 +652,7 @@
       "Cleanliness",
       "Cute stuff",
       "Lots of water",
+      "Round stuff",
       "Strange stuff"
     ],
     "type": "Decoration"
@@ -713,6 +725,8 @@
     "image": "https://www.serebii.net/pokemonpokopia/items/canoe.png",
     "categories": [
       "Group Activities",
+      "Lots of water",
+      "Rides",
       "Round stuff"
     ],
     "type": "Toy"
@@ -748,7 +762,7 @@
       "Metal stuff",
       "Strange stuff"
     ],
-    "type": ""
+    "type": "Toy"
   },
   {
     "name": "Castform weather charm",
@@ -773,6 +787,7 @@
     "name": "CD player",
     "image": "https://www.serebii.net/pokemonpokopia/items/cdplayer.png",
     "categories": [
+      "Containers",
       "Electronics",
       "Group Activities",
       "Noisy stuff"
@@ -926,7 +941,8 @@
     "categories": [
       "Cute stuff",
       "Fabric",
-      "Soft stuff"
+      "Soft stuff",
+      "Symbols"
     ],
     "type": "Toy"
   },
@@ -947,8 +963,10 @@
       "Complicated stuff",
       "Electronics",
       "Glass stuff",
+      "Group Activities",
       "Metal stuff",
-      "Shiny stuff"
+      "Shiny stuff",
+      "Strange stuff"
     ],
     "type": "Toy"
   },
@@ -995,7 +1013,8 @@
     "image": "https://www.serebii.net/pokemonpokopia/items/controlunit.png",
     "categories": [
       "Blocky stuff",
-      "Complicated stuff"
+      "Complicated stuff",
+      "Metal stuff"
     ],
     "type": "Toy"
   },
@@ -1051,6 +1070,7 @@
     "image": "https://www.serebii.net/pokemonpokopia/items/corkboard.png",
     "categories": [
       "Blocky stuff",
+      "Colorful stuff",
       "Gatherings",
       "Watching stuff"
     ],
@@ -1098,6 +1118,7 @@
     "categories": [
       "Cute stuff",
       "Fabric",
+      "Luxury",
       "Soft stuff"
     ],
     "type": "Relaxation"
@@ -1264,6 +1285,7 @@
       "Hard stuff",
       "Lots of dirt",
       "Slender objects",
+      "Stone stuff",
       "Strange stuff"
     ],
     "type": "Decoration"
@@ -1274,6 +1296,7 @@
     "categories": [
       "Hard stuff",
       "Lots of dirt",
+      "Stone stuff",
       "Strange stuff"
     ],
     "type": "Decoration"
@@ -1285,6 +1308,7 @@
       "Hard stuff",
       "Lots of dirt",
       "Slender objects",
+      "Stone stuff",
       "Strange stuff"
     ],
     "type": "Decoration"
@@ -1296,6 +1320,7 @@
       "Hard stuff",
       "Lots of dirt",
       "Slender objects",
+      "Stone stuff",
       "Strange stuff"
     ],
     "type": "Decoration"
@@ -1330,7 +1355,8 @@
     "categories": [
       "Cute stuff",
       "Fabric",
-      "Soft stuff"
+      "Soft stuff",
+      "Symbols"
     ],
     "type": "Toy"
   },
@@ -1359,7 +1385,8 @@
     "categories": [
       "Cute stuff",
       "Fabric",
-      "Soft stuff"
+      "Soft stuff",
+      "Symbols"
     ],
     "type": "Toy"
   },
@@ -1404,7 +1431,8 @@
     "categories": [
       "Cute stuff",
       "Fabric",
-      "Soft stuff"
+      "Soft stuff",
+      "Symbols"
     ],
     "type": "Toy"
   },
@@ -1483,6 +1511,7 @@
       "Electronics",
       "Metal stuff",
       "Nice breezes",
+      "Round stuff",
       "Spinning stuff"
     ],
     "type": "Toy"
@@ -1526,7 +1555,8 @@
     "categories": [
       "Lots of water",
       "Metal stuff",
-      "Shiny stuff"
+      "Shiny stuff",
+      "Symbols"
     ],
     "type": "Decoration"
   },
@@ -1619,6 +1649,7 @@
       "Lots of nature",
       "Pretty flowers",
       "Slender objects",
+      "Stone stuff",
       "Watching stuff"
     ],
     "type": "Decoration"
@@ -1651,7 +1682,7 @@
       "Pretty flowers",
       "Soft stuff"
     ],
-    "type": ""
+    "type": "Relaxation"
   },
   {
     "name": "Flower garland",
@@ -1976,6 +2007,7 @@
     "categories": [
       "Letters and words",
       "Spooky stuff",
+      "Stone stuff",
       "Strange stuff"
     ],
     "type": "Decoration"
@@ -2006,7 +2038,8 @@
     "categories": [
       "Complicated stuff",
       "Garbage",
-      "Letters and words"
+      "Letters and words",
+      "Watching stuff"
     ],
     "type": "Toy"
   },
@@ -2014,7 +2047,8 @@
     "name": "Grubby cell phone",
     "image": "https://www.serebii.net/pokemonpokopia/items/grubbycellphone.png",
     "categories": [
-      "Garbage"
+      "Garbage",
+      "Strange stuff"
     ],
     "type": "Toy"
   },
@@ -2045,7 +2079,8 @@
     "categories": [
       "Complicated stuff",
       "Garbage",
-      "Letters and words"
+      "Letters and words",
+      "Watching stuff"
     ],
     "type": "Toy"
   },
@@ -2055,7 +2090,8 @@
     "categories": [
       "Complicated stuff",
       "Garbage",
-      "Letters and words"
+      "Letters and words",
+      "Watching stuff"
     ],
     "type": "Toy"
   },
@@ -2063,7 +2099,9 @@
     "name": "Grubby tablet",
     "image": "https://www.serebii.net/pokemonpokopia/items/grubbytablet.png",
     "categories": [
-      "Garbage"
+      "Garbage",
+      "Metal stuff",
+      "Strange stuff"
     ],
     "type": "Toy"
   },
@@ -2084,7 +2122,8 @@
     "image": "https://www.serebii.net/pokemonpokopia/items/gymemblemstatue.png",
     "categories": [
       "Shiny stuff",
-      "Stone stuff"
+      "Stone stuff",
+      "Symbols"
     ],
     "type": "Decoration"
   },
@@ -2101,7 +2140,9 @@
     "image": "https://www.serebii.net/pokemonpokopia/items/hangingbanner.png",
     "categories": [
       "Colorful stuff",
-      "Fabric"
+      "Fabric",
+      "Symbols",
+      "Wobbly stuff"
     ],
     "type": "Decoration"
   },
@@ -2142,6 +2183,7 @@
       "Hard stuff",
       "Lots of dirt",
       "Slender objects",
+      "Stone stuff",
       "Strange stuff"
     ],
     "type": "Decoration"
@@ -2152,6 +2194,7 @@
     "categories": [
       "Hard stuff",
       "Lots of dirt",
+      "Stone stuff",
       "Strange stuff"
     ],
     "type": "Decoration"
@@ -2163,6 +2206,7 @@
       "Hard stuff",
       "Lots of dirt",
       "Slender objects",
+      "Stone stuff",
       "Strange stuff"
     ],
     "type": "Decoration"
@@ -2174,6 +2218,17 @@
       "Cute stuff"
     ],
     "type": ""
+  },
+  {
+    "name": "Hide-and-sneak trophy",
+    "image": "https://www.serebii.net/pokemonpokopia/items/hide-and-sneaktrophy.png",
+    "categories": [
+      "Hard stuff",
+      "Luxury",
+      "Metal stuff",
+      "Watching stuff"
+    ],
+    "type": "Decoration"
   },
   {
     "name": "Hoppip water bottle",
@@ -2246,7 +2301,8 @@
     "image": "https://www.serebii.net/pokemonpokopia/items/industrialchair.png",
     "categories": [
       "Hard stuff",
-      "Metal stuff"
+      "Metal stuff",
+      "Round stuff"
     ],
     "type": "Relaxation"
   },
@@ -2288,6 +2344,7 @@
       "Metal stuff",
       "Shiny stuff",
       "Stone stuff",
+      "Strange stuff",
       "Symbols"
     ],
     "type": "Decoration"
@@ -2411,6 +2468,7 @@
     "categories": [
       "Blocky stuff",
       "Containers",
+      "Glass stuff",
       "Hard stuff",
       "Metal stuff"
     ],
@@ -2471,6 +2529,7 @@
     "categories": [
       "Hard stuff",
       "Lots of dirt",
+      "Stone stuff",
       "Strange stuff"
     ],
     "type": "Decoration"
@@ -2533,6 +2592,17 @@
     "type": "Toy"
   },
   {
+    "name": "Jump rope trophy",
+    "image": "https://www.serebii.net/pokemonpokopia/items/jumpropetrophy.png",
+    "categories": [
+      "Hard stuff",
+      "Luxury",
+      "Metal stuff",
+      "Watching stuff"
+    ],
+    "type": "Decoration"
+  },
+  {
     "name": "Knitting supplies",
     "image": "https://www.serebii.net/pokemonpokopia/items/knittingsupplies.png",
     "categories": [
@@ -2572,7 +2642,8 @@
       "Electronics",
       "Glass stuff",
       "Metal stuff",
-      "Shiny stuff"
+      "Shiny stuff",
+      "Strange stuff"
     ],
     "type": "Toy"
   },
@@ -2621,6 +2692,7 @@
     "categories": [
       "Containers",
       "Pretty flowers",
+      "Stone stuff",
       "Watching stuff"
     ],
     "type": "Decoration"
@@ -2739,7 +2811,8 @@
       "Hard stuff",
       "Luxury",
       "Metal stuff",
-      "Spooky stuff"
+      "Spooky stuff",
+      "Stone stuff"
     ],
     "type": "Relaxation"
   },
@@ -2750,6 +2823,7 @@
       "Containers",
       "Glass stuff",
       "Luxury",
+      "Stone stuff",
       "Strange stuff"
     ],
     "type": "Toy"
@@ -2822,7 +2896,8 @@
     "image": "https://www.serebii.net/pokemonpokopia/items/mapandcompass.png",
     "categories": [
       "Group Activities",
-      "Letters and words"
+      "Letters and words",
+      "Symbols"
     ],
     "type": "Toy"
   },
@@ -2935,6 +3010,7 @@
       "Blocky stuff",
       "Complicated stuff",
       "Electronics",
+      "Glass stuff",
       "Metal stuff",
       "Shiny stuff",
       "Strange stuff"
@@ -2968,7 +3044,8 @@
       "Glass stuff",
       "Metal stuff",
       "Round stuff",
-      "Shiny stuff"
+      "Shiny stuff",
+      "Symbols"
     ],
     "type": "Decoration"
   },
@@ -2993,7 +3070,8 @@
       "Nice breezes",
       "Rides",
       "Shiny stuff",
-      "Stone stuff"
+      "Stone stuff",
+      "Strange stuff"
     ],
     "type": "Toy"
   },
@@ -3089,6 +3167,7 @@
     "image": "https://www.serebii.net/pokemonpokopia/items/mug.png",
     "categories": [
       "Containers",
+      "Stone stuff",
       "Symbols"
     ],
     "type": "Decoration"
@@ -3117,6 +3196,7 @@
     "name": "Mushroom streetlight",
     "image": "https://www.serebii.net/pokemonpokopia/items/mushroomstreetlight.png",
     "categories": [
+      "Round stuff",
       "Shiny stuff",
       "Slender objects",
       "Spooky stuff"
@@ -3127,6 +3207,7 @@
     "name": "Music mat (Fa)",
     "image": "https://www.serebii.net/pokemonpokopia/items/musicmat(fa).png",
     "categories": [
+      "Colorful stuff",
       "Noisy stuff",
       "Play spaces",
       "Shiny stuff",
@@ -3138,6 +3219,7 @@
     "name": "Music mat (High do)",
     "image": "https://www.serebii.net/pokemonpokopia/items/musicmat(highdo).png",
     "categories": [
+      "Colorful stuff",
       "Noisy stuff",
       "Play spaces",
       "Shiny stuff",
@@ -3149,6 +3231,7 @@
     "name": "Music mat (La)",
     "image": "https://www.serebii.net/pokemonpokopia/items/musicmat(la).png",
     "categories": [
+      "Colorful stuff",
       "Noisy stuff",
       "Play spaces",
       "Shiny stuff",
@@ -3160,6 +3243,7 @@
     "name": "Music mat (low do)",
     "image": "https://www.serebii.net/pokemonpokopia/items/musicmat(lowdo).png",
     "categories": [
+      "Colorful stuff",
       "Noisy stuff",
       "Play spaces",
       "Shiny stuff",
@@ -3171,6 +3255,7 @@
     "name": "Music mat (Mi)",
     "image": "https://www.serebii.net/pokemonpokopia/items/musicmat(mi).png",
     "categories": [
+      "Colorful stuff",
       "Noisy stuff",
       "Play spaces",
       "Shiny stuff",
@@ -3182,6 +3267,7 @@
     "name": "Music mat (Re)",
     "image": "https://www.serebii.net/pokemonpokopia/items/musicmat(re).png",
     "categories": [
+      "Colorful stuff",
       "Noisy stuff",
       "Play spaces",
       "Shiny stuff",
@@ -3193,6 +3279,7 @@
     "name": "Music mat (Sol)",
     "image": "https://www.serebii.net/pokemonpokopia/items/musicmat(sol).png",
     "categories": [
+      "Colorful stuff",
       "Noisy stuff",
       "Play spaces",
       "Shiny stuff",
@@ -3204,6 +3291,7 @@
     "name": "Music mat (Ti)",
     "image": "https://www.serebii.net/pokemonpokopia/items/musicmat(ti).png",
     "categories": [
+      "Colorful stuff",
       "Noisy stuff",
       "Play spaces",
       "Shiny stuff",
@@ -3679,7 +3767,8 @@
     "categories": [
       "Cute stuff",
       "Fabric",
-      "Soft stuff"
+      "Soft stuff",
+      "Symbols"
     ],
     "type": "Toy"
   },
@@ -3724,6 +3813,7 @@
       "Containers",
       "Spooky stuff",
       "Stone stuff",
+      "Strange stuff",
       "Watching stuff"
     ],
     "type": "Decoration"
@@ -3846,6 +3936,7 @@
     "name": "Poké Ball Chest",
     "image": "https://www.serebii.net/pokemonpokopia/items/pokeballchest.png",
     "categories": [
+      "Colorful stuff",
       "Containers",
       "Cute stuff",
       "Metal stuff",
@@ -3957,7 +4048,8 @@
     "image": "https://www.serebii.net/pokemonpokopia/items/popartlamp.png",
     "categories": [
       "Electronics",
-      "Glass stuff"
+      "Glass stuff",
+      "Metal stuff"
     ],
     "type": "Decoration"
   },
@@ -4008,6 +4100,7 @@
     "categories": [
       "Exercise",
       "Fabric",
+      "Group Activities",
       "Lots of dirt",
       "Wobbly stuff"
     ],
@@ -4020,6 +4113,7 @@
       "Colorful stuff",
       "Exercise",
       "Play spaces",
+      "Strange stuff",
       "Wobbly stuff"
     ],
     "type": "Toy"
@@ -4030,7 +4124,8 @@
     "categories": [
       "Colorful stuff",
       "Glass stuff",
-      "Letters and words"
+      "Letters and words",
+      "Symbols"
     ],
     "type": "Decoration"
   },
@@ -4038,6 +4133,7 @@
     "name": "Rainbow Feather",
     "image": "https://www.serebii.net/pokemonpokopia/items/rainbowfeather.png",
     "categories": [
+      "Luxury",
       "Shiny stuff"
     ],
     "type": ""
@@ -4112,6 +4208,7 @@
     "name": "Repel",
     "image": "https://www.serebii.net/pokemonpokopia/items/repel.png",
     "categories": [
+      "Hard stuff",
       "Strange stuff"
     ],
     "type": "Toy"
@@ -4330,6 +4427,7 @@
     "categories": [
       "Hard stuff",
       "Lots of dirt",
+      "Stone stuff",
       "Strange stuff"
     ],
     "type": "Decoration"
@@ -4383,6 +4481,7 @@
       "Complicated stuff",
       "Gatherings",
       "Glass stuff",
+      "Group Activities",
       "Letters and words",
       "Metal stuff"
     ],
@@ -4491,6 +4590,7 @@
       "Hard stuff",
       "Lots of dirt",
       "Slender objects",
+      "Stone stuff",
       "Strange stuff"
     ],
     "type": "Decoration"
@@ -4501,6 +4601,7 @@
     "categories": [
       "Hard stuff",
       "Lots of dirt",
+      "Stone stuff",
       "Strange stuff"
     ],
     "type": "Decoration"
@@ -4512,6 +4613,7 @@
       "Hard stuff",
       "Lots of dirt",
       "Slender objects",
+      "Stone stuff",
       "Strange stuff"
     ],
     "type": "Decoration"
@@ -4556,6 +4658,7 @@
       "Metal stuff",
       "Shiny stuff",
       "Stone stuff",
+      "Strange stuff",
       "Symbols"
     ],
     "type": "Decoration"
@@ -4589,6 +4692,7 @@
     "name": "Silver Feather",
     "image": "https://www.serebii.net/pokemonpokopia/items/silverfeather.png",
     "categories": [
+      "Luxury",
       "Shiny stuff"
     ],
     "type": ""
@@ -4628,6 +4732,7 @@
     "categories": [
       "Hard stuff",
       "Lots of dirt",
+      "Stone stuff",
       "Strange stuff"
     ],
     "type": "Decoration"
@@ -4686,6 +4791,7 @@
     "image": "https://www.serebii.net/pokemonpokopia/items/slendercandle.png",
     "categories": [
       "Lots of fire",
+      "Luxury",
       "Slender objects",
       "Spooky stuff",
       "Stone stuff"
@@ -4924,6 +5030,7 @@
     "categories": [
       "Electronics",
       "Group Activities",
+      "Noisy stuff",
       "Shiny stuff",
       "Strange stuff"
     ],
@@ -5224,7 +5331,9 @@
     "categories": [
       "Electronics",
       "Gatherings",
-      "Glass stuff"
+      "Glass stuff",
+      "Round stuff",
+      "Shiny stuff"
     ],
     "type": "Decoration"
   },
@@ -5263,7 +5372,8 @@
     "categories": [
       "Cute stuff",
       "Fabric",
-      "Soft stuff"
+      "Soft stuff",
+      "Symbols"
     ],
     "type": "Toy"
   },
@@ -5314,6 +5424,7 @@
     "image": "https://www.serebii.net/pokemonpokopia/items/tabletopmic.png",
     "categories": [
       "Electronics",
+      "Metal stuff",
       "Shiny stuff"
     ],
     "type": "Toy"
@@ -5348,6 +5459,7 @@
       "Blocky stuff",
       "Complicated stuff",
       "Metal stuff",
+      "Strange stuff",
       "Symbols",
       "Watching stuff"
     ],
@@ -5523,6 +5635,7 @@
       "Hard stuff",
       "Lots of dirt",
       "Slender objects",
+      "Stone stuff",
       "Strange stuff"
     ],
     "type": "Decoration"
@@ -5533,6 +5646,7 @@
     "categories": [
       "Hard stuff",
       "Lots of dirt",
+      "Stone stuff",
       "Strange stuff"
     ],
     "type": "Decoration"
@@ -5544,6 +5658,7 @@
       "Hard stuff",
       "Lots of dirt",
       "Slender objects",
+      "Stone stuff",
       "Strange stuff"
     ],
     "type": "Decoration"
@@ -5730,6 +5845,7 @@
     "image": "https://www.serebii.net/pokemonpokopia/items/walltorch.png",
     "categories": [
       "Lots of fire",
+      "Metal stuff",
       "Stone stuff"
     ],
     "type": "Decoration"
@@ -5851,6 +5967,7 @@
     "categories": [
       "Cute stuff",
       "Glass stuff",
+      "Hard stuff",
       "Strange stuff",
       "Watching stuff"
     ],
@@ -5919,6 +6036,7 @@
       "Hard stuff",
       "Lots of dirt",
       "Slender objects",
+      "Stone stuff",
       "Strange stuff"
     ],
     "type": "Decoration"
@@ -5929,6 +6047,7 @@
     "categories": [
       "Hard stuff",
       "Lots of dirt",
+      "Stone stuff",
       "Strange stuff"
     ],
     "type": "Decoration"
@@ -5940,6 +6059,7 @@
       "Hard stuff",
       "Lots of dirt",
       "Slender objects",
+      "Stone stuff",
       "Strange stuff"
     ],
     "type": "Decoration"
@@ -5951,6 +6071,7 @@
       "Hard stuff",
       "Lots of dirt",
       "Slender objects",
+      "Stone stuff",
       "Strange stuff"
     ],
     "type": "Decoration"
@@ -5962,6 +6083,7 @@
       "Hard stuff",
       "Lots of dirt",
       "Slender objects",
+      "Stone stuff",
       "Strange stuff"
     ],
     "type": "Decoration"
@@ -6072,6 +6194,7 @@
     "image": "https://www.serebii.net/pokemonpokopia/items/wreath.png",
     "categories": [
       "Round stuff",
+      "Symbols",
       "Wooden stuff"
     ],
     "type": "Decoration"
