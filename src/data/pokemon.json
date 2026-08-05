@@ -5626,5 +5626,941 @@
     ],
     "taste": "Sweet flavors",
     "image": "https://www.serebii.net/pokemonpokopia/pokemon/small/385.png"
+  },
+  {
+    "number": "001",
+    "name": "Shellder",
+    "specialty1": "Scrub",
+    "specialty2": "Litter",
+    "habitat": "Dark",
+    "type1": "Water",
+    "type2": "",
+    "favorites": [
+      "Lots of water",
+      "Shiny stuff",
+      "Round stuff",
+      "Hard stuff",
+      "Containers"
+    ],
+    "taste": "Bitter flavors",
+    "image": "https://www.serebii.net/pokemonpokopia/pokemon/small/090.png"
+  },
+  {
+    "number": "002",
+    "name": "Cloyster",
+    "specialty1": "Scrub",
+    "specialty2": "Litter",
+    "habitat": "Cool",
+    "type1": "Water",
+    "type2": "Ice",
+    "favorites": [
+      "Lots of water",
+      "Shiny stuff",
+      "Round stuff",
+      "Sharp stuff",
+      "Containers"
+    ],
+    "taste": "Sour Flavors",
+    "image": "https://www.serebii.net/pokemonpokopia/pokemon/small/091.png"
+  },
+  {
+    "number": "003",
+    "name": "Horsea",
+    "specialty1": "Water",
+    "specialty2": "",
+    "habitat": "Humid",
+    "type1": "Water",
+    "type2": "",
+    "favorites": [
+      "Lots of Water",
+      "Slender objects",
+      "Spinning stuff",
+      "Play spaces",
+      "Group activities"
+    ],
+    "taste": "Sweet flavors",
+    "image": "https://www.serebii.net/pokemonpokopia/pokemon/small/116.png"
+  },
+  {
+    "number": "004",
+    "name": "Seadra",
+    "specialty1": "Water",
+    "specialty2": "Litter",
+    "habitat": "Humid",
+    "type1": "Water",
+    "type2": "",
+    "favorites": [
+      "Lots of water",
+      "Slender objects",
+      "Spinning stuff",
+      "Ocean vibes",
+      "Sharp stuff"
+    ],
+    "taste": "Spicy flavors",
+    "image": "https://www.serebii.net/pokemonpokopia/pokemon/small/117.png"
+  },
+  {
+    "number": "005",
+    "name": "Kingdra",
+    "specialty1": "Water",
+    "specialty2": "Litter",
+    "habitat": "Dark",
+    "type1": "Water",
+    "type2": "Dragon",
+    "favorites": [
+      "Lots of water",
+      "Slender objects",
+      "Luxury",
+      "Exercise",
+      "Nice breezes"
+    ],
+    "taste": "Dry flavors",
+    "image": "https://www.serebii.net/pokemonpokopia/pokemon/small/230.png"
+  },
+  {
+    "number": "006",
+    "name": "Staryu",
+    "specialty1": "Teleport",
+    "specialty2": "",
+    "habitat": "Bright",
+    "type1": "Water",
+    "type2": "",
+    "favorites": [
+      "Lots of water",
+      "Strange stuff",
+      "Spinning stuff",
+      "Colorful stuff",
+      "Sharp stuff"
+    ],
+    "taste": "Bitter flavors",
+    "image": "https://www.serebii.net/pokemonpokopia/pokemon/small/120.png"
+  },
+  {
+    "number": "007",
+    "name": "Starmie",
+    "specialty1": "Teleport",
+    "specialty2": "Gather",
+    "habitat": "Bright",
+    "type1": "Water",
+    "type2": "Psychic",
+    "favorites": [
+      "Lots of water",
+      "Strange stuff",
+      "Spinning stuff",
+      "Colorful stuff",
+      "Complicated stuff"
+    ],
+    "taste": "Bitter flavors",
+    "image": "https://www.serebii.net/pokemonpokopia/pokemon/small/121.png"
+  },
+  {
+    "number": "008",
+    "name": "Totodile",
+    "specialty1": "Chop",
+    "specialty2": "",
+    "habitat": "Bright",
+    "type1": "Water",
+    "type2": "",
+    "favorites": [
+      "Lots of water",
+      "Sharp stuff",
+      "Play spaces",
+      "Group activities",
+      "Wobbly stuff"
+    ],
+    "taste": "Spicy flavors",
+    "image": "https://www.serebii.net/pokemonpokopia/pokemon/small/158.png"
+  },
+  {
+    "number": "009",
+    "name": "Croconaw",
+    "specialty1": "Chop",
+    "specialty2": "Crush",
+    "habitat": "Bright",
+    "type1": "Water",
+    "type2": "",
+    "favorites": [
+      "Lots of water",
+      "Sharp stuff",
+      "Exercise",
+      "Slender objects",
+      "Fabric"
+    ],
+    "taste": "Spicy flavors",
+    "image": "https://www.serebii.net/pokemonpokopia/pokemon/small/159.png"
+  },
+  {
+    "number": "010",
+    "name": "Feraligatr",
+    "specialty1": "Chop",
+    "specialty2": "Crush",
+    "habitat": "Bright",
+    "type1": "Water",
+    "type2": "",
+    "favorites": [
+      "Lots of water",
+      "Sharp stuff",
+      "Exercise",
+      "Luxury",
+      "Nice breezes"
+    ],
+    "taste": "Sour Flavors",
+    "image": "https://www.serebii.net/pokemonpokopia/pokemon/small/160.png"
+  },
+  {
+    "number": "011",
+    "name": "Chinchou",
+    "specialty1": "Generate",
+    "specialty2": "",
+    "habitat": "Humid",
+    "type1": "Water",
+    "type2": "Electric",
+    "favorites": [
+      "Lots of water",
+      "Electronics",
+      "Wobbly stuff",
+      "Glass stuff",
+      "Shiny stuff"
+    ],
+    "taste": "Dry flavors",
+    "image": "https://www.serebii.net/pokemonpokopia/pokemon/small/170.png"
+  },
+  {
+    "number": "012",
+    "name": "Lanturn",
+    "specialty1": "Generate",
+    "specialty2": "Water",
+    "habitat": "Dark",
+    "type1": "Water",
+    "type2": "Electric",
+    "favorites": [
+      "Lots of water",
+      "Electronics",
+      "Wobbly stuff",
+      "Glass stuff",
+      "Cleanliness"
+    ],
+    "taste": "Spicy flavors",
+    "image": "https://www.serebii.net/pokemonpokopia/pokemon/small/171.png"
+  },
+  {
+    "number": "013",
+    "name": "Corsola",
+    "specialty1": "Grow",
+    "specialty2": "",
+    "habitat": "Warm",
+    "type1": "Water",
+    "type2": "Rock",
+    "favorites": [
+      "Lots of water",
+      "Stone stuff",
+      "Lots of nature",
+      "Glass stuff",
+      "Cleanliness"
+    ],
+    "taste": "Sweet flavors",
+    "image": "https://www.serebii.net/pokemonpokopia/pokemon/small/222.png"
+  },
+  {
+    "number": "014",
+    "name": "Mudkip",
+    "specialty1": "Water",
+    "specialty2": "",
+    "habitat": "Bright",
+    "type1": "Water",
+    "type2": "",
+    "favorites": [
+      "Lots of water",
+      "Lots of dirt",
+      "Soft stuff",
+      "Play spaces",
+      "Stone stuff"
+    ],
+    "taste": "Dry flavors",
+    "image": "https://www.serebii.net/pokemonpokopia/pokemon/small/258.png"
+  },
+  {
+    "number": "015",
+    "name": "Marshtomp",
+    "specialty1": "Water",
+    "specialty2": "Build",
+    "habitat": "Bright",
+    "type1": "Water",
+    "type2": "Ground",
+    "favorites": [
+      "Lots of water",
+      "Lots of dirt",
+      "Soft stuff",
+      "Construction",
+      "Watching stuff"
+    ],
+    "taste": "Dry flavors",
+    "image": "https://www.serebii.net/pokemonpokopia/pokemon/small/259.png"
+  },
+  {
+    "number": "016",
+    "name": "Swampert",
+    "specialty1": "Build",
+    "specialty2": "Bulldoze",
+    "habitat": "Bright",
+    "type1": "Water",
+    "type2": "Ground",
+    "favorites": [
+      "Lots of water",
+      "Lots of dirt",
+      "Soft stuff",
+      "Construction",
+      "Exercise"
+    ],
+    "taste": "Dry flavors",
+    "image": "https://www.serebii.net/pokemonpokopia/pokemon/small/260.png"
+  },
+  {
+    "number": "017",
+    "name": "Carvanha",
+    "specialty1": "Chop",
+    "specialty2": "",
+    "habitat": "Warm",
+    "type1": "Water",
+    "type2": "Dark",
+    "favorites": [
+      "Lots of water",
+      "Sharp stuff",
+      "Exercise",
+      "Ocean vibes",
+      "Group activities"
+    ],
+    "taste": "Spicy flavors",
+    "image": "https://www.serebii.net/pokemonpokopia/pokemon/small/318.png"
+  },
+  {
+    "number": "018",
+    "name": "Sharpedo",
+    "specialty1": "Chop",
+    "specialty2": "Scrub",
+    "habitat": "Humid",
+    "type1": "Water",
+    "type2": "Dark",
+    "favorites": [
+      "Lots of water",
+      "Sharp stuff",
+      "Exercise",
+      "Ocean vibes",
+      "Symbols"
+    ],
+    "taste": "Spicy flavors",
+    "image": "https://www.serebii.net/pokemonpokopia/pokemon/small/319.png"
+  },
+  {
+    "number": "019",
+    "name": "Barboach",
+    "specialty1": "Search",
+    "specialty2": "",
+    "habitat": "Humid",
+    "type1": "Water",
+    "type2": "Ground",
+    "favorites": [
+      "Lots of water",
+      "Lots of dirt",
+      "Watching stuff",
+      "Soft stuff",
+      "Slender objects"
+    ],
+    "taste": "Bitter flavors",
+    "image": "https://www.serebii.net/pokemonpokopia/pokemon/small/339.png"
+  },
+  {
+    "number": "020",
+    "name": "Whiscash",
+    "specialty1": "Search",
+    "specialty2": "Bulldoze",
+    "habitat": "Humid",
+    "type1": "Water",
+    "type2": "Ground",
+    "favorites": [
+      "Lots of water",
+      "Lots of dirt",
+      "Watching stuff",
+      "Soft stuff",
+      "Wobbly stuff"
+    ],
+    "taste": "Dry flavors",
+    "image": "https://www.serebii.net/pokemonpokopia/pokemon/small/340.png"
+  },
+  {
+    "number": "021",
+    "name": "Corphish",
+    "specialty1": "Build",
+    "specialty2": "",
+    "habitat": "Humid",
+    "type1": "Water",
+    "type2": "",
+    "favorites": [
+      "Lots of water",
+      "Construction",
+      "Exercise",
+      "Lots of nature",
+      "Play spaces"
+    ],
+    "taste": "Bitter flavors",
+    "image": "https://www.serebii.net/pokemonpokopia/pokemon/small/341.png"
+  },
+  {
+    "number": "022",
+    "name": "Crawdaunt",
+    "specialty1": "Build",
+    "specialty2": "Crush",
+    "habitat": "Humid",
+    "type1": "Water",
+    "type2": "Dark",
+    "favorites": [
+      "Lots of water",
+      "Construction",
+      "Exercise",
+      "Healing",
+      "Luxury"
+    ],
+    "taste": "Spicy flavors",
+    "image": "https://www.serebii.net/pokemonpokopia/pokemon/small/342.png"
+  },
+  {
+    "number": "023",
+    "name": "Luvdisc",
+    "specialty1": "Hype",
+    "specialty2": "",
+    "habitat": "Warm",
+    "type1": "Water",
+    "type2": "",
+    "favorites": [
+      "Lots of water",
+      "Cute stuff",
+      "Healing",
+      "Group activities",
+      "Play spaces"
+    ],
+    "taste": "Sweet Flavors",
+    "image": "https://www.serebii.net/pokemonpokopia/pokemon/small/370.png"
+  },
+  {
+    "number": "024",
+    "name": "Buizel",
+    "specialty1": "Chop",
+    "specialty2": "Trade",
+    "habitat": "Bright",
+    "type1": "Water",
+    "type2": "",
+    "favorites": [
+      "Lots of water",
+      "Soft stuff",
+      "Spinning stuff",
+      "Play spaces",
+      "Group activities"
+    ],
+    "taste": "Dry flavors",
+    "image": "https://www.serebii.net/pokemonpokopia/pokemon/small/418.png"
+  },
+  {
+    "number": "025",
+    "name": "Floatzel",
+    "specialty1": "Trade",
+    "specialty2": "Build",
+    "habitat": "Bright",
+    "type1": "Water",
+    "type2": "",
+    "favorites": [
+      "Lots of water",
+      "Soft stuff",
+      "Spinning stuff",
+      "Healing",
+      "Cleanliness"
+    ],
+    "taste": "Spicy flavors",
+    "image": "https://www.serebii.net/pokemonpokopia/pokemon/small/419.png"
+  },
+  {
+    "number": "026",
+    "name": "Finneon",
+    "specialty1": "Hype",
+    "specialty2": "",
+    "habitat": "Bright",
+    "type1": "Water",
+    "type2": "",
+    "favorites": [
+      "Lots of water",
+      "Colorful stuff",
+      "Shiny stuff",
+      "Glass stuff",
+      "Fabric"
+    ],
+    "taste": "Sour Flavors",
+    "image": "https://www.serebii.net/pokemonpokopia/pokemon/small/456.png"
+  },
+  {
+    "number": "027",
+    "name": "Lumineon",
+    "specialty1": "Hype",
+    "specialty2": "Water",
+    "habitat": "Dark",
+    "type1": "Water",
+    "type2": "",
+    "favorites": [
+      "Lots of water",
+      "Colorful stuff",
+      "Shiny stuff",
+      "Glass stuff",
+      "Group activities"
+    ],
+    "taste": "Dry flavors",
+    "image": "https://www.serebii.net/pokemonpokopia/pokemon/small/457.png"
+  },
+  {
+    "number": "028",
+    "name": "Frillish Male Form",
+    "specialty1": "Search",
+    "specialty2": "Burn",
+    "habitat": "Dark",
+    "type1": "Water",
+    "type2": "Ghost",
+    "favorites": [
+      "Lots of water",
+      "Spooky stuff",
+      "Ocean vibes",
+      "Watching stuff",
+      "Fabric"
+    ],
+    "taste": "Sweet Flavors",
+    "image": "https://www.serebii.net/pokemonpokopia/pokemon/small/592-frillishmaleform.png"
+  },
+  {
+    "number": "028",
+    "name": "Frillish Female Form",
+    "specialty1": "Search",
+    "specialty2": "Burn",
+    "habitat": "Dark",
+    "type1": "Water",
+    "type2": "Ghost",
+    "favorites": [
+      "Lots of water",
+      "Spooky stuff",
+      "Ocean vibes",
+      "Watching stuff",
+      "Fabric"
+    ],
+    "taste": "Sour Flavors",
+    "image": "https://www.serebii.net/pokemonpokopia/pokemon/small/592-frillishfemaleform.png"
+  },
+  {
+    "number": "029",
+    "name": "Jellicent Male Form",
+    "specialty1": "Search",
+    "specialty2": "Burn",
+    "habitat": "Dark",
+    "type1": "Water",
+    "type2": "Ghost",
+    "favorites": [
+      "Lots of water",
+      "Spooky stuff",
+      "Ocean vibes",
+      "Rides",
+      "Luxury"
+    ],
+    "taste": "Sour Flavors",
+    "image": "https://www.serebii.net/pokemonpokopia/pokemon/small/593-jellicentmaleform.png"
+  },
+  {
+    "number": "029",
+    "name": "Jellicent Female Form",
+    "specialty1": "Search",
+    "specialty2": "Burn",
+    "habitat": "Dark",
+    "type1": "Water",
+    "type2": "Ghost",
+    "favorites": [
+      "Lots of water",
+      "Spooky stuff",
+      "Ocean vibes",
+      "Rides",
+      "Luxury"
+    ],
+    "taste": "Spicy flavors",
+    "image": "https://www.serebii.net/pokemonpokopia/pokemon/small/593-jellicentfemaleform.png"
+  },
+  {
+    "number": "030",
+    "name": "Alomomola",
+    "specialty1": "Water",
+    "specialty2": "Scrub",
+    "habitat": "Warm",
+    "type1": "Water",
+    "type2": "",
+    "favorites": [
+      "Lots of water",
+      "Cute stuff",
+      "Healing",
+      "Colorful stuff",
+      "Cleanliness"
+    ],
+    "taste": "Sour Flavors",
+    "image": "https://www.serebii.net/pokemonpokopia/pokemon/small/594.png"
+  },
+  {
+    "number": "031",
+    "name": "Stunfisk",
+    "specialty1": "Generate",
+    "specialty2": "Bulldoze",
+    "habitat": "Humid",
+    "type1": "Ground",
+    "type2": "Electric",
+    "favorites": [
+      "Lots of dirt",
+      "Electronics",
+      "Blocky stuff",
+      "Soft stuff",
+      "Watching stuff"
+    ],
+    "taste": "Dry flavors",
+    "image": "https://www.serebii.net/pokemonpokopia/pokemon/small/618.png"
+  },
+  {
+    "number": "032",
+    "name": "Inkay",
+    "specialty1": "Gather",
+    "specialty2": "Teleport",
+    "habitat": "Dark",
+    "type1": "Dark",
+    "type2": "Psychic",
+    "favorites": [
+      "Complicated stuff",
+      "Strange stuff",
+      "Colorful stuff",
+      "Spinning stuff",
+      "Noisy stuff"
+    ],
+    "taste": "Sweet Flavors",
+    "image": "https://www.serebii.net/pokemonpokopia/pokemon/small/686.png"
+  },
+  {
+    "number": "033",
+    "name": "Malamar",
+    "specialty1": "Gather",
+    "specialty2": "Teleport",
+    "habitat": "Bright",
+    "type1": "Dark",
+    "type2": "Psychic",
+    "favorites": [
+      "Complicated stuff",
+      "Strange stuff",
+      "Colorful stuff",
+      "Spooky stuff",
+      "Letters and words"
+    ],
+    "taste": "Sour Flavors",
+    "image": "https://www.serebii.net/pokemonpokopia/pokemon/small/687.png"
+  },
+  {
+    "number": "034",
+    "name": "Popplio",
+    "specialty1": "Hype",
+    "specialty2": "Water",
+    "habitat": "Bright",
+    "type1": "Water",
+    "type2": "",
+    "favorites": [
+      "Lots of water",
+      "Play spaces",
+      "Cute stuff",
+      "Round stuff",
+      "Shiny stuff"
+    ],
+    "taste": "Sweet Flavors",
+    "image": "https://www.serebii.net/pokemonpokopia/pokemon/small/728.png"
+  },
+  {
+    "number": "035",
+    "name": "Brionne",
+    "specialty1": "Hype",
+    "specialty2": "Trade",
+    "habitat": "Bright",
+    "type1": "Water",
+    "type2": "",
+    "favorites": [
+      "Lots of water",
+      "Play spaces",
+      "Group activities",
+      "Noisy stuff",
+      "Cleanliness"
+    ],
+    "taste": "Sweet Flavors",
+    "image": "https://www.serebii.net/pokemonpokopia/pokemon/small/729.png"
+  },
+  {
+    "number": "036",
+    "name": "Primarina",
+    "specialty1": "Hype",
+    "specialty2": "Scrub",
+    "habitat": "Bright",
+    "type1": "Water",
+    "type2": "Fairy",
+    "favorites": [
+      "Lots of water",
+      "Play spaces",
+      "Cute stuff",
+      "Noisy stuff",
+      "Cleanliness"
+    ],
+    "taste": "Sour Flavors",
+    "image": "https://www.serebii.net/pokemonpokopia/pokemon/small/730.png"
+  },
+  {
+    "number": "037",
+    "name": "Mareanie",
+    "specialty1": "Recycle",
+    "specialty2": "",
+    "habitat": "Warm",
+    "type1": "Poison",
+    "type2": "Water",
+    "favorites": [
+      "Garbage",
+      "Lots of water",
+      "Sharp stuff",
+      "Colorful stuff",
+      "Shiny stuff"
+    ],
+    "taste": "Bitter flavors",
+    "image": "https://www.serebii.net/pokemonpokopia/pokemon/small/747.png"
+  },
+  {
+    "number": "038",
+    "name": "Toxapex",
+    "specialty1": "Recycle",
+    "specialty2": "Build",
+    "habitat": "Warm",
+    "type1": "Poison",
+    "type2": "Water",
+    "favorites": [
+      "Garbage",
+      "Lots of water",
+      "Sharp stuff",
+      "Colorful stuff",
+      "Containers"
+    ],
+    "taste": "Dry flavors",
+    "image": "https://www.serebii.net/pokemonpokopia/pokemon/small/748.png"
+  },
+  {
+    "number": "039",
+    "name": "Wimpod",
+    "specialty1": "Recycle",
+    "specialty2": "",
+    "habitat": "Dark",
+    "type1": "Bug",
+    "type2": "Water",
+    "favorites": [
+      "Lots of nature",
+      "Lots of water",
+      "Group activities",
+      "Garbage",
+      "Ocean vibes"
+    ],
+    "taste": "Bitter flavors",
+    "image": "https://www.serebii.net/pokemonpokopia/pokemon/small/767.png"
+  },
+  {
+    "number": "040",
+    "name": "Golisopod",
+    "specialty1": "Recycle",
+    "specialty2": "Chop",
+    "habitat": "Dark",
+    "type1": "Bug",
+    "type2": "Water",
+    "favorites": [
+      "Lots of nature",
+      "Lots of water",
+      "Healing",
+      "Exercise",
+      "Luxury"
+    ],
+    "taste": "Dry flavors",
+    "image": "https://www.serebii.net/pokemonpokopia/pokemon/small/768.png"
+  },
+  {
+    "number": "041",
+    "name": "Bruxish",
+    "specialty1": "Gather",
+    "specialty2": "Teleport",
+    "habitat": "Warm",
+    "type1": "Water",
+    "type2": "Psychic",
+    "favorites": [
+      "Lots of water",
+      "Strange stuff",
+      "Colorful stuff",
+      "Hard stuff",
+      "Watching stuff"
+    ],
+    "taste": "Sour Flavors",
+    "image": "https://www.serebii.net/pokemonpokopia/pokemon/small/779.png"
+  },
+  {
+    "number": "042",
+    "name": "Dhelmise",
+    "specialty1": "Grow",
+    "specialty2": "Litter",
+    "habitat": "Dark",
+    "type1": "Ghost",
+    "type2": "Grass",
+    "favorites": [
+      "Spooky stuff",
+      "Lots of nature",
+      "Wobbly stuff",
+      "Symbols",
+      "Ocean vibes"
+    ],
+    "taste": "Bitter flavors",
+    "image": "https://www.serebii.net/pokemonpokopia/pokemon/small/781.png"
+  },
+  {
+    "number": "043",
+    "name": "Chewtle",
+    "specialty1": "Chop",
+    "specialty2": "",
+    "habitat": "Bright",
+    "type1": "Water",
+    "type2": "",
+    "favorites": [
+      "Lots of water",
+      "Hard stuff",
+      "Round stuff",
+      "Lots of nature",
+      "Fabric"
+    ],
+    "taste": "Sweet Flavors",
+    "image": "https://www.serebii.net/pokemonpokopia/pokemon/small/833.png"
+  },
+  {
+    "number": "044",
+    "name": "Drednaw",
+    "specialty1": "Chop",
+    "specialty2": "Bulldoze",
+    "habitat": "Bright",
+    "type1": "Water",
+    "type2": "Rock",
+    "favorites": [
+      "Lots of water",
+      "Hard stuff",
+      "Round stuff",
+      "Stone stuff",
+      "Exercise"
+    ],
+    "taste": "Sour Flavors",
+    "image": "https://www.serebii.net/pokemonpokopia/pokemon/small/834.png"
+  },
+  {
+    "number": "045",
+    "name": "Pincurchin",
+    "specialty1": "Generate",
+    "specialty2": "",
+    "habitat": "Humid",
+    "type1": "Electric",
+    "type2": "",
+    "favorites": [
+      "Electronics",
+      "Round stuff",
+      "Sharp stuff",
+      "Watching stuff",
+      "Ocean vibes"
+    ],
+    "taste": "Bitter flavors",
+    "image": "https://www.serebii.net/pokemonpokopia/pokemon/small/871.png"
+  },
+  {
+    "number": "046",
+    "name": "Wiglett",
+    "specialty1": "Bulldoze",
+    "specialty2": "",
+    "habitat": "Humid",
+    "type1": "Water",
+    "type2": "",
+    "favorites": [
+      "Lots of water",
+      "Gatherings",
+      "Slender objects",
+      "Group activities",
+      "Lots of dirt"
+    ],
+    "taste": "Dry flavors",
+    "image": "https://www.serebii.net/pokemonpokopia/pokemon/small/960.png"
+  },
+  {
+    "number": "047",
+    "name": "Wugtrio",
+    "specialty1": "Bulldoze",
+    "specialty2": "Search",
+    "habitat": "Humid",
+    "type1": "Water",
+    "type2": "",
+    "favorites": [
+      "Lots of water",
+      "Gatherings",
+      "Slender objects",
+      "Group activities",
+      "Stone stuff"
+    ],
+    "taste": "Sweet Flavors",
+    "image": "https://www.serebii.net/pokemonpokopia/pokemon/small/961.png"
+  },
+  {
+    "number": "048",
+    "name": "Veluza",
+    "specialty1": "Gather",
+    "specialty2": "Teleport",
+    "habitat": "Cool",
+    "type1": "Water",
+    "type2": "Psychic",
+    "favorites": [
+      "Lots of water",
+      "Soft stuff",
+      "Sharp stuff",
+      "Exercise",
+      "Rides"
+    ],
+    "taste": "Sweet Flavors",
+    "image": "https://www.serebii.net/pokemonpokopia/pokemon/small/976.png"
+  },
+  {
+    "number": "049",
+    "name": "Phione",
+    "specialty1": "Trade",
+    "specialty2": "",
+    "habitat": "Warm",
+    "type1": "Water",
+    "type2": "",
+    "favorites": [
+      "Lots of water",
+      "Cute stuff",
+      "Ocean vibes",
+      "Soft stuff",
+      "Round stuff"
+    ],
+    "taste": "Sour Flavors",
+    "image": "https://www.serebii.net/pokemonpokopia/pokemon/small/489.png"
+  },
+  {
+    "number": "050",
+    "name": "Manaphy",
+    "specialty1": "Trade",
+    "specialty2": "Hype",
+    "habitat": "Cool",
+    "type1": "Water",
+    "type2": "",
+    "favorites": [
+      "Lots of water",
+      "Cute stuff",
+      "Ocean vibes",
+      "Healing",
+      "Noisy stuff"
+    ],
+    "taste": "Bitter flavors",
+    "image": "https://www.serebii.net/pokemonpokopia/pokemon/small/490.png"
   }
 ]

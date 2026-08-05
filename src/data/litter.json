@@ -34,7 +34,12 @@
     "Tyrantrum": "Stone",
     "Aurorus": "Stone",
     "Jumpluff": "Fluff",
-    "Jirachi": "Stardust"
+    "Jirachi": "Stardust",
+    "Shellder": "Seashell",
+    "Cloyster": "Seashell",
+    "Seadra": "Black Paint",
+    "Kingdra": "Black Paint",
+    "Dhelmise": "Nonburnable Garbage"
   },
   "imgs": {
     "Leaf": "https://www.serebii.net/pokemonpokopia/items/leaf.png",
@@ -48,6 +53,8 @@
     "Fluff": "https://www.serebii.net/pokemonpokopia/items/fluff.png",
     "Squishy Clay": "https://www.serebii.net/pokemonpokopia/items/squishyclay.png",
     "Iron Ore": "https://www.serebii.net/pokemonpokopia/items/ironore.png",
-    "Stardust": "https://www.serebii.net/pokemonpokopia/items/stardust.png"
+    "Stardust": "https://www.serebii.net/pokemonpokopia/items/stardust.png",
+    "Seashell": "https://www.serebii.net/pokemonpokopia/items/seashell.png",
+    "Black Paint": "https://www.serebii.net/pokemonpokopia/items/blackpaint.png"
   }
 }

@@ -6,6 +6,7 @@ const path = require("path");
 const BASE_URL = "https://www.serebii.net";
 const START_URL = "https://www.serebii.net/pokemonpokopia/availablepokemon.shtml";
 const EVENT_DEX_URL = "https://www.serebii.net/pokemonpokopia/eventpokedex.shtml";
+const DLC1_DEX_URL = "https://www.serebii.net/pokemonpokopia/basinpokedex.shtml";
 
 async function fetchPage(url) {
   try {
@@ -120,12 +121,14 @@ async function scrapeList(url, showLogs) {
 async function main(showLogs) {
   const {rowResults: results, specialtyImageMap} = await scrapeList(START_URL, showLogs);
   const {rowResults: eventResults, specialtyImageMap: eventSpecialtyImageMap } = await scrapeList(EVENT_DEX_URL, showLogs);
+  const {rowResults: dlc1Results, specialtyImageMap: dlc1SpecialtyImageMap } = await scrapeList(DLC1_DEX_URL, showLogs);
   results.push(...eventResults);
+  results.push(...dlc1Results);
 
   const outputPath = path.join(__dirname, "../src/data/pokemon.json");
   await fs.writeJson(outputPath, results, { spaces: 2 });
 
-  const combinedSpecialtyImageMap = { ...specialtyImageMap, ...eventSpecialtyImageMap };
+  const combinedSpecialtyImageMap = { ...specialtyImageMap, ...eventSpecialtyImageMap, ...dlc1SpecialtyImageMap };
   const specialtyImgPath = path.join(__dirname, "../src/data/specialtyImages.json");
   await fs.writeJson(specialtyImgPath, combinedSpecialtyImageMap, { spaces: 2 });
 
