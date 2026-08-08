@@ -5,6 +5,7 @@ import { DITTO_NAME } from './constants'
 const STORAGE_KEY_HOUSES = 'pokemon-houses'
 const STORAGE_KEY_SELECTED = 'pokemon-selected-house'
 const STORAGE_KEY_DRAG_ENABLED = 'pokemon-drag-enabled'
+const STORAGE_KEY_DLC_ON = 'pokopia-has-dlc'
 
 const canHouseHoldDitto = (house: House) => !(house.type === 'custom' && house.members.length === 1)
 
@@ -29,12 +30,14 @@ const HouseProvider = ({ children }: { children: React.ReactNode }) => {
   const [filterLocation, setFilterLocation] = useState<LocationCode | null>(null)
   const [dragAndDropEnabled, setDragAndDropEnabled] = useState(true)
   const [isHydrated, setIsHydrated] = useState(false)
+  const [hasDLC, setHasDLC] = useState<boolean>(true)
 
   // Load from localStorage on mount
   useEffect(() => {
     const savedHouses = localStorage.getItem(STORAGE_KEY_HOUSES)
     const savedSelected = localStorage.getItem(STORAGE_KEY_SELECTED)
     const savedDragEnabled = localStorage.getItem(STORAGE_KEY_DRAG_ENABLED)
+    const savedDlcOn = localStorage.getItem(STORAGE_KEY_DLC_ON)
     
     if (savedHouses) {
       try {
@@ -51,6 +54,10 @@ const HouseProvider = ({ children }: { children: React.ReactNode }) => {
 
     if (savedDragEnabled !== null) {
       setDragAndDropEnabled(savedDragEnabled !== 'false')
+    }
+
+    if (savedDlcOn !== null) {
+      setHasDLC(savedDlcOn === 'true')
     }
     
     setIsHydrated(true)
@@ -79,6 +86,12 @@ const HouseProvider = ({ children }: { children: React.ReactNode }) => {
       localStorage.setItem(STORAGE_KEY_DRAG_ENABLED, String(dragAndDropEnabled))
     }
   }, [dragAndDropEnabled, isHydrated])
+
+  useEffect(() => {
+    if (isHydrated) {
+      localStorage.setItem(STORAGE_KEY_DLC_ON, String(hasDLC))
+    }
+  }, [hasDLC, isHydrated])
 
   const houseMap = useMemo(() => Object.fromEntries(houses.map((house) => [house.id, house])), [houses])
 
@@ -251,7 +264,7 @@ const HouseProvider = ({ children }: { children: React.ReactNode }) => {
   }
 
   return (
-    <HouseContext.Provider value={{ houses, houseMap, selectedHouseId, setSelectedHouseId, filterLocation, setFilterLocation, dragAndDropEnabled, setDragAndDropEnabled, generateHouse, moveToHouse, updateHouse, removeHouse, removeFromHouse, clearHouseData, importHouses }}>
+    <HouseContext.Provider value={{ houses, houseMap, selectedHouseId, setSelectedHouseId, filterLocation, setFilterLocation, dragAndDropEnabled, setDragAndDropEnabled, generateHouse, moveToHouse, updateHouse, removeHouse, removeFromHouse, clearHouseData, importHouses, hasDLC, setHasDLC }}>
       {children}
     </HouseContext.Provider>
   )
@@ -273,6 +286,8 @@ const HouseContext = createContext<{
   removeFromHouse: (pokemonName: string, sourceHouseId?: number) => void
   clearHouseData: () => void
   importHouses: (houses: House[]) => void
+  hasDLC: boolean
+  setHasDLC: Dispatch<SetStateAction<boolean>>
 }>({
   houses: [],
   selectedHouseId: null,
@@ -289,6 +304,8 @@ const HouseContext = createContext<{
   removeFromHouse: () => {},
   clearHouseData: () => {},
   importHouses: () => {},
+  hasDLC: true,
+  setHasDLC: () => {},
 })
 
 export { HouseProvider, HouseContext }

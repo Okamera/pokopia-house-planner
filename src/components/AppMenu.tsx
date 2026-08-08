@@ -16,7 +16,7 @@ const isIPhoneSafari = () => {
 }
 
 export const AppMenu = () => {
-  const { clearHouseData, dragAndDropEnabled, houses, importHouses, setDragAndDropEnabled } = useHouse()
+  const { clearHouseData, dragAndDropEnabled, houses, importHouses, setDragAndDropEnabled, hasDLC, setHasDLC } = useHouse()
   const { fontScale, setFontScale } = useFontSize()
   const fileInputRef = useRef<HTMLInputElement>(null)
   const [menuOpen, setMenuOpen] = useState(false)
@@ -130,6 +130,18 @@ export const AppMenu = () => {
                 onClick={() => setDragAndDropEnabled((current) => !current)}
               >
                 {dragAndDropEnabled ? 'Click, Drag and Drop' : 'Click only'}
+              </button>
+            </div>
+            <div className="menu-section">
+              <label>DLC Content</label>
+              <button
+                type="button"
+                className={`menu-toggle-btn ${hasDLC ? 'active' : ''}`}
+                onClick={() => {
+                  setHasDLC((current) => !current)
+                }}
+              >
+                {hasDLC ? 'Show' : 'Hide'}
               </button>
             </div>
             <hr className="menu-divider" />

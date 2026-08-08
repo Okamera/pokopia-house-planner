@@ -54,7 +54,7 @@ async function scrapeDetails(url) {
   };
 }
 
-async function scrapeList(url, showLogs) {
+async function scrapeList(url, showLogs, isDLC) {
   const $ = await fetchPage(url);
   if (!$) return [];
 
@@ -108,6 +108,7 @@ async function scrapeList(url, showLogs) {
         favorites: details.favorites || [],
         taste: details.taste || "",
         image,
+        isDLC: isDLC
       };
     })
   );
@@ -121,7 +122,7 @@ async function scrapeList(url, showLogs) {
 async function main(showLogs) {
   const {rowResults: results, specialtyImageMap} = await scrapeList(START_URL, showLogs);
   const {rowResults: eventResults, specialtyImageMap: eventSpecialtyImageMap } = await scrapeList(EVENT_DEX_URL, showLogs);
-  const {rowResults: dlc1Results, specialtyImageMap: dlc1SpecialtyImageMap } = await scrapeList(DLC1_DEX_URL, showLogs);
+  const {rowResults: dlc1Results, specialtyImageMap: dlc1SpecialtyImageMap } = await scrapeList(DLC1_DEX_URL, showLogs, true);
   results.push(...eventResults);
   results.push(...dlc1Results);
 

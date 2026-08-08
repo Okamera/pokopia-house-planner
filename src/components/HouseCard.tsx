@@ -13,7 +13,7 @@ type HouseProps = {
 }
 
 export const HouseCard = ({ house, onDetailsClick }: HouseProps) => {
-  const { selectedHouseId, setSelectedHouseId, dragAndDropEnabled, updateHouse, removeHouse } = useHouse()
+  const { selectedHouseId, setSelectedHouseId, dragAndDropEnabled, updateHouse, removeHouse, hasDLC } = useHouse()
   const { ref } = useDroppable({
     id: house.id,
   })
@@ -94,7 +94,9 @@ export const HouseCard = ({ house, onDetailsClick }: HouseProps) => {
               onBlur={() => setEditingLocation(false)}
               onClick={(e) => e.stopPropagation()}
             >
-              {(Object.entries(locations) as Array<[LocationCode, string]>).map(([code, name]) => (
+              {(Object.entries(locations) as Array<[LocationCode, string]>)
+                .filter(([code]) => code !== 'bu' || hasDLC)
+                .map(([code, name]) => (
                 <option key={code} value={code}>{name}</option>
               ))}
             </select>

@@ -15,7 +15,7 @@ const slotCost: Record<number, number> = {
 }
 
 export const HouseList = () => {
-  const { houses, setSelectedHouseId, filterLocation, setFilterLocation } = useHouse()
+  const { houses, setSelectedHouseId, filterLocation, setFilterLocation, hasDLC } = useHouse()
   const [view, setView] = useState<'grid' | 'table'>(() => {
     const savedView = localStorage.getItem(STORAGE_KEY_VIEW)
     return savedView === 'table' ? 'table' : 'grid'
@@ -23,7 +23,8 @@ export const HouseList = () => {
   const [sort, setSort] = useState<Sort>({ col: 'id', dir: 'asc' })
   const [detailsHouseId, setDetailsHouseId] = useState<number | null>(null)
 
-  const locationCosts = (Object.keys(locations) as LocationCode[]).map((loc) => {
+  const locationKeys = (Object.keys(locations) as LocationCode[]).filter((loc) => loc !== 'bu' || hasDLC)
+  const locationCosts = locationKeys.map((loc) => {
     const cost = houses
       .filter((h) => h.location === loc && h.type === 'prefab')
       .reduce((sum, h) => sum + (slotCost[h.members.length] ?? 0), 0)

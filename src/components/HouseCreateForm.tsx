@@ -4,7 +4,7 @@ import type { HouseType, LocationCode } from '../types';
 import { locations } from '../utils/houseUtils';
 
 export const HouseCreateForm = () => {
-  const { generateHouse, filterLocation } = useHouse()
+  const { generateHouse, filterLocation, hasDLC } = useHouse()
   const [location, setLocation] = useState<LocationCode>('ww')
   const [slots, setSlots] = useState(4)
   const [type, setType] = useState<HouseType>('custom')
@@ -64,9 +64,11 @@ export const HouseCreateForm = () => {
       <div>
         <label>Location</label>
         <select name="location" id="location" value={location} onChange={(e) => setLocation(e.target.value as LocationCode)}>
-          {Object.entries(locations).map(([code, name]) => (
-            <option key={code} value={code}>{name}</option>
-          ))}
+          {Object.entries(locations)
+            .filter(([code]) => code !== 'bu' || hasDLC)
+            .map(([code, name]) => (
+              <option key={code} value={code}>{name}</option>
+            ))}
         </select>
       </div>
       </div>

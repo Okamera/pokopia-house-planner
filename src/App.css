@@ -117,6 +117,8 @@
   --accentRed: #FE7A5E;
   --accentRedTint: #FE7A5E50;
   --dittoPink:#EFB6FE;
+  --accentTeal: #00BFA5;
+  --accentTealTint: #00BFA550;
 }
 /* Dark Mode */
 @media (prefers-color-scheme: dark) {
@@ -149,6 +151,8 @@
     --accentRed: #822121;
     --accentRedTint: #82212150;
     --dittoPink:#db86f1;
+    --accentTeal: #00796B;
+    --accentTealTint: #00796B50;
   }
 }
 
@@ -884,6 +888,7 @@
     &.rr { background: var(--accentOrangeTint); border-color: var(--accentOrange); }
     &.pt { background: var(--accentRedTint); border-color: var(--accentRed); }
     &.ci { background: var(--accentYellowTint); border-color: var(--accentYellow); }
+    &.bu { background: var(--accentTealTint); border-color: var(--accentTeal); }
 
     &.over-limit {
       opacity: 1;
@@ -1004,6 +1009,7 @@
     &.ss { background: var(--accentPurpleTint); &.selected { background: var(--accentPurple); } }
     &.rr { background: var(--accentOrangeTint); &.selected { background: var(--accentOrange); } }
     &.pt { background: var(--accentRedTint); &.selected { background: var(--accentRed); } }
+    &.bu { background: var(--accentTealTint); &.selected { background: var(--accentTeal); } }
     &.ci { background: var(--accentYellowTint); &.selected { background: var(--accentYellow); } }
   }
 
@@ -1386,6 +1392,14 @@
       &.selected {
         background: var(--accentYellow);
         border: 2px solid var(--accentYellow);
+      }
+    }
+    &.bu {
+      background: var(--accentTealTint);
+      border: 2px solid var(--accentTealTint);
+      &.selected {
+        background: var(--accentTeal);
+        border: 2px solid var(--accentTeal);
       }
     }
 

@@ -5,7 +5,8 @@
     "categories": [
       "Round stuff"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Adventure kit",
@@ -15,7 +16,8 @@
       "Fabric",
       "Soft stuff"
     ],
-    "type": "Toy"
+    "type": "Toy",
+    "isDLC": false
   },
   {
     "name": "Aether Paradise",
@@ -23,7 +25,8 @@
     "categories": [
       "Round stuff"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Afternoon tea set",
@@ -34,7 +37,8 @@
       "Looks like food",
       "Luxury"
     ],
-    "type": "Decoration"
+    "type": "Decoration",
+    "isDLC": false
   },
   {
     "name": "Air conditioner",
@@ -45,7 +49,8 @@
       "Nice breezes",
       "Strange stuff"
     ],
-    "type": "Decoration"
+    "type": "Decoration",
+    "isDLC": false
   },
   {
     "name": "Alarm Clock",
@@ -57,7 +62,8 @@
       "Round stuff",
       "Strange stuff"
     ],
-    "type": "Toy"
+    "type": "Toy",
+    "isDLC": false
   },
   {
     "name": "Antique bed",
@@ -68,7 +74,8 @@
       "Luxury",
       "Soft stuff"
     ],
-    "type": "Relaxation"
+    "type": "Relaxation",
+    "isDLC": false
   },
   {
     "name": "Antique chair",
@@ -79,7 +86,8 @@
       "Luxury",
       "Soft stuff"
     ],
-    "type": "Relaxation"
+    "type": "Relaxation",
+    "isDLC": false
   },
   {
     "name": "Antique chandelier",
@@ -90,7 +98,8 @@
       "Luxury",
       "Metal stuff"
     ],
-    "type": "Decoration"
+    "type": "Decoration",
+    "isDLC": false
   },
   {
     "name": "Antique chest",
@@ -101,7 +110,8 @@
       "Luxury",
       "Wooden stuff"
     ],
-    "type": "Decoration"
+    "type": "Decoration",
+    "isDLC": false
   },
   {
     "name": "Antique clock",
@@ -113,7 +123,8 @@
       "Noisy stuff",
       "Wooden stuff"
     ],
-    "type": "Toy"
+    "type": "Toy",
+    "isDLC": false
   },
   {
     "name": "Antique closet",
@@ -124,7 +135,8 @@
       "Luxury",
       "Wooden stuff"
     ],
-    "type": "Decoration"
+    "type": "Decoration",
+    "isDLC": false
   },
   {
     "name": "Antique dresser",
@@ -133,7 +145,8 @@
       "Glass stuff",
       "Luxury"
     ],
-    "type": "Toy"
+    "type": "Toy",
+    "isDLC": false
   },
   {
     "name": "Antique sofa",
@@ -146,7 +159,8 @@
       "Soft stuff",
       "Wooden stuff"
     ],
-    "type": "Relaxation"
+    "type": "Relaxation",
+    "isDLC": false
   },
   {
     "name": "Antique table",
@@ -155,7 +169,8 @@
       "Luxury",
       "Wooden stuff"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Arcade machine",
@@ -167,7 +182,8 @@
       "Group Activities",
       "Play spaces"
     ],
-    "type": "Toy"
+    "type": "Toy",
+    "isDLC": false
   },
   {
     "name": "Arcanine doll",
@@ -177,7 +193,8 @@
       "Fabric",
       "Symbols"
     ],
-    "type": "Toy"
+    "type": "Toy",
+    "isDLC": false
   },
   {
     "name": "Area Zero",
@@ -185,7 +202,8 @@
     "categories": [
       "Round stuff"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Armor Fossil",
@@ -197,7 +215,8 @@
       "Stone stuff",
       "Strange stuff"
     ],
-    "type": "Decoration"
+    "type": "Decoration",
+    "isDLC": false
   },
   {
     "name": "Armor fragment",
@@ -205,7 +224,8 @@
     "categories": [
       "Strange stuff"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Arrow sign",
@@ -214,7 +234,28 @@
       "Letters and words",
       "Wooden stuff"
     ],
-    "type": "Decoration"
+    "type": "Decoration",
+    "isDLC": false
+  },
+  {
+    "name": "Arrow sign (left)",
+    "image": "https://www.serebii.net/pokemonpokopia/items/arrowsign(left).png",
+    "categories": [
+      "Blocky stuff",
+      "Symbols"
+    ],
+    "type": "Decoration",
+    "isDLC": true
+  },
+  {
+    "name": "Arrow sign (right)",
+    "image": "https://www.serebii.net/pokemonpokopia/items/arrowsign(right).png",
+    "categories": [
+      "Blocky stuff",
+      "Symbols"
+    ],
+    "type": "Decoration",
+    "isDLC": true
   },
   {
     "name": "Audio mixer",
@@ -224,7 +265,8 @@
       "Electronics",
       "Strange stuff"
     ],
-    "type": "Toy"
+    "type": "Toy",
+    "isDLC": false
   },
   {
     "name": "Auspicious Armor",
@@ -234,7 +276,8 @@
       "Shiny stuff",
       "Strange stuff"
     ],
-    "type": "Decoration"
+    "type": "Decoration",
+    "isDLC": false
   },
   {
     "name": "Balloons",
@@ -246,7 +289,8 @@
       "Round stuff",
       "Wobbly stuff"
     ],
-    "type": "Toy"
+    "type": "Toy",
+    "isDLC": false
   },
   {
     "name": "Barrel",
@@ -257,7 +301,8 @@
       "Round stuff",
       "Wooden stuff"
     ],
-    "type": "Decoration"
+    "type": "Decoration",
+    "isDLC": false
   },
   {
     "name": "Bathtime set",
@@ -271,7 +316,8 @@
       "Play spaces",
       "Shiny stuff"
     ],
-    "type": "Toy"
+    "type": "Toy",
+    "isDLC": false
   },
   {
     "name": "Bathtub",
@@ -282,7 +328,8 @@
       "Stone stuff",
       "Strange stuff"
     ],
-    "type": "Decoration"
+    "type": "Decoration",
+    "isDLC": false
   },
   {
     "name": "Battle! (Gym Leader Battle)",
@@ -290,7 +337,8 @@
     "categories": [
       "Round stuff"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Battle! (Gym Leader) 1",
@@ -298,7 +346,8 @@
     "categories": [
       "Round stuff"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Battle! (Gym Leader) 2",
@@ -306,7 +355,8 @@
     "categories": [
       "Round stuff"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Beach chair",
@@ -316,7 +366,8 @@
       "Ocean vibes",
       "Soft stuff"
     ],
-    "type": "Relaxation"
+    "type": "Relaxation",
+    "isDLC": false
   },
   {
     "name": "Beach parasol",
@@ -326,7 +377,8 @@
       "Lots of water",
       "Ocean vibes"
     ],
-    "type": "Relaxation"
+    "type": "Relaxation",
+    "isDLC": false
   },
   {
     "name": "Beautiful flower",
@@ -334,7 +386,8 @@
     "categories": [
       "Pretty flowers"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Beautiful flower (pink)",
@@ -342,7 +395,8 @@
     "categories": [
       "Pretty flowers"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Beautiful flower (purple)",
@@ -350,7 +404,8 @@
     "categories": [
       "Pretty flowers"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Beautiful flower (white)",
@@ -358,7 +413,8 @@
     "categories": [
       "Pretty flowers"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Beautiful flower (yellow)",
@@ -366,7 +422,8 @@
     "categories": [
       "Pretty flowers"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Bell",
@@ -378,7 +435,8 @@
       "Strange stuff",
       "Wobbly stuff"
     ],
-    "type": "Toy"
+    "type": "Toy",
+    "isDLC": false
   },
   {
     "name": "Bell Tower",
@@ -386,7 +444,8 @@
     "categories": [
       "Round stuff"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Berry basket",
@@ -397,7 +456,8 @@
       "Looks like food",
       "Lots of nature"
     ],
-    "type": "Decoration"
+    "type": "Decoration",
+    "isDLC": false
   },
   {
     "name": "Berry bed",
@@ -409,7 +469,8 @@
       "Lots of nature",
       "Soft stuff"
     ],
-    "type": "Relaxation"
+    "type": "Relaxation",
+    "isDLC": false
   },
   {
     "name": "Berry case",
@@ -420,7 +481,8 @@
       "Looks like food",
       "Lots of nature"
     ],
-    "type": "Decoration"
+    "type": "Decoration",
+    "isDLC": false
   },
   {
     "name": "Berry chair",
@@ -432,7 +494,8 @@
       "Round stuff",
       "Soft stuff"
     ],
-    "type": "Relaxation"
+    "type": "Relaxation",
+    "isDLC": false
   },
   {
     "name": "Berry clock",
@@ -443,7 +506,8 @@
       "Lots of nature",
       "Round stuff"
     ],
-    "type": "Toy"
+    "type": "Toy",
+    "isDLC": false
   },
   {
     "name": "Berry hanging lamp",
@@ -456,7 +520,8 @@
       "Lots of nature",
       "Slender objects"
     ],
-    "type": "Decoration"
+    "type": "Decoration",
+    "isDLC": false
   },
   {
     "name": "Berry print",
@@ -465,7 +530,8 @@
       "Looks like food",
       "Lots of nature"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Berry print (wallpaper)",
@@ -474,7 +540,8 @@
       "Looks like food",
       "Lots of nature"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Berry table",
@@ -483,7 +550,8 @@
       "Looks like food",
       "Lots of nature"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Berry table lamp",
@@ -495,7 +563,8 @@
       "Looks like food",
       "Lots of nature"
     ],
-    "type": "Decoration"
+    "type": "Decoration",
+    "isDLC": false
   },
   {
     "name": "Berry wall decoration",
@@ -507,7 +576,8 @@
       "Lots of nature",
       "Watching stuff"
     ],
-    "type": "Decoration"
+    "type": "Decoration",
+    "isDLC": false
   },
   {
     "name": "Big drum",
@@ -515,7 +585,8 @@
     "categories": [
       "Round stuff"
     ],
-    "type": "Toy"
+    "type": "Toy",
+    "isDLC": false
   },
   {
     "name": "Big Nugget",
@@ -528,7 +599,8 @@
       "Stone stuff",
       "Symbols"
     ],
-    "type": "Toy"
+    "type": "Toy",
+    "isDLC": false
   },
   {
     "name": "Big Root",
@@ -536,7 +608,8 @@
     "categories": [
       "Lots of nature"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Big storage box",
@@ -544,7 +617,8 @@
     "categories": [
       "Wooden stuff"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Bike",
@@ -556,7 +630,8 @@
       "Rides",
       "Strange stuff"
     ],
-    "type": "Toy"
+    "type": "Toy",
+    "isDLC": false
   },
   {
     "name": "Black paint",
@@ -565,7 +640,8 @@
       "Colorful stuff",
       "Lots of dirt"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Blank canvas",
@@ -574,7 +650,21 @@
       "Fabric",
       "Watching stuff"
     ],
-    "type": "Decoration"
+    "type": "Decoration",
+    "isDLC": false
+  },
+  {
+    "name": "Blender",
+    "image": "https://www.serebii.net/pokemonpokopia/items/blender.png",
+    "categories": [
+      "Containers",
+      "Glass stuff",
+      "Lots of water",
+      "Noisy stuff",
+      "Spinning stuff"
+    ],
+    "type": "Toy",
+    "isDLC": true
   },
   {
     "name": "Blue meteor lamp",
@@ -585,7 +675,8 @@
       "Glass stuff",
       "Shiny stuff"
     ],
-    "type": "Decoration"
+    "type": "Decoration",
+    "isDLC": false
   },
   {
     "name": "Blue paint",
@@ -594,7 +685,8 @@
       "Colorful stuff",
       "Lots of dirt"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Bonfire",
@@ -604,7 +696,8 @@
       "Lots of fire",
       "Watching stuff"
     ],
-    "type": "Decoration"
+    "type": "Decoration",
+    "isDLC": false
   },
   {
     "name": "Boo-in-the-box",
@@ -618,7 +711,8 @@
       "Spooky stuff",
       "Strange stuff"
     ],
-    "type": "Toy"
+    "type": "Toy",
+    "isDLC": false
   },
   {
     "name": "Book",
@@ -629,7 +723,21 @@
       "Letters and words",
       "Watching stuff"
     ],
-    "type": "Toy"
+    "type": "Toy",
+    "isDLC": false
+  },
+  {
+    "name": "Book stack",
+    "image": "https://www.serebii.net/pokemonpokopia/items/bookstack.png",
+    "categories": [
+      "Blocky stuff",
+      "Colorful stuff",
+      "Gatherings",
+      "Letters and words",
+      "Watching stuff"
+    ],
+    "type": "Toy",
+    "isDLC": true
   },
   {
     "name": "Bookcase",
@@ -643,7 +751,21 @@
       "Watching stuff",
       "Wooden stuff"
     ],
-    "type": "Decoration"
+    "type": "Decoration",
+    "isDLC": false
+  },
+  {
+    "name": "Bottled ship",
+    "image": "https://www.serebii.net/pokemonpokopia/items/bottledship.png",
+    "categories": [
+      "Glass stuff",
+      "Lots of water",
+      "Ocean vibes",
+      "Rides",
+      "Watching stuff"
+    ],
+    "type": "Toy",
+    "isDLC": true
   },
   {
     "name": "Bouncy blue bathtub",
@@ -655,7 +777,8 @@
       "Round stuff",
       "Strange stuff"
     ],
-    "type": "Decoration"
+    "type": "Decoration",
+    "isDLC": false
   },
   {
     "name": "Boutique",
@@ -663,7 +786,8 @@
     "categories": [
       "Round stuff"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Box Sofa",
@@ -673,7 +797,8 @@
       "Fabric",
       "Soft stuff"
     ],
-    "type": "Relaxation"
+    "type": "Relaxation",
+    "isDLC": false
   },
   {
     "name": "Brick",
@@ -681,7 +806,8 @@
     "categories": [
       "Hard stuff"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Broken streetlight",
@@ -689,7 +815,36 @@
     "categories": [
       "Slender objects"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
+  },
+  {
+    "name": "Bubble machine",
+    "image": "https://www.serebii.net/pokemonpokopia/items/bubblemachine.png",
+    "categories": [
+      "Electronics",
+      "Lots of water",
+      "Round stuff",
+      "Spinning stuff",
+      "Strange stuff"
+    ],
+    "type": "Toy",
+    "isDLC": true
+  },
+  {
+    "name": "Café sign",
+    "image": "https://www.serebii.net/pokemonpokopia/items/cafesign.png",
+    "categories": [
+      "Blocky stuff",
+      "Colorful stuff",
+      "Cute stuff",
+      "Electronics",
+      "Letters and words",
+      "Symbols",
+      "Watching stuff"
+    ],
+    "type": "Decoration",
+    "isDLC": true
   },
   {
     "name": "Campfire",
@@ -699,7 +854,8 @@
       "Lots of fire",
       "Stone stuff"
     ],
-    "type": "Relaxation"
+    "type": "Relaxation",
+    "isDLC": false
   },
   {
     "name": "Camping chair",
@@ -709,7 +865,17 @@
       "Metal stuff",
       "Soft stuff"
     ],
-    "type": "Relaxation"
+    "type": "Relaxation",
+    "isDLC": false
+  },
+  {
+    "name": "Canalave City (Night)",
+    "image": "https://www.serebii.net/pokemonpokopia/items/canalavecity(night).png",
+    "categories": [
+      "Round stuff"
+    ],
+    "type": "",
+    "isDLC": true
   },
   {
     "name": "Cannon",
@@ -718,7 +884,8 @@
       "Metal stuff",
       "Strange stuff"
     ],
-    "type": "Toy"
+    "type": "Toy",
+    "isDLC": false
   },
   {
     "name": "Canoe",
@@ -729,7 +896,8 @@
       "Rides",
       "Round stuff"
     ],
-    "type": "Toy"
+    "type": "Toy",
+    "isDLC": false
   },
   {
     "name": "Card reader",
@@ -741,7 +909,8 @@
       "Metal stuff",
       "Strange stuff"
     ],
-    "type": "Decoration"
+    "type": "Decoration",
+    "isDLC": false
   },
   {
     "name": "Cardboard boxes",
@@ -751,7 +920,17 @@
       "Containers",
       "Gatherings"
     ],
-    "type": "Decoration"
+    "type": "Decoration",
+    "isDLC": false
+  },
+  {
+    "name": "Cascarrafa",
+    "image": "https://www.serebii.net/pokemonpokopia/items/cascarrafa.png",
+    "categories": [
+      "Round stuff"
+    ],
+    "type": "",
+    "isDLC": true
   },
   {
     "name": "Cash register",
@@ -762,7 +941,8 @@
       "Metal stuff",
       "Strange stuff"
     ],
-    "type": "Toy"
+    "type": "Toy",
+    "isDLC": false
   },
   {
     "name": "Castform weather charm",
@@ -773,7 +953,8 @@
       "Spinning stuff",
       "Strange stuff"
     ],
-    "type": "Toy"
+    "type": "Toy",
+    "isDLC": false
   },
   {
     "name": "Caves of Mt. Moon",
@@ -781,7 +962,8 @@
     "categories": [
       "Round stuff"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "CD player",
@@ -792,7 +974,8 @@
       "Group Activities",
       "Noisy stuff"
     ],
-    "type": "Toy"
+    "type": "Toy",
+    "isDLC": false
   },
   {
     "name": "CD rack",
@@ -806,7 +989,8 @@
       "Watching stuff",
       "Wooden stuff"
     ],
-    "type": "Decoration"
+    "type": "Decoration",
+    "isDLC": false
   },
   {
     "name": "Ceiling fan",
@@ -817,7 +1001,8 @@
       "Spinning stuff",
       "Strange stuff"
     ],
-    "type": "Decoration"
+    "type": "Decoration",
+    "isDLC": false
   },
   {
     "name": "Cell phone",
@@ -829,7 +1014,20 @@
       "Metal stuff",
       "Shiny stuff"
     ],
-    "type": "Toy"
+    "type": "Toy",
+    "isDLC": false
+  },
+  {
+    "name": "Chain lamp",
+    "image": "https://www.serebii.net/pokemonpokopia/items/chainlamp.png",
+    "categories": [
+      "Electronics",
+      "Glass stuff",
+      "Metal stuff",
+      "Wobbly stuff"
+    ],
+    "type": "Decoration",
+    "isDLC": true
   },
   {
     "name": "Chansey plant",
@@ -841,7 +1039,8 @@
       "Pretty flowers",
       "Round stuff"
     ],
-    "type": "Decoration"
+    "type": "Decoration",
+    "isDLC": false
   },
   {
     "name": "Charcoal",
@@ -849,7 +1048,8 @@
     "categories": [
       "Lots of fire"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Chic chair",
@@ -860,7 +1060,8 @@
       "Soft stuff",
       "Wooden stuff"
     ],
-    "type": "Relaxation"
+    "type": "Relaxation",
+    "isDLC": false
   },
   {
     "name": "Chic sofa",
@@ -872,7 +1073,8 @@
       "Soft stuff",
       "Wooden stuff"
     ],
-    "type": "Relaxation"
+    "type": "Relaxation",
+    "isDLC": false
   },
   {
     "name": "Chic streetlight",
@@ -884,7 +1086,8 @@
       "Shiny stuff",
       "Slender objects"
     ],
-    "type": "Decoration"
+    "type": "Decoration",
+    "isDLC": false
   },
   {
     "name": "Chic table",
@@ -892,7 +1095,22 @@
     "categories": [
       "Luxury"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
+  },
+  {
+    "name": "Chimecho wind chime",
+    "image": "https://www.serebii.net/pokemonpokopia/items/chimechowindchime.png",
+    "categories": [
+      "Cute stuff",
+      "Glass stuff",
+      "Nice breezes",
+      "Noisy stuff",
+      "Slender objects",
+      "Wobbly stuff"
+    ],
+    "type": "Toy",
+    "isDLC": true
   },
   {
     "name": "Chocolate cookies",
@@ -903,7 +1121,8 @@
       "Looks like food",
       "Round stuff"
     ],
-    "type": "Decoration"
+    "type": "Decoration",
+    "isDLC": false
   },
   {
     "name": "Cleaning supplies",
@@ -913,7 +1132,8 @@
       "Lots of water",
       "Shiny stuff"
     ],
-    "type": "Toy"
+    "type": "Toy",
+    "isDLC": false
   },
   {
     "name": "Clear Amulet",
@@ -922,7 +1142,8 @@
       "Glass stuff",
       "Shiny stuff"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Clear Bell",
@@ -933,7 +1154,8 @@
       "Shiny stuff",
       "Strange stuff"
     ],
-    "type": "Toy"
+    "type": "Toy",
+    "isDLC": false
   },
   {
     "name": "Clefairy doll",
@@ -944,7 +1166,8 @@
       "Soft stuff",
       "Symbols"
     ],
-    "type": "Toy"
+    "type": "Toy",
+    "isDLC": false
   },
   {
     "name": "Cloud cannon",
@@ -954,7 +1177,8 @@
       "Noisy stuff",
       "Strange stuff"
     ],
-    "type": "Toy"
+    "type": "Toy",
+    "isDLC": false
   },
   {
     "name": "Computer",
@@ -968,7 +1192,8 @@
       "Shiny stuff",
       "Strange stuff"
     ],
-    "type": "Toy"
+    "type": "Toy",
+    "isDLC": false
   },
   {
     "name": "Concrete",
@@ -976,7 +1201,8 @@
     "categories": [
       "Hard stuff"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Concrete pipe",
@@ -985,7 +1211,8 @@
       "Round stuff",
       "Stone stuff"
     ],
-    "type": "Decoration"
+    "type": "Decoration",
+    "isDLC": false
   },
   {
     "name": "Construction supplies",
@@ -998,7 +1225,8 @@
       "Metal stuff",
       "Round stuff"
     ],
-    "type": "Decoration"
+    "type": "Decoration",
+    "isDLC": false
   },
   {
     "name": "Contest Spectacular",
@@ -1006,7 +1234,8 @@
     "categories": [
       "Round stuff"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Control unit",
@@ -1016,7 +1245,8 @@
       "Complicated stuff",
       "Metal stuff"
     ],
-    "type": "Toy"
+    "type": "Toy",
+    "isDLC": false
   },
   {
     "name": "Cooking stove",
@@ -1027,7 +1257,8 @@
       "Metal stuff",
       "Strange stuff"
     ],
-    "type": "Decoration"
+    "type": "Decoration",
+    "isDLC": false
   },
   {
     "name": "Cool bass guitar",
@@ -1037,7 +1268,8 @@
       "Noisy stuff",
       "Strange stuff"
     ],
-    "type": "Toy"
+    "type": "Toy",
+    "isDLC": false
   },
   {
     "name": "Cool electric guitar",
@@ -1047,7 +1279,8 @@
       "Noisy stuff",
       "Strange stuff"
     ],
-    "type": "Toy"
+    "type": "Toy",
+    "isDLC": false
   },
   {
     "name": "Copper ingot",
@@ -1055,7 +1288,8 @@
     "categories": [
       "Metal stuff"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Copper ore",
@@ -1063,7 +1297,8 @@
     "categories": [
       "Metal stuff"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Corkboard",
@@ -1074,7 +1309,8 @@
       "Gatherings",
       "Watching stuff"
     ],
-    "type": "Decoration"
+    "type": "Decoration",
+    "isDLC": false
   },
   {
     "name": "Corrugated metal",
@@ -1082,7 +1318,8 @@
     "categories": [
       "Metal stuff"
     ],
-    "type": "Road"
+    "type": "Road",
+    "isDLC": false
   },
   {
     "name": "Cotton Spores",
@@ -1090,7 +1327,8 @@
     "categories": [
       "Soft stuff"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Crystal ball",
@@ -1102,7 +1340,8 @@
       "Shiny stuff",
       "Strange stuff"
     ],
-    "type": "Toy"
+    "type": "Toy",
+    "isDLC": false
   },
   {
     "name": "Crystal fragment",
@@ -1110,7 +1349,31 @@
     "categories": [
       "Shiny stuff"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
+  },
+  {
+    "name": "Cursola light",
+    "image": "https://www.serebii.net/pokemonpokopia/items/cursolalight.png",
+    "categories": [
+      "Cute stuff",
+      "Shiny stuff",
+      "Spooky stuff",
+      "Strange stuff"
+    ],
+    "type": "Decoration",
+    "isDLC": true
+  },
+  {
+    "name": "Cushion bed",
+    "image": "https://www.serebii.net/pokemonpokopia/items/cushionbed.png",
+    "categories": [
+      "Fabric",
+      "Group Activities",
+      "Soft stuff"
+    ],
+    "type": "Relaxation",
+    "isDLC": true
   },
   {
     "name": "Cute bed",
@@ -1121,7 +1384,8 @@
       "Luxury",
       "Soft stuff"
     ],
-    "type": "Relaxation"
+    "type": "Relaxation",
+    "isDLC": false
   },
   {
     "name": "Cute chair",
@@ -1131,7 +1395,8 @@
       "Fabric",
       "Soft stuff"
     ],
-    "type": "Relaxation"
+    "type": "Relaxation",
+    "isDLC": false
   },
   {
     "name": "Cute dresser",
@@ -1142,7 +1407,8 @@
       "Glass stuff",
       "Strange stuff"
     ],
-    "type": "Toy"
+    "type": "Toy",
+    "isDLC": false
   },
   {
     "name": "Cute flower",
@@ -1151,7 +1417,8 @@
       "Cute stuff",
       "Pretty flowers"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Cute flower (blue)",
@@ -1159,7 +1426,8 @@
     "categories": [
       "Pretty flowers"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Cute flower (pink)",
@@ -1167,7 +1435,8 @@
     "categories": [
       "Pretty flowers"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Cute flower (white)",
@@ -1175,7 +1444,8 @@
     "categories": [
       "Pretty flowers"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Cute flower (yellow)",
@@ -1183,7 +1453,8 @@
     "categories": [
       "Pretty flowers"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Cute lamp",
@@ -1193,7 +1464,8 @@
       "Electronics",
       "Glass stuff"
     ],
-    "type": "Decoration"
+    "type": "Decoration",
+    "isDLC": false
   },
   {
     "name": "Cute sofa",
@@ -1204,7 +1476,8 @@
       "Group Activities",
       "Soft stuff"
     ],
-    "type": "Relaxation"
+    "type": "Relaxation",
+    "isDLC": false
   },
   {
     "name": "Cute table",
@@ -1212,7 +1485,8 @@
     "categories": [
       "Cute stuff"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Cutting board",
@@ -1220,7 +1494,8 @@
     "categories": [
       "Wooden stuff"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Cyan paint",
@@ -1229,7 +1504,36 @@
       "Colorful stuff",
       "Lots of dirt"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
+  },
+  {
+    "name": "Cycle shop sign",
+    "image": "https://www.serebii.net/pokemonpokopia/items/cycleshopsign.png",
+    "categories": [
+      "Blocky stuff",
+      "Colorful stuff",
+      "Cute stuff",
+      "Electronics",
+      "Letters and words",
+      "Symbols",
+      "Watching stuff"
+    ],
+    "type": "Decoration",
+    "isDLC": true
+  },
+  {
+    "name": "Dangling streetlight",
+    "image": "https://www.serebii.net/pokemonpokopia/items/danglingstreetlight.png",
+    "categories": [
+      "Electronics",
+      "Hard stuff",
+      "Metal stuff",
+      "Shiny stuff",
+      "Slender objects"
+    ],
+    "type": "Decoration",
+    "isDLC": true
   },
   {
     "name": "Deck chair",
@@ -1237,7 +1541,8 @@
     "categories": [
       "Ocean vibes"
     ],
-    "type": "Relaxation"
+    "type": "Relaxation",
+    "isDLC": false
   },
   {
     "name": "Decorative bookshelf",
@@ -1246,7 +1551,80 @@
       "Gatherings",
       "Letters and words"
     ],
-    "type": "Decoration"
+    "type": "Decoration",
+    "isDLC": false
+  },
+  {
+    "name": "Decorative cloth",
+    "image": "https://www.serebii.net/pokemonpokopia/items/decorativecloth.png",
+    "categories": [
+      "Fabric",
+      "Shiny stuff"
+    ],
+    "type": "Decoration",
+    "isDLC": true
+  },
+  {
+    "name": "Decorative Dive Ball",
+    "image": "https://www.serebii.net/pokemonpokopia/items/decorativediveball.png",
+    "categories": [
+      "Metal stuff",
+      "Ocean vibes",
+      "Round stuff",
+      "Symbols",
+      "Watching stuff"
+    ],
+    "type": "Decoration",
+    "isDLC": true
+  },
+  {
+    "name": "Decorative Great Ball",
+    "image": "https://www.serebii.net/pokemonpokopia/items/decorativegreatball.png",
+    "categories": [
+      "Metal stuff",
+      "Round stuff",
+      "Symbols",
+      "Watching stuff"
+    ],
+    "type": "Decoration",
+    "isDLC": true
+  },
+  {
+    "name": "Decorative Heal Ball",
+    "image": "https://www.serebii.net/pokemonpokopia/items/decorativehealball.png",
+    "categories": [
+      "Metal stuff",
+      "Round stuff",
+      "Symbols",
+      "Watching stuff"
+    ],
+    "type": "Decoration",
+    "isDLC": true
+  },
+  {
+    "name": "Decorative Lure Ball",
+    "image": "https://www.serebii.net/pokemonpokopia/items/decorativelureball.png",
+    "categories": [
+      "Metal stuff",
+      "Ocean vibes",
+      "Round stuff",
+      "Symbols",
+      "Watching stuff"
+    ],
+    "type": "Decoration",
+    "isDLC": true
+  },
+  {
+    "name": "Decorative Net Ball",
+    "image": "https://www.serebii.net/pokemonpokopia/items/decorativenetball.png",
+    "categories": [
+      "Metal stuff",
+      "Round stuff",
+      "Symbols",
+      "Watching stuff"
+    ],
+    "type": "Decoration",
+    "isDLC": true
   },
   {
     "name": "Decorative plant shelf",
@@ -1255,7 +1633,56 @@
       "Gatherings",
       "Pretty flowers"
     ],
-    "type": "Decoration"
+    "type": "Decoration",
+    "isDLC": false
+  },
+  {
+    "name": "Decorative plates",
+    "image": "https://www.serebii.net/pokemonpokopia/items/decorativeplates.png",
+    "categories": [
+      "Colorful stuff",
+      "Cute stuff",
+      "Gatherings",
+      "Luxury",
+      "Round stuff",
+      "Stone stuff",
+      "Watching stuff"
+    ],
+    "type": "Decoration",
+    "isDLC": true
+  },
+  {
+    "name": "Decorative Poké Ball",
+    "image": "https://www.serebii.net/pokemonpokopia/items/decorativepokeball.png",
+    "categories": [
+      "Metal stuff",
+      "Round stuff",
+      "Watching stuff"
+    ],
+    "type": "Decoration",
+    "isDLC": false
+  },
+  {
+    "name": "Decorative Quick Ball",
+    "image": "https://www.serebii.net/pokemonpokopia/items/decorativequickball.png",
+    "categories": [
+      "Metal stuff",
+      "Round stuff",
+      "Symbols",
+      "Watching stuff"
+    ],
+    "type": "Decoration",
+    "isDLC": true
+  },
+  {
+    "name": "Decorative shop shelf",
+    "image": "https://www.serebii.net/pokemonpokopia/items/decorativeshopshelf.png",
+    "categories": [
+      "Blocky stuff",
+      "Metal stuff"
+    ],
+    "type": "Decoration",
+    "isDLC": true
   },
   {
     "name": "Decorative storage shelf",
@@ -1265,7 +1692,8 @@
       "Stone stuff",
       "Strange stuff"
     ],
-    "type": "Decoration"
+    "type": "Decoration",
+    "isDLC": false
   },
   {
     "name": "Desk light",
@@ -1276,7 +1704,8 @@
       "Metal stuff",
       "Slender objects"
     ],
-    "type": "Decoration"
+    "type": "Decoration",
+    "isDLC": false
   },
   {
     "name": "Despot Fossil (body)",
@@ -1288,7 +1717,8 @@
       "Stone stuff",
       "Strange stuff"
     ],
-    "type": "Decoration"
+    "type": "Decoration",
+    "isDLC": false
   },
   {
     "name": "Despot Fossil (head)",
@@ -1299,7 +1729,8 @@
       "Stone stuff",
       "Strange stuff"
     ],
-    "type": "Decoration"
+    "type": "Decoration",
+    "isDLC": false
   },
   {
     "name": "Despot Fossil (legs)",
@@ -1311,7 +1742,8 @@
       "Stone stuff",
       "Strange stuff"
     ],
-    "type": "Decoration"
+    "type": "Decoration",
+    "isDLC": false
   },
   {
     "name": "Despot Fossil (tail)",
@@ -1323,7 +1755,8 @@
       "Stone stuff",
       "Strange stuff"
     ],
-    "type": "Decoration"
+    "type": "Decoration",
+    "isDLC": false
   },
   {
     "name": "Digital camera",
@@ -1335,7 +1768,8 @@
       "Shiny stuff",
       "Strange stuff"
     ],
-    "type": "Toy"
+    "type": "Toy",
+    "isDLC": false
   },
   {
     "name": "Dining cabinet",
@@ -1347,7 +1781,8 @@
       "Luxury",
       "Wooden stuff"
     ],
-    "type": "Decoration"
+    "type": "Decoration",
+    "isDLC": false
   },
   {
     "name": "Ditto doll",
@@ -1358,7 +1793,8 @@
       "Soft stuff",
       "Symbols"
     ],
-    "type": "Toy"
+    "type": "Toy",
+    "isDLC": false
   },
   {
     "name": "Ditto Flag",
@@ -1366,7 +1802,17 @@
     "categories": [
       "Stone stuff"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
+  },
+  {
+    "name": "Dive",
+    "image": "https://www.serebii.net/pokemonpokopia/items/dive.png",
+    "categories": [
+      "Round stuff"
+    ],
+    "type": "",
+    "isDLC": true
   },
   {
     "name": "Double streetlight",
@@ -1377,7 +1823,8 @@
       "Metal stuff",
       "Slender objects"
     ],
-    "type": "Decoration"
+    "type": "Decoration",
+    "isDLC": false
   },
   {
     "name": "Dragonite doll",
@@ -1388,7 +1835,8 @@
       "Soft stuff",
       "Symbols"
     ],
-    "type": "Toy"
+    "type": "Toy",
+    "isDLC": false
   },
   {
     "name": "Dress Up With Props",
@@ -1396,7 +1844,8 @@
     "categories": [
       "Round stuff"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Driftveil City",
@@ -1404,7 +1853,8 @@
     "categories": [
       "Round stuff"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Ecruteak City",
@@ -1412,7 +1862,8 @@
     "categories": [
       "Round stuff"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Eerie candle",
@@ -1423,7 +1874,8 @@
       "Spooky stuff",
       "Stone stuff"
     ],
-    "type": "Decoration"
+    "type": "Decoration",
+    "isDLC": false
   },
   {
     "name": "Eevee doll",
@@ -1434,7 +1886,8 @@
       "Soft stuff",
       "Symbols"
     ],
-    "type": "Toy"
+    "type": "Toy",
+    "isDLC": false
   },
   {
     "name": "Elegant flower",
@@ -1442,7 +1895,8 @@
     "categories": [
       "Pretty flowers"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Elegant flower (orange)",
@@ -1450,7 +1904,8 @@
     "categories": [
       "Pretty flowers"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Elegant flower (pink)",
@@ -1458,7 +1913,8 @@
     "categories": [
       "Pretty flowers"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Elegant flower (red)",
@@ -1466,7 +1922,8 @@
     "categories": [
       "Pretty flowers"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Elegant flower (yellow)",
@@ -1474,16 +1931,19 @@
     "categories": [
       "Pretty flowers"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Excavation tools",
     "image": "https://www.serebii.net/pokemonpokopia/items/excavationtools.png",
     "categories": [
       "Metal stuff",
+      "Sharp stuff",
       "Strange stuff"
     ],
-    "type": "Toy"
+    "type": "Toy",
+    "isDLC": false
   },
   {
     "name": "Extravagant flowers",
@@ -1494,7 +1954,8 @@
       "Stone stuff",
       "Watching stuff"
     ],
-    "type": "Decoration"
+    "type": "Decoration",
+    "isDLC": false
   },
   {
     "name": "Fairy Feather",
@@ -1502,7 +1963,8 @@
     "categories": [
       "Cute stuff"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Fan",
@@ -1514,7 +1976,8 @@
       "Round stuff",
       "Spinning stuff"
     ],
-    "type": "Toy"
+    "type": "Toy",
+    "isDLC": false
   },
   {
     "name": "Fancy chair",
@@ -1525,7 +1988,8 @@
       "Soft stuff",
       "Spinning stuff"
     ],
-    "type": "Relaxation"
+    "type": "Relaxation",
+    "isDLC": false
   },
   {
     "name": "Fancy pen",
@@ -1537,7 +2001,8 @@
       "Sharp stuff",
       "Slender objects"
     ],
-    "type": "Decoration"
+    "type": "Decoration",
+    "isDLC": false
   },
   {
     "name": "Fiery Magby statue",
@@ -1547,7 +2012,8 @@
       "Stone stuff",
       "Strange stuff"
     ],
-    "type": "Toy"
+    "type": "Toy",
+    "isDLC": false
   },
   {
     "name": "Fire hydrant",
@@ -1558,7 +2024,8 @@
       "Shiny stuff",
       "Symbols"
     ],
-    "type": "Decoration"
+    "type": "Decoration",
+    "isDLC": false
   },
   {
     "name": "Firepit",
@@ -1569,7 +2036,8 @@
       "Round stuff",
       "Stone stuff"
     ],
-    "type": "Decoration"
+    "type": "Decoration",
+    "isDLC": false
   },
   {
     "name": "Firework (blue)",
@@ -1577,7 +2045,8 @@
     "categories": [
       "Round stuff"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Firework (green)",
@@ -1585,7 +2054,8 @@
     "categories": [
       "Round stuff"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Firework (red)",
@@ -1593,7 +2063,8 @@
     "categories": [
       "Round stuff"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Firework (white)",
@@ -1601,7 +2072,8 @@
     "categories": [
       "Round stuff"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Firework (yellow)",
@@ -1609,7 +2081,8 @@
     "categories": [
       "Round stuff"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "First aid kit",
@@ -1620,7 +2093,8 @@
       "Healing",
       "Metal stuff"
     ],
-    "type": "Toy"
+    "type": "Toy",
+    "isDLC": false
   },
   {
     "name": "Fishing rod",
@@ -1631,7 +2105,8 @@
       "Slender objects",
       "Wobbly stuff"
     ],
-    "type": "Toy"
+    "type": "Toy",
+    "isDLC": false
   },
   {
     "name": "Flame Orb",
@@ -1639,7 +2114,8 @@
     "categories": [
       "Round stuff"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Flat-leaf plant",
@@ -1652,7 +2128,8 @@
       "Stone stuff",
       "Watching stuff"
     ],
-    "type": "Decoration"
+    "type": "Decoration",
+    "isDLC": false
   },
   {
     "name": "Floor switch",
@@ -1660,7 +2137,8 @@
     "categories": [
       "Electronics"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Flower backpack",
@@ -1671,7 +2149,8 @@
       "Pretty flowers",
       "Soft stuff"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Flower cushion",
@@ -1682,7 +2161,8 @@
       "Pretty flowers",
       "Soft stuff"
     ],
-    "type": "Relaxation"
+    "type": "Relaxation",
+    "isDLC": false
   },
   {
     "name": "Flower garland",
@@ -1694,7 +2174,8 @@
       "Soft stuff",
       "Watching stuff"
     ],
-    "type": "Decoration"
+    "type": "Decoration",
+    "isDLC": false
   },
   {
     "name": "Flowery table setting",
@@ -1707,7 +2188,8 @@
       "Pretty flowers",
       "Soft stuff"
     ],
-    "type": "Decoration"
+    "type": "Decoration",
+    "isDLC": false
   },
   {
     "name": "Fluff",
@@ -1716,7 +2198,8 @@
       "Fabric",
       "Soft stuff"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Fluorescent light",
@@ -1727,7 +2210,8 @@
       "Shiny stuff",
       "Slender objects"
     ],
-    "type": "Decoration"
+    "type": "Decoration",
+    "isDLC": false
   },
   {
     "name": "Folding chair",
@@ -1736,7 +2220,8 @@
       "Metal stuff",
       "Wobbly stuff"
     ],
-    "type": "Relaxation"
+    "type": "Relaxation",
+    "isDLC": false
   },
   {
     "name": "Food counter",
@@ -1744,7 +2229,8 @@
     "categories": [
       "Wooden stuff"
     ],
-    "type": "Decoration"
+    "type": "Decoration",
+    "isDLC": false
   },
   {
     "name": "Fortree City",
@@ -1752,7 +2238,8 @@
     "categories": [
       "Round stuff"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Frame",
@@ -1765,7 +2252,8 @@
       "Watching stuff",
       "Wooden stuff"
     ],
-    "type": "Decoration"
+    "type": "Decoration",
+    "isDLC": false
   },
   {
     "name": "Fried potatoes",
@@ -1775,7 +2263,8 @@
       "Gatherings",
       "Looks like food"
     ],
-    "type": "Decoration"
+    "type": "Decoration",
+    "isDLC": false
   },
   {
     "name": "Fuchsia City Theme",
@@ -1783,7 +2272,8 @@
     "categories": [
       "Round stuff"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Funky diffuser",
@@ -1793,7 +2283,8 @@
       "Metal stuff",
       "Strange stuff"
     ],
-    "type": "Toy"
+    "type": "Toy",
+    "isDLC": false
   },
   {
     "name": "Game Boy system",
@@ -1803,7 +2294,8 @@
       "Electronics",
       "Group Activities"
     ],
-    "type": "Toy"
+    "type": "Toy",
+    "isDLC": false
   },
   {
     "name": "Game Corner",
@@ -1811,7 +2303,8 @@
     "categories": [
       "Round stuff"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Gaming bed",
@@ -1823,7 +2316,8 @@
       "Shiny stuff",
       "Soft stuff"
     ],
-    "type": "Relaxation"
+    "type": "Relaxation",
+    "isDLC": false
   },
   {
     "name": "Gaming chair",
@@ -1838,7 +2332,8 @@
       "Soft stuff",
       "Spinning stuff"
     ],
-    "type": "Relaxation"
+    "type": "Relaxation",
+    "isDLC": false
   },
   {
     "name": "Gaming fridge",
@@ -1850,7 +2345,8 @@
       "Glass stuff",
       "Metal stuff"
     ],
-    "type": "Decoration"
+    "type": "Decoration",
+    "isDLC": false
   },
   {
     "name": "Gaming light",
@@ -1861,7 +2357,8 @@
       "Gatherings",
       "Glass stuff"
     ],
-    "type": "Decoration"
+    "type": "Decoration",
+    "isDLC": false
   },
   {
     "name": "Gaming PC",
@@ -1873,7 +2370,8 @@
       "Metal stuff",
       "Shiny stuff"
     ],
-    "type": "Toy"
+    "type": "Toy",
+    "isDLC": false
   },
   {
     "name": "Garbage bags",
@@ -1882,7 +2380,8 @@
       "Garbage",
       "Gatherings"
     ],
-    "type": "Decoration"
+    "type": "Decoration",
+    "isDLC": false
   },
   {
     "name": "Garbage bin",
@@ -1892,7 +2391,8 @@
       "Garbage",
       "Metal stuff"
     ],
-    "type": "Decoration"
+    "type": "Decoration",
+    "isDLC": false
   },
   {
     "name": "Garden bench",
@@ -1902,7 +2402,8 @@
       "Lots of nature",
       "Metal stuff"
     ],
-    "type": "Relaxation"
+    "type": "Relaxation",
+    "isDLC": false
   },
   {
     "name": "Garden chair",
@@ -1911,7 +2412,8 @@
       "Lots of nature",
       "Metal stuff"
     ],
-    "type": "Relaxation"
+    "type": "Relaxation",
+    "isDLC": false
   },
   {
     "name": "Garden flowers",
@@ -1920,7 +2422,8 @@
       "Colorful stuff",
       "Pretty flowers"
     ],
-    "type": "Decoration"
+    "type": "Decoration",
+    "isDLC": false
   },
   {
     "name": "Garden light",
@@ -1930,7 +2433,8 @@
       "Glass stuff",
       "Metal stuff"
     ],
-    "type": "Decoration"
+    "type": "Decoration",
+    "isDLC": false
   },
   {
     "name": "Garden ornament",
@@ -1939,7 +2443,8 @@
       "Gatherings",
       "Stone stuff"
     ],
-    "type": "Decoration"
+    "type": "Decoration",
+    "isDLC": false
   },
   {
     "name": "Garden table",
@@ -1947,7 +2452,23 @@
     "categories": [
       "Lots of nature"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
+  },
+  {
+    "name": "Gift shop sign",
+    "image": "https://www.serebii.net/pokemonpokopia/items/giftshopsign.png",
+    "categories": [
+      "Blocky stuff",
+      "Colorful stuff",
+      "Cute stuff",
+      "Electronics",
+      "Letters and words",
+      "Symbols",
+      "Watching stuff"
+    ],
+    "type": "Decoration",
+    "isDLC": true
   },
   {
     "name": "Glass",
@@ -1955,7 +2476,8 @@
     "categories": [
       "Glass stuff"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Glass window",
@@ -1963,7 +2485,8 @@
     "categories": [
       "Glass stuff"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Gold Bottle Cap",
@@ -1972,7 +2495,8 @@
       "Round stuff",
       "Shiny stuff"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Gold ingot",
@@ -1980,7 +2504,8 @@
     "categories": [
       "Metal stuff"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Gold ore",
@@ -1988,7 +2513,8 @@
     "categories": [
       "Metal stuff"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Gold Teeth",
@@ -1999,7 +2525,8 @@
       "Stone stuff",
       "Strange stuff"
     ],
-    "type": "Toy"
+    "type": "Toy",
+    "isDLC": false
   },
   {
     "name": "Gravestone",
@@ -2010,7 +2537,8 @@
       "Stone stuff",
       "Strange stuff"
     ],
-    "type": "Decoration"
+    "type": "Decoration",
+    "isDLC": false
   },
   {
     "name": "Green meteor lamp",
@@ -2021,7 +2549,8 @@
       "Glass stuff",
       "Shiny stuff"
     ],
-    "type": "Decoration"
+    "type": "Decoration",
+    "isDLC": false
   },
   {
     "name": "Green paint",
@@ -2030,7 +2559,8 @@
       "Colorful stuff",
       "Lots of dirt"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Grubby book",
@@ -2041,7 +2571,8 @@
       "Letters and words",
       "Watching stuff"
     ],
-    "type": "Toy"
+    "type": "Toy",
+    "isDLC": false
   },
   {
     "name": "Grubby cell phone",
@@ -2050,7 +2581,8 @@
       "Garbage",
       "Strange stuff"
     ],
-    "type": "Toy"
+    "type": "Toy",
+    "isDLC": false
   },
   {
     "name": "Grubby letter",
@@ -2060,7 +2592,8 @@
       "Garbage",
       "Letters and words"
     ],
-    "type": "Toy"
+    "type": "Toy",
+    "isDLC": false
   },
   {
     "name": "Grubby newspaper",
@@ -2071,7 +2604,8 @@
       "Letters and words",
       "Watching stuff"
     ],
-    "type": "Toy"
+    "type": "Toy",
+    "isDLC": false
   },
   {
     "name": "Grubby notepad",
@@ -2082,7 +2616,8 @@
       "Letters and words",
       "Watching stuff"
     ],
-    "type": "Toy"
+    "type": "Toy",
+    "isDLC": false
   },
   {
     "name": "Grubby papers",
@@ -2093,7 +2628,8 @@
       "Letters and words",
       "Watching stuff"
     ],
-    "type": "Toy"
+    "type": "Toy",
+    "isDLC": false
   },
   {
     "name": "Grubby tablet",
@@ -2103,7 +2639,8 @@
       "Metal stuff",
       "Strange stuff"
     ],
-    "type": "Toy"
+    "type": "Toy",
+    "isDLC": false
   },
   {
     "name": "Guest-room bed",
@@ -2115,7 +2652,20 @@
       "Soft stuff",
       "Wooden stuff"
     ],
-    "type": "Relaxation"
+    "type": "Relaxation",
+    "isDLC": false
+  },
+  {
+    "name": "Gyarados fountain",
+    "image": "https://www.serebii.net/pokemonpokopia/items/gyaradosfountain.png",
+    "categories": [
+      "Lots of water",
+      "Luxury",
+      "Stone stuff",
+      "Strange stuff"
+    ],
+    "type": "Toy",
+    "isDLC": true
   },
   {
     "name": "Gym emblem statue",
@@ -2125,7 +2675,8 @@
       "Stone stuff",
       "Symbols"
     ],
-    "type": "Decoration"
+    "type": "Decoration",
+    "isDLC": false
   },
   {
     "name": "Handcar",
@@ -2133,7 +2684,8 @@
     "categories": [
       "Rides"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Hanging banner",
@@ -2144,7 +2696,8 @@
       "Symbols",
       "Wobbly stuff"
     ],
-    "type": "Decoration"
+    "type": "Decoration",
+    "isDLC": false
   },
   {
     "name": "Hanging scroll",
@@ -2154,7 +2707,20 @@
       "Letters and words",
       "Strange stuff"
     ],
-    "type": "Decoration"
+    "type": "Decoration",
+    "isDLC": false
+  },
+  {
+    "name": "Hanging sign",
+    "image": "https://www.serebii.net/pokemonpokopia/items/hangingsign.png",
+    "categories": [
+      "Blocky stuff",
+      "Letters and words",
+      "Metal stuff",
+      "Wobbly stuff"
+    ],
+    "type": "Decoration",
+    "isDLC": true
   },
   {
     "name": "Harbor streetlight",
@@ -2166,7 +2732,19 @@
       "Ocean vibes",
       "Slender objects"
     ],
-    "type": "Decoration"
+    "type": "Decoration",
+    "isDLC": false
+  },
+  {
+    "name": "Harp",
+    "image": "https://www.serebii.net/pokemonpokopia/items/harp.png",
+    "categories": [
+      "Luxury",
+      "Metal stuff",
+      "Noisy stuff"
+    ],
+    "type": "Toy",
+    "isDLC": true
   },
   {
     "name": "Hau'oli City (Day)",
@@ -2174,7 +2752,8 @@
     "categories": [
       "Round stuff"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Headbutt Fossil (body)",
@@ -2186,7 +2765,8 @@
       "Stone stuff",
       "Strange stuff"
     ],
-    "type": "Decoration"
+    "type": "Decoration",
+    "isDLC": false
   },
   {
     "name": "Headbutt Fossil (head)",
@@ -2197,7 +2777,8 @@
       "Stone stuff",
       "Strange stuff"
     ],
-    "type": "Decoration"
+    "type": "Decoration",
+    "isDLC": false
   },
   {
     "name": "Headbutt Fossil (tail)",
@@ -2209,7 +2790,8 @@
       "Stone stuff",
       "Strange stuff"
     ],
-    "type": "Decoration"
+    "type": "Decoration",
+    "isDLC": false
   },
   {
     "name": "Heart Scale",
@@ -2217,7 +2799,8 @@
     "categories": [
       "Cute stuff"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Hide-and-sneak trophy",
@@ -2228,7 +2811,8 @@
       "Metal stuff",
       "Watching stuff"
     ],
-    "type": "Decoration"
+    "type": "Decoration",
+    "isDLC": false
   },
   {
     "name": "Hoppip water bottle",
@@ -2239,7 +2823,8 @@
       "Cute stuff",
       "Lots of water"
     ],
-    "type": "Decoration"
+    "type": "Decoration",
+    "isDLC": false
   },
   {
     "name": "Horsea fountain",
@@ -2250,7 +2835,17 @@
       "Stone stuff",
       "Strange stuff"
     ],
-    "type": "Toy"
+    "type": "Toy",
+    "isDLC": false
+  },
+  {
+    "name": "Hotel Z",
+    "image": "https://www.serebii.net/pokemonpokopia/items/hotelz.png",
+    "categories": [
+      "Round stuff"
+    ],
+    "type": "",
+    "isDLC": true
   },
   {
     "name": "Humidifier",
@@ -2263,7 +2858,8 @@
       "Round stuff",
       "Strange stuff"
     ],
-    "type": "Decoration"
+    "type": "Decoration",
+    "isDLC": false
   },
   {
     "name": "Indigo meteor lamp",
@@ -2274,7 +2870,8 @@
       "Glass stuff",
       "Shiny stuff"
     ],
-    "type": "Decoration"
+    "type": "Decoration",
+    "isDLC": false
   },
   {
     "name": "Industrial bed",
@@ -2285,7 +2882,8 @@
       "Metal stuff",
       "Soft stuff"
     ],
-    "type": "Relaxation"
+    "type": "Relaxation",
+    "isDLC": false
   },
   {
     "name": "Industrial bench",
@@ -2294,7 +2892,8 @@
       "Group Activities",
       "Metal stuff"
     ],
-    "type": "Relaxation"
+    "type": "Relaxation",
+    "isDLC": false
   },
   {
     "name": "Industrial chair",
@@ -2304,7 +2903,8 @@
       "Metal stuff",
       "Round stuff"
     ],
-    "type": "Relaxation"
+    "type": "Relaxation",
+    "isDLC": false
   },
   {
     "name": "Industrial desk",
@@ -2312,7 +2912,8 @@
     "categories": [
       "Metal stuff"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Inflatable boat",
@@ -2322,7 +2923,8 @@
       "Group Activities",
       "Lots of water"
     ],
-    "type": "Relaxation"
+    "type": "Relaxation",
+    "isDLC": false
   },
   {
     "name": "Inflatable Sudowoodo",
@@ -2333,7 +2935,8 @@
       "Watching stuff",
       "Wobbly stuff"
     ],
-    "type": "Toy"
+    "type": "Toy",
+    "isDLC": false
   },
   {
     "name": "Information board",
@@ -2347,7 +2950,8 @@
       "Strange stuff",
       "Symbols"
     ],
-    "type": "Decoration"
+    "type": "Decoration",
+    "isDLC": false
   },
   {
     "name": "Iron Ball",
@@ -2356,7 +2960,8 @@
       "Hard stuff",
       "Round stuff"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Iron bed",
@@ -2366,7 +2971,8 @@
       "Metal stuff",
       "Soft stuff"
     ],
-    "type": "Relaxation"
+    "type": "Relaxation",
+    "isDLC": false
   },
   {
     "name": "Iron bench",
@@ -2376,7 +2982,8 @@
       "Hard stuff",
       "Metal stuff"
     ],
-    "type": "Relaxation"
+    "type": "Relaxation",
+    "isDLC": false
   },
   {
     "name": "Iron chair",
@@ -2386,7 +2993,8 @@
       "Hard stuff",
       "Metal stuff"
     ],
-    "type": "Relaxation"
+    "type": "Relaxation",
+    "isDLC": false
   },
   {
     "name": "Iron deposit",
@@ -2394,7 +3002,8 @@
     "categories": [
       "Metal stuff"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Iron door",
@@ -2402,7 +3011,8 @@
     "categories": [
       "Metal stuff"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Iron gate",
@@ -2410,7 +3020,8 @@
     "categories": [
       "Metal stuff"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Iron ingot",
@@ -2418,7 +3029,8 @@
     "categories": [
       "Metal stuff"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Iron ladder",
@@ -2426,7 +3038,8 @@
     "categories": [
       "Metal stuff"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Iron ore",
@@ -2434,7 +3047,8 @@
     "categories": [
       "Metal stuff"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Iron pipes",
@@ -2444,7 +3058,8 @@
       "Gatherings",
       "Metal stuff"
     ],
-    "type": "Decoration"
+    "type": "Decoration",
+    "isDLC": false
   },
   {
     "name": "Iron rack",
@@ -2452,7 +3067,8 @@
     "categories": [
       "Hard stuff"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Iron scaffold",
@@ -2460,7 +3076,8 @@
     "categories": [
       "Construction"
     ],
-    "type": "Road"
+    "type": "Road",
+    "isDLC": false
   },
   {
     "name": "Iron stand",
@@ -2472,7 +3089,8 @@
       "Hard stuff",
       "Metal stuff"
     ],
-    "type": "Decoration"
+    "type": "Decoration",
+    "isDLC": false
   },
   {
     "name": "Iron steps",
@@ -2480,7 +3098,8 @@
     "categories": [
       "Metal stuff"
     ],
-    "type": "Road"
+    "type": "Road",
+    "isDLC": false
   },
   {
     "name": "Iron table",
@@ -2489,7 +3108,8 @@
       "Hard stuff",
       "Metal stuff"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Iron wall",
@@ -2497,7 +3117,8 @@
     "categories": [
       "Metal stuff"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Iron-plate flooring",
@@ -2505,7 +3126,8 @@
     "categories": [
       "Metal stuff"
     ],
-    "type": "Road"
+    "type": "Road",
+    "isDLC": false
   },
   {
     "name": "Iron-plate flooring (wallpaper)",
@@ -2513,7 +3135,8 @@
     "categories": [
       "Metal stuff"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Iron-scaffold plank",
@@ -2521,7 +3144,8 @@
     "categories": [
       "Construction"
     ],
-    "type": "Road"
+    "type": "Road",
+    "isDLC": false
   },
   {
     "name": "Jaw Fossil",
@@ -2532,7 +3156,8 @@
       "Stone stuff",
       "Strange stuff"
     ],
-    "type": "Decoration"
+    "type": "Decoration",
+    "isDLC": false
   },
   {
     "name": "Jewel wall decoration",
@@ -2543,7 +3168,8 @@
       "Stone stuff",
       "Watching stuff"
     ],
-    "type": "Decoration"
+    "type": "Decoration",
+    "isDLC": false
   },
   {
     "name": "Jirachi lamp",
@@ -2555,7 +3181,8 @@
       "Hard stuff",
       "Shiny stuff"
     ],
-    "type": "Decoration"
+    "type": "Decoration",
+    "isDLC": false
   },
   {
     "name": "Jubilife Village",
@@ -2563,7 +3190,8 @@
     "categories": [
       "Round stuff"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Juice trio",
@@ -2575,7 +3203,8 @@
       "Glass stuff",
       "Looks like food"
     ],
-    "type": "Decoration"
+    "type": "Decoration",
+    "isDLC": false
   },
   {
     "name": "Jumbled cords",
@@ -2589,7 +3218,8 @@
       "Group Activities",
       "Metal stuff"
     ],
-    "type": "Toy"
+    "type": "Toy",
+    "isDLC": false
   },
   {
     "name": "Jump rope trophy",
@@ -2600,7 +3230,8 @@
       "Metal stuff",
       "Watching stuff"
     ],
-    "type": "Decoration"
+    "type": "Decoration",
+    "isDLC": false
   },
   {
     "name": "Knitting supplies",
@@ -2610,11 +3241,11 @@
       "Fabric",
       "Gatherings",
       "Group Activities",
-      "Lots of dirt",
       "Round stuff",
       "Soft stuff"
     ],
-    "type": "Toy"
+    "type": "Toy",
+    "isDLC": false
   },
   {
     "name": "Lagging Tail",
@@ -2622,7 +3253,20 @@
     "categories": [
       "Wobbly stuff"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
+  },
+  {
+    "name": "Lampion",
+    "image": "https://www.serebii.net/pokemonpokopia/items/lampion.png",
+    "categories": [
+      "Hard stuff",
+      "Luxury",
+      "Slender objects",
+      "Watching stuff"
+    ],
+    "type": "Decoration",
+    "isDLC": true
   },
   {
     "name": "Lantern",
@@ -2632,7 +3276,8 @@
       "Glass stuff",
       "Metal stuff"
     ],
-    "type": "Decoration"
+    "type": "Decoration",
+    "isDLC": false
   },
   {
     "name": "Laptop",
@@ -2645,7 +3290,8 @@
       "Shiny stuff",
       "Strange stuff"
     ],
-    "type": "Toy"
+    "type": "Toy",
+    "isDLC": false
   },
   {
     "name": "Large Lost Relic",
@@ -2653,7 +3299,8 @@
     "categories": [
       "Strange stuff"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Large mirror",
@@ -2664,7 +3311,8 @@
       "Luxury",
       "Strange stuff"
     ],
-    "type": "Toy"
+    "type": "Toy",
+    "isDLC": false
   },
   {
     "name": "Large ventilation fan",
@@ -2676,7 +3324,8 @@
       "Spinning stuff",
       "Strange stuff"
     ],
-    "type": "Decoration"
+    "type": "Decoration",
+    "isDLC": false
   },
   {
     "name": "Laser sensor",
@@ -2684,7 +3333,8 @@
     "categories": [
       "Electronics"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Leafy plant",
@@ -2695,7 +3345,8 @@
       "Stone stuff",
       "Watching stuff"
     ],
-    "type": "Decoration"
+    "type": "Decoration",
+    "isDLC": false
   },
   {
     "name": "Leftovers",
@@ -2703,7 +3354,8 @@
     "categories": [
       "Looks like food"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Letter",
@@ -2714,7 +3366,8 @@
       "Letters and words",
       "Watching stuff"
     ],
-    "type": "Toy"
+    "type": "Toy",
+    "isDLC": false
   },
   {
     "name": "Life Orb",
@@ -2722,7 +3375,8 @@
     "categories": [
       "Round stuff"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Light Clay",
@@ -2731,7 +3385,8 @@
       "Soft stuff",
       "Stone stuff"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Log Bed",
@@ -2744,7 +3399,8 @@
       "Soft stuff",
       "Wooden stuff"
     ],
-    "type": "Relaxation"
+    "type": "Relaxation",
+    "isDLC": false
   },
   {
     "name": "Log chair",
@@ -2754,7 +3410,8 @@
       "Round stuff",
       "Wooden stuff"
     ],
-    "type": "Relaxation"
+    "type": "Relaxation",
+    "isDLC": false
   },
   {
     "name": "Log table",
@@ -2763,7 +3420,8 @@
       "Lots of nature",
       "Wooden stuff"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Lucky Egg",
@@ -2771,7 +3429,8 @@
     "categories": [
       "Round stuff"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Lumber",
@@ -2779,7 +3438,17 @@
     "categories": [
       "Wooden stuff"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
+  },
+  {
+    "name": "Lumiose City",
+    "image": "https://www.serebii.net/pokemonpokopia/items/lumiosecity.png",
+    "categories": [
+      "Round stuff"
+    ],
+    "type": "",
+    "isDLC": true
   },
   {
     "name": "Lunch box",
@@ -2790,7 +3459,8 @@
       "Gatherings",
       "Looks like food"
     ],
-    "type": "Decoration"
+    "type": "Decoration",
+    "isDLC": false
   },
   {
     "name": "Luxury bed",
@@ -2801,7 +3471,8 @@
       "Soft stuff",
       "Stone stuff"
     ],
-    "type": "Relaxation"
+    "type": "Relaxation",
+    "isDLC": false
   },
   {
     "name": "Luxury chair",
@@ -2814,7 +3485,8 @@
       "Spooky stuff",
       "Stone stuff"
     ],
-    "type": "Relaxation"
+    "type": "Relaxation",
+    "isDLC": false
   },
   {
     "name": "Luxury dresser",
@@ -2826,7 +3498,8 @@
       "Stone stuff",
       "Strange stuff"
     ],
-    "type": "Toy"
+    "type": "Toy",
+    "isDLC": false
   },
   {
     "name": "Luxury lamp",
@@ -2839,7 +3512,8 @@
       "Luxury",
       "Slender objects"
     ],
-    "type": "Decoration"
+    "type": "Decoration",
+    "isDLC": false
   },
   {
     "name": "Luxury sofa",
@@ -2850,7 +3524,8 @@
       "Luxury",
       "Soft stuff"
     ],
-    "type": "Relaxation"
+    "type": "Relaxation",
+    "isDLC": false
   },
   {
     "name": "Luxury table",
@@ -2858,7 +3533,8 @@
     "categories": [
       "Luxury"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Magazine rack",
@@ -2871,7 +3547,8 @@
       "Watching stuff",
       "Wooden stuff"
     ],
-    "type": "Decoration"
+    "type": "Decoration",
+    "isDLC": false
   },
   {
     "name": "Mailbox",
@@ -2880,7 +3557,8 @@
       "Containers",
       "Metal stuff"
     ],
-    "type": "Decoration"
+    "type": "Decoration",
+    "isDLC": false
   },
   {
     "name": "Malicious Armor",
@@ -2889,7 +3567,8 @@
       "Luxury",
       "Strange stuff"
     ],
-    "type": "Decoration"
+    "type": "Decoration",
+    "isDLC": false
   },
   {
     "name": "Map and compass",
@@ -2899,7 +3578,82 @@
       "Letters and words",
       "Symbols"
     ],
-    "type": "Toy"
+    "type": "Toy",
+    "isDLC": false
+  },
+  {
+    "name": "Marine chair",
+    "image": "https://www.serebii.net/pokemonpokopia/items/marinechair.png",
+    "categories": [
+      "Ocean vibes",
+      "Stone stuff"
+    ],
+    "type": "Relaxation",
+    "isDLC": true
+  },
+  {
+    "name": "Marine chest",
+    "image": "https://www.serebii.net/pokemonpokopia/items/marinechest.png",
+    "categories": [
+      "Blocky stuff",
+      "Colorful stuff",
+      "Containers",
+      "Ocean vibes",
+      "Shiny stuff",
+      "Stone stuff"
+    ],
+    "type": "Decoration",
+    "isDLC": true
+  },
+  {
+    "name": "Marine closet",
+    "image": "https://www.serebii.net/pokemonpokopia/items/marinecloset.png",
+    "categories": [
+      "Blocky stuff",
+      "Colorful stuff",
+      "Containers",
+      "Ocean vibes",
+      "Shiny stuff",
+      "Stone stuff"
+    ],
+    "type": "Decoration",
+    "isDLC": true
+  },
+  {
+    "name": "Marine dresser",
+    "image": "https://www.serebii.net/pokemonpokopia/items/marinedresser.png",
+    "categories": [
+      "Colorful stuff",
+      "Cute stuff",
+      "Glass stuff",
+      "Ocean vibes",
+      "Strange stuff"
+    ],
+    "type": "Toy",
+    "isDLC": true
+  },
+  {
+    "name": "Marine sofa",
+    "image": "https://www.serebii.net/pokemonpokopia/items/marinesofa.png",
+    "categories": [
+      "Cute stuff",
+      "Fabric",
+      "Group Activities",
+      "Ocean vibes",
+      "Soft stuff"
+    ],
+    "type": "Relaxation",
+    "isDLC": true
+  },
+  {
+    "name": "Marine table",
+    "image": "https://www.serebii.net/pokemonpokopia/items/marinetable.png",
+    "categories": [
+      "Colorful stuff",
+      "Ocean vibes"
+    ],
+    "type": "",
+    "isDLC": true
   },
   {
     "name": "Menu board",
@@ -2910,7 +3664,8 @@
       "Letters and words",
       "Wooden stuff"
     ],
-    "type": "Decoration"
+    "type": "Decoration",
+    "isDLC": false
   },
   {
     "name": "Metal chain",
@@ -2919,7 +3674,8 @@
       "Metal stuff",
       "Slender objects"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Metal Debris",
@@ -2929,7 +3685,8 @@
       "Metal stuff",
       "Stone stuff"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Metal drum",
@@ -2940,7 +3697,8 @@
       "Metal stuff",
       "Round stuff"
     ],
-    "type": "Decoration"
+    "type": "Decoration",
+    "isDLC": false
   },
   {
     "name": "Metal fragments",
@@ -2948,7 +3706,8 @@
     "categories": [
       "Metal stuff"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Metal Powder",
@@ -2956,7 +3715,8 @@
     "categories": [
       "Shiny stuff"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Metallic smelting furnace",
@@ -2964,7 +3724,21 @@
     "categories": [
       "Lots of fire"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
+  },
+  {
+    "name": "Metronome",
+    "image": "https://www.serebii.net/pokemonpokopia/items/metronome.png",
+    "categories": [
+      "Metal stuff",
+      "Noisy stuff",
+      "Strange stuff",
+      "Watching stuff",
+      "Wobbly stuff"
+    ],
+    "type": "Toy",
+    "isDLC": true
   },
   {
     "name": "Microscope",
@@ -2976,7 +3750,8 @@
       "Strange stuff",
       "Watching stuff"
     ],
-    "type": "Toy"
+    "type": "Toy",
+    "isDLC": false
   },
   {
     "name": "Microwave oven",
@@ -2988,7 +3763,8 @@
       "Metal stuff",
       "Strange stuff"
     ],
-    "type": "Toy"
+    "type": "Toy",
+    "isDLC": false
   },
   {
     "name": "Mini bookcase",
@@ -3001,7 +3777,8 @@
       "Watching stuff",
       "Wooden stuff"
     ],
-    "type": "Decoration"
+    "type": "Decoration",
+    "isDLC": false
   },
   {
     "name": "Mini generator",
@@ -3015,7 +3792,8 @@
       "Shiny stuff",
       "Strange stuff"
     ],
-    "type": "Decoration"
+    "type": "Decoration",
+    "isDLC": false
   },
   {
     "name": "Mini plain bed",
@@ -3026,7 +3804,8 @@
       "Soft stuff",
       "Wooden stuff"
     ],
-    "type": "Relaxation"
+    "type": "Relaxation",
+    "isDLC": false
   },
   {
     "name": "Miracle Seed",
@@ -3034,7 +3813,8 @@
     "categories": [
       "Lots of nature"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Mirror ball",
@@ -3047,7 +3827,8 @@
       "Shiny stuff",
       "Symbols"
     ],
-    "type": "Decoration"
+    "type": "Decoration",
+    "isDLC": false
   },
   {
     "name": "Model planet",
@@ -3060,7 +3841,8 @@
       "Round stuff",
       "Spinning stuff"
     ],
-    "type": "Toy"
+    "type": "Toy",
+    "isDLC": false
   },
   {
     "name": "Model space shuttle",
@@ -3073,7 +3855,8 @@
       "Stone stuff",
       "Strange stuff"
     ],
-    "type": "Toy"
+    "type": "Toy",
+    "isDLC": false
   },
   {
     "name": "Modern door",
@@ -3081,7 +3864,8 @@
     "categories": [
       "Glass stuff"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Modern sink",
@@ -3093,7 +3877,8 @@
       "Metal stuff",
       "Strange stuff"
     ],
-    "type": "Toy"
+    "type": "Toy",
+    "isDLC": false
   },
   {
     "name": "Moon clock",
@@ -3104,7 +3889,8 @@
       "Watching stuff",
       "Wobbly stuff"
     ],
-    "type": "Toy"
+    "type": "Toy",
+    "isDLC": false
   },
   {
     "name": "Mountain flowers",
@@ -3112,7 +3898,8 @@
     "categories": [
       "Pretty flowers"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Mountain flowers (pink)",
@@ -3120,7 +3907,8 @@
     "categories": [
       "Pretty flowers"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Mountain flowers (purple)",
@@ -3128,7 +3916,8 @@
     "categories": [
       "Pretty flowers"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Mountain flowers (red)",
@@ -3136,7 +3925,8 @@
     "categories": [
       "Pretty flowers"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Mountain flowers (white)",
@@ -3144,7 +3934,8 @@
     "categories": [
       "Pretty flowers"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Mt. Coronet",
@@ -3152,7 +3943,8 @@
     "categories": [
       "Round stuff"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Mud",
@@ -3160,7 +3952,8 @@
     "categories": [
       "Lots of dirt"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Mug",
@@ -3170,7 +3963,8 @@
       "Stone stuff",
       "Symbols"
     ],
-    "type": "Decoration"
+    "type": "Decoration",
+    "isDLC": false
   },
   {
     "name": "Munna bank",
@@ -3181,7 +3975,8 @@
       "Spooky stuff",
       "Stone stuff"
     ],
-    "type": "Toy"
+    "type": "Toy",
+    "isDLC": false
   },
   {
     "name": "Mushroom lamp",
@@ -3190,7 +3985,8 @@
       "Electronics",
       "Wooden stuff"
     ],
-    "type": "Decoration"
+    "type": "Decoration",
+    "isDLC": false
   },
   {
     "name": "Mushroom streetlight",
@@ -3201,7 +3997,21 @@
       "Slender objects",
       "Spooky stuff"
     ],
-    "type": "Decoration"
+    "type": "Decoration",
+    "isDLC": false
+  },
+  {
+    "name": "Music box",
+    "image": "https://www.serebii.net/pokemonpokopia/items/musicbox.png",
+    "categories": [
+      "Blocky stuff",
+      "Luxury",
+      "Noisy stuff",
+      "Spinning stuff",
+      "Strange stuff"
+    ],
+    "type": "Toy",
+    "isDLC": true
   },
   {
     "name": "Music mat (Fa)",
@@ -3213,7 +4023,8 @@
       "Shiny stuff",
       "Strange stuff"
     ],
-    "type": "Toy"
+    "type": "Toy",
+    "isDLC": false
   },
   {
     "name": "Music mat (High do)",
@@ -3225,7 +4036,8 @@
       "Shiny stuff",
       "Strange stuff"
     ],
-    "type": "Toy"
+    "type": "Toy",
+    "isDLC": false
   },
   {
     "name": "Music mat (La)",
@@ -3237,7 +4049,8 @@
       "Shiny stuff",
       "Strange stuff"
     ],
-    "type": "Toy"
+    "type": "Toy",
+    "isDLC": false
   },
   {
     "name": "Music mat (low do)",
@@ -3249,7 +4062,8 @@
       "Shiny stuff",
       "Strange stuff"
     ],
-    "type": "Toy"
+    "type": "Toy",
+    "isDLC": false
   },
   {
     "name": "Music mat (Mi)",
@@ -3261,7 +4075,8 @@
       "Shiny stuff",
       "Strange stuff"
     ],
-    "type": "Toy"
+    "type": "Toy",
+    "isDLC": false
   },
   {
     "name": "Music mat (Re)",
@@ -3273,7 +4088,8 @@
       "Shiny stuff",
       "Strange stuff"
     ],
-    "type": "Toy"
+    "type": "Toy",
+    "isDLC": false
   },
   {
     "name": "Music mat (Sol)",
@@ -3285,7 +4101,8 @@
       "Shiny stuff",
       "Strange stuff"
     ],
-    "type": "Toy"
+    "type": "Toy",
+    "isDLC": false
   },
   {
     "name": "Music mat (Ti)",
@@ -3297,7 +4114,8 @@
       "Shiny stuff",
       "Strange stuff"
     ],
-    "type": "Toy"
+    "type": "Toy",
+    "isDLC": false
   },
   {
     "name": "Mysterious statue",
@@ -3307,7 +4125,8 @@
       "Stone stuff",
       "Strange stuff"
     ],
-    "type": "Decoration"
+    "type": "Decoration",
+    "isDLC": false
   },
   {
     "name": "Mystic Water",
@@ -3315,7 +4134,8 @@
     "categories": [
       "Lots of water"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Naptime bed",
@@ -3326,7 +4146,8 @@
       "Group Activities",
       "Soft stuff"
     ],
-    "type": "Relaxation"
+    "type": "Relaxation",
+    "isDLC": false
   },
   {
     "name": "Newspaper",
@@ -3337,7 +4158,8 @@
       "Letters and words",
       "Watching stuff"
     ],
-    "type": "Toy"
+    "type": "Toy",
+    "isDLC": false
   },
   {
     "name": "Nonburnable garbage",
@@ -3345,7 +4167,8 @@
     "categories": [
       "Garbage"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Nonburnable garbage (outdoor)",
@@ -3353,7 +4176,8 @@
     "categories": [
       "Garbage"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Notepad",
@@ -3364,7 +4188,8 @@
       "Letters and words",
       "Watching stuff"
     ],
-    "type": "Toy"
+    "type": "Toy",
+    "isDLC": false
   },
   {
     "name": "Nugget",
@@ -3373,7 +4198,8 @@
       "Round stuff",
       "Shiny stuff"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Oak's Lab",
@@ -3381,7 +4207,8 @@
     "categories": [
       "Round stuff"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Office cabinet",
@@ -3392,7 +4219,8 @@
       "Metal stuff",
       "Wooden stuff"
     ],
-    "type": "Decoration"
+    "type": "Decoration",
+    "isDLC": false
   },
   {
     "name": "Office chair",
@@ -3403,7 +4231,8 @@
       "Soft stuff",
       "Spinning stuff"
     ],
-    "type": "Relaxation"
+    "type": "Relaxation",
+    "isDLC": false
   },
   {
     "name": "Office desk",
@@ -3411,7 +4240,8 @@
     "categories": [
       "Metal stuff"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Office locker",
@@ -3421,7 +4251,8 @@
       "Containers",
       "Metal stuff"
     ],
-    "type": "Decoration"
+    "type": "Decoration",
+    "isDLC": false
   },
   {
     "name": "Office shelf",
@@ -3435,7 +4266,8 @@
       "Letters and words",
       "Metal stuff"
     ],
-    "type": "Decoration"
+    "type": "Decoration",
+    "isDLC": false
   },
   {
     "name": "Oil lantern",
@@ -3446,7 +4278,8 @@
       "Lots of fire",
       "Metal stuff"
     ],
-    "type": "Decoration"
+    "type": "Decoration",
+    "isDLC": false
   },
   {
     "name": "Open Book",
@@ -3457,7 +4290,8 @@
       "Letters and words",
       "Watching stuff"
     ],
-    "type": "Toy"
+    "type": "Toy",
+    "isDLC": false
   },
   {
     "name": "Orange meteor lamp",
@@ -3468,7 +4302,72 @@
       "Glass stuff",
       "Shiny stuff"
     ],
-    "type": "Decoration"
+    "type": "Decoration",
+    "isDLC": false
+  },
+  {
+    "name": "Ornate bed",
+    "image": "https://www.serebii.net/pokemonpokopia/items/ornatebed.png",
+    "categories": [
+      "Colorful stuff",
+      "Fabric",
+      "Luxury",
+      "Soft stuff",
+      "Stone stuff"
+    ],
+    "type": "Relaxation",
+    "isDLC": true
+  },
+  {
+    "name": "Ornate chair",
+    "image": "https://www.serebii.net/pokemonpokopia/items/ornatechair.png",
+    "categories": [
+      "Colorful stuff",
+      "Fabric",
+      "Luxury",
+      "Ocean vibes",
+      "Soft stuff",
+      "Stone stuff"
+    ],
+    "type": "Relaxation",
+    "isDLC": true
+  },
+  {
+    "name": "Ornate decorative shelf",
+    "image": "https://www.serebii.net/pokemonpokopia/items/ornatedecorativeshelf.png",
+    "categories": [
+      "Colorful stuff",
+      "Gatherings",
+      "Luxury",
+      "Round stuff",
+      "Shiny stuff",
+      "Watching stuff"
+    ],
+    "type": "Decoration",
+    "isDLC": true
+  },
+  {
+    "name": "Ornate stand",
+    "image": "https://www.serebii.net/pokemonpokopia/items/ornatestand.png",
+    "categories": [
+      "Blocky stuff",
+      "Colorful stuff",
+      "Containers",
+      "Luxury",
+      "Ocean vibes",
+      "Stone stuff"
+    ],
+    "type": "Decoration",
+    "isDLC": true
+  },
+  {
+    "name": "Ornate table",
+    "image": "https://www.serebii.net/pokemonpokopia/items/ornatetable.png",
+    "categories": [
+      "Luxury"
+    ],
+    "type": "",
+    "isDLC": true
   },
   {
     "name": "Paint balloon (aquamarine)",
@@ -3477,7 +4376,8 @@
       "Colorful stuff",
       "Round stuff"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Paint balloon (beige)",
@@ -3486,7 +4386,8 @@
       "Colorful stuff",
       "Round stuff"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Paint balloon (black)",
@@ -3495,7 +4396,8 @@
       "Colorful stuff",
       "Round stuff"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Paint balloon (blue)",
@@ -3504,7 +4406,8 @@
       "Colorful stuff",
       "Round stuff"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Paint balloon (brown)",
@@ -3513,7 +4416,8 @@
       "Colorful stuff",
       "Round stuff"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Paint balloon (cyan)",
@@ -3522,7 +4426,8 @@
       "Colorful stuff",
       "Round stuff"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Paint balloon (gray)",
@@ -3531,7 +4436,8 @@
       "Colorful stuff",
       "Round stuff"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Paint balloon (green)",
@@ -3540,7 +4446,8 @@
       "Colorful stuff",
       "Round stuff"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Paint balloon (lime)",
@@ -3549,7 +4456,8 @@
       "Colorful stuff",
       "Round stuff"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Paint balloon (navy)",
@@ -3558,7 +4466,8 @@
       "Colorful stuff",
       "Round stuff"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Paint balloon (orange)",
@@ -3567,7 +4476,8 @@
       "Colorful stuff",
       "Round stuff"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Paint balloon (pink)",
@@ -3576,7 +4486,8 @@
       "Colorful stuff",
       "Round stuff"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Paint balloon (plum)",
@@ -3585,7 +4496,8 @@
       "Colorful stuff",
       "Round stuff"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Paint balloon (purple)",
@@ -3594,7 +4506,8 @@
       "Colorful stuff",
       "Round stuff"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Paint balloon (red)",
@@ -3603,7 +4516,8 @@
       "Colorful stuff",
       "Round stuff"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Paint balloon (rose)",
@@ -3612,7 +4526,8 @@
       "Colorful stuff",
       "Round stuff"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Paint balloon (white)",
@@ -3621,7 +4536,8 @@
       "Colorful stuff",
       "Round stuff"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Paint balloon (yellow)",
@@ -3630,7 +4546,8 @@
       "Colorful stuff",
       "Round stuff"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Painting (landscape)",
@@ -3640,7 +4557,8 @@
       "Fabric",
       "Watching stuff"
     ],
-    "type": "Decoration"
+    "type": "Decoration",
+    "isDLC": false
   },
   {
     "name": "Painting (portrait)",
@@ -3650,7 +4568,8 @@
       "Fabric",
       "Watching stuff"
     ],
-    "type": "Decoration"
+    "type": "Decoration",
+    "isDLC": false
   },
   {
     "name": "Painting (still life)",
@@ -3660,7 +4579,8 @@
       "Fabric",
       "Watching stuff"
     ],
-    "type": "Decoration"
+    "type": "Decoration",
+    "isDLC": false
   },
   {
     "name": "Pallet Town",
@@ -3668,7 +4588,8 @@
     "categories": [
       "Round stuff"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Paper",
@@ -3676,7 +4597,8 @@
     "categories": [
       "Blocky stuff"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Paper Party cups",
@@ -3686,7 +4608,8 @@
       "Group Activities",
       "Lots of water"
     ],
-    "type": "Decoration"
+    "type": "Decoration",
+    "isDLC": false
   },
   {
     "name": "Papers",
@@ -3697,7 +4620,23 @@
       "Letters and words",
       "Watching stuff"
     ],
-    "type": "Toy"
+    "type": "Toy",
+    "isDLC": false
+  },
+  {
+    "name": "Party ball",
+    "image": "https://www.serebii.net/pokemonpokopia/items/partyball.png",
+    "categories": [
+      "Containers",
+      "Letters and words",
+      "Luxury",
+      "Round stuff",
+      "Stone stuff",
+      "Strange stuff",
+      "Watching stuff"
+    ],
+    "type": "Decoration",
+    "isDLC": true
   },
   {
     "name": "Party bunting",
@@ -3706,7 +4645,27 @@
       "Colorful stuff",
       "Fabric"
     ],
-    "type": "Decoration"
+    "type": "Decoration",
+    "isDLC": false
+  },
+  {
+    "name": "Pathway light (single)",
+    "image": "https://www.serebii.net/pokemonpokopia/items/pathwaylight(single).png",
+    "categories": [
+      "Watching stuff"
+    ],
+    "type": "",
+    "isDLC": true
+  },
+  {
+    "name": "Pearl streetlight",
+    "image": "https://www.serebii.net/pokemonpokopia/items/pearlstreetlight.png",
+    "categories": [
+      "Ocean vibes",
+      "Slender objects"
+    ],
+    "type": "Decoration",
+    "isDLC": true
   },
   {
     "name": "Pencil holder",
@@ -3717,7 +4676,8 @@
       "Gatherings",
       "Stone stuff"
     ],
-    "type": "Toy"
+    "type": "Toy",
+    "isDLC": false
   },
   {
     "name": "Pewter City Theme",
@@ -3725,7 +4685,8 @@
     "categories": [
       "Round stuff"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Photo cutout board",
@@ -3737,7 +4698,8 @@
       "Group Activities",
       "Watching stuff"
     ],
-    "type": "Toy"
+    "type": "Toy",
+    "isDLC": false
   },
   {
     "name": "Photo frame",
@@ -3748,7 +4710,8 @@
       "Group Activities",
       "Watching stuff"
     ],
-    "type": "Decoration"
+    "type": "Decoration",
+    "isDLC": false
   },
   {
     "name": "Picnic basket",
@@ -3759,7 +4722,8 @@
       "Fabric",
       "Group Activities"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Pikachu doll",
@@ -3770,7 +4734,8 @@
       "Soft stuff",
       "Symbols"
     ],
-    "type": "Toy"
+    "type": "Toy",
+    "isDLC": false
   },
   {
     "name": "Pikachu sofa",
@@ -3782,7 +4747,8 @@
       "Group Activities",
       "Soft stuff"
     ],
-    "type": "Relaxation"
+    "type": "Relaxation",
+    "isDLC": false
   },
   {
     "name": "Pink paint",
@@ -3791,7 +4757,8 @@
       "Colorful stuff",
       "Lots of dirt"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Pinwheels",
@@ -3804,7 +4771,8 @@
       "Spinning stuff",
       "Watching stuff"
     ],
-    "type": "Toy"
+    "type": "Toy",
+    "isDLC": false
   },
   {
     "name": "Pitcher-plant pot",
@@ -3816,7 +4784,8 @@
       "Strange stuff",
       "Watching stuff"
     ],
-    "type": "Decoration"
+    "type": "Decoration",
+    "isDLC": false
   },
   {
     "name": "Pizza",
@@ -3826,7 +4795,8 @@
       "Looks like food",
       "Round stuff"
     ],
-    "type": "Decoration"
+    "type": "Decoration",
+    "isDLC": false
   },
   {
     "name": "Plain bed",
@@ -3836,7 +4806,8 @@
       "Group Activities",
       "Soft stuff"
     ],
-    "type": "Relaxation"
+    "type": "Relaxation",
+    "isDLC": false
   },
   {
     "name": "Plain chair",
@@ -3846,7 +4817,8 @@
       "Soft stuff",
       "Wooden stuff"
     ],
-    "type": "Relaxation"
+    "type": "Relaxation",
+    "isDLC": false
   },
   {
     "name": "Plain chest",
@@ -3857,7 +4829,8 @@
       "Fabric",
       "Wooden stuff"
     ],
-    "type": "Decoration"
+    "type": "Decoration",
+    "isDLC": false
   },
   {
     "name": "Plain closet",
@@ -3868,7 +4841,8 @@
       "Fabric",
       "Wooden stuff"
     ],
-    "type": "Decoration"
+    "type": "Decoration",
+    "isDLC": false
   },
   {
     "name": "Plain lamp",
@@ -3878,7 +4852,8 @@
       "Fabric",
       "Glass stuff"
     ],
-    "type": "Decoration"
+    "type": "Decoration",
+    "isDLC": false
   },
   {
     "name": "Plain sofa",
@@ -3889,7 +4864,8 @@
       "Soft stuff",
       "Wooden stuff"
     ],
-    "type": "Relaxation"
+    "type": "Relaxation",
+    "isDLC": false
   },
   {
     "name": "Plain stand",
@@ -3900,7 +4876,8 @@
       "Fabric",
       "Wooden stuff"
     ],
-    "type": "Decoration"
+    "type": "Decoration",
+    "isDLC": false
   },
   {
     "name": "Plain stool",
@@ -3911,7 +4888,8 @@
       "Soft stuff",
       "Wooden stuff"
     ],
-    "type": "Relaxation"
+    "type": "Relaxation",
+    "isDLC": false
   },
   {
     "name": "Plain table",
@@ -3919,7 +4897,17 @@
     "categories": [
       "Wooden stuff"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
+  },
+  {
+    "name": "Po Town",
+    "image": "https://www.serebii.net/pokemonpokopia/items/potown.png",
+    "categories": [
+      "Round stuff"
+    ],
+    "type": "",
+    "isDLC": true
   },
   {
     "name": "Poké Ball bed",
@@ -3930,7 +4918,8 @@
       "Round stuff",
       "Soft stuff"
     ],
-    "type": "Relaxation"
+    "type": "Relaxation",
+    "isDLC": false
   },
   {
     "name": "Poké Ball Chest",
@@ -3942,7 +4931,8 @@
       "Metal stuff",
       "Round stuff"
     ],
-    "type": "Decoration"
+    "type": "Decoration",
+    "isDLC": false
   },
   {
     "name": "Poké Ball lamp",
@@ -3954,7 +4944,8 @@
       "Round stuff",
       "Strange stuff"
     ],
-    "type": "Decoration"
+    "type": "Decoration",
+    "isDLC": false
   },
   {
     "name": "Poké Ball light",
@@ -3966,7 +4957,8 @@
       "Luxury",
       "Metal stuff"
     ],
-    "type": "Decoration"
+    "type": "Decoration",
+    "isDLC": false
   },
   {
     "name": "Poké Ball Sofa",
@@ -3976,7 +4968,8 @@
       "Metal stuff",
       "Round stuff"
     ],
-    "type": "Relaxation"
+    "type": "Relaxation",
+    "isDLC": false
   },
   {
     "name": "Pokémetal",
@@ -3984,7 +4977,8 @@
     "categories": [
       "Metal stuff"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Pokémetal fragment",
@@ -3992,7 +4986,8 @@
     "categories": [
       "Metal stuff"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Pokémon Center",
@@ -4000,7 +4995,8 @@
     "categories": [
       "Round stuff"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Pokémon Gym",
@@ -4008,7 +5004,8 @@
     "categories": [
       "Round stuff"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Polygonal Shelf",
@@ -4019,7 +5016,8 @@
       "Hard stuff",
       "Strange stuff"
     ],
-    "type": "Decoration"
+    "type": "Decoration",
+    "isDLC": false
   },
   {
     "name": "Pop art bed",
@@ -4030,7 +5028,8 @@
       "Group Activities",
       "Soft stuff"
     ],
-    "type": "Relaxation"
+    "type": "Relaxation",
+    "isDLC": false
   },
   {
     "name": "Pop art chair",
@@ -4041,7 +5040,8 @@
       "Fabric",
       "Soft stuff"
     ],
-    "type": "Relaxation"
+    "type": "Relaxation",
+    "isDLC": false
   },
   {
     "name": "Pop art lamp",
@@ -4051,7 +5051,8 @@
       "Glass stuff",
       "Metal stuff"
     ],
-    "type": "Decoration"
+    "type": "Decoration",
+    "isDLC": false
   },
   {
     "name": "Pop art sofa",
@@ -4063,7 +5064,8 @@
       "Group Activities",
       "Soft stuff"
     ],
-    "type": "Relaxation"
+    "type": "Relaxation",
+    "isDLC": false
   },
   {
     "name": "Pop art table",
@@ -4071,7 +5073,29 @@
     "categories": [
       "Cute stuff"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
+  },
+  {
+    "name": "Portal pod",
+    "image": "https://www.serebii.net/pokemonpokopia/items/portalpod.png",
+    "categories": [
+      "Containers"
+    ],
+    "type": "",
+    "isDLC": false
+  },
+  {
+    "name": "Primarina statue",
+    "image": "https://www.serebii.net/pokemonpokopia/items/primarinastatue.png",
+    "categories": [
+      "Cute stuff",
+      "Luxury",
+      "Stone stuff",
+      "Watching stuff"
+    ],
+    "type": "Toy",
+    "isDLC": true
   },
   {
     "name": "Printer",
@@ -4082,7 +5106,8 @@
       "Glass stuff",
       "Strange stuff"
     ],
-    "type": "Decoration"
+    "type": "Decoration",
+    "isDLC": false
   },
   {
     "name": "Public seat",
@@ -4092,7 +5117,8 @@
       "Hard stuff",
       "Metal stuff"
     ],
-    "type": "Relaxation"
+    "type": "Relaxation",
+    "isDLC": false
   },
   {
     "name": "Punching bag",
@@ -4104,7 +5130,8 @@
       "Lots of dirt",
       "Wobbly stuff"
     ],
-    "type": "Toy"
+    "type": "Toy",
+    "isDLC": false
   },
   {
     "name": "Punching game",
@@ -4116,7 +5143,8 @@
       "Strange stuff",
       "Wobbly stuff"
     ],
-    "type": "Toy"
+    "type": "Toy",
+    "isDLC": false
   },
   {
     "name": "Raichu sign",
@@ -4127,7 +5155,8 @@
       "Letters and words",
       "Symbols"
     ],
-    "type": "Decoration"
+    "type": "Decoration",
+    "isDLC": false
   },
   {
     "name": "Rainbow Feather",
@@ -4136,7 +5165,8 @@
       "Luxury",
       "Shiny stuff"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Rare Pokémetal",
@@ -4144,7 +5174,8 @@
     "categories": [
       "Metal stuff"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Rare Pokémetal fragment",
@@ -4152,7 +5183,8 @@
     "categories": [
       "Metal stuff"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Recycling bin",
@@ -4162,7 +5194,8 @@
       "Garbage",
       "Metal stuff"
     ],
-    "type": "Decoration"
+    "type": "Decoration",
+    "isDLC": false
   },
   {
     "name": "Red crystal fragment",
@@ -4170,7 +5203,8 @@
     "categories": [
       "Shiny stuff"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Red meteor lamp",
@@ -4181,7 +5215,8 @@
       "Glass stuff",
       "Shiny stuff"
     ],
-    "type": "Decoration"
+    "type": "Decoration",
+    "isDLC": false
   },
   {
     "name": "Red paint",
@@ -4190,7 +5225,8 @@
       "Colorful stuff",
       "Lots of dirt"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Refrigerator",
@@ -4202,7 +5238,8 @@
       "Metal stuff",
       "Strange stuff"
     ],
-    "type": "Toy"
+    "type": "Toy",
+    "isDLC": false
   },
   {
     "name": "Repel",
@@ -4211,7 +5248,8 @@
       "Hard stuff",
       "Strange stuff"
     ],
-    "type": "Toy"
+    "type": "Toy",
+    "isDLC": false
   },
   {
     "name": "Resort bed",
@@ -4221,7 +5259,8 @@
       "Ocean vibes",
       "Soft stuff"
     ],
-    "type": "Relaxation"
+    "type": "Relaxation",
+    "isDLC": false
   },
   {
     "name": "Resort chair",
@@ -4232,7 +5271,8 @@
       "Soft stuff",
       "Wooden stuff"
     ],
-    "type": "Relaxation"
+    "type": "Relaxation",
+    "isDLC": false
   },
   {
     "name": "Resort hammock",
@@ -4244,7 +5284,8 @@
       "Soft stuff",
       "Wobbly stuff"
     ],
-    "type": "Relaxation"
+    "type": "Relaxation",
+    "isDLC": false
   },
   {
     "name": "Resort light",
@@ -4253,7 +5294,8 @@
       "Electronics",
       "Ocean vibes"
     ],
-    "type": "Decoration"
+    "type": "Decoration",
+    "isDLC": false
   },
   {
     "name": "Resort sofa",
@@ -4265,7 +5307,8 @@
       "Soft stuff",
       "Wooden stuff"
     ],
-    "type": "Relaxation"
+    "type": "Relaxation",
+    "isDLC": false
   },
   {
     "name": "Resort stool",
@@ -4277,7 +5320,22 @@
       "Soft stuff",
       "Wooden stuff"
     ],
-    "type": "Relaxation"
+    "type": "Relaxation",
+    "isDLC": false
+  },
+  {
+    "name": "Restaurant sign",
+    "image": "https://www.serebii.net/pokemonpokopia/items/restaurantsign.png",
+    "categories": [
+      "Blocky stuff",
+      "Colorful stuff",
+      "Electronics",
+      "Letters and words",
+      "Symbols",
+      "Watching stuff"
+    ],
+    "type": "Decoration",
+    "isDLC": true
   },
   {
     "name": "Ribbon cake",
@@ -4288,7 +5346,8 @@
       "Looks like food",
       "Round stuff"
     ],
-    "type": "Decoration"
+    "type": "Decoration",
+    "isDLC": false
   },
   {
     "name": "Ring Target",
@@ -4296,7 +5355,8 @@
     "categories": [
       "Round stuff"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Road to Bill",
@@ -4304,7 +5364,8 @@
     "categories": [
       "Round stuff"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Road to Cerulean City",
@@ -4312,7 +5373,8 @@
     "categories": [
       "Round stuff"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Road to Viridian City",
@@ -4320,7 +5382,8 @@
     "categories": [
       "Round stuff"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Robust flower",
@@ -4328,7 +5391,8 @@
     "categories": [
       "Pretty flowers"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Robust flower (blue)",
@@ -4336,7 +5400,8 @@
     "categories": [
       "Pretty flowers"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Robust flower (orange)",
@@ -4344,7 +5409,8 @@
     "categories": [
       "Pretty flowers"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Robust flower (purple)",
@@ -4352,7 +5418,8 @@
     "categories": [
       "Pretty flowers"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Robust flower (white)",
@@ -4360,7 +5427,8 @@
     "categories": [
       "Pretty flowers"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Rocket Hideout",
@@ -4368,7 +5436,8 @@
     "categories": [
       "Round stuff"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Room Service",
@@ -4376,7 +5445,8 @@
     "categories": [
       "Fabric"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Rope",
@@ -4384,7 +5454,8 @@
     "categories": [
       "Slender objects"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Rose Tower",
@@ -4392,7 +5463,8 @@
     "categories": [
       "Round stuff"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Route 10 (Unova)",
@@ -4400,7 +5472,8 @@
     "categories": [
       "Round stuff"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Route 209 (Day)",
@@ -4408,7 +5481,8 @@
     "categories": [
       "Round stuff"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Rowlet clock",
@@ -4419,7 +5493,21 @@
       "Strange stuff",
       "Watching stuff"
     ],
-    "type": "Toy"
+    "type": "Toy",
+    "isDLC": false
+  },
+  {
+    "name": "Running shoes",
+    "image": "https://www.serebii.net/pokemonpokopia/items/runningshoes.png",
+    "categories": [
+      "Colorful stuff",
+      "Cute stuff",
+      "Fabric",
+      "Lots of dirt",
+      "Soft stuff"
+    ],
+    "type": "Decoration",
+    "isDLC": true
   },
   {
     "name": "Sail Fossil",
@@ -4430,7 +5518,20 @@
       "Stone stuff",
       "Strange stuff"
     ],
-    "type": "Decoration"
+    "type": "Decoration",
+    "isDLC": false
+  },
+  {
+    "name": "Sand toys",
+    "image": "https://www.serebii.net/pokemonpokopia/items/sandtoys.png",
+    "categories": [
+      "Colorful stuff",
+      "Metal stuff",
+      "Ocean vibes",
+      "Play spaces"
+    ],
+    "type": "Toy",
+    "isDLC": true
   },
   {
     "name": "Sandbags",
@@ -4441,7 +5542,8 @@
       "Gatherings",
       "Lots of dirt"
     ],
-    "type": "Decoration"
+    "type": "Decoration",
+    "isDLC": false
   },
   {
     "name": "Sandbox",
@@ -4453,7 +5555,8 @@
       "Ocean vibes",
       "Play spaces"
     ],
-    "type": "Toy"
+    "type": "Toy",
+    "isDLC": false
   },
   {
     "name": "Sandwiches",
@@ -4464,7 +5567,8 @@
       "Gatherings",
       "Looks like food"
     ],
-    "type": "Decoration"
+    "type": "Decoration",
+    "isDLC": false
   },
   {
     "name": "Sash window",
@@ -4472,7 +5576,8 @@
     "categories": [
       "Glass stuff"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Science experiment",
@@ -4485,7 +5590,8 @@
       "Letters and words",
       "Metal stuff"
     ],
-    "type": "Toy"
+    "type": "Toy",
+    "isDLC": false
   },
   {
     "name": "Sea glass fragments",
@@ -4493,7 +5599,8 @@
     "categories": [
       "Glass stuff"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Seashell",
@@ -4501,7 +5608,22 @@
     "categories": [
       "Hard stuff"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
+  },
+  {
+    "name": "Seashell seat",
+    "image": "https://www.serebii.net/pokemonpokopia/items/seashellseat.png",
+    "categories": [
+      "Colorful stuff",
+      "Cute stuff",
+      "Fabric",
+      "Round stuff",
+      "Soft stuff",
+      "Stone stuff"
+    ],
+    "type": "Relaxation",
+    "isDLC": true
   },
   {
     "name": "Seashore flowers",
@@ -4509,7 +5631,8 @@
     "categories": [
       "Pretty flowers"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Seashore flowers (blue)",
@@ -4517,7 +5640,8 @@
     "categories": [
       "Pretty flowers"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Seashore flowers (orange)",
@@ -4525,7 +5649,8 @@
     "categories": [
       "Pretty flowers"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Seashore flowers (white)",
@@ -4533,7 +5658,8 @@
     "categories": [
       "Pretty flowers"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Seashore flowers (yellow)",
@@ -4541,7 +5667,8 @@
     "categories": [
       "Pretty flowers"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Security camera",
@@ -4549,7 +5676,8 @@
     "categories": [
       "Electronics"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Seedot Lamp",
@@ -4560,7 +5688,21 @@
       "Lots of nature",
       "Round stuff"
     ],
-    "type": "Decoration"
+    "type": "Decoration",
+    "isDLC": false
+  },
+  {
+    "name": "Servers",
+    "image": "https://www.serebii.net/pokemonpokopia/items/servers.png",
+    "categories": [
+      "Blocky stuff",
+      "Electronics",
+      "Hard stuff",
+      "Metal stuff",
+      "Strange stuff"
+    ],
+    "type": "Decoration",
+    "isDLC": true
   },
   {
     "name": "Shaved ice",
@@ -4570,7 +5712,8 @@
       "Looks like food",
       "Lots of water"
     ],
-    "type": "Decoration"
+    "type": "Decoration",
+    "isDLC": false
   },
   {
     "name": "Shell lamp",
@@ -4581,7 +5724,8 @@
       "Glass stuff",
       "Ocean vibes"
     ],
-    "type": "Decoration"
+    "type": "Decoration",
+    "isDLC": false
   },
   {
     "name": "Shield Fossil (body)",
@@ -4593,7 +5737,8 @@
       "Stone stuff",
       "Strange stuff"
     ],
-    "type": "Decoration"
+    "type": "Decoration",
+    "isDLC": false
   },
   {
     "name": "Shield Fossil (Head)",
@@ -4604,7 +5749,8 @@
       "Stone stuff",
       "Strange stuff"
     ],
-    "type": "Decoration"
+    "type": "Decoration",
+    "isDLC": false
   },
   {
     "name": "Shield Fossil (tail)",
@@ -4616,7 +5762,8 @@
       "Stone stuff",
       "Strange stuff"
     ],
-    "type": "Decoration"
+    "type": "Decoration",
+    "isDLC": false
   },
   {
     "name": "Ship's Wheel",
@@ -4625,7 +5772,50 @@
       "Ocean vibes",
       "Round stuff"
     ],
-    "type": "Toy"
+    "type": "Toy",
+    "isDLC": false
+  },
+  {
+    "name": "Shop display case",
+    "image": "https://www.serebii.net/pokemonpokopia/items/shopdisplaycase.png",
+    "categories": [
+      "Blocky stuff",
+      "Containers",
+      "Gatherings",
+      "Glass stuff",
+      "Round stuff",
+      "Symbols",
+      "Watching stuff"
+    ],
+    "type": "Decoration",
+    "isDLC": true
+  },
+  {
+    "name": "Shop fridge",
+    "image": "https://www.serebii.net/pokemonpokopia/items/shopfridge.png",
+    "categories": [
+      "Blocky stuff",
+      "Colorful stuff",
+      "Containers",
+      "Electronics",
+      "Glass stuff",
+      "Metal stuff"
+    ],
+    "type": "Decoration",
+    "isDLC": true
+  },
+  {
+    "name": "Shop shelf",
+    "image": "https://www.serebii.net/pokemonpokopia/items/shopshelf.png",
+    "categories": [
+      "Colorful stuff",
+      "Containers",
+      "Healing",
+      "Letters and words",
+      "Symbols"
+    ],
+    "type": "Decoration",
+    "isDLC": true
   },
   {
     "name": "Shower",
@@ -4637,7 +5827,8 @@
       "Slender objects",
       "Strange stuff"
     ],
-    "type": "Toy"
+    "type": "Toy",
+    "isDLC": false
   },
   {
     "name": "Sign",
@@ -4647,7 +5838,8 @@
       "Symbols",
       "Wooden stuff"
     ],
-    "type": "Decoration"
+    "type": "Decoration",
+    "isDLC": false
   },
   {
     "name": "Signpost",
@@ -4661,7 +5853,8 @@
       "Strange stuff",
       "Symbols"
     ],
-    "type": "Decoration"
+    "type": "Decoration",
+    "isDLC": false
   },
   {
     "name": "Silk Scarf",
@@ -4669,7 +5862,8 @@
     "categories": [
       "Wobbly stuff"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Silph Co.",
@@ -4677,7 +5871,8 @@
     "categories": [
       "Round stuff"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Silver Bottle Cap",
@@ -4686,7 +5881,8 @@
       "Round stuff",
       "Shiny stuff"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Silver Feather",
@@ -4695,7 +5891,8 @@
       "Luxury",
       "Shiny stuff"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Silver Powder",
@@ -4703,7 +5900,8 @@
     "categories": [
       "Lots of nature"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Simple cushion",
@@ -4712,7 +5910,8 @@
       "Fabric",
       "Soft stuff"
     ],
-    "type": "Relaxation"
+    "type": "Relaxation",
+    "isDLC": false
   },
   {
     "name": "Sink",
@@ -4724,7 +5923,8 @@
       "Stone stuff",
       "Strange stuff"
     ],
-    "type": "Toy"
+    "type": "Toy",
+    "isDLC": false
   },
   {
     "name": "Skull Fossil",
@@ -4735,7 +5935,8 @@
       "Stone stuff",
       "Strange stuff"
     ],
-    "type": "Decoration"
+    "type": "Decoration",
+    "isDLC": false
   },
   {
     "name": "Skyland flowers",
@@ -4743,7 +5944,8 @@
     "categories": [
       "Pretty flowers"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Skyland flowers (blue)",
@@ -4751,7 +5953,8 @@
     "categories": [
       "Pretty flowers"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Skyland flowers (orange)",
@@ -4759,7 +5962,8 @@
     "categories": [
       "Pretty flowers"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Skyland flowers (pink)",
@@ -4767,7 +5971,8 @@
     "categories": [
       "Pretty flowers"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Skyland flowers (yellow)",
@@ -4775,7 +5980,8 @@
     "categories": [
       "Pretty flowers"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Sleeping bag",
@@ -4784,7 +5990,8 @@
       "Fabric",
       "Soft stuff"
     ],
-    "type": "Relaxation"
+    "type": "Relaxation",
+    "isDLC": false
   },
   {
     "name": "Slender candle",
@@ -4796,7 +6003,8 @@
       "Spooky stuff",
       "Stone stuff"
     ],
-    "type": "Decoration"
+    "type": "Decoration",
+    "isDLC": false
   },
   {
     "name": "Slide",
@@ -4806,7 +6014,22 @@
       "Play spaces",
       "Wooden stuff"
     ],
-    "type": "Toy"
+    "type": "Toy",
+    "isDLC": false
+  },
+  {
+    "name": "Slim information board",
+    "image": "https://www.serebii.net/pokemonpokopia/items/sliminformationboard.png",
+    "categories": [
+      "Blocky stuff",
+      "Colorful stuff",
+      "Hard stuff",
+      "Letters and words",
+      "Metal stuff",
+      "Symbols"
+    ],
+    "type": "Decoration",
+    "isDLC": true
   },
   {
     "name": "Small garbage can",
@@ -4817,7 +6040,8 @@
       "Metal stuff",
       "Round stuff"
     ],
-    "type": "Decoration"
+    "type": "Decoration",
+    "isDLC": false
   },
   {
     "name": "Small log",
@@ -4825,7 +6049,8 @@
     "categories": [
       "Wooden stuff"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Small Lost Relic",
@@ -4833,7 +6058,8 @@
     "categories": [
       "Strange stuff"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Small stage",
@@ -4846,7 +6072,8 @@
       "Spinning stuff",
       "Strange stuff"
     ],
-    "type": "Toy"
+    "type": "Toy",
+    "isDLC": false
   },
   {
     "name": "Small vase",
@@ -4858,7 +6085,8 @@
       "Stone stuff",
       "Watching stuff"
     ],
-    "type": "Decoration"
+    "type": "Decoration",
+    "isDLC": false
   },
   {
     "name": "Smelting furnace",
@@ -4866,7 +6094,8 @@
     "categories": [
       "Lots of fire"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Snowbelle City",
@@ -4874,7 +6103,8 @@
     "categories": [
       "Round stuff"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Soda float",
@@ -4884,7 +6114,8 @@
       "Looks like food",
       "Lots of water"
     ],
-    "type": "Decoration"
+    "type": "Decoration",
+    "isDLC": false
   },
   {
     "name": "Soft Sand",
@@ -4892,7 +6123,8 @@
     "categories": [
       "Soft stuff"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Soft seat",
@@ -4902,7 +6134,8 @@
       "Fabric",
       "Soft stuff"
     ],
-    "type": "Relaxation"
+    "type": "Relaxation",
+    "isDLC": false
   },
   {
     "name": "Sootopolis City",
@@ -4910,7 +6143,8 @@
     "categories": [
       "Round stuff"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "South Province",
@@ -4918,7 +6152,8 @@
     "categories": [
       "Round stuff"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Spaceship",
@@ -4930,7 +6165,8 @@
       "Round stuff",
       "Stone stuff"
     ],
-    "type": "Toy"
+    "type": "Toy",
+    "isDLC": false
   },
   {
     "name": "Spacesuit",
@@ -4942,7 +6178,19 @@
       "Shiny stuff",
       "Stone stuff"
     ],
-    "type": "Toy"
+    "type": "Toy",
+    "isDLC": false
+  },
+  {
+    "name": "Sparkling jewelry",
+    "image": "https://www.serebii.net/pokemonpokopia/items/sparklingjewelry.png",
+    "categories": [
+      "Luxury",
+      "Metal stuff",
+      "Shiny stuff"
+    ],
+    "type": "Decoration",
+    "isDLC": true
   },
   {
     "name": "Speaker",
@@ -4952,7 +6200,8 @@
       "Electronics",
       "Noisy stuff"
     ],
-    "type": "Toy"
+    "type": "Toy",
+    "isDLC": false
   },
   {
     "name": "Spectator chair",
@@ -4961,7 +6210,8 @@
       "Hard stuff",
       "Metal stuff"
     ],
-    "type": "Relaxation"
+    "type": "Relaxation",
+    "isDLC": false
   },
   {
     "name": "Spell Tag",
@@ -4969,7 +6219,8 @@
     "categories": [
       "Spooky stuff"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Spotlight",
@@ -4979,7 +6230,8 @@
       "Glass stuff",
       "Metal stuff"
     ],
-    "type": "Decoration"
+    "type": "Decoration",
+    "isDLC": false
   },
   {
     "name": "Sprinkler",
@@ -4990,7 +6242,8 @@
       "Stone stuff",
       "Strange stuff"
     ],
-    "type": "Toy"
+    "type": "Toy",
+    "isDLC": false
   },
   {
     "name": "Squishy clay",
@@ -4998,7 +6251,8 @@
     "categories": [
       "Soft stuff"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Stained-glass window (lower)",
@@ -5006,7 +6260,8 @@
     "categories": [
       "Glass stuff"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Stained-glass window (middle)",
@@ -5014,7 +6269,8 @@
     "categories": [
       "Glass stuff"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Stained-glass window (upper)",
@@ -5022,7 +6278,19 @@
     "categories": [
       "Glass stuff"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
+  },
+  {
+    "name": "Standing frame",
+    "image": "https://www.serebii.net/pokemonpokopia/items/standingframe.png",
+    "categories": [
+      "Blocky stuff",
+      "Hard stuff",
+      "Watching stuff"
+    ],
+    "type": "Decoration",
+    "isDLC": true
   },
   {
     "name": "Standing mic",
@@ -5034,7 +6302,8 @@
       "Shiny stuff",
       "Strange stuff"
     ],
-    "type": "Toy"
+    "type": "Toy",
+    "isDLC": false
   },
   {
     "name": "Star closet",
@@ -5047,7 +6316,8 @@
       "Shiny stuff",
       "Wooden stuff"
     ],
-    "type": "Decoration"
+    "type": "Decoration",
+    "isDLC": false
   },
   {
     "name": "Star Piece",
@@ -5055,7 +6325,8 @@
     "categories": [
       "Shiny stuff"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Star wall decoration",
@@ -5067,7 +6338,8 @@
       "Shiny stuff",
       "Watching stuff"
     ],
-    "type": "Decoration"
+    "type": "Decoration",
+    "isDLC": false
   },
   {
     "name": "Star-shaped Dresser",
@@ -5079,7 +6351,8 @@
       "Shiny stuff",
       "Strange stuff"
     ],
-    "type": "Toy"
+    "type": "Toy",
+    "isDLC": false
   },
   {
     "name": "Stardust",
@@ -5087,7 +6360,21 @@
     "categories": [
       "Shiny stuff"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
+  },
+  {
+    "name": "Starmie Doll",
+    "image": "https://www.serebii.net/pokemonpokopia/items/starmiedoll.png",
+    "categories": [
+      "Cute stuff",
+      "Fabric",
+      "Soft stuff",
+      "Symbols",
+      "Watching stuff"
+    ],
+    "type": "Toy",
+    "isDLC": true
   },
   {
     "name": "Starry-sky bed",
@@ -5100,7 +6387,8 @@
       "Shiny stuff",
       "Soft stuff"
     ],
-    "type": "Relaxation"
+    "type": "Relaxation",
+    "isDLC": false
   },
   {
     "name": "Step stool",
@@ -5109,7 +6397,8 @@
       "Metal stuff",
       "Rides"
     ],
-    "type": "Toy"
+    "type": "Toy",
+    "isDLC": false
   },
   {
     "name": "Stone",
@@ -5117,7 +6406,8 @@
     "categories": [
       "Stone stuff"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Stone bench",
@@ -5127,7 +6417,8 @@
       "Hard stuff",
       "Stone stuff"
     ],
-    "type": "Relaxation"
+    "type": "Relaxation",
+    "isDLC": false
   },
   {
     "name": "Stone brick wall",
@@ -5136,7 +6427,8 @@
       "Hard stuff",
       "Stone stuff"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Stone brick wall (wallpaper)",
@@ -5145,7 +6437,8 @@
       "Hard stuff",
       "Stone stuff"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Stone debris",
@@ -5154,7 +6447,8 @@
       "Hard stuff",
       "Stone stuff"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Stone fireplace",
@@ -5166,7 +6460,8 @@
       "Luxury",
       "Stone stuff"
     ],
-    "type": "Relaxation"
+    "type": "Relaxation",
+    "isDLC": false
   },
   {
     "name": "Stone flooring",
@@ -5175,7 +6470,8 @@
       "Hard stuff",
       "Stone stuff"
     ],
-    "type": "Road"
+    "type": "Road",
+    "isDLC": false
   },
   {
     "name": "Stone flooring (wallpaper)",
@@ -5184,7 +6480,8 @@
       "Hard stuff",
       "Stone stuff"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Stone fragments",
@@ -5192,7 +6489,8 @@
     "categories": [
       "Wooden stuff"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Stone hipped roof",
@@ -5201,7 +6499,8 @@
       "Hard stuff",
       "Stone stuff"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Stone pillar (lower)",
@@ -5210,7 +6509,8 @@
       "Hard stuff",
       "Stone stuff"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Stone pillar (middle)",
@@ -5219,7 +6519,8 @@
       "Hard stuff",
       "Stone stuff"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Stone pillar (upper)",
@@ -5228,7 +6529,8 @@
       "Hard stuff",
       "Stone stuff"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Stone roof decoration",
@@ -5237,7 +6539,8 @@
       "Hard stuff",
       "Stone stuff"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Stone roof valley",
@@ -5246,7 +6549,20 @@
       "Hard stuff",
       "Stone stuff"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
+  },
+  {
+    "name": "Stone sign",
+    "image": "https://www.serebii.net/pokemonpokopia/items/stonesign.png",
+    "categories": [
+      "Blocky stuff",
+      "Letters and words",
+      "Stone stuff",
+      "Symbols"
+    ],
+    "type": "Decoration",
+    "isDLC": true
   },
   {
     "name": "Stone steps",
@@ -5255,7 +6571,8 @@
       "Hard stuff",
       "Stone stuff"
     ],
-    "type": "Road"
+    "type": "Road",
+    "isDLC": false
   },
   {
     "name": "Stone table",
@@ -5263,7 +6580,8 @@
     "categories": [
       "Hard stuff"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Stone tiling",
@@ -5272,7 +6590,8 @@
       "Hard stuff",
       "Stone stuff"
     ],
-    "type": "Road"
+    "type": "Road",
+    "isDLC": false
   },
   {
     "name": "Stone tiling (wallpaper)",
@@ -5281,7 +6600,8 @@
       "Hard stuff",
       "Stone stuff"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Storage box",
@@ -5289,7 +6609,17 @@
     "categories": [
       "Wooden stuff"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
+  },
+  {
+    "name": "Stow-on-Side",
+    "image": "https://www.serebii.net/pokemonpokopia/items/stow-on-side.png",
+    "categories": [
+      "Round stuff"
+    ],
+    "type": "",
+    "isDLC": true
   },
   {
     "name": "Straw bed",
@@ -5298,7 +6628,8 @@
       "Lots of nature",
       "Soft stuff"
     ],
-    "type": "Relaxation"
+    "type": "Relaxation",
+    "isDLC": false
   },
   {
     "name": "Straw stool",
@@ -5307,7 +6638,8 @@
       "Round stuff",
       "Soft stuff"
     ],
-    "type": "Relaxation"
+    "type": "Relaxation",
+    "isDLC": false
   },
   {
     "name": "Straw table",
@@ -5315,7 +6647,8 @@
     "categories": [
       "Lots of nature"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Strength rock",
@@ -5323,7 +6656,8 @@
     "categories": [
       "Hard stuff"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "String lights",
@@ -5335,7 +6669,8 @@
       "Round stuff",
       "Shiny stuff"
     ],
-    "type": "Decoration"
+    "type": "Decoration",
+    "isDLC": false
   },
   {
     "name": "Study desk",
@@ -5343,7 +6678,8 @@
     "categories": [
       "Wooden stuff"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Sturdy stick",
@@ -5351,7 +6687,8 @@
     "categories": [
       "Wooden stuff"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Stylish stool",
@@ -5364,7 +6701,8 @@
       "Soft stuff",
       "Wooden stuff"
     ],
-    "type": "Relaxation"
+    "type": "Relaxation",
+    "isDLC": false
   },
   {
     "name": "Substitute doll",
@@ -5375,7 +6713,8 @@
       "Soft stuff",
       "Symbols"
     ],
-    "type": "Toy"
+    "type": "Toy",
+    "isDLC": false
   },
   {
     "name": "Super Training!",
@@ -5383,7 +6722,21 @@
     "categories": [
       "Round stuff"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
+  },
+  {
+    "name": "Supermarket sign",
+    "image": "https://www.serebii.net/pokemonpokopia/items/supermarketsign.png",
+    "categories": [
+      "Blocky stuff",
+      "Electronics",
+      "Letters and words",
+      "Symbols",
+      "Watching stuff"
+    ],
+    "type": "Decoration",
+    "isDLC": true
   },
   {
     "name": "Surface light",
@@ -5393,7 +6746,8 @@
       "Glass stuff",
       "Round stuff"
     ],
-    "type": "Decoration"
+    "type": "Decoration",
+    "isDLC": false
   },
   {
     "name": "Table setting",
@@ -5405,7 +6759,8 @@
       "Looks like food",
       "Lots of water"
     ],
-    "type": "Decoration"
+    "type": "Decoration",
+    "isDLC": false
   },
   {
     "name": "Tablet",
@@ -5417,7 +6772,8 @@
       "Metal stuff",
       "Shiny stuff"
     ],
-    "type": "Toy"
+    "type": "Toy",
+    "isDLC": false
   },
   {
     "name": "Tabletop mic",
@@ -5427,7 +6783,8 @@
       "Metal stuff",
       "Shiny stuff"
     ],
-    "type": "Toy"
+    "type": "Toy",
+    "isDLC": false
   },
   {
     "name": "Tall potted plant",
@@ -5440,7 +6797,8 @@
       "Stone stuff",
       "Watching stuff"
     ],
-    "type": "Decoration"
+    "type": "Decoration",
+    "isDLC": false
   },
   {
     "name": "Tea set",
@@ -5450,7 +6808,8 @@
       "Gatherings",
       "Group Activities"
     ],
-    "type": "Decoration"
+    "type": "Decoration",
+    "isDLC": false
   },
   {
     "name": "Team Rocket Wall Hanging",
@@ -5463,7 +6822,20 @@
       "Symbols",
       "Watching stuff"
     ],
-    "type": "Decoration"
+    "type": "Decoration",
+    "isDLC": false
+  },
+  {
+    "name": "Teaware set",
+    "image": "https://www.serebii.net/pokemonpokopia/items/teawareset.png",
+    "categories": [
+      "Colorful stuff",
+      "Looks like food",
+      "Lots of water",
+      "Luxury"
+    ],
+    "type": "Decoration",
+    "isDLC": true
   },
   {
     "name": "Telescope",
@@ -5475,7 +6847,8 @@
       "Strange stuff",
       "Watching stuff"
     ],
-    "type": "Toy"
+    "type": "Toy",
+    "isDLC": false
   },
   {
     "name": "Television",
@@ -5490,7 +6863,8 @@
       "Shiny stuff",
       "Watching stuff"
     ],
-    "type": "Toy"
+    "type": "Toy",
+    "isDLC": false
   },
   {
     "name": "The Academy",
@@ -5498,7 +6872,8 @@
     "categories": [
       "Round stuff"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "The S.S. Anne",
@@ -5506,7 +6881,17 @@
     "categories": [
       "Round stuff"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
+  },
+  {
+    "name": "The Sea",
+    "image": "https://www.serebii.net/pokemonpokopia/items/thesea.png",
+    "categories": [
+      "Round stuff"
+    ],
+    "type": "",
+    "isDLC": true
   },
   {
     "name": "Tidal Bell",
@@ -5517,7 +6902,8 @@
       "Round stuff",
       "Strange stuff"
     ],
-    "type": "Toy"
+    "type": "Toy",
+    "isDLC": false
   },
   {
     "name": "Tinkagear",
@@ -5525,7 +6911,8 @@
     "categories": [
       "Hard stuff"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Tire toy",
@@ -5535,7 +6922,8 @@
       "Play spaces",
       "Round stuff"
     ],
-    "type": "Toy"
+    "type": "Toy",
+    "isDLC": false
   },
   {
     "name": "Tires",
@@ -5544,7 +6932,8 @@
       "Gatherings",
       "Round stuff"
     ],
-    "type": "Toy"
+    "type": "Toy",
+    "isDLC": false
   },
   {
     "name": "Title Screen",
@@ -5552,7 +6941,8 @@
     "categories": [
       "Round stuff"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Toilet",
@@ -5564,7 +6954,20 @@
       "Stone stuff",
       "Strange stuff"
     ],
-    "type": "Decoration"
+    "type": "Decoration",
+    "isDLC": false
+  },
+  {
+    "name": "Toolbox",
+    "image": "https://www.serebii.net/pokemonpokopia/items/toolbox.png",
+    "categories": [
+      "Blocky stuff",
+      "Containers",
+      "Hard stuff",
+      "Metal stuff"
+    ],
+    "type": "Toy",
+    "isDLC": true
   },
   {
     "name": "Torch",
@@ -5572,7 +6975,8 @@
     "categories": [
       "Lots of fire"
     ],
-    "type": "Relaxation"
+    "type": "Relaxation",
+    "isDLC": false
   },
   {
     "name": "Towel rack",
@@ -5582,7 +6986,8 @@
       "Fabric",
       "Soft stuff"
     ],
-    "type": "Decoration"
+    "type": "Decoration",
+    "isDLC": false
   },
   {
     "name": "Town map",
@@ -5593,7 +6998,8 @@
       "Strange stuff",
       "Watching stuff"
     ],
-    "type": "Toy"
+    "type": "Toy",
+    "isDLC": false
   },
   {
     "name": "Town streetlight",
@@ -5604,7 +7010,8 @@
       "Metal stuff",
       "Slender objects"
     ],
-    "type": "Decoration"
+    "type": "Decoration",
+    "isDLC": false
   },
   {
     "name": "Toy blocks",
@@ -5614,7 +7021,8 @@
       "Play spaces",
       "Wooden stuff"
     ],
-    "type": "Toy"
+    "type": "Toy",
+    "isDLC": false
   },
   {
     "name": "Treasure",
@@ -5626,7 +7034,8 @@
       "Metal stuff",
       "Stone stuff"
     ],
-    "type": "Toy"
+    "type": "Toy",
+    "isDLC": false
   },
   {
     "name": "Tundra Fossil (body)",
@@ -5638,7 +7047,8 @@
       "Stone stuff",
       "Strange stuff"
     ],
-    "type": "Decoration"
+    "type": "Decoration",
+    "isDLC": false
   },
   {
     "name": "Tundra Fossil (head)",
@@ -5649,7 +7059,8 @@
       "Stone stuff",
       "Strange stuff"
     ],
-    "type": "Decoration"
+    "type": "Decoration",
+    "isDLC": false
   },
   {
     "name": "Tundra Fossil (tail)",
@@ -5661,7 +7072,8 @@
       "Stone stuff",
       "Strange stuff"
     ],
-    "type": "Decoration"
+    "type": "Decoration",
+    "isDLC": false
   },
   {
     "name": "Twine",
@@ -5669,7 +7081,8 @@
     "categories": [
       "Slender objects"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Twisted potted plant",
@@ -5681,7 +7094,8 @@
       "Slender objects",
       "Watching stuff"
     ],
-    "type": "Decoration"
+    "type": "Decoration",
+    "isDLC": false
   },
   {
     "name": "Twisted Spoon",
@@ -5689,7 +7103,8 @@
     "categories": [
       "Strange stuff"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Ultra Ruin",
@@ -5697,7 +7112,17 @@
     "categories": [
       "Round stuff"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
+  },
+  {
+    "name": "Undella Town (Summer)",
+    "image": "https://www.serebii.net/pokemonpokopia/items/undellatown(summer).png",
+    "categories": [
+      "Round stuff"
+    ],
+    "type": "",
+    "isDLC": true
   },
   {
     "name": "Union Cave",
@@ -5705,7 +7130,8 @@
     "categories": [
       "Round stuff"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Utility pole",
@@ -5713,7 +7139,8 @@
     "categories": [
       "Electronics"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Vending machine",
@@ -5722,10 +7149,10 @@
       "Blocky stuff",
       "Glass stuff",
       "Group Activities",
-      "Metal stuff",
-      "Sharp stuff"
+      "Metal stuff"
     ],
-    "type": "Toy"
+    "type": "Toy",
+    "isDLC": false
   },
   {
     "name": "Vermilion City Theme",
@@ -5733,7 +7160,8 @@
     "categories": [
       "Round stuff"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Vine rope",
@@ -5741,7 +7169,8 @@
     "categories": [
       "Slender objects"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Vine wall decoration",
@@ -5750,7 +7179,17 @@
       "Lots of nature",
       "Slender objects"
     ],
-    "type": "Decoration"
+    "type": "Decoration",
+    "isDLC": false
+  },
+  {
+    "name": "Violet City",
+    "image": "https://www.serebii.net/pokemonpokopia/items/violetcity.png",
+    "categories": [
+      "Round stuff"
+    ],
+    "type": "",
+    "isDLC": true
   },
   {
     "name": "Violet meteor lamp",
@@ -5761,7 +7200,8 @@
       "Glass stuff",
       "Shiny stuff"
     ],
-    "type": "Decoration"
+    "type": "Decoration",
+    "isDLC": false
   },
   {
     "name": "Wall Calendar",
@@ -5772,7 +7212,19 @@
       "Letters and words",
       "Watching stuff"
     ],
-    "type": "Decoration"
+    "type": "Decoration",
+    "isDLC": false
+  },
+  {
+    "name": "Wall clock",
+    "image": "https://www.serebii.net/pokemonpokopia/items/wallclock.png",
+    "categories": [
+      "Glass stuff",
+      "Metal stuff",
+      "Round stuff"
+    ],
+    "type": "Toy",
+    "isDLC": true
   },
   {
     "name": "Wall light",
@@ -5783,7 +7235,8 @@
       "Glass stuff",
       "Sharp stuff"
     ],
-    "type": "Decoration"
+    "type": "Decoration",
+    "isDLC": false
   },
   {
     "name": "Wall mirror",
@@ -5795,7 +7248,8 @@
       "Strange stuff",
       "Watching stuff"
     ],
-    "type": "Toy"
+    "type": "Toy",
+    "isDLC": false
   },
   {
     "name": "Wall monitor",
@@ -5810,7 +7264,8 @@
       "Shiny stuff",
       "Watching stuff"
     ],
-    "type": "Toy"
+    "type": "Toy",
+    "isDLC": false
   },
   {
     "name": "Wall photo frame",
@@ -5820,7 +7275,21 @@
       "Containers",
       "Watching stuff"
     ],
-    "type": "Decoration"
+    "type": "Decoration",
+    "isDLC": false
+  },
+  {
+    "name": "Wall plant",
+    "image": "https://www.serebii.net/pokemonpokopia/items/wallplant.png",
+    "categories": [
+      "Containers",
+      "Gatherings",
+      "Looks like food",
+      "Pretty flowers",
+      "Watching stuff"
+    ],
+    "type": "Decoration",
+    "isDLC": true
   },
   {
     "name": "Wall storage box",
@@ -5830,7 +7299,8 @@
       "Containers",
       "Wooden stuff"
     ],
-    "type": "Decoration"
+    "type": "Decoration",
+    "isDLC": false
   },
   {
     "name": "Wall switch",
@@ -5838,7 +7308,8 @@
     "categories": [
       "Electronics"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Wall torch",
@@ -5848,7 +7319,8 @@
       "Metal stuff",
       "Stone stuff"
     ],
-    "type": "Decoration"
+    "type": "Decoration",
+    "isDLC": false
   },
   {
     "name": "Wall-mounted flowers",
@@ -5857,7 +7329,18 @@
       "Colorful stuff",
       "Pretty flowers"
     ],
-    "type": "Decoration"
+    "type": "Decoration",
+    "isDLC": false
+  },
+  {
+    "name": "Wall-mounted tools",
+    "image": "https://www.serebii.net/pokemonpokopia/items/wall-mountedtools.png",
+    "categories": [
+      "Colorful stuff",
+      "Metal stuff"
+    ],
+    "type": "Toy",
+    "isDLC": true
   },
   {
     "name": "Washing machine",
@@ -5871,7 +7354,8 @@
       "Metal stuff",
       "Strange stuff"
     ],
-    "type": "Toy"
+    "type": "Toy",
+    "isDLC": false
   },
   {
     "name": "Wastepaper",
@@ -5879,7 +7363,8 @@
     "categories": [
       "Garbage"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Water basin",
@@ -5891,7 +7376,8 @@
       "Round stuff",
       "Wooden stuff"
     ],
-    "type": "Decoration"
+    "type": "Decoration",
+    "isDLC": false
   },
   {
     "name": "Water pillar quarter",
@@ -5901,7 +7387,8 @@
       "Lots of water",
       "Watching stuff"
     ],
-    "type": "Decoration"
+    "type": "Decoration",
+    "isDLC": false
   },
   {
     "name": "Waterproof seat",
@@ -5909,7 +7396,8 @@
     "categories": [
       "Cleanliness"
     ],
-    "type": "Relaxation"
+    "type": "Relaxation",
+    "isDLC": false
   },
   {
     "name": "Weakness Policy",
@@ -5917,7 +7405,8 @@
     "categories": [
       "Letters and words"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Weather vane",
@@ -5927,7 +7416,8 @@
       "Nice breezes",
       "Spinning stuff"
     ],
-    "type": "Toy"
+    "type": "Toy",
+    "isDLC": false
   },
   {
     "name": "Wheelbarrow",
@@ -5938,7 +7428,8 @@
       "Lots of dirt",
       "Metal stuff"
     ],
-    "type": "Decoration"
+    "type": "Decoration",
+    "isDLC": false
   },
   {
     "name": "White paint",
@@ -5947,7 +7438,8 @@
       "Colorful stuff",
       "Lots of dirt"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Whiteboard",
@@ -5959,7 +7451,8 @@
       "Group Activities",
       "Letters and words"
     ],
-    "type": "Decoration"
+    "type": "Decoration",
+    "isDLC": false
   },
   {
     "name": "Wiggly mirror",
@@ -5971,7 +7464,8 @@
       "Strange stuff",
       "Watching stuff"
     ],
-    "type": "Toy"
+    "type": "Toy",
+    "isDLC": false
   },
   {
     "name": "Wild Area (North)",
@@ -5979,7 +7473,8 @@
     "categories": [
       "Round stuff"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Wildflowers",
@@ -5987,7 +7482,8 @@
     "categories": [
       "Pretty flowers"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Wildflowers (blue)",
@@ -5995,7 +7491,8 @@
     "categories": [
       "Pretty flowers"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Wildflowers (orange)",
@@ -6003,7 +7500,8 @@
     "categories": [
       "Pretty flowers"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Wildflowers (purple)",
@@ -6011,7 +7509,8 @@
     "categories": [
       "Pretty flowers"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Wildflowers (red)",
@@ -6019,7 +7518,8 @@
     "categories": [
       "Pretty flowers"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Window pane",
@@ -6027,7 +7527,23 @@
     "categories": [
       "Glass stuff"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
+  },
+  {
+    "name": "Windup Inkay",
+    "image": "https://www.serebii.net/pokemonpokopia/items/windupinkay.png",
+    "categories": [
+      "Cute stuff",
+      "Lots of water",
+      "Metal stuff",
+      "Noisy stuff",
+      "Ocean vibes",
+      "Play spaces",
+      "Watching stuff"
+    ],
+    "type": "Toy",
+    "isDLC": true
   },
   {
     "name": "Wing fossil (body)",
@@ -6039,7 +7555,8 @@
       "Stone stuff",
       "Strange stuff"
     ],
-    "type": "Decoration"
+    "type": "Decoration",
+    "isDLC": false
   },
   {
     "name": "Wing Fossil (head)",
@@ -6050,7 +7567,8 @@
       "Stone stuff",
       "Strange stuff"
     ],
-    "type": "Decoration"
+    "type": "Decoration",
+    "isDLC": false
   },
   {
     "name": "Wing Fossil (left wing)",
@@ -6062,7 +7580,8 @@
       "Stone stuff",
       "Strange stuff"
     ],
-    "type": "Decoration"
+    "type": "Decoration",
+    "isDLC": false
   },
   {
     "name": "Wing Fossil (right wing)",
@@ -6074,7 +7593,8 @@
       "Stone stuff",
       "Strange stuff"
     ],
-    "type": "Decoration"
+    "type": "Decoration",
+    "isDLC": false
   },
   {
     "name": "Wing Fossil (tail)",
@@ -6086,7 +7606,8 @@
       "Stone stuff",
       "Strange stuff"
     ],
-    "type": "Decoration"
+    "type": "Decoration",
+    "isDLC": false
   },
   {
     "name": "Wire",
@@ -6094,7 +7615,8 @@
     "categories": [
       "Slender objects"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Wireless power transmitter",
@@ -6102,7 +7624,8 @@
     "categories": [
       "Electronics"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Wireless power-transmitter switch",
@@ -6110,7 +7633,8 @@
     "categories": [
       "Electronics"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Wobbuffet Wobbler",
@@ -6123,7 +7647,8 @@
       "Strange stuff",
       "Wobbly stuff"
     ],
-    "type": "Toy"
+    "type": "Toy",
+    "isDLC": false
   },
   {
     "name": "Wooden Bed",
@@ -6133,7 +7658,8 @@
       "Lots of nature",
       "Soft stuff"
     ],
-    "type": "Relaxation"
+    "type": "Relaxation",
+    "isDLC": false
   },
   {
     "name": "Wooden bench",
@@ -6141,7 +7667,8 @@
     "categories": [
       "Group Activities"
     ],
-    "type": "Relaxation"
+    "type": "Relaxation",
+    "isDLC": false
   },
   {
     "name": "Wooden birdhouse",
@@ -6150,7 +7677,8 @@
       "Containers",
       "Slender objects"
     ],
-    "type": "Decoration"
+    "type": "Decoration",
+    "isDLC": false
   },
   {
     "name": "Wooden crate",
@@ -6160,7 +7688,8 @@
       "Containers",
       "Wooden stuff"
     ],
-    "type": "Decoration"
+    "type": "Decoration",
+    "isDLC": false
   },
   {
     "name": "Wooden plate",
@@ -6168,7 +7697,8 @@
     "categories": [
       "Wooden stuff"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Wooden stool",
@@ -6177,7 +7707,8 @@
       "Blocky stuff",
       "Wooden stuff"
     ],
-    "type": "Relaxation"
+    "type": "Relaxation",
+    "isDLC": false
   },
   {
     "name": "Worn wooden crate",
@@ -6187,7 +7718,8 @@
       "Containers",
       "Wooden stuff"
     ],
-    "type": "Decoration"
+    "type": "Decoration",
+    "isDLC": false
   },
   {
     "name": "Wreath",
@@ -6197,7 +7729,8 @@
       "Symbols",
       "Wooden stuff"
     ],
-    "type": "Decoration"
+    "type": "Decoration",
+    "isDLC": false
   },
   {
     "name": "Wyndon",
@@ -6205,7 +7738,8 @@
     "categories": [
       "Round stuff"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   },
   {
     "name": "Yellow meteor lamp",
@@ -6216,7 +7750,8 @@
       "Glass stuff",
       "Shiny stuff"
     ],
-    "type": "Decoration"
+    "type": "Decoration",
+    "isDLC": false
   },
   {
     "name": "Yellow paint",
@@ -6225,6 +7760,7 @@
       "Colorful stuff",
       "Lots of dirt"
     ],
-    "type": ""
+    "type": "",
+    "isDLC": false
   }
 ]

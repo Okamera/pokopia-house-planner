@@ -66,6 +66,11 @@ function mergeFurnitureItems(itemsByName, nextItem) {
   if (existingItem.type === "Unknown" && nextItem.type !== "Unknown") {
     existingItem.type = nextItem.type;
   }
+
+  // If any source indicates the item is DLC, mark it true
+  if (!existingItem.isDLC && nextItem.isDLC) {
+    existingItem.isDLC = true;
+  }
 }
 
 async function fetchPage(url) {
@@ -127,34 +132,50 @@ async function scrapeFurnitureForCategory(categoryName, url, allTypes, showLogs)
 
   const furniture = [];
 
-  $(itemsTable)
-    .find("tr")
-    .slice(1)
-    .each((_, row) => {
-      const cells = $(row).find("td");
+  // iterate rows sequentially so we can await item page fetches
+  const rows = $(itemsTable).find('tr').slice(1).toArray();
+  for (const row of rows) {
+    const cells = $(row).find('td');
 
-      if (cells.length < 4) {
-        return;
+    if (cells.length < 4) continue;
+
+    const name = normalizeText($(cells[1]).text());
+    if (!name) continue;
+
+    const image = toAbsoluteUrl($(cells[0]).find('img').attr('src'));
+    const type = getFurnitureType($, cells[3]);
+
+    // detect item page link (name cell anchor or image link)
+    const relHref = $(cells[1]).find('a').attr('href') || $(cells[0]).find('a').attr('href') || '';
+    const itemUrl = relHref ? toAbsoluteUrl(relHref) : null;
+
+    // default isDLC false; check item page text for the special phrase when available
+    let isDLC = false;
+    if (itemUrl) {
+      try {
+        const item$ = await fetchPage(itemUrl);
+        if (item$) {
+          const bodyText = item$.root().text();
+          if (bodyText && bodyText.indexOf('Requires Expansion Pass') !== -1) {
+            isDLC = true;
+          }
+        }
+      } catch (e) {
+        // non-fatal: leave isDLC false
       }
+    }
 
-      const name = normalizeText($(cells[1]).text());
-      if (!name) {
-        return;
-      }
-
-      const image = toAbsoluteUrl($(cells[0]).find("img").attr("src"));
-      const type = getFurnitureType($, cells[3]);
-
-      furniture.push({
-        name,
-        image,
-        categories: [categoryName],
-        type: type?.name || "",
-      });
-      if (type) {
-        allTypes[type.name] = type.image;
-      }
+    furniture.push({
+      name,
+      image,
+      categories: [categoryName],
+      type: type?.name || "",
+      isDLC,
     });
+    if (type) {
+      allTypes[type.name] = type.image;
+    }
+  }
 
   if (showLogs) console.log(`Scraped ${furniture.length} furniture items from ${categoryName}`);
   return { furniture, types: allTypes };

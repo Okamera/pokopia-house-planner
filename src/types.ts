@@ -1,4 +1,4 @@
-export type LocationCode = 'ww' | 'bb' | 'rr' | 'ss' | 'pt'// | 'ci'
+export type LocationCode = 'ww' | 'bb' | 'rr' | 'ss' | 'pt' | 'bu' // | 'ci'
 
 export type HouseType = 'prefab' | 'custom'
 
@@ -13,6 +13,7 @@ export interface PokemonRecord {
   favorites: string[]
   taste: string
   image: string
+  isDLC?: boolean
 }
 
 export interface CompatiblePokemon extends PokemonRecord {

@@ -5643,7 +5643,8 @@
       "Containers"
     ],
     "taste": "Bitter flavors",
-    "image": "https://www.serebii.net/pokemonpokopia/pokemon/small/090.png"
+    "image": "https://www.serebii.net/pokemonpokopia/pokemon/small/090.png",
+    "isDLC": true
   },
   {
     "number": "002",
@@ -5661,7 +5662,8 @@
       "Containers"
     ],
     "taste": "Sour Flavors",
-    "image": "https://www.serebii.net/pokemonpokopia/pokemon/small/091.png"
+    "image": "https://www.serebii.net/pokemonpokopia/pokemon/small/091.png",
+    "isDLC": true
   },
   {
     "number": "003",
@@ -5679,7 +5681,8 @@
       "Group activities"
     ],
     "taste": "Sweet flavors",
-    "image": "https://www.serebii.net/pokemonpokopia/pokemon/small/116.png"
+    "image": "https://www.serebii.net/pokemonpokopia/pokemon/small/116.png",
+    "isDLC": true
   },
   {
     "number": "004",
@@ -5697,7 +5700,8 @@
       "Sharp stuff"
     ],
     "taste": "Spicy flavors",
-    "image": "https://www.serebii.net/pokemonpokopia/pokemon/small/117.png"
+    "image": "https://www.serebii.net/pokemonpokopia/pokemon/small/117.png",
+    "isDLC": true
   },
   {
     "number": "005",
@@ -5715,7 +5719,8 @@
       "Nice breezes"
     ],
     "taste": "Dry flavors",
-    "image": "https://www.serebii.net/pokemonpokopia/pokemon/small/230.png"
+    "image": "https://www.serebii.net/pokemonpokopia/pokemon/small/230.png",
+    "isDLC": true
   },
   {
     "number": "006",
@@ -5733,7 +5738,8 @@
       "Sharp stuff"
     ],
     "taste": "Bitter flavors",
-    "image": "https://www.serebii.net/pokemonpokopia/pokemon/small/120.png"
+    "image": "https://www.serebii.net/pokemonpokopia/pokemon/small/120.png",
+    "isDLC": true
   },
   {
     "number": "007",
@@ -5751,7 +5757,8 @@
       "Complicated stuff"
     ],
     "taste": "Bitter flavors",
-    "image": "https://www.serebii.net/pokemonpokopia/pokemon/small/121.png"
+    "image": "https://www.serebii.net/pokemonpokopia/pokemon/small/121.png",
+    "isDLC": true
   },
   {
     "number": "008",
@@ -5769,7 +5776,8 @@
       "Wobbly stuff"
     ],
     "taste": "Spicy flavors",
-    "image": "https://www.serebii.net/pokemonpokopia/pokemon/small/158.png"
+    "image": "https://www.serebii.net/pokemonpokopia/pokemon/small/158.png",
+    "isDLC": true
   },
   {
     "number": "009",
@@ -5787,7 +5795,8 @@
       "Fabric"
     ],
     "taste": "Spicy flavors",
-    "image": "https://www.serebii.net/pokemonpokopia/pokemon/small/159.png"
+    "image": "https://www.serebii.net/pokemonpokopia/pokemon/small/159.png",
+    "isDLC": true
   },
   {
     "number": "010",
@@ -5805,7 +5814,8 @@
       "Nice breezes"
     ],
     "taste": "Sour Flavors",
-    "image": "https://www.serebii.net/pokemonpokopia/pokemon/small/160.png"
+    "image": "https://www.serebii.net/pokemonpokopia/pokemon/small/160.png",
+    "isDLC": true
   },
   {
     "number": "011",
@@ -5823,7 +5833,8 @@
       "Shiny stuff"
     ],
     "taste": "Dry flavors",
-    "image": "https://www.serebii.net/pokemonpokopia/pokemon/small/170.png"
+    "image": "https://www.serebii.net/pokemonpokopia/pokemon/small/170.png",
+    "isDLC": true
   },
   {
     "number": "012",
@@ -5841,7 +5852,8 @@
       "Cleanliness"
     ],
     "taste": "Spicy flavors",
-    "image": "https://www.serebii.net/pokemonpokopia/pokemon/small/171.png"
+    "image": "https://www.serebii.net/pokemonpokopia/pokemon/small/171.png",
+    "isDLC": true
   },
   {
     "number": "013",
@@ -5859,7 +5871,8 @@
       "Cleanliness"
     ],
     "taste": "Sweet flavors",
-    "image": "https://www.serebii.net/pokemonpokopia/pokemon/small/222.png"
+    "image": "https://www.serebii.net/pokemonpokopia/pokemon/small/222.png",
+    "isDLC": true
   },
   {
     "number": "014",
@@ -5877,7 +5890,8 @@
       "Stone stuff"
     ],
     "taste": "Dry flavors",
-    "image": "https://www.serebii.net/pokemonpokopia/pokemon/small/258.png"
+    "image": "https://www.serebii.net/pokemonpokopia/pokemon/small/258.png",
+    "isDLC": true
   },
   {
     "number": "015",
@@ -5895,7 +5909,8 @@
       "Watching stuff"
     ],
     "taste": "Dry flavors",
-    "image": "https://www.serebii.net/pokemonpokopia/pokemon/small/259.png"
+    "image": "https://www.serebii.net/pokemonpokopia/pokemon/small/259.png",
+    "isDLC": true
   },
   {
     "number": "016",
@@ -5913,7 +5928,8 @@
       "Exercise"
     ],
     "taste": "Dry flavors",
-    "image": "https://www.serebii.net/pokemonpokopia/pokemon/small/260.png"
+    "image": "https://www.serebii.net/pokemonpokopia/pokemon/small/260.png",
+    "isDLC": true
   },
   {
     "number": "017",
@@ -5931,7 +5947,8 @@
       "Group activities"
     ],
     "taste": "Spicy flavors",
-    "image": "https://www.serebii.net/pokemonpokopia/pokemon/small/318.png"
+    "image": "https://www.serebii.net/pokemonpokopia/pokemon/small/318.png",
+    "isDLC": true
   },
   {
     "number": "018",
@@ -5949,7 +5966,8 @@
       "Symbols"
     ],
     "taste": "Spicy flavors",
-    "image": "https://www.serebii.net/pokemonpokopia/pokemon/small/319.png"
+    "image": "https://www.serebii.net/pokemonpokopia/pokemon/small/319.png",
+    "isDLC": true
   },
   {
     "number": "019",
@@ -5967,7 +5985,8 @@
       "Slender objects"
     ],
     "taste": "Bitter flavors",
-    "image": "https://www.serebii.net/pokemonpokopia/pokemon/small/339.png"
+    "image": "https://www.serebii.net/pokemonpokopia/pokemon/small/339.png",
+    "isDLC": true
   },
   {
     "number": "020",
@@ -5985,7 +6004,8 @@
       "Wobbly stuff"
     ],
     "taste": "Dry flavors",
-    "image": "https://www.serebii.net/pokemonpokopia/pokemon/small/340.png"
+    "image": "https://www.serebii.net/pokemonpokopia/pokemon/small/340.png",
+    "isDLC": true
   },
   {
     "number": "021",
@@ -6003,7 +6023,8 @@
       "Play spaces"
     ],
     "taste": "Bitter flavors",
-    "image": "https://www.serebii.net/pokemonpokopia/pokemon/small/341.png"
+    "image": "https://www.serebii.net/pokemonpokopia/pokemon/small/341.png",
+    "isDLC": true
   },
   {
     "number": "022",
@@ -6021,7 +6042,8 @@
       "Luxury"
     ],
     "taste": "Spicy flavors",
-    "image": "https://www.serebii.net/pokemonpokopia/pokemon/small/342.png"
+    "image": "https://www.serebii.net/pokemonpokopia/pokemon/small/342.png",
+    "isDLC": true
   },
   {
     "number": "023",
@@ -6039,7 +6061,8 @@
       "Play spaces"
     ],
     "taste": "Sweet Flavors",
-    "image": "https://www.serebii.net/pokemonpokopia/pokemon/small/370.png"
+    "image": "https://www.serebii.net/pokemonpokopia/pokemon/small/370.png",
+    "isDLC": true
   },
   {
     "number": "024",
@@ -6057,7 +6080,8 @@
       "Group activities"
     ],
     "taste": "Dry flavors",
-    "image": "https://www.serebii.net/pokemonpokopia/pokemon/small/418.png"
+    "image": "https://www.serebii.net/pokemonpokopia/pokemon/small/418.png",
+    "isDLC": true
   },
   {
     "number": "025",
@@ -6075,7 +6099,8 @@
       "Cleanliness"
     ],
     "taste": "Spicy flavors",
-    "image": "https://www.serebii.net/pokemonpokopia/pokemon/small/419.png"
+    "image": "https://www.serebii.net/pokemonpokopia/pokemon/small/419.png",
+    "isDLC": true
   },
   {
     "number": "026",
@@ -6093,7 +6118,8 @@
       "Fabric"
     ],
     "taste": "Sour Flavors",
-    "image": "https://www.serebii.net/pokemonpokopia/pokemon/small/456.png"
+    "image": "https://www.serebii.net/pokemonpokopia/pokemon/small/456.png",
+    "isDLC": true
   },
   {
     "number": "027",
@@ -6111,7 +6137,8 @@
       "Group activities"
     ],
     "taste": "Dry flavors",
-    "image": "https://www.serebii.net/pokemonpokopia/pokemon/small/457.png"
+    "image": "https://www.serebii.net/pokemonpokopia/pokemon/small/457.png",
+    "isDLC": true
   },
   {
     "number": "028",
@@ -6129,7 +6156,8 @@
       "Fabric"
     ],
     "taste": "Sweet Flavors",
-    "image": "https://www.serebii.net/pokemonpokopia/pokemon/small/592-frillishmaleform.png"
+    "image": "https://www.serebii.net/pokemonpokopia/pokemon/small/592-frillishmaleform.png",
+    "isDLC": true
   },
   {
     "number": "028",
@@ -6147,7 +6175,8 @@
       "Fabric"
     ],
     "taste": "Sour Flavors",
-    "image": "https://www.serebii.net/pokemonpokopia/pokemon/small/592-frillishfemaleform.png"
+    "image": "https://www.serebii.net/pokemonpokopia/pokemon/small/592-frillishfemaleform.png",
+    "isDLC": true
   },
   {
     "number": "029",
@@ -6165,7 +6194,8 @@
       "Luxury"
     ],
     "taste": "Sour Flavors",
-    "image": "https://www.serebii.net/pokemonpokopia/pokemon/small/593-jellicentmaleform.png"
+    "image": "https://www.serebii.net/pokemonpokopia/pokemon/small/593-jellicentmaleform.png",
+    "isDLC": true
   },
   {
     "number": "029",
@@ -6183,7 +6213,8 @@
       "Luxury"
     ],
     "taste": "Spicy flavors",
-    "image": "https://www.serebii.net/pokemonpokopia/pokemon/small/593-jellicentfemaleform.png"
+    "image": "https://www.serebii.net/pokemonpokopia/pokemon/small/593-jellicentfemaleform.png",
+    "isDLC": true
   },
   {
     "number": "030",
@@ -6201,7 +6232,8 @@
       "Cleanliness"
     ],
     "taste": "Sour Flavors",
-    "image": "https://www.serebii.net/pokemonpokopia/pokemon/small/594.png"
+    "image": "https://www.serebii.net/pokemonpokopia/pokemon/small/594.png",
+    "isDLC": true
   },
   {
     "number": "031",
@@ -6219,7 +6251,8 @@
       "Watching stuff"
     ],
     "taste": "Dry flavors",
-    "image": "https://www.serebii.net/pokemonpokopia/pokemon/small/618.png"
+    "image": "https://www.serebii.net/pokemonpokopia/pokemon/small/618.png",
+    "isDLC": true
   },
   {
     "number": "032",
@@ -6237,7 +6270,8 @@
       "Noisy stuff"
     ],
     "taste": "Sweet Flavors",
-    "image": "https://www.serebii.net/pokemonpokopia/pokemon/small/686.png"
+    "image": "https://www.serebii.net/pokemonpokopia/pokemon/small/686.png",
+    "isDLC": true
   },
   {
     "number": "033",
@@ -6255,7 +6289,8 @@
       "Letters and words"
     ],
     "taste": "Sour Flavors",
-    "image": "https://www.serebii.net/pokemonpokopia/pokemon/small/687.png"
+    "image": "https://www.serebii.net/pokemonpokopia/pokemon/small/687.png",
+    "isDLC": true
   },
   {
     "number": "034",
@@ -6273,7 +6308,8 @@
       "Shiny stuff"
     ],
     "taste": "Sweet Flavors",
-    "image": "https://www.serebii.net/pokemonpokopia/pokemon/small/728.png"
+    "image": "https://www.serebii.net/pokemonpokopia/pokemon/small/728.png",
+    "isDLC": true
   },
   {
     "number": "035",
@@ -6291,7 +6327,8 @@
       "Cleanliness"
     ],
     "taste": "Sweet Flavors",
-    "image": "https://www.serebii.net/pokemonpokopia/pokemon/small/729.png"
+    "image": "https://www.serebii.net/pokemonpokopia/pokemon/small/729.png",
+    "isDLC": true
   },
   {
     "number": "036",
@@ -6309,7 +6346,8 @@
       "Cleanliness"
     ],
     "taste": "Sour Flavors",
-    "image": "https://www.serebii.net/pokemonpokopia/pokemon/small/730.png"
+    "image": "https://www.serebii.net/pokemonpokopia/pokemon/small/730.png",
+    "isDLC": true
   },
   {
     "number": "037",
@@ -6327,7 +6365,8 @@
       "Shiny stuff"
     ],
     "taste": "Bitter flavors",
-    "image": "https://www.serebii.net/pokemonpokopia/pokemon/small/747.png"
+    "image": "https://www.serebii.net/pokemonpokopia/pokemon/small/747.png",
+    "isDLC": true
   },
   {
     "number": "038",
@@ -6345,7 +6384,8 @@
       "Containers"
     ],
     "taste": "Dry flavors",
-    "image": "https://www.serebii.net/pokemonpokopia/pokemon/small/748.png"
+    "image": "https://www.serebii.net/pokemonpokopia/pokemon/small/748.png",
+    "isDLC": true
   },
   {
     "number": "039",
@@ -6363,7 +6403,8 @@
       "Ocean vibes"
     ],
     "taste": "Bitter flavors",
-    "image": "https://www.serebii.net/pokemonpokopia/pokemon/small/767.png"
+    "image": "https://www.serebii.net/pokemonpokopia/pokemon/small/767.png",
+    "isDLC": true
   },
   {
     "number": "040",
@@ -6381,7 +6422,8 @@
       "Luxury"
     ],
     "taste": "Dry flavors",
-    "image": "https://www.serebii.net/pokemonpokopia/pokemon/small/768.png"
+    "image": "https://www.serebii.net/pokemonpokopia/pokemon/small/768.png",
+    "isDLC": true
   },
   {
     "number": "041",
@@ -6399,7 +6441,8 @@
       "Watching stuff"
     ],
     "taste": "Sour Flavors",
-    "image": "https://www.serebii.net/pokemonpokopia/pokemon/small/779.png"
+    "image": "https://www.serebii.net/pokemonpokopia/pokemon/small/779.png",
+    "isDLC": true
   },
   {
     "number": "042",
@@ -6417,7 +6460,8 @@
       "Ocean vibes"
     ],
     "taste": "Bitter flavors",
-    "image": "https://www.serebii.net/pokemonpokopia/pokemon/small/781.png"
+    "image": "https://www.serebii.net/pokemonpokopia/pokemon/small/781.png",
+    "isDLC": true
   },
   {
     "number": "043",
@@ -6435,7 +6479,8 @@
       "Fabric"
     ],
     "taste": "Sweet Flavors",
-    "image": "https://www.serebii.net/pokemonpokopia/pokemon/small/833.png"
+    "image": "https://www.serebii.net/pokemonpokopia/pokemon/small/833.png",
+    "isDLC": true
   },
   {
     "number": "044",
@@ -6453,7 +6498,8 @@
       "Exercise"
     ],
     "taste": "Sour Flavors",
-    "image": "https://www.serebii.net/pokemonpokopia/pokemon/small/834.png"
+    "image": "https://www.serebii.net/pokemonpokopia/pokemon/small/834.png",
+    "isDLC": true
   },
   {
     "number": "045",
@@ -6471,7 +6517,8 @@
       "Ocean vibes"
     ],
     "taste": "Bitter flavors",
-    "image": "https://www.serebii.net/pokemonpokopia/pokemon/small/871.png"
+    "image": "https://www.serebii.net/pokemonpokopia/pokemon/small/871.png",
+    "isDLC": true
   },
   {
     "number": "046",
@@ -6489,7 +6536,8 @@
       "Lots of dirt"
     ],
     "taste": "Dry flavors",
-    "image": "https://www.serebii.net/pokemonpokopia/pokemon/small/960.png"
+    "image": "https://www.serebii.net/pokemonpokopia/pokemon/small/960.png",
+    "isDLC": true
   },
   {
     "number": "047",
@@ -6507,7 +6555,8 @@
       "Stone stuff"
     ],
     "taste": "Sweet Flavors",
-    "image": "https://www.serebii.net/pokemonpokopia/pokemon/small/961.png"
+    "image": "https://www.serebii.net/pokemonpokopia/pokemon/small/961.png",
+    "isDLC": true
   },
   {
     "number": "048",
@@ -6525,7 +6574,8 @@
       "Rides"
     ],
     "taste": "Sweet Flavors",
-    "image": "https://www.serebii.net/pokemonpokopia/pokemon/small/976.png"
+    "image": "https://www.serebii.net/pokemonpokopia/pokemon/small/976.png",
+    "isDLC": true
   },
   {
     "number": "049",
@@ -6543,7 +6593,8 @@
       "Round stuff"
     ],
     "taste": "Sour Flavors",
-    "image": "https://www.serebii.net/pokemonpokopia/pokemon/small/489.png"
+    "image": "https://www.serebii.net/pokemonpokopia/pokemon/small/489.png",
+    "isDLC": true
   },
   {
     "number": "050",
@@ -6561,6 +6612,7 @@
       "Noisy stuff"
     ],
     "taste": "Bitter flavors",
-    "image": "https://www.serebii.net/pokemonpokopia/pokemon/small/490.png"
+    "image": "https://www.serebii.net/pokemonpokopia/pokemon/small/490.png",
+    "isDLC": true
   }
 ]

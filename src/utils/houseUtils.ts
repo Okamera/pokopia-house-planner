@@ -7,6 +7,7 @@ export const locations: Record<LocationCode, string> = {
   rr: 'Rocky Ridges',
   ss: 'Sparkling Skylands',
   pt: 'Palette Town',
+  bu: 'Bubbly Basin'
 }
 
 export const getPokemonByName = (name: string) => pokemonMap[name];

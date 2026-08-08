@@ -42,7 +42,7 @@ const getCompatibilityMembers = (house: House): House['members'] => {
 }
 
 export const CompatabilityList = () => {
-  const { houses, selectedHouseId, dragAndDropEnabled, moveToHouse } = useHouse()
+  const { houses, selectedHouseId, dragAndDropEnabled, moveToHouse, hasDLC } = useHouse()
   const { ref: compatabilityRef } = useDroppable({
     id: 'compatability-list',
   })
@@ -100,9 +100,11 @@ export const CompatabilityList = () => {
       .filter((pokemon) => pokemon.name === 'Ditto'
         ? !selectedHouse || canHouseHoldDitto(selectedHouse)
         : !assignedPokemon.has(pokemon.name))
+      .filter((pokemon) => hasDLC || !pokemon.isDLC)
+      .filter((pokemon) => !selectedHouse || selectedHouse.location !== 'bu' || pokemon.type1 === 'Water' || pokemon.type2 === 'Water' || ['Ditto', 'Smeargle', 'Tinkaton'].includes(pokemon.name))
       .filter((pokemon) => selectedSpecialties.size === 0 || selectedSpecialties.has(pokemon.specialty1) || selectedSpecialties.has(pokemon.specialty2))
       .filter((pokemon) => nameSearch.trim() === '' || pokemon.name.toLowerCase().includes(nameSearch.trim().toLowerCase()))
-  }, [pokemonData, houses, nameSearch, selectedHouse, selectedSpecialties])
+  }, [pokemonData, houses, nameSearch, selectedHouse, selectedSpecialties, hasDLC])
 
   const sharedSelectedData = useMemo<SharedSelectedData | null>(() => {
     if (!selectedHouse) {
