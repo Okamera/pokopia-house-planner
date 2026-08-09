@@ -133,7 +133,6 @@ export const AppMenu = () => {
               </button>
             </div>
             <div className="menu-section">
-              <label>DLC Content</label>
               <button
                 type="button"
                 className={`menu-toggle-btn ${hasDLC ? 'active' : ''}`}
@@ -141,7 +140,7 @@ export const AppMenu = () => {
                   setHasDLC((current) => !current)
                 }}
               >
-                {hasDLC ? 'Show' : 'Hide'}
+                {hasDLC ? 'Show DLC Content' : 'Hide DLC Content'}
               </button>
             </div>
             <hr className="menu-divider" />

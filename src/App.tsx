@@ -1,4 +1,5 @@
 import './App.css'
+import { useEffect, useState } from 'react'
 import { DragDropProvider } from '@dnd-kit/react'
 import { HouseProvider, useHouse } from './HouseProvider'
 import { FontSizeProvider } from './FontSizeProvider'
@@ -32,8 +33,25 @@ const parseDragSource = (sourceId: string) => {
   }
 }
 
+const UPDATE_ANNOUNCEMENT_KEY = 'pokopia-update-announcement-date'
+const UPDATE_ANNOUNCEMENT_DATE = new Date('2026-08-09T00:00:00Z').getTime()
+
 function AppContent() {
   const { houses, dragAndDropEnabled, moveToHouse, removeFromHouse } = useHouse()
+  const [announcementOpen, setAnnouncementOpen] = useState(false)
+
+  useEffect(() => {
+    const storedTime = Number(localStorage.getItem(UPDATE_ANNOUNCEMENT_KEY)) || 0
+
+    if (!storedTime || storedTime < UPDATE_ANNOUNCEMENT_DATE) {
+      setAnnouncementOpen(true)
+    }
+  }, [])
+
+  const dismissAnnouncement = () => {
+    localStorage.setItem(UPDATE_ANNOUNCEMENT_KEY, UPDATE_ANNOUNCEMENT_DATE.toString())
+    setAnnouncementOpen(false)
+  }
 
   const handleDragEnd = (event: DragEndEventLike) => {
     if (!dragAndDropEnabled || event.canceled) {
@@ -74,19 +92,44 @@ function AppContent() {
   }
 
   return (
-    // @ts-ignore
-    <DragDropProvider onDragEnd={handleDragEnd}>
-      <AppMenu />
-      <section id="container">
-        <div id="left">
-          <HouseCreateForm />
-          <HouseList />
+    <>
+      {announcementOpen && (
+        <div className="app-modal-backdrop" onClick={dismissAnnouncement}>
+          <div className="app-modal" onClick={(event) => event.stopPropagation()}>
+            <div className="about-modal-header">
+              <h2>Updates are here!</h2>
+              <button type="button" aria-label="Close" onClick={dismissAnnouncement}>
+                ×
+              </button>
+            </div>
+            <p>
+              The first batch of DLC has arrived to Pokopia! The new DLC content has been added to the house planner.
+            </p>
+            <p>
+              If you did not purchase the DLC, you can turn off the DLC content in the app menu.
+            </p>
+            <div className="modal-actions">
+              <button type="button" className="modal-cancel" onClick={dismissAnnouncement}>
+                Got it
+              </button>
+            </div>
+          </div>
         </div>
-        <div id="right">
-          <CompatabilityList />
-        </div>
-      </section>
-    </DragDropProvider>
+      )}
+      {/* @ts-ignore */}
+      <DragDropProvider onDragEnd={handleDragEnd}>
+        <AppMenu />
+        <section id="container">
+          <div id="left">
+            <HouseCreateForm />
+            <HouseList />
+          </div>
+          <div id="right">
+            <CompatabilityList />
+          </div>
+        </section>
+      </DragDropProvider>
+    </>
   )
 }
 
