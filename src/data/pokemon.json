@@ -5628,6 +5628,42 @@
     "image": "https://www.serebii.net/pokemonpokopia/pokemon/small/385.png"
   },
   {
+    "number": "006",
+    "name": "Feebas",
+    "specialty1": "Water",
+    "specialty2": "",
+    "habitat": "Humid",
+    "type1": "Water",
+    "type2": "",
+    "favorites": [
+      "Lots of water",
+      "Shiny stuff",
+      "Glass stuff",
+      "Lots of nature",
+      "Group activities"
+    ],
+    "taste": "Sweet Flavors",
+    "image": "https://www.serebii.net/pokemonpokopia/pokemon/small/349.png"
+  },
+  {
+    "number": "007",
+    "name": "Milotic",
+    "specialty1": "Water",
+    "specialty2": "Hype",
+    "habitat": "Humid",
+    "type1": "Water",
+    "type2": "",
+    "favorites": [
+      "Lots of water",
+      "Shiny stuff",
+      "Glass stuff",
+      "Luxury",
+      "Cleanliness"
+    ],
+    "taste": "Sour Flavors",
+    "image": "https://www.serebii.net/pokemonpokopia/pokemon/small/350.png"
+  },
+  {
     "number": "001",
     "name": "Shellder",
     "specialty1": "Scrub",
@@ -5953,7 +5989,7 @@
   {
     "number": "018",
     "name": "Sharpedo",
-    "specialty1": "Chop",
+    "specialty1": "Crush",
     "specialty2": "Scrub",
     "habitat": "Humid",
     "type1": "Water",

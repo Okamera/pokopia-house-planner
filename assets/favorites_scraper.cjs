@@ -8,6 +8,8 @@ const FAVORITES_OUTPUT_PATH = path.join(__dirname, "../src/data/favoriteLinks.js
 const FURNITURE_OUTPUT_PATH = path.join(__dirname, "../src/data/furniture.json");
 const FURNITURE_TYPES_OUTPUT_PATH = path.join(__dirname, "../src/data/furnitureTypes.json");
 
+const currFurniture = require("../src/data/furniture.json");
+
 function toAbsoluteUrl(value) {
   if (!value) return "";
   return new URL(value, BASE_URL).href;
@@ -151,7 +153,10 @@ async function scrapeFurnitureForCategory(categoryName, url, allTypes, showLogs)
 
     // default isDLC false; check item page text for the special phrase when available
     let isDLC = false;
-    if (itemUrl) {
+    const existingItem = currFurniture.find(item => item.name === name);
+    if (existingItem) {
+      isDLC = existingItem.isDLC;
+    } else if (itemUrl) {
       try {
         const item$ = await fetchPage(itemUrl);
         if (item$) {
