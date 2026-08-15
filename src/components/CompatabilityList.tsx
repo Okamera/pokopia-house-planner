@@ -5,6 +5,7 @@ import { useHouse } from '../HouseProvider'
 import type { CompatiblePokemon, House, PokemonRecord } from '../types'
 import { getPokemonByName, getSharedFavorites, getHabitats } from '../utils/houseUtils'
 import { pokemonData } from '../data/data'
+import FilterDropdown, { FilterDropdownSingle } from './FilterDropdown'
 
 const favoriteCount = 5
 
@@ -41,6 +42,12 @@ const getCompatibilityMembers = (house: House): House['members'] => {
   return emptyIndex < 2 ? house.members.slice(0, 2) : house.members.slice(2, 4)
 }
 
+const habitatFilterOptions = [
+  { value: 'all', text: 'All habitats' },
+  { value: 'compatible', text: 'Compatible' },
+  { value: 'matching', text: 'Matching only' }
+]
+
 export const CompatabilityList = () => {
   const { houses, selectedHouseId, dragAndDropEnabled, moveToHouse, hasDLC } = useHouse()
   const { ref: compatabilityRef } = useDroppable({
@@ -48,26 +55,10 @@ export const CompatabilityList = () => {
   })
   const selectedHouse = houses.find((house) => house.id === selectedHouseId) ?? null
   const [selectedSpecialties, setSelectedSpecialties] = useState<Set<string>>(new Set())
-  const [dropdownOpen, setDropdownOpen] = useState(false)
-  const [habitatFilter, setHabitatFilter] = useState<'all' | 'compatible' | 'matching'>('compatible')
+  const [selectedTypes, setSelectedTypes] = useState<Set<string>>(new Set())
+  const [habitatFilter, setHabitatFilter] = useState({value: 'all', text: 'All habitats'})
   const [nameSearch, setNameSearch] = useState('')
   const [showSpecialtyIcons, setShowSpecialtyIcons] = useState(true)
-  const dropdownRef = useRef<HTMLDivElement>(null)
-  const habitatDropdownRef = useRef<HTMLDivElement>(null)
-  const [habitatDropdownOpen, setHabitatDropdownOpen] = useState(false)
-
-  useEffect(() => {
-    const handleClickOutside = (e: MouseEvent) => {
-      if (dropdownRef.current && !dropdownRef.current.contains(e.target as Node)) {
-        setDropdownOpen(false)
-      }
-      if (habitatDropdownRef.current && !habitatDropdownRef.current.contains(e.target as Node)) {
-        setHabitatDropdownOpen(false)
-      }
-    }
-    document.addEventListener('mousedown', handleClickOutside)
-    return () => document.removeEventListener('mousedown', handleClickOutside)
-  }, [])
 
   const toggleSpecialty = (specialty: string) => {
     setSelectedSpecialties((prev) => {
@@ -91,20 +82,35 @@ export const CompatabilityList = () => {
     })
   }, [])
 
+  const types = useMemo(() => {
+    const set = new Set<string>()
+    pokemonData.forEach((pokemon) => {
+      if (pokemon.type1.trim()) set.add(pokemon.type1.trim())
+      if (pokemon.type2.trim()) set.add(pokemon.type2.trim())
+    })
+    return Array.from(set).sort((a, b) => a.localeCompare(b))
+  }, [])
+
   const filteredData = useMemo(() => {
     const assignedPokemon = new Set(
       houses.flatMap((house) => house.members.filter((member): member is string => member !== null)),
     )
-
+    console.log('types', selectedTypes)
     return pokemonData
-      .filter((pokemon) => pokemon.name === 'Ditto'
-        ? !selectedHouse || canHouseHoldDitto(selectedHouse)
-        : !assignedPokemon.has(pokemon.name))
-      .filter((pokemon) => hasDLC || !pokemon.isDLC)
-      .filter((pokemon) => !selectedHouse || selectedHouse.location !== 'bu' || pokemon.type1 === 'Water' || pokemon.type2 === 'Water' || ['Ditto', 'Smeargle', 'Tinkaton'].includes(pokemon.name))
-      .filter((pokemon) => selectedSpecialties.size === 0 || selectedSpecialties.has(pokemon.specialty1) || selectedSpecialties.has(pokemon.specialty2))
-      .filter((pokemon) => nameSearch.trim() === '' || pokemon.name.toLowerCase().includes(nameSearch.trim().toLowerCase()))
-  }, [pokemonData, houses, nameSearch, selectedHouse, selectedSpecialties, hasDLC])
+      .filter((pokemon) => 
+        (pokemon.name === 'Ditto'
+          ? !selectedHouse || canHouseHoldDitto(selectedHouse)
+          : !assignedPokemon.has(pokemon.name))
+        && (hasDLC || !pokemon.isDLC)
+        && (selectedSpecialties.size === 0
+          || selectedSpecialties.has(pokemon.specialty1)
+          || selectedSpecialties.has(pokemon.specialty2))
+        && (selectedTypes.size === 0
+          || selectedTypes.has(pokemon.type1)
+          || selectedTypes.has(pokemon.type2))
+        && (nameSearch.trim() === '' || pokemon.name.toLowerCase().includes(nameSearch.trim().toLowerCase()))
+      )
+  }, [pokemonData, houses, nameSearch, selectedHouse, selectedSpecialties, hasDLC, selectedTypes])
 
   const sharedSelectedData = useMemo<SharedSelectedData | null>(() => {
     if (!selectedHouse) {
@@ -137,7 +143,7 @@ export const CompatabilityList = () => {
       if (!sharedSelectedData) return { ...pokemon, compatibility: 0 }
       
       // For 'all' mode, skip habitat filtering entirely
-      if (habitatFilter === 'all') {
+      if (habitatFilter.value === 'all') {
         const sharedFavorites = getPokemonFavorites(pokemon).filter((favorite) =>
           sharedSelectedData.favorites.includes(favorite)
         )
@@ -153,7 +159,7 @@ export const CompatabilityList = () => {
       if (conflictingHabitats.some(h => h && pokemon.habitat === h)) return { ...pokemon, compatibility: 0 }
       
       // For 'matching' mode, also hide non-matching habitats
-      if (habitatFilter === 'matching' && !sharedSelectedData.habitats.includes(pokemon.habitat)) return { ...pokemon, compatibility: 0 }
+      if (habitatFilter.value === 'matching' && !sharedSelectedData.habitats.includes(pokemon.habitat)) return { ...pokemon, compatibility: 0 }
 
       const sharedFavorites = getPokemonFavorites(pokemon).filter((favorite) =>
         sharedSelectedData.favorites.includes(favorite)
@@ -189,41 +195,18 @@ export const CompatabilityList = () => {
             <button id="name-search-clear" onClick={() => setNameSearch('')}>✕</button>
           )}
         </div>
-        <div id="specialty-filter" ref={dropdownRef}>
-          <button
-            id="specialty-filter-trigger"
-            className={dropdownOpen ? 'open' : ''}
-            onClick={() => setDropdownOpen((o) => !o)}
-          >
-            <span>
-              {selectedSpecialties.size === 0
-                ? 'All Specialties'
-                : `${selectedSpecialties.size} selected`}
-            </span>
-            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-              <polyline points="6 9 12 15 18 9" />
-            </svg>
-          </button>
-          {selectedSpecialties.size > 0 && (
-            <button id="specialty-filter-clear" onClick={() => setSelectedSpecialties(new Set())}>✕</button>
-          )}
-          {dropdownOpen && (
-            <ul id="specialty-dropdown">
-              {specialties.map((specialty) => (
-                <li key={specialty}>
-                  <label>
-                    <input
-                      type="checkbox"
-                      checked={selectedSpecialties.has(specialty)}
-                      onChange={() => toggleSpecialty(specialty)}
-                    />
-                    {specialty}
-                  </label>
-                </li>
-              ))}
-            </ul>
-          )}
-        </div>
+        <FilterDropdown
+          selected={selectedSpecialties}
+          setSelected={setSelectedSpecialties}
+          items={specialties}
+          text={selectedSpecialties.size === 0 ? 'All Specialties' : selectedSpecialties.size === 1 ? '1 Specialty' : `${selectedSpecialties.size} Specialties`}
+        />
+        <FilterDropdown
+          selected={selectedTypes}
+          setSelected={setSelectedTypes}
+          items={types}
+          text={selectedTypes.size === 0 ? 'All Types' : selectedTypes.size === 1 ? `${selectedTypes.values().next().value} Type` : `${selectedTypes.size} Types`}
+        />
         <button
           id="specialty-icons-toggle"
           className={showSpecialtyIcons ? 'active' : ''}
@@ -238,59 +221,12 @@ export const CompatabilityList = () => {
           {showSpecialtyIcons ? 'Icons: on' : 'Icons: off'}
         </button>
         {selectedHouse && (
-          <div id="habitat-filter" ref={habitatDropdownRef}>
-            <button
-              id="habitat-filter-trigger"
-              className={habitatDropdownOpen ? 'open' : ''}
-              onClick={() => setHabitatDropdownOpen((o) => !o)}
-            >
-              <span>
-                {habitatFilter === 'all' && 'Habitat: all'}
-                {habitatFilter === 'compatible' && 'Habitat: compatible'}
-                {habitatFilter === 'matching' && 'Habitat: matching'}
-              </span>
-              <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                <polyline points="6 9 12 15 18 9" />
-              </svg>
-            </button>
-            {habitatDropdownOpen && (
-              <ul id="habitat-dropdown">
-                <li>
-                  <button
-                    className={habitatFilter === 'all' ? 'active' : ''}
-                    onClick={() => {
-                      setHabitatFilter('all')
-                      setHabitatDropdownOpen(false)
-                    }}
-                  >
-                    All habitats
-                  </button>
-                </li>
-                <li>
-                  <button
-                    className={habitatFilter === 'compatible' ? 'active' : ''}
-                    onClick={() => {
-                      setHabitatFilter('compatible')
-                      setHabitatDropdownOpen(false)
-                    }}
-                  >
-                    Compatible
-                  </button>
-                </li>
-                <li>
-                  <button
-                    className={habitatFilter === 'matching' ? 'active' : ''}
-                    onClick={() => {
-                      setHabitatFilter('matching')
-                      setHabitatDropdownOpen(false)
-                    }}
-                  >
-                    Matching only
-                  </button>
-                </li>
-              </ul>
-            )}
-          </div>
+          <FilterDropdownSingle
+            selected={habitatFilter}
+            setSelected={setHabitatFilter}
+            items={habitatFilterOptions}
+            selectedText={`Habitat: ${habitatFilter.value}`}
+          />
         )}
       </div>
       <ul ref={compatabilityRef} id="compatability-list">

@@ -1662,11 +1662,11 @@
   }
 }
 
-#habitat-filter {
+.single-filter {
   position: relative;
 }
 
-#habitat-filter-trigger {
+.single-filter-trigger {
   display: flex;
   align-items: center;
   gap: 5px;
@@ -1702,7 +1702,7 @@
   }
 }
 
-#habitat-dropdown {
+.single-filter-list {
   position: absolute;
   top: calc(100% + 4px);
   left: 0;
@@ -1818,17 +1818,17 @@
     }
   }
   @media (max-width: 752px) {
-    width: auto;
+    width: 150px;
   }
 }
 
-#specialty-filter {
+.filter-dropdown {
   display: flex;
   align-items: center;
   gap: 6px;
   position: relative;
 
-  #specialty-filter-trigger {
+  .filter-dropdown-trigger {
     display: flex;
     align-items: center;
     gap: 6px;
@@ -1848,9 +1848,17 @@
       transform: none;
       box-shadow: none;
     }
+
+    svg {
+      transition: transform 0.15s ease;
+    }
+
+    &.open svg {
+      transform: rotate(180deg);
+    }
   }
 
-  #specialty-filter-clear {
+  .filter-dropdown-clear {
     padding: 3px 7px;
     font-size: 0.6875rem;
     border-radius: 6px;
@@ -1859,6 +1867,8 @@
     color: var(--textSecondary);
     cursor: pointer;
     line-height: 1;
+    position: absolute;
+    right: 5px;
 
     &:hover {
       background: var(--accentDanger);
@@ -1868,7 +1878,7 @@
     }
   }
 
-  #specialty-dropdown {
+  .filter-dropdown-list {
     position: absolute;
     top: calc(100% + 4px);
     left: 0;
