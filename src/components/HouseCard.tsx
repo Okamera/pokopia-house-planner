@@ -10,9 +10,10 @@ import { favoriteLinks } from '../data/data'
 type HouseProps = {
   house: House
   onDetailsClick: (id: number) => void
+  onlyHouse: boolean
 }
 
-export const HouseCard = ({ house, onDetailsClick }: HouseProps) => {
+export const HouseCard = ({ house, onDetailsClick, onlyHouse }: HouseProps) => {
   const { selectedHouseId, setSelectedHouseId, dragAndDropEnabled, updateHouse, removeHouse, hasDLC } = useHouse()
   const { ref } = useDroppable({
     id: house.id,
@@ -226,6 +227,17 @@ export const HouseCard = ({ house, onDetailsClick }: HouseProps) => {
           </div>
         </>
       )}
+      {onlyHouse && !house.members.find((m) => m) ? (
+        <div id="house-list-empty">
+          <svg className="arrow" width="96" height="96" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round">
+            <path d="M12 20V6" />
+            <path d="M6 12l6-6 6 6" />
+          </svg>
+          <div>
+            <p>Click the on the house card and click or drag a pokemon to the card to add it.</p>
+          </div>
+        </div>
+      ) : null}
     </div>
   )
 }

@@ -4,7 +4,7 @@ import type { HouseType, LocationCode } from '../types';
 import { locations } from '../utils/houseUtils';
 
 export const HouseCreateForm = () => {
-  const { generateHouse, filterLocation, hasDLC } = useHouse()
+  const { generateHouse, filterLocation, hasDLC, houses } = useHouse()
   const [location, setLocation] = useState<LocationCode>('ww')
   const [slots, setSlots] = useState(4)
   const [type, setType] = useState<HouseType>('custom')
@@ -72,8 +72,19 @@ export const HouseCreateForm = () => {
         </select>
       </div>
       </div>
-      <button className="house-create-submit" onClick={onGenerate}>
-        Add</button>
+      <button className="house-create-submit" onClick={onGenerate}>Add</button>
+      {houses.length === 0 ? (
+        <div id="house-list-empty">
+          <svg className="arrow" width="96" height="96" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round">
+            <path d="M12 20V6" />
+            <path d="M6 12l6-6 6 6" />
+          </svg>
+          <div>
+            <h3>Add your first house</h3>
+            <p>Use the above controls and click <strong>Add</strong> to create your first house.</p>
+          </div>
+        </div>
+      ) : null }
     </div>
   )
 }

@@ -94,7 +94,7 @@ export const HouseList = () => {
       {view === 'grid' ? (
         <ul id="houses">
           {visibleHouses.map((house) => (
-            <HouseCard key={house.id} house={house} onDetailsClick={setDetailsHouseId} />
+            <HouseCard key={house.id} house={house} onDetailsClick={setDetailsHouseId} onlyHouse={houses.length === 1} />
           ))}
         </ul>
       ) : (

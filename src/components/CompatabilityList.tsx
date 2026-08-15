@@ -95,7 +95,6 @@ export const CompatabilityList = () => {
     const assignedPokemon = new Set(
       houses.flatMap((house) => house.members.filter((member): member is string => member !== null)),
     )
-    console.log('types', selectedTypes)
     return pokemonData
       .filter((pokemon) => 
         (pokemon.name === 'Ditto'
