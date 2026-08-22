@@ -397,7 +397,9 @@
     "name": "Beach volleyball set",
     "image": "https://www.serebii.net/pokemonpokopia/items/beachvolleyballset.png",
     "categories": [
+      "Exercise",
       "Group Activities",
+      "Lots of dirt",
       "Ocean vibes",
       "Play spaces",
       "Wobbly stuff"
@@ -657,6 +659,7 @@
     "name": "Big swim ring",
     "image": "https://www.serebii.net/pokemonpokopia/items/bigswimring.png",
     "categories": [
+      "Colorful stuff",
       "Group Activities",
       "Ocean vibes",
       "Round stuff",
@@ -1359,6 +1362,7 @@
     "categories": [
       "Blocky stuff",
       "Cleanliness",
+      "Colorful stuff",
       "Group Activities"
     ],
     "type": "Decoration",
@@ -2243,6 +2247,16 @@
     "isDLC": false
   },
   {
+    "name": "Floating lantern",
+    "image": "https://www.serebii.net/pokemonpokopia/items/floatinglantern.png",
+    "categories": [
+      "Colorful stuff",
+      "Electronics"
+    ],
+    "type": "Decoration",
+    "isDLC": false
+  },
+  {
     "name": "Floor switch",
     "image": "https://www.serebii.net/pokemonpokopia/items/floorswitch.png",
     "categories": [
@@ -2364,7 +2378,6 @@
       "Blocky stuff",
       "Containers",
       "Letters and words",
-      "Sharp stuff",
       "Watching stuff",
       "Wooden stuff"
     ],
@@ -5313,6 +5326,15 @@
     "isDLC": false
   },
   {
+    "name": "Prism scale",
+    "image": "https://www.serebii.net/pokemonpokopia/items/prismscale.png",
+    "categories": [
+      "Shiny stuff"
+    ],
+    "type": "",
+    "isDLC": false
+  },
+  {
     "name": "Public seat",
     "image": "https://www.serebii.net/pokemonpokopia/items/publicseat.png",
     "categories": [
@@ -5747,7 +5769,9 @@
     "name": "Sand bed",
     "image": "https://www.serebii.net/pokemonpokopia/items/sandbed.png",
     "categories": [
+      "Colorful stuff",
       "Fabric",
+      "Lots of dirt",
       "Ocean vibes",
       "Play spaces",
       "Soft stuff"
@@ -7006,6 +7030,7 @@
     "name": "Swim ring",
     "image": "https://www.serebii.net/pokemonpokopia/items/swimring.png",
     "categories": [
+      "Colorful stuff",
       "Ocean vibes",
       "Round stuff",
       "Soft stuff"
@@ -7518,8 +7543,7 @@
     "categories": [
       "Blocky stuff",
       "Electronics",
-      "Glass stuff",
-      "Sharp stuff"
+      "Glass stuff"
     ],
     "type": "Decoration",
     "isDLC": false

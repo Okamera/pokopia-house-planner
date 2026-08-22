@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { useHouse } from '../HouseProvider';
 import HouseCard from './HouseCard';
 import HouseDetailsModal from './HouseDetailsModal';
-import type { LocationCode, PokemonRecord, Sort } from '../types';
+import type { LocationCode, Sort } from '../types';
 import { locations, getHabitats, getSharedFavorites } from '../utils/houseUtils'
 import { HouseTable } from './HouseTable';
 
