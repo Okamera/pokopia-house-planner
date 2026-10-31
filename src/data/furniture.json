@@ -936,6 +936,19 @@
     "isDLC": true
   },
   {
+    "name": "Candy bucket",
+    "image": "https://www.serebii.net/pokemonpokopia/items/candybucket.png",
+    "categories": [
+      "Containers",
+      "Cute stuff",
+      "Gatherings",
+      "Looks like food",
+      "Spooky stuff"
+    ],
+    "type": "Decoration",
+    "isDLC": false
+  },
+  {
     "name": "Cannon",
     "image": "https://www.serebii.net/pokemonpokopia/items/cannon.png",
     "categories": [
@@ -1247,6 +1260,20 @@
       "Metal stuff",
       "Noisy stuff",
       "Strange stuff"
+    ],
+    "type": "Toy",
+    "isDLC": false
+  },
+  {
+    "name": "Cofagrigus locker",
+    "image": "https://www.serebii.net/pokemonpokopia/items/cofagriguslocker.png",
+    "categories": [
+      "Blocky stuff",
+      "Containers",
+      "Luxury",
+      "Metal stuff",
+      "Shiny stuff",
+      "Spooky stuff"
     ],
     "type": "Toy",
     "isDLC": false
@@ -1987,6 +2014,19 @@
     "isDLC": false
   },
   {
+    "name": "Eerie statue",
+    "image": "https://www.serebii.net/pokemonpokopia/items/eeriestatue.png",
+    "categories": [
+      "Letters and words",
+      "Spooky stuff",
+      "Stone stuff",
+      "Symbols",
+      "Wobbly stuff"
+    ],
+    "type": "Toy",
+    "isDLC": false
+  },
+  {
     "name": "Eevee doll",
     "image": "https://www.serebii.net/pokemonpokopia/items/eeveedoll.png",
     "categories": [
@@ -2275,7 +2315,7 @@
       "Pretty flowers",
       "Soft stuff"
     ],
-    "type": "",
+    "type": "Decoration",
     "isDLC": false
   },
   {
@@ -2359,7 +2399,7 @@
     "categories": [
       "Wooden stuff"
     ],
-    "type": "Decoration",
+    "type": "",
     "isDLC": false
   },
   {
@@ -2402,6 +2442,21 @@
       "Round stuff"
     ],
     "type": "",
+    "isDLC": false
+  },
+  {
+    "name": "Fun balloons",
+    "image": "https://www.serebii.net/pokemonpokopia/items/funballoons.png",
+    "categories": [
+      "Colorful stuff",
+      "Cute stuff",
+      "Gatherings",
+      "Play spaces",
+      "Round stuff",
+      "Spooky stuff",
+      "Wobbly stuff"
+    ],
+    "type": "Toy",
     "isDLC": false
   },
   {
@@ -2590,6 +2645,17 @@
       "Lots of nature"
     ],
     "type": "",
+    "isDLC": false
+  },
+  {
+    "name": "Ghost smoke projector",
+    "image": "https://www.serebii.net/pokemonpokopia/items/ghostsmokeprojector.png",
+    "categories": [
+      "Round stuff",
+      "Spooky stuff",
+      "Strange stuff"
+    ],
+    "type": "Toy",
     "isDLC": false
   },
   {
@@ -2974,6 +3040,7 @@
     "name": "Hide-and-sneak trophy",
     "image": "https://www.serebii.net/pokemonpokopia/items/hide-and-sneaktrophy.png",
     "categories": [
+      "Complicated stuff",
       "Hard stuff",
       "Luxury",
       "Metal stuff",
@@ -3403,6 +3470,7 @@
     "name": "Jump rope trophy",
     "image": "https://www.serebii.net/pokemonpokopia/items/jumpropetrophy.png",
     "categories": [
+      "Complicated stuff",
       "Hard stuff",
       "Luxury",
       "Metal stuff",
@@ -5346,6 +5414,32 @@
     "isDLC": false
   },
   {
+    "name": "Pumpkin lantern",
+    "image": "https://www.serebii.net/pokemonpokopia/items/pumpkinlantern.png",
+    "categories": [
+      "Looks like food",
+      "Round stuff",
+      "Shiny stuff",
+      "Spooky stuff",
+      "Watching stuff"
+    ],
+    "type": "Toy",
+    "isDLC": false
+  },
+  {
+    "name": "Pumpkin lantern tower",
+    "image": "https://www.serebii.net/pokemonpokopia/items/pumpkinlanterntower.png",
+    "categories": [
+      "Looks like food",
+      "Round stuff",
+      "Shiny stuff",
+      "Spooky stuff",
+      "Watching stuff"
+    ],
+    "type": "Toy",
+    "isDLC": false
+  },
+  {
     "name": "Punching bag",
     "image": "https://www.serebii.net/pokemonpokopia/items/punchingbag.png",
     "categories": [
@@ -7027,6 +7121,15 @@
     "isDLC": false
   },
   {
+    "name": "Swampert squad rug",
+    "image": "https://www.serebii.net/pokemonpokopia/items/swampertsquadrug.png",
+    "categories": [
+      "Round stuff"
+    ],
+    "type": "",
+    "isDLC": true
+  },
+  {
     "name": "Swim ring",
     "image": "https://www.serebii.net/pokemonpokopia/items/swimring.png",
     "categories": [
@@ -7180,15 +7283,6 @@
     "isDLC": false
   },
   {
-    "name": "The Sea",
-    "image": "https://www.serebii.net/pokemonpokopia/items/thesea.png",
-    "categories": [
-      "Round stuff"
-    ],
-    "type": "",
-    "isDLC": true
-  },
-  {
     "name": "Throat Spray",
     "image": "https://www.serebii.net/pokemonpokopia/items/throatspray.png",
     "categories": [
@@ -7270,6 +7364,7 @@
     "image": "https://www.serebii.net/pokemonpokopia/items/toolbox.png",
     "categories": [
       "Blocky stuff",
+      "Construction",
       "Containers",
       "Hard stuff",
       "Metal stuff"
@@ -7342,6 +7437,18 @@
       "Luxury",
       "Metal stuff",
       "Stone stuff"
+    ],
+    "type": "Toy",
+    "isDLC": false
+  },
+  {
+    "name": "Trevenant streetlight",
+    "image": "https://www.serebii.net/pokemonpokopia/items/trevenantstreetlight.png",
+    "categories": [
+      "Shiny stuff",
+      "Slender objects",
+      "Spooky stuff",
+      "Watching stuff"
     ],
     "type": "Toy",
     "isDLC": false
@@ -7647,6 +7754,7 @@
     "image": "https://www.serebii.net/pokemonpokopia/items/wall-mountedtools.png",
     "categories": [
       "Colorful stuff",
+      "Construction",
       "Metal stuff"
     ],
     "type": "Toy",

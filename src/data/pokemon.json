@@ -5664,6 +5664,42 @@
     "image": "https://www.serebii.net/pokemonpokopia/pokemon/small/350.png"
   },
   {
+    "number": "008",
+    "name": "Pumpkaboo",
+    "specialty1": "Hype",
+    "specialty2": "",
+    "habitat": "Bright",
+    "type1": "Ghost",
+    "type2": "Grass",
+    "favorites": [
+      "Spooky stuff",
+      "Lots of nature",
+      "Pretty flowers",
+      "Group activities",
+      "Containers"
+    ],
+    "taste": "Sweet Flavors",
+    "image": "https://www.serebii.net/pokemonpokopia/pokemon/small/710.png"
+  },
+  {
+    "number": "009",
+    "name": "Gourgeist",
+    "specialty1": "Hype",
+    "specialty2": "Gather",
+    "habitat": "Bright",
+    "type1": "Ghost",
+    "type2": "Grass",
+    "favorites": [
+      "Spooky stuff",
+      "Lots of nature",
+      "Pretty flowers",
+      "Group activities",
+      "Noisy stuff"
+    ],
+    "taste": "Dry flavors",
+    "image": "https://www.serebii.net/pokemonpokopia/pokemon/small/711.png"
+  },
+  {
     "number": "001",
     "name": "Shellder",
     "specialty1": "Scrub",
