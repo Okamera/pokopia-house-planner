@@ -5700,6 +5700,96 @@
     "image": "https://www.serebii.net/pokemonpokopia/pokemon/small/711.png"
   },
   {
+    "number": "010",
+    "name": "Applin",
+    "specialty1": "Grow",
+    "specialty2": "",
+    "habitat": "Bright",
+    "type1": "Grass",
+    "type2": "Dragon",
+    "favorites": [
+      "Lots of nature",
+      "Wooden stuff",
+      "Looks like food",
+      "Pretty flowers",
+      "Containers"
+    ],
+    "taste": "Sour Flavors",
+    "image": "https://www.serebii.net/pokemonpokopia/pokemon/small/840.png"
+  },
+  {
+    "number": "011",
+    "name": "Flapple",
+    "specialty1": "Grow",
+    "specialty2": "Fly",
+    "habitat": "Bright",
+    "type1": "Grass",
+    "type2": "Dragon",
+    "favorites": [
+      "Lots of nature",
+      "Wooden stuff",
+      "Looks like food",
+      "Healing",
+      "Exercise"
+    ],
+    "taste": "Sour Flavors",
+    "image": "https://www.serebii.net/pokemonpokopia/pokemon/small/841.png"
+  },
+  {
+    "number": "012",
+    "name": "Appletun",
+    "specialty1": "Grow",
+    "specialty2": "Crush",
+    "habitat": "Bright",
+    "type1": "Grass",
+    "type2": "Dragon",
+    "favorites": [
+      "Lots of nature",
+      "Wooden stuff",
+      "Looks like food",
+      "Pretty flowers",
+      "Watching stuff"
+    ],
+    "taste": "Sweet Flavors",
+    "image": "https://www.serebii.net/pokemonpokopia/pokemon/small/842.png"
+  },
+  {
+    "number": "013",
+    "name": "Dipplin",
+    "specialty1": "Grow",
+    "specialty2": "Recycle",
+    "habitat": "Bright",
+    "type1": "Grass",
+    "type2": "Dragon",
+    "favorites": [
+      "Lots of nature",
+      "Wooden stuff",
+      "Looks like food",
+      "Gatherings",
+      "Containers"
+    ],
+    "taste": "Sweet Flavors",
+    "image": "https://www.serebii.net/pokemonpokopia/pokemon/small/1011.png"
+  },
+  {
+    "number": "014",
+    "name": "Hydrapple",
+    "specialty1": "Trade",
+    "specialty2": "Recycle",
+    "habitat": "Bright",
+    "type1": "Grass",
+    "type2": "Dragon",
+    "favorites": [
+      "Lots of nature",
+      "Wooden stuff",
+      "Slender objects",
+      "Gatherings",
+      "Containers"
+    ],
+    "taste": "Sweet Flavors",
+    "image": "https://www.serebii.net/pokemonpokopia/pokemon/small/1019.png"
+  },
+  {
     "number": "001",
     "name": "Shellder",
     "specialty1": "Scrub",

@@ -176,6 +176,27 @@
     "isDLC": false
   },
   {
+    "name": "Apple pie",
+    "image": "https://www.serebii.net/pokemonpokopia/items/applepie.png",
+    "categories": [
+      "Looks like food",
+      "Luxury",
+      "Round stuff"
+    ],
+    "type": "Decoration",
+    "isDLC": false
+  },
+  {
+    "name": "Appley blender",
+    "image": "https://www.serebii.net/pokemonpokopia/items/appleyblender.png",
+    "categories": [
+      "Glass stuff",
+      "Looks like food"
+    ],
+    "type": "Toy",
+    "isDLC": false
+  },
+  {
     "name": "Arcade machine",
     "image": "https://www.serebii.net/pokemonpokopia/items/arcademachine.png",
     "categories": [
@@ -1360,6 +1381,18 @@
     "isDLC": false
   },
   {
+    "name": "Cooking utensils",
+    "image": "https://www.serebii.net/pokemonpokopia/items/cookingutensils.png",
+    "categories": [
+      "Colorful stuff",
+      "Slender objects",
+      "Wobbly stuff",
+      "Wooden stuff"
+    ],
+    "type": "Decoration",
+    "isDLC": false
+  },
+  {
     "name": "Cool bass guitar",
     "image": "https://www.serebii.net/pokemonpokopia/items/coolbassguitar.png",
     "categories": [
@@ -1912,6 +1945,16 @@
       "Luxury",
       "Stone stuff",
       "Wooden stuff"
+    ],
+    "type": "Decoration",
+    "isDLC": false
+  },
+  {
+    "name": "Dipplin mixing bowl",
+    "image": "https://www.serebii.net/pokemonpokopia/items/dipplinmixingbowl.png",
+    "categories": [
+      "Round stuff",
+      "Wobbly stuff"
     ],
     "type": "Decoration",
     "isDLC": false
@@ -2979,6 +3022,20 @@
     ],
     "type": "Toy",
     "isDLC": true
+  },
+  {
+    "name": "Harvest basket",
+    "image": "https://www.serebii.net/pokemonpokopia/items/harvestbasket.png",
+    "categories": [
+      "Colorful stuff",
+      "Containers",
+      "Gatherings",
+      "Looks like food",
+      "Lots of nature",
+      "Round stuff"
+    ],
+    "type": "Decoration",
+    "isDLC": false
   },
   {
     "name": "Hau'oli City (Day)",
